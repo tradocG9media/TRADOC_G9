@@ -1,0 +1,81 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Professional Readings Search Results";
+    IEnumerable<Reading> data = Reading.GetReadings();
+    string searchString = ViewBag.searchString;
+    var resultTitle = data.Where(x => x.title.Contains(searchString));
+    var resultDesc = data.Where(x => x.description.Contains(searchString));
+    var resultComments = data.Where(x => x.comment.Contains(searchString));
+    var results = resultDesc.Concat(resultTitle).Concat(resultComments).Distinct();//omit duplicates
+
+    var keys = ViewBag.keys;
+    var value1 = ViewBag.value1;
+    //var value2 = ViewBag.value2;
+}
+
+<br />
+<div class="row">
+    <h1 class="page-heder"><b>@ViewBag.Title </b></h1>
+
+    <div class="col-md-12">    
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>Intro</h4>
+                    <p></p>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-4">
+        <div class="list-group">
+            <div class="list-group-item">
+                    <form class="form-inline" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="searchStr">Search</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">Search Readings</div>
+                                
+                                <input type="text" class="form-control text-muted" id="searchStr" placeholder="Search term">
+                                <button type="submit" class="input-group-addon btn btn-default  btn-sm"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        @*<button type="submit" class="btn btn-primary">Transfer cash</button>*@
+                    </form>
+                </div>
+            <div class="list-group-item">When you're deciding what words to put in the search box, try to choose words that are likely to appear on the site you're looking for. For example, instead of saying my head hurts, say headache, because that’s the word a medical site would use.</div>
+        </div>
+@ObjectInfo.Print(searchString)
+        @ObjectInfo.Print(keys);
+    </div>
+    <div class="col-md-8">
+        
+
+        <div class="">
+            <div class="">
+                <div class="list-group">
+                    <div class="list-group-item text-warning"> <h4><b>Search Results <span class="label label-warning">@results.Count()</span></b></h4></div>
+                   @foreach (var item in results)
+                   {
+                       <div class="list-group-item">
+                           <div>
+                               <h3><b>@item.title</b></h3>
+                               <span class="text-muted page-header">Series: <b><span class="text-primary">#@item.series</span> @item.descTitle</b> @item.pubDate | @item.authors </span>
+                             
+                               <p data-container="body" data-html="true" data-toggle="popover" data-trigger="hover" data-placement="top"
+                                  data-content='@(Shorten.ShortStr(item.comment, 388))'>  <i class="fa fa-info-circle fa-lg text-warning"
+                                   style="cursor: pointer"></i> <span class="text-warning">LTG McMaster's Comments</span>
+                               </p>
+                                 <p class="divider-thin"></p>
+                              
+                           </div>
+                           <div>@Html.Raw(item.description)</div>
+                       </div>
+                   }
+
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>

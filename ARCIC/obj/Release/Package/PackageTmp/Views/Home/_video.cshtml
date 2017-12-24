@@ -1,0 +1,89 @@
+﻿@using ARCIC.Models;
+
+@{    
+    var Video = Globals.video.OrderByDescending(x => x.entDate);
+            
+    }  
+<style>
+    .playBtn {
+        position: relative;
+        display: block;
+        /*height:34px;*/
+        left: 0;
+        top: 1px;
+        margin-top: -38px;
+        margin-bottom: 0px;
+        z-index: 1000;
+        /*opacity: .89;*/
+        color: white;
+        background-color: black;
+        padding: 7px 12px 7px 12px; /* Top,Right // Bottom,Left */
+        width: 100%;
+    }
+</style>
+
+    @foreach (var item in Video)
+    {
+       <div class="col-md-3">
+            <div class="panel panel-default">
+
+                @if (item.imageURL.Contains("https") || item.imageURL.Contains("http") || item.imageURL.Contains("App_Imgs/"))
+                {
+                    <img class="card-img-top img-responsive" alt="Card image cap" src="@item.imageURL" style="width: 102%;" />
+                }
+                else
+                {
+                    <img class="card-img-top img-responsive" alt="Card image cap" src='@("../App_Imgs/Content/" + item.imageURL + "f.jpg")' style="width: 102%;" />
+                }
+
+                <div class="playBtn clearfix">
+                    <div class="clearfix">
+                        <span class="pull-left"><b>@item.pubDate</b></span>
+                        @if (item.link.Contains(".pdf") || item.link.Contains(".ppt") || item.frozen == "1")
+                        {
+                        }
+                        else
+                        {
+                            <a class="clearfix" href="@item.link" target="_blank" style="color: white;" onClick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: '@item.title', eventValue: 1});">
+                                <img class="img-responsive pull-right" src="../App_Imgs/App/Logos/youtube30.png" />
+                            </a>
+                        }
+                    </div>
+                </div>
+                <div class="panel-body" style="height:142px;">
+                    <div class="card-deck-wrapper">
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-block clearfix">
+                                    <h4 class="card-title"><strong>@item.title</strong></h4>
+                                    <div>
+                                        @if (item.frozen == "1")
+                                        {
+                                            <div class="clearfix text-uppercase text-center small">
+                                                <div class="pull-right">
+                                                    <span onclick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: '@item.title', eventValue: 1});">Watch on @item.source</span>
+
+                                                </div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="clearfix text-uppercase text-center">
+                                                <span class="small">
+                                                    <a href="@item.link" target="_blank"
+                                                       onclick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: '@item.title', eventValue: 1});">Watch on @item.source</a>
+                                                    <i class="fa fa-external-link"></i>
+                                                </span>
+                                            </div>
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+

@@ -1,0 +1,73 @@
+﻿<div class="" id="accordion">
+    <div class="panel panel-default-small">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <i class="indicator fa fa-chevron-right" style="font-size:14px;"></i>
+                <a data-toggle="" href="http://www.arcic.army.mil"> <b> ARCIC </b> </a>
+
+            </div>
+        </div>
+        <div class="panel-heading">
+            <div class="panel-title">
+                <i class="indicator fa fa-chevron-right" style="font-size:14px;"></i><a data-toggle="collapse" href="#menuPanelListGroup1">
+                    <b> National</b>
+                </a>
+            </div>
+        </div>
+        <ul class="list-group collapse out" id="menuPanelListGroup1">
+            <li class="list-group-item librePanelListGroupItem">
+                <a href="https://developer.yodlee.com/API_Resources/Integration_Guide#CobrandAuthentication" target="_blank">
+                    <h5>
+                        <b>Newspapers/Magazines</b>
+                    </h5>
+                </a>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Paramaters</a></li>
+                    <li class="list-group-item"><a href="#">Joint Forces Quarterly</a></li>
+                    <li class="list-group-item"><a href="#">Military Review</a></li>
+                    <li class="list-group-item"><a href="#">Army Magazine</a></li>
+                    <li class="list-group-item"><a href="#">Air Force Magazine</a></li>
+                    <li class="list-group-item"><a href="#">Navy Proceedings</a></li>
+                    <li class="list-group-item"><a href="#">The Marine Corps Gazette</a></li>
+                    <li class="list-group-item"><a href="#">The National Interest</a></li>
+                    <li class="list-group-item"><a href="#">Combat Studies Institute</a></li>
+                    <li class="list-group-item"><a href="#">Naval War College Review</a></li>
+                </ul>
+
+
+            <li class="list-group-item librePanelListGroupItem">
+                <a href="https://developer.yodlee.com/API_Resources/Integration_Guide#UserAuthentication" target="_blank">
+                    <h5><b>Influential Blogs</b></h5>
+                </a>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Paramaters</a></li>
+                    <li class="list-group-item"><a href="#">Joint Forces Quarterly</a></li>
+                    <li class="list-group-item"><a href="#">Military Review</a></li>
+                    <li class="list-group-item"><a href="#">Army Magazine</a></li>
+                    <li class="list-group-item"><a href="#">Air Force Magazine</a></li>
+                    <li class="list-group-item"><a href="#">Navy Proceedings</a></li>
+                    <li class="list-group-item"><a href="#">The Marine Corps Gazette</a></li>
+                    <li class="list-group-item"><a href="#">The National Interest</a></li>
+                    <li class="list-group-item"><a href="#">Combat Studies Institute</a></li>
+                    <li class="list-group-item"><a href="#">Naval War College Review</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+    
+    <script>
+        function toggleChevron(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find("i.indicator")
+                .toggleClass('fa-chevron-right fa-chevron-down');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+    </script>
+
+</div>
+
+

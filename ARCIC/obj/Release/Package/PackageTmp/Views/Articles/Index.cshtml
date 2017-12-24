@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ARCIC.Models.Article>
+    @using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Articles";    
+    var y = Model.ToList();
+}
+
+    <div class="row">
+    @foreach (var item in y.Take(4))
+    {
+        <div class="col-md-3">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4><b>@item.title</b></h4>
+                    @*<p>@Html.Raw(Shorten.ShortStr(item.description,144))</p>*@
+                </div>
+            </div>
+
+        </div>
+    }
+
+
+   <div class="col-md-12 text-center">
+       <h3><b>ARMY WARFIGHTING CHALLENGES</b></h3>
+   </div>
+</div>
+   
+
+
+

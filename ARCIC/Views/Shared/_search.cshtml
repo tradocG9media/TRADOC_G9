@@ -1,0 +1,173 @@
+﻿
+
+
+<div id="facebox" style="display: none;">
+                <div class="popup">
+                    <div class="content">
+                        XXXXXXXX<h1>der</h1>
+                    </div>
+                    <a href="#" class="close">
+                        <img src="../app_Imgs/btn_close.png" title="close" class="close_image"></a>
+                </div>
+            </div>
+<div style="background: transparent none repeat scroll 0% 0%; border: 0px none; display: block; float: none; height: 0px; line-height: 0; margin: 0px; padding: 0px; position: static; width: 0px;" id="usasearch_sayt">
+                <ul style="z-index: 1001; top: 0px; left: 0px; display: none;" aria-activedescendant="ui-active-menuitem" role="listbox" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
+                <ul style="z-index: 1001; top: 0px; left: 0px; display: none;" aria-activedescendant="ui-active-menuitem" role="listbox" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
+                <ul style="z-index: 1001; top: 0px; left: 0px; display: none;" aria-activedescendant="ui-active-menuitem" role="listbox" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
+                <ul style="z-index: 1001; top: 0px; left: 0px; display: none;" aria-activedescendant="ui-active-menuitem" role="listbox" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
+            </div>
+<div id="usasearch_sayt"></div>
+<div id="usasearch_sayt"></div>
+<div id="usasearch_sayt"></div>
+
+ <style>
+
+.winshell {
+	height: 210px;
+	width: 884px;
+	background:	url("../app_Imgs/bg_megamenu_search.png") no-repeat;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 20px 50px 20px 50px;
+}
+
+
+.SearchTitle {
+	width: 150px;
+	margin: 0px;
+	padding: 3px;
+	vertical-align: top;
+	border: 1px solid #666;
+	background: #FFF;
+	color: #666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform:uppercase;
+	line-height: 16px;
+}
+.SearchForm {
+	width: 534px;
+	background: url("../app_Imgs/Backgrounds/FFFFFF_t80.png");
+	margin: 0px;
+	padding: 10px;
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+.SearchBody {
+	height: 35px;
+	width: 534px;
+	background: url("../app_Imgs/Backgrounds/FFFFFF_t80.png");
+	margin: 0px;
+	padding: 10px;
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+input[type=text] {
+    background: #FFF;
+    border: 1px solid #000;
+    color: #000;
+    height: 26px;
+    width: 575px;
+    padding: 0px 0px 0px 6px;
+    margin: 0px;
+    box-shadow: 2px 2px 3px #999 inset;
+    vertical-align:top;
+}
+
+.FormButton {
+	margin: 0px;
+	padding: 5px 14px 5px 14px;
+	border: none;
+	background: #36C;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	color:#FFF;
+    vertical-align:top;
+}
+.FormButton:hover {
+	background: #f90;
+	color:#000;
+}
+.PoweredBy {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+
+</style>
+<!--Search MODAL-->
+<div class="">
+            <!-- Modal -->
+            <div style="display: none;" class="modal fade" id="searchModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header clearfix">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h3 class="modal-title text-center"><b>ARCIC Search</b> </h3>                        
+                            
+                        </div>
+                        <div class="modal-body">
+                            <div id='' class=''>
+                                <div class="panel-body text-center clearfix">
+                                    
+                                                <form accept-charset="UTF-8" action="http://search.usa.gov/search" id="search_form" method="get" class="center-block">
+
+                                                    @*<div style="margin: 0; padding: 0; display: inline">
+                                                        <input name="utf8" type="hidden" value="&#x2713;" />
+                                                    </div>*@
+                                                    <div class="form-group">
+                                                    <input id="affiliate" name="affiliate" type="hidden" value="arcic" />
+                                                    <label for="inputSearch">Search</label>
+                                                    <input class="text-center" autocomplete="off" class="usagov-search-autocomplete form-control" id="query" name="query" type="text"  />
+                                                    
+                                                   <button name="commit" type="submit" class="btn btn-primary"> <i class="fa fa-search"></i></button> 
+
+                                                    </div>
+                                                    
+
+                                                </form>
+
+                                   <p class="col-md-offset-4 col-md-3 "><img class="img-responsive" src="http://f22818b4dfc10241d8a3-f1564c64756a8cfee25b6b19953b1d23.r31.cf2.rackcdn.com/digitalgov_search_logo.png" style="margin-left:30px;"/></p>
+                                    @*<asp:hyperlink runat="server"
+                                        navigateurl="http://www.digitalgov.gov/"
+                                        cssclass="std"
+                                        target="_blank"
+                                        onclick="ga('send', 'event', 'Link', 'Page Menu', 'DigitalGov.gov');"><asp:Image runat="server"
+			ImageUrl="../app_Imgs/bg_formfield_search.png"
+			AlternateText="Powered by DigitalGov.gov"
+			CssClass="PoweredBy" /></asp:hyperlink>*@
+
+
+
+                                    <script type="text/javascript">
+                                        //<![CDATA[
+                                        var usasearch_config = { siteHandle: "arcic" };
+                                        var script = document.createElement("script");
+                                        script.type = "text/javascript";
+                                        script.src = "//search.usa.gov/javascripts/remote.loader.js";
+                                        document.getElementsByTagName("head")[0].appendChild(script);
+                                        //]]>
+                                    </script>
+
+
+                                </div>
+
+</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+

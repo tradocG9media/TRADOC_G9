@@ -1,0 +1,113 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Think";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+    var data = ViewBag.data;
+}
+
+
+<div class="row">
+
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Think</h1>
+            <p>Why Does Thinking Matter?</p>
+            <p>
+                Thinking is the process of using one's mind to consider or reason about a situation, problem or solution.  Thinking is critical to the success of the Army, both present and future challenges.
+                By thinking, Army forces gain intellectual advantages over adversaries. Leaders think ahead in time to anticipate opportunities and dangers and take prudent risk to gain and maintain positions of relative advantage over the enemy. Leaders develop unit cultures that encourage the exercise of thinking and good judgment consistent with the philosophy of mission command.
+            </p>
+            <p>
+                Leaders use thinking in order to best align efforts in time, space, and purpose to achieve tactical or campaign objectives. Because military operations are a series of temporary conditions, commanders must think ahead in time and space to retain and exploit the initiative.
+            </p>
+            <p>
+                Army leaders must think critically, are comfortable with ambiguity, accept prudent risk, assess the situation continuously, develop innovative solutions to problems, and remain mentally and physically agile to capitalize on opportunities.
+            </p>
+            @*<p>
+                <a class="btn btn-primary btn-large">Call to action!</a>
+            </p>*@
+        </header>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>An Approach to Thinking</b></h4>
+                        <p>
+                            One of our most important duties as Army professionals is to think clearly about the problem of future armed conflict. The Army must continue to emphasize adaptability in leaders, units, and institutions that can learn and innovate while fighting.  Thinking allows describing how future forces will fight and win and provide intellectual foundation for modernization by considering threats, technology and history/lessons learned. Thinking is essential in defining problems and shaping concepts and solutions for how the Army will address them.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>Reflections</b></h4>
+                        <ol>
+                            <li>What obstacles prevent thinking?</li>
+                            <li>What are the essential elements of thinking in the Army?</li>
+                            <li>What role does an organizational institution or culture play in thinking?</li>
+                            <li>How does a leader develop an approach to thinking?</li>
+                            <li>How does a leader foster a thinking mindset in his or her junior leaders?</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                @Html.Partial("_article")
+                @Html.Partial("_video")                
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row">
+           
+                @helpers.SSPBook(
+                "Preparing for War: The Emergence of the Modern U.S. Army, 1815-1917, by LTC J. P. Clark",
+                "Nineteenth-century officers believed that generalship and battlefield command were more a matter of innate ability than anything institutions could teach. By World War I, however, Progressive Era concepts of professionalism had infiltrated the Army. Younger officers took for granted that war’s complexity required them to be trained to think and act alike―a notion that would have offended earlier generations. Preparing for War concludes by demonstrating how these new notions set the conditions for many of the successes―and some of the failures―of General Pershing’s American Expeditionary Forces.",
+                622,
+                "http://www.worldcat.org/title/preparing-for-war-the-emergence-of-the-modern-us-army-1815-1917/oclc/938708030/viewport",
+                "Clark.jpg")
+
+             @helpers.SSPBook(
+                "Military Innovation in the Interwar Period, by Williamson Murray and Allan Millett",
+                "During the interwar period, however, the armed forces grew increasingly asymmetrical, developing different approaches to the same problems. This study of major military innovations in the 1920s and 1930s explores differences in exploitation by the seven major military powers. The comparative essays investigate how and why innovation occurred or did not occur, and explain much of the strategic and operative performance of the Axis and Allies in World War II.",
+                622,
+                "http://www.worldcat.org/title/military-innovation-in-the-interwar-period/oclc/39931676/viewport",
+                "Murray.jpg")
+
+            @helpers.SSPBook(
+                "The Dynamics of Military Revolution, 1300-2050, by MacGregor Knox and Williamson Murray",
+                "The Dynamics of Military Revolution bridges a major gap in the emerging literature on revolutions in military affairs. It suggests that two very different phenomena have been at work over the past centuries: &quot;military revolutions, &quot; which are driven by vast social and political changes, and &quot;revolutions in military affairs, &quot; which military institutions have directed, although usually with great difficulty and ambiguous results.",
+                622,
+                "http://www.worldcat.org/title/dynamics-of-military-revolution-1300-2050/oclc/45393690/viewport",
+                "Knox.jpg")
+            @helpers.SSPBook(
+                "The Seventh Sense: Power, Fortune, and Survival in the Age of Networks, by Joshua Cooper Ramo",
+                "According to Joshua Ramo, this is a time of disruption that lends itself to &quot;seventh sense&quot; thinking—in less trendy terms, the ability to discern how things connect to other things in nodes and networks, &quot;to look at any object and see the way in which it is changed by connection.&quot;",
+                622,
+                "http://www.worldcat.org/title/seventh-sense-power-fortune-and-survival-in-the-age-of-networks/oclc/921166382&referer=brief_results",
+                "Ramo.jpg")               
+               
+            
+        </div>
+        <div class="row">
+             @helpers.SSPBook(
+                "The Ten Faces of Innovation -- Strategies for Heightening Creativity By Tom Kelley with Jonathan Littman",
+                "Drawing on nearly 20 years of experience managing IDEO, Kelley identifies ten roles people can play in an organization to foster innovation and new ideas while offering an effective counter to naysayers. Among these approaches are the Anthropologist—the person who goes into the field to see how customers use and respond to products, to come up with new innovations; the Cross-pollinator who mixes and matches ideas, people, and technology to create new ideas that can drive growth; and the Hurdler, who instantly looks for ways to overcome the limits and challenges to any situation.",
+                622,
+                "https://www.goodreads.com/book/show/95656.The_Ten_Faces_of_Innovation?from_search=true",
+                "Kelley2.jpg") 
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,68 @@
+﻿@using ARCIC.Models;
+
+@{
+    var data = Article.GetArticles();
+    //var mdb = data.Where(x => x.pGroup == "mdb").Take(3).OrderBy(x => Convert.ToDateTime(x.pubDate));
+    var mdb = data
+    .Where(x => x.pType == "Video" || x.pType == "Article")
+    .Where(x => x.pGroup == "mdb")
+    .Take(3).OrderByDescending(x => Convert.ToDateTime(x.entDate));
+
+}
+<!--Multi-Domain Battle-->
+<div id="MDB" class="">
+ 
+      @foreach (var item in mdb)
+    {      
+        
+        <div class="col-md-4">
+
+            <div class="panel panel-default">
+                @if (item.archive == "mil")
+                {
+                    <img style="margin-bottom: 0px;" class="card-img-top img-responsive" alt="Card image cap"  src='@("../App_Imgs/Mil/" + item.imageURL + "f.png")'/>
+                }
+                else if (item.archive == "exclusive")
+                {
+                    <img style="margin-bottom: 0px;" class="card-img-top img-responsive" alt="Card image cap"  src='@("../App_Imgs/Exclusives/" + item.imageURL + "f.png")'/>
+                }
+                else
+                {
+                    <img style="margin-bottom: 0px;" class="card-img-top img-responsive" alt=""  src='@("../App_Imgs/Content/" + item.imageURL + "f.jpg")'/>
+                    
+                }
+                <div class="panel-body">
+                    <div class="clearfix">
+                        <h3 class="card-title"><strong>@Html.Raw(item.title)</strong></h3>
+                        
+                        @if (item.description.Contains("iframe"))
+                        {
+                            @*<h5>&nbsp;</h5><div>&nbsp;</div>*@
+                        }
+                        else
+                        {
+                            @*<p class="card-text">@Html.Raw(Shorten.ShortStr(item.description,80))</p>*@
+                        }
+
+                        <p class="divider-thin"></p>
+                        <div class="card-text text-center"><small class="text-muted">@item.author </small></div>
+                        <div class="text-center">
+                            <small class="clearfix">&nbsp;
+                                <span class="">
+                                    @*<a class="text-uppercase" @Html.Raw(Article.Tracker.Video(item.title + " - (From MDB Home Page)")) href="@item.link" target="_blank">                                    
+                                         @item.source</a> <i class="fa fa-external-link"></i>*@
+
+                                    <a href="@item.link" target="_blank" class="text-uppercase" onclick="ga('send', 'event', { eventCategory: 'MDB',  eventAction: 'Clicked', eventLabel: '@item.title (From MDB Home Page)', eventValue: 1});">
+                                        @item.source</a>
+                                </span>
+                            </small>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

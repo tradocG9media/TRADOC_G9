@@ -1,0 +1,17 @@
+﻿@using ARCIC.Models;
+@using CONTENT;
+
+@{
+    var data = CONTENT.Article.GetArticles();
+}
+
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-body">
+           @foreach (var item in data)
+           {
+                <h4>@item.headline</h4>
+           }
+        </div>
+    </div>
+</div>

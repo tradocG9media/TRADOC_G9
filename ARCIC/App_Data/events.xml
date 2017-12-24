@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events>
+		<event>
+			<eventID>88</eventID>			
+			<date>09/22/2016 12:00:00</date>
+			<day>Monday</day>
+			<author>US Army</author>
+			<desc>Monday Night Football</desc>
+			<entry>
+				<![CDATA[ 
+                       <article>
+							<p>The weapons’ modernization balancing act required to take care of immediate tactical needs while also preparing for the future will be the topic of an Oct. 3 professional develop forum at the Association of the U.S. Army’s Annual Meeting and Exposition.</p>
+                       </article>    
+				]]>
+			</entry>
+		</event>
+		<event>
+			<eventID>87</eventID>			
+			<date>09/22/2016 09:30:00</date>	
+			<day>Friday</day>
+			<author>US Army</author>
+			<desc>Future Multidomain</desc>
+			<entry>
+				<![CDATA[ 
+                       <article>
+							<p>Hello Dolly</p>
+                       </article>  
+				]]>
+			</entry>			
+		</event>
+		<event>
+			<eventID>86</eventID>			
+			<date>07/12/2016 12:00:00</date>			
+			<day>Thursday</day>
+			<author>Nadia Schadlow</author>
+			<desc>For the U.S. Army</desc>
+			<entry>
+				<![CDATA[    
+                    
+                       <article>
+							 <p>For the U.S. Army --- Recently, the new Army Secretary Eric Fanning repeated what by now is a familiar refrain in defense policy circles: The Army must tell its story better in order to get the resources it needs.  The “tell the story better” narrative is by now a familiar one — and a misguided one.</p>
+							
+                       </article>               
+				
+				]]>
+			</entry>			
+		</event>		
+		<event>
+			<eventID>85</eventID>			
+			<date>06/30/2016 09:00:00</date>			
+			<day>Wednesday</day>
+			<author>Dr. Kira Hutchinson</author>
+			<desc>Army Secretary Eric Fanning</desc>
+			<entry>
+				<![CDATA[ 
+				<article>
+				<p>Recently, the new Army Secretary Eric Fanning repeated what by now is a familiar refrain in defense policy circles: The Army must tell its story better in order to get the resources it needs.  The “tell the story better” narrative is by now a familiar one — and a misguided one.</p>
+				</article>
+				]]>
+		
+			</entry>			
+		</event>
+	<event>
+		<eventID>84</eventID>
+		<date>04/23/2016 09:45:00</date>
+		<day>Wednesday</day>
+		<author>Dr. Kira Hutchinson</author>
+		<desc>MLB Nationals Playoff Run</desc>
+		<entry>
+			<![CDATA[ 
+				<article>
+				<p>MLB Nationals Playoff Run --- Eric Fanning repeated what by now is a familiar refrain in defense policy circles: The Army must tell its story better in order to get the resources it needs.  The “tell the story better” narrative is by now a familiar one — and a misguided one.</p>
+				</article>
+				]]>
+
+		</entry>
+	</event>
+				
+
+</events>
+
+
+
+
+

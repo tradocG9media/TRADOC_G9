@@ -1,0 +1,93 @@
+﻿
+@{ 
+    // Build btn html template
+    // Build database with content for buttons
+    // Build class to handle dynamically adding buttons
+    var trackingLabel = ViewBag.trackingLabel;
+    var dataChkOPD = ViewBag.dateOPD;
+    var dataChkPDF = ViewBag.datePDF;
+    var dataChkDSS = ViewBag.dateDSS;
+    IEnumerable<ARCIC.Models.HotLinks> hotLinks = ViewBag.hotLinks;
+    var currReading = ViewBag.currReading;
+
+}
+
+<div class="well">    
+   
+</div>
+
+
+<div id="advertising" class="text-center">
+    <div role="group" aria-label="Basic example">
+        <a class="btn btn-default" href='@hotLinks.ToList().Find(x => x.name == "RAS").url' target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Document', eventAction: 'Download', eventLabel: 'RAS Strategy PDF', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>RAS <i class="fa fa-file-pdf-o"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="@hotLinks.ToList().Find(x => x.name == "flickr").url" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Photos', eventAction: 'Clicked', eventLabel: 'Flickr Photos', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>ARCIC Photos <i class="fa fa-flickr"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="@hotLinks.ToList().Find(x => x.name == "youTube").url" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Video', eventAction: 'Play', eventLabel: 'youTube adaptingthearmy playlist', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>Playlist <i class="fa fa-youtube-play"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="@hotLinks.ToList().Find(x => x.name == "csm travers blog").url" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Blog', eventAction: 'Click', eventLabel: 'CSM Traver&apos;s Blog', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>CSM Traver's Blog <i class="fa fa-external-link"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="../App_Documents/AWA.pdf" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Document', eventAction: 'Download', eventLabel: 'AWA PDF', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>JWA <i class="fa fa-download"></i></b>
+            </span>
+        </a>
+
+        @if (dataChkPDF > DateTime.Now)
+        {
+            <a class="btn btn-default" href="/Event?Group=PDF">
+                <span class="text-textColor">
+                    <b>PDF <i class="fa fa-microphone"></i></b>
+                </span>
+            </a>
+        }
+        @if (dataChkOPD > DateTime.Now)
+        {
+            <a class="btn btn-default" href="/Event?Group=OPD">
+                <span class="text-textColor">
+                    <b>OPD <i class="fa fa-microphone"></i></b>
+                </span>
+            </a>
+        }
+        @if (dataChkDSS > DateTime.Now)
+        {
+            <a class="btn btn-default" href="/Event?Group=DSS">
+                <span class="text-textColor">
+                    <b>DSS <i class="fa fa-microphone"></i></b>
+                </span>
+            </a>
+        }
+        <!-- LPD Weekly -->
+        <a class="btn btn-default" href='@("../LPD/ProfessionalReadings?articleSeries=" + currReading)'>
+            <span class="text-primary"><b>Reading #@currReading <i class="fa fa-file-text-o"></i></b> </span>
+        </a>
+    </div>
+
+</div>
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+

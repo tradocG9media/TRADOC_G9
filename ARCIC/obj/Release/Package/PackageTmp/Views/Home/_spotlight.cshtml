@@ -1,0 +1,60 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    int currSpot = Globals.currSpotlight;
+    var spotlights = Spotlight.GetSpotlights().Take(6);
+    //var currSpotLinks = ARCIC.Models.Spotlight.Link(currSpot);
+
+    foreach (var spotlight in spotlights)
+    {
+        <div class="col-md-6">
+            <div class="panel panel-default">
+
+                <img style="width:100%;" class="center-block" src='@("../App_Imgs/Content/" + spotlight.imageFilename + "f.jpg")' />
+                <div class="panel-body clearfix">
+
+                    <div class="text-center clearfix">
+                        @* <img class="img-responsive pull-left center-block" src="../App_Imgs/App/Logos/ARCIC-Emblem.png" style="width: 41px;" />*@
+                        <h4 class="text-warning text-uppercase"> @spotlight.mainArea </h4>
+                    </div>
+
+                    <h4 style="">
+                        <b>
+                            @if (spotlight.imageTitle.Length > 38)
+                            {
+                                @Shorten.ShortStr(spotlight.imageTitle, 39)<a data-toggle="popover" data-container="body" data-trigger="hover" data-html="true"
+                                                                              data-content="@spotlight.imageTitle">...</a>
+                            }
+                            else
+                            {
+                                <a href="@spotlight.imageLink">@spotlight.imageTitle</a>
+                            }
+
+                        </b>
+                    </h4>
+                    <p>
+
+                        @Html.Raw(Shorten.ShortStr(spotlight.imageCaption, 388))
+                        <a href='@spotlight.mainPage'>[...]</a>
+                    </p>
+                </div>
+                <div class="panel-footer text-center">
+                    <div>
+                        <a href="@spotlight.mainPage" class="btn-link" role="button">@spotlight.mainArea</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+
+}
+

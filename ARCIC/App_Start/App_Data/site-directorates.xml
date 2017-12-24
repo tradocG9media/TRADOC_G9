@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - -->
+<!-- ~/app_Imgs/Icons/Exclusive_020.png  -->
+<!-- ARCIC Exclusive News Article        -->
+<!-- linkexclusive-big                   -->
+<!-- - -->
+<!-- - -->
+<!-- ~/app_Imgs/link_newwin_big.png      -->
+<!-- Opens a new tab or window           -->
+<!-- link-big                            -->
+<!-- - -->
+<!-- - -->
+<!-- ~/app_Imgs/link_empty_big.png       -->
+<!-- Spacer                              -->
+<!-- link-big                            -->
+<!-- - -->
+<!-- - -->
+<!-- - -->
+
+
+<site>
+	<directorates>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<dirID>1</dirID>
+			<dirAbbr>ARCIC-HQ</dirAbbr>
+			<dirTitle>Army Capabilities Integration Center</dirTitle>
+			<dirCategory>Army Capabilities Integration Center (Headquarters)</dirCategory>
+			<dirDesc>ARCIC Headquarters oversees the development, evaluation, and integration of concepts, requirements, and solutions for the Army – across DOTMLPF, Warfighting functions and formations – to provide Soldiers the capabilities they need to support Combatant Commanders.</dirDesc>
+			<dirURL>~/Directorates/arcic-hq.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>2</order>
+			<dirID>2</dirID>
+			<dirAbbr>BMC</dirAbbr>
+			<dirTitle>Brigade Modernization Command</dirTitle>
+			<dirCategory>Brigade Modernization Command</dirCategory>
+			<dirDesc>The Brigade Modernization Command (BMC) conducts physical integration and evaluations of the network, capability packages and other adaptive and core capabilities in order to provide DOTMLPF recommendations to the Army.</dirDesc>
+			<dirURL>~/Directorates/brigade-modernization.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>3</order>
+			<dirID>3</dirID>
+			<dirAbbr>CDD</dirAbbr>
+			<dirTitle>Capabilities Developments Directorate</dirTitle>
+			<dirCategory>Capabilities Developments Directorate</dirCategory>
+			<dirDesc>The Capabilities Developments Directorate (CDD) prioritizes, integrates, and synchronizes DOTMLPF-P capabilities developments across force modernization proponents – and across operational organizations. CDD is also responsible for assessing the means of achieving a given capability with alternatives derived from different functional areas or different specific solutions. Working across organization types, the CDD validates that capabilities – and the attendant requirements documentation -- address the most urgent warfighting needs within available and forecasted resources.</dirDesc>
+			<dirURL>~/Directorates/capabilities-developments.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>4</order>
+			<dirID>4</dirID>
+			<dirAbbr>CDLD</dirAbbr>
+			<dirTitle>Concept Development and Learning Directorate</dirTitle>
+			<dirCategory>Concept Development and Learning Directorate</dirCategory>
+			<dirDesc>The Concept Development and Learning Directorate (CDLD) integrates Army learning activities and develops the Army's vision of future conflict and the conduct of future joint land operations for the development of Army concepts, and capabilities across the DOTMLPF.</dirDesc>
+			<dirURL>~/Directorates/concept-development-learning.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>5</order>
+			<dirID>5</dirID>
+			<dirAbbr>F2025BD</dirAbbr>
+			<dirTitle>Force 2025 and Beyond Directorate</dirTitle>
+			<dirCategory>Force 2025 and Beyond Directorate</dirCategory>
+			<dirDesc>The Force 2025 and Beyond Directorate (F2025BD) serves as TRADOC's lead to integrate and synchronize development of future Army concepts and capabilities and help foster / coordinate innovation efforts across the force. This is done in coordination and collaboration with AMC, FORSCOM, HQDA staff and others.</dirDesc>
+			<dirURL>~/Directorates/force-2025-beyond.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>6</order>
+			<dirID>6</dirID>
+			<dirAbbr>IAPD</dirAbbr>
+			<dirTitle>International Army Programs Directorate</dirTitle>
+			<dirCategory>International Army Programs Directorate</dirCategory>
+			<dirDesc>The International Army Programs Directorate (IAPD) manages and coordinates TRADOC international activities to synchronize the exchange of DOTMLPF information with Army Service Component Command priority countries, allies, and friends to enhance current and future operational capabilities.</dirDesc>
+			<dirURL>~/Directorates/international-army-programs.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+		<directorate>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>7</order>
+			<dirID>7</dirID>
+			<dirAbbr>G-9</dirAbbr>
+			<dirTitle>TRADOC G-9</dirTitle>
+			<dirCategory>TRADOC G-9</dirCategory>
+			<dirDesc>Describe TRADOC positions in the Nation Capital Region to shape the future force and build a common visualization and understanding with HQDA, other Services, OSD, Joint Staff, and Congress.</dirDesc>
+			<dirURL>~/Directorates/g9.aspx</dirURL>
+			<dateUpdated>19000000000000</dateUpdated>
+		</directorate>
+	</directorates>
+</site>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - -->
+<!-- ~/app_Imgs/Icons/Exclusive_020.png  -->
+<!-- ARCIC Exclusive News Article        -->
+<!-- linkexclusive-big                   -->
+<!-- - -->
+<!-- - -->
+<!-- ~/app_Imgs/link_newwin_big.png      -->
+<!-- Opens a new tab or window           -->
+<!-- link-big                            -->
+<!-- - -->
+<!-- - -->
+<!-- ~/app_Imgs/link_empty_big.png       -->
+<!-- Spacer                              -->
+<!-- link-big                            -->
+<!-- - -->
+<!-- - -->
+<!-- - -->
+
+
+<site>
+	<leaders>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>1</directorateID>
+			<leadID>1</leadID>
+			<leadName>LTG H. R. McMaster</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>McMaster-HR-LTG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/arcichq-dir-bio.aspx</urlAddress>
+				</leadURL>
+				<leadURL>
+					<urlTitle>Continuity &amp; Change (Military Review)</urlTitle>
+					<urlAddress>http://usacac.army.mil/CAC2/MilitaryReview/Archives/English/MilitaryReview_20150430_art005.pdf</urlAddress>
+				</leadURL>
+				<leadURL>
+					<urlTitle>Welcome to Incoming Personnel</urlTitle>
+					<urlAddress>../AboutARCIC/Incoming-Personnel.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>2</order>
+			<directorateID>1</directorateID>
+			<leadID>2</leadID>
+			<leadName>MG Robert Dyess</leadName>
+			<leadTitle>Deputy Director</leadTitle>
+			<leadPict>Dyess-Robert-MG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/arcichq-deputydir-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>3</order>
+			<directorateID>1</directorateID>
+			<leadID>3</leadID>
+			<leadName>CSM Stephen Travers</leadName>
+			<leadTitle>Command Sergeant Major</leadTitle>
+			<leadPict>Travers-Stephen-CSM-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/arcichq-csm-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>2</directorateID>
+			<leadID>4</leadID>
+			<leadName>BG Terrence J. McKenrick</leadName>
+			<leadTitle>Commanding General</leadTitle>
+			<leadPict>McKenrick-Terrence-BG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/bmc-dir-bio.aspx</urlAddress>
+				</leadURL>
+				<leadURL>
+					<urlTitle>Q&amp;A Interview</urlTitle>
+					<urlAddress>../Leadership/bmc-dir-q-and-a.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>2</order>
+			<directorateID>2</directorateID>
+			<leadID>5</leadID>
+			<leadName>James Coroy</leadName>
+			<leadTitle>Command Sergeant Major</leadTitle>
+			<leadPict>Coroy-James-CSM-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/bmc-csm-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>3</directorateID>
+			<leadID>6</leadID>
+			<leadName>BG John George</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>George-John-BG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/cdd-dir-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>4</directorateID>
+			<leadID>7</leadID>
+			<leadName>BG Leopoldo Quintas</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>Quintas-Leopoldo-BG_ACU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/cdld-dir-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>5</directorateID>
+			<leadID>8</leadID>
+			<leadName>COL Thomas Dorame</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>Dorame-Thomas-COL-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/f2025bd-dir-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>6</directorateID>
+			<leadID>9</leadID>
+			<leadName>Mr. Edward Melton</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>Melton-Edward-Mr_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/iapd-dir-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>7</directorateID>
+			<leadID>10</leadID>
+			<leadName>Mr. Rickey Smith</leadName>
+			<leadTitle>Deputy Chief of Staff, G-9</leadTitle>
+			<leadPict>Smith-Rickey-Mr_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/g9-dcos-bio.aspx</urlAddress>
+				</leadURL>
+				<leadURL>
+					<urlTitle>Q&amp;A Interview</urlTitle>
+					<urlAddress>../Leadership/g9-dcos-q-and-a.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+	</leaders>
+</site>
+
+<!--
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>3</directorateID>
+			<leadID>6</leadID>
+			<leadName>MG Cedric Wins</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>Wins-Cedric-BG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/cdd-dir-bio.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>4</directorateID>
+			<leadID>7</leadID>
+			<leadName>BG Christopher McPadden</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>Mcpadden-Christopher-BG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/cdld-dir-bio.aspx</urlAddress>
+				</leadURL>
+				<leadURL>
+					<urlTitle>Q&amp;A Interview</urlTitle>
+					<urlAddress>../Leadership/cdld-dir-q-and-a.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+
+		<leader>
+			<frozen>0</frozen>
+			<archive>0</archive>
+			<order>1</order>
+			<directorateID>5</directorateID>
+			<leadID>8</leadID>
+			<leadName>BG Gary Brito</leadName>
+			<leadTitle>Director</leadTitle>
+			<leadPict>Brito-Gary-BG-ASU_01</leadPict>
+			<leadLinks>
+				<leadURL>
+					<urlTitle>Biography</urlTitle>
+					<urlAddress>../Leadership/f2025bd-dir-bio.aspx</urlAddress>
+				</leadURL>
+				<leadURL>
+					<urlTitle>Q&amp;A Interview</urlTitle>
+					<urlAddress>../Leadership/f2025bd-dir-q-and-a.aspx</urlAddress>
+				</leadURL>
+			</leadLinks>
+		</leader>
+-->

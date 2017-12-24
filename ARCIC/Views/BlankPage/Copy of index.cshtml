@@ -1,0 +1,320 @@
+﻿
+@using System.Web.WebPages.Html
+@{
+    
+    Layout = "~/Views/Shared/_testLayout.cshtml";
+    
+}
+
+
+  <style>
+    #sidebar1 div div div, #sidebar2 div div div  {
+       background-color:#F5D04C;
+    }
+ #sidebar1 div div div a, #sidebar2 div div div  a {
+       color: white!important;
+    }
+.thumb {
+	
+	width:50%;
+}
+
+</style>
+
+
+
+
+<div id="wrapper" class="container-fluid" >    
+
+ 
+   
+         
+<div class="row clearfix">
+
+   <div class="col-md-2 pull-left">   
+
+    <div id="sidebar1">
+        <!--<h4 id="quickLinksHeader"><b><i class="fa fa-link text-warning"></i>&nbsp; Links &nbsp;</b></h4>-->
+        <br />
+    
+        <div class="text-center">
+            <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Assess an Engagement</b></h5>
+                    <a href="https://tradoc-g9-sem.army.mil/Account/" target="_blank" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Go to the Strategic Engagement Manager"> <i class="fa fa-edit"></i></a>
+                </div>                
+            </div>
+                       
+            
+             <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Current Monthly Assessments</b></h5>
+                    <div class="btn-group">
+                        <a href="/sites/TCED/Docs/Assessments/ARCIC-SC-Monthly-Current.pdf" target="_blank" class="btn btn-primary"
+                         data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Monthly Assessments"> <i class="fa fa-bar-chart"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Current Quarterly/ KLE</b></h5>
+                    <div class="btn-group">
+                        <a href="/sites/TCED/Docs/Assessments/Quarterly Engagement Analyses/ARCICQtrlyEngagementAnalysis-Current.pdf" target="_blank" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Quarterly Assessments"> <i class="fa fa-area-chart"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Think Tanks</b></h5>
+                     <div class="btn-group">
+                         <a href="/sites/TCED/Docs/Think Tanks/" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Think Tank Analyses, Profiles, and Summaries"><i class="fa fa-folder"></i></a>
+                     </div>
+                </div>                
+            </div>  
+            
+           <!-- <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Site Map</b></h5>                    
+                        <a href="/sites/TCED/Docs/SiteMap/TCED Site Structure-01-17.pptx" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Latest Metrics"> <i class="fa fa-sitemap"></i></a>
+                   
+                </div>
+            </div>-->
+              
+           
+                   
+        </div>            
+      
+
+    </div>
+</div>
+
+
+   <div class="col-md-8">
+              <h2 class="text-center"><b>Engaging Our Stakeholders</b></h2>
+            <div class="panel panel-default">
+                <div class="panel-body text-center">
+                    <blockquote class="blockquote">                        
+                            <h4>
+                            <p>"We must develop opportunities to tell our partners and stakeholders in and outside of DOD &quot;what TRADOC is for&quot; in order to gain and retain their trust, support for our efforts, and required resources."</p></h4>
+                        <footer>TRADOC Strategic Guidance 2017, 19 September 2016</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+
+
+   <!--Sidebar-- --Quick Links Bar-->    
+   <div class="col-md-2 pull-right">   
+
+    <div id="sidebar2" class="">
+        <!--<h4 id="quickLinksHeader"><b><i class="fa fa-link text-success"></i>&nbsp; Quick Links &nbsp;</b></h4>-->
+        <br />
+    
+        <div class="text-center">
+        
+        <!-- <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Campaign Plan FY 15/16</b></h5>
+                    <a href="/sites/TCED/Docs/TCP/TCP-with-Annexes-15-JULY-15-with-slides-TRADOC-Format.pdf" target="_blank" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="TRADOC Campaign Plan FY 15/16"> <i class="fa fa-book"></i></a>
+                </div>                
+            </div>-->
+            
+            <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Opportunities Calendar</b></h5>
+                    <a href="/sites/TCED/Docs/Calendars/EventsOpportunityCalendarG9.pdf" target="_blank" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="View PDF of Calendar"> <i class="fa fa-calendar"></i></a>
+                </div>                
+            </div>
+            
+            <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Today's Highlights</b></h5>
+                     <div class="btn-group">
+                         <a href="/sites/TCED/Docs/Daily Highlights/TRADOC-G9-Daily.pdf" target="_blank" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="View Today's Daily Hightlights"> <i class="fa fa-newspaper-o"></i></a>
+                         <!--<a href="/sites/TCED/Docs/Daily Highlights/Daily Highlights/" class="btn btn-primary"  data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Archives"><i class="fa fa-folder"></i></a> -->                    
+ </div>
+                </div>                
+            </div>
+            
+               <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>Strategic Guidance 2017</b></h5>
+                    <a href="/sites/TCED/Docs/TSG/TSG-2017-19-Sep-16.pdf" target="_blank" class="btn btn-primary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="TRADOC Strategic Guidance - 2017"> <i class="fa fa-pencil"></i></a>
+                </div>                
+            </div>
+        
+            <div class="panel panel-default center-block text-primary">
+                <div class="panel-body clearfix">
+                    <h5 class=""><b>TRADOC Priorities</b></h5>
+                    <a href="/sites/TCED/Docs/TRADOC Priorities/TRADOC-Priorities-1-DEC-16.pdf" target="_blank" class="btn btn-primary"> <i class="fa fa-clipboard"></i></a>
+                </div>                
+            </div>
+                  
+          
+        </div>          
+      
+
+    </div>
+  </div><!--End of Sidebar2 -->
+
+
+
+
+<!--Begin Stakeholders-->
+<div id="" class="col-md-8 clearfix"> 
+
+                    <!-- Row 1 -->                                         
+                        
+               
+
+
+    <div class="col-md-2 col-md-offset-3 text-center" role="button">
+                                <div class="panel panel-default">
+                                    <div class="panel-body btn-default"
+                                        style="background-image: url('../SiteAssets/App_Imgs/jcs.png'); background-position: center center; background-repeat: no-repeat; background-size: 190px 190px; margin-top: -13px;"
+                                         data-container="body" data-html="true" data-toggle="popover" data-trigger="hover" data-placement="right" 
+                                        data-content="
+                                        <img class='img-responsive thumb center-block' src='../SiteAssets/App_Imgs/jcs.png'/>    
+                                        <ul class='list-inline text=cemter'>
+                                                <li>COCOMs</li>
+                                                <li>USPACOM</li>
+                                                <li>USEUCOM</li>
+                                                <li>USSOUTHCOM</li>
+                                                <li>USCENTCOM</li>
+                                                <li>USSOCOM</li>
+                                                <li>USTRANSCOM</li>
+                                                <li>USSTRATCOM</li>
+                                                <li>USNORTHCOM</li>
+                                                <li>USAFRICOM</li>
+                                                <li>USCYBERCOM</li>
+                                            </ul>
+                                          </div></div>">
+                                        <h4><b>Joint<br /> Chiefs of Staff</b></h4>
+                                        <p class="fa fa-info-circle fa-2x text-primary"></p>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                                
+ 
+<div class="col-md-2 text-center" role="button">
+                                <div class="panel panel-default">
+                                    <div class="panel-body btn-default" style="background-image: url('../SiteAssets/App_Imgs/DoD1.png'); background-position: center center; background-repeat: no-repeat; background-size: 190px 190px;"
+                                        data-container="body" data-html="true" data-toggle="popover" data-trigger="hover" data-placement="right"
+                                        data-content="<img class='img-responsive thumb center-block' src='../SiteAssets/App_Imgs/DoD1.png'/><div> <div class='text-center'><h4><b>Department of Defense</b></h4><p> 
+										
+                                            <ul class='list-inline'>
+										<li>OSD Policy</li>
+										<li>OSD AT&L</li>
+										<li>OSD CAPE</li>
+										<li>OSD DOT&E</li>
+										<li>DIA</li>
+										<li>ONA</li>
+										<li>DARPA</li>
+										<li>DLA</li>
+										<li>JIDA</li>
+										<li>Others</li>
+										</ul>                                 
+										 </p></div> </div>">
+                                        <h4><b>Department <br/>of Defense</b></h4>
+                                        <p class="fa fa-info-circle fa-2x text-primary"></p>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+
+
+<div class="col-md-2 text-center" role="button">
+                                <div class="panel panel-default">
+                                    <div class="panel-body btn-default" style="background-image: url('../SiteAssets/App_Imgs/DoA.png'); background-position: center center; background-repeat: no-repeat; background-size: 190px 190px;"
+                                        data-container="body" data-html="true" data-toggle="popover" data-trigger="hover" data-placement="right"
+                                        data-content="<img class='img-responsive thumb thumb center-block' src='../SiteAssets/App_Imgs/DoA.png'/><div> <div class='text-center'><h4><b>Department of the Army</b></h4> <ul class='list-inline'>
+                                        <li>DoDAS</li>
+                                        <li>OCPA</li>
+                                        <li>OCLL</li>
+                                        <li>ARSTAF</li>
+                                        <li>Secretariat</li>
+                                        <li>G-4</li>
+                                        <li>G-8</li>
+                                        <li>ACSIM/IMCOM</li>
+                                        <li>OTSG</li>
+                                        <li>OTJAG</li>
+                                        <li>CAA</li>
+                                        <li>OPMG</li>
+                                        <li>ARNG</li>
+                                        <li>OCAR</li>
+                                        <li>ASA(IE&E)</li>
+                                        <li>ASA(IE&E)</li>
+                                        <li>ASA(CW)</li>
+                                        <li>IG</li>
+                                        <li>OBT</li>
+                                        <li>CIO/G-6</li>
+                                        </ul></div> </div>">
+                                        <h4><b>Department <br/>of the Army</b></h4>
+                                        <p class="fa fa-info-circle fa-2x text-primary"></p>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+    <div class="row">                            
+                            <!--TRADOC-->
+                           <div class="panel panel-default">
+                               <div class="panel-body">
+                                   <div class="text-center" role="button" style="background-image: url('../SiteAssets/App_Imgs/tradoc.png'); background-position: center center; background-repeat: no-repeat; background-size: 382px 382px; height:382px;">
+                               
+                                    <div data-container="body" data-html="true" data-toggle="popover" data-trigger="hover" data-placement="right"
+                                        data-content="<img class='img-responsive' src='../SiteAssets/App_Imgs/tradoc.png'/><div> <div><h4><b>TRADOC</b></h4><p><p>TRADOC executes its mission through six major subordinate centers and commands:<ul><li>Army Capabilities Integration Center (Fort Eustis) </li><li>Combined Arms Center (Fort Leavenworth)</li><li>Initial Military Training (Fort Eustis) </li><li>Combined Arms Support Command (Fort Lee)</li><li>US Army Recruiting Command (Fort Knox)</li><li>US Army Cadet Command (Fort Knox) </li></ul></p></div> </div>">
+                                                                       
+                                        <h3><br/><br/><br/><br/><b>TRADOC</b></h3>
+                                        
+                                        &nbsp; 
+                                    </div>
+                                
+                            </div>
+ 
+                            <!--End Col-md-4-->
+                        </div><!--Row-->
+                        
+
+                </div><!--End Col-md-8-->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+<!--End Row--></div>
+                                
+                                
+                                
+                            
+                            
+
+                            
+                            
+                        
+                        <!--Row 2 -->
+                       
+</div> 
+
+
+ 
+       
+
+

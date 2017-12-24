@@ -1,0 +1,167 @@
+﻿@using System;
+@using System.Collections;
+@using ARCIC.Models;
+
+<!--Focus = Exclusive or Local for internal Links/pages-->
+
+@{      
+
+    var slides = Slides.GetSlides();
+
+    var artID = new List<object>();
+    ArrayList titles = new ArrayList();
+    ArrayList images = new ArrayList();
+    ArrayList links = new ArrayList();
+    ArrayList focus = new ArrayList();
+    ArrayList pAll = new ArrayList();
+    ArrayList message = new ArrayList();
+
+    //Create slideDeck
+
+    foreach (var item in slides)
+
+    {
+        artID.Add(item.artID);
+        titles.Add(item.title);
+        images.Add(item.imageURL);
+        links.Add(item.link);
+        focus.Add(item.pFocus);
+        pAll.Add(item.pType);
+        message.Add(item.description);
+
+    }        
+
+}  
+
+
+
+<div id="myCarousel" class="carousel slide " data-ride="carousel ">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            @*<li data-target="#myCarousel" data-slide-to="4"></li>*@
+        </ol>            
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">          
+            <div class="item active">
+                <div class="fill hidden-xs hidden-sm hidden-md  " style="background-image: url('@("App_Imgs/Slider/" + images[0] + "f.jpg")'); height: 340px;"></div>
+                <div class="fill hidden-lg" style="background-image: url('@("App_Imgs/Slider/" + images[0] + "f.jpg")'); height: 240px; background-position:-50em;"></div>
+
+                <div class="col-md-offset-1 col-md-9">
+                    <div class="carousel-caption text-left clearfix">
+                        @if (focus[0].ToString() == "Exclusive")
+                        {
+                             <div class="text-left hidden-xs hidden-sm hidden-md"><img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" style="width:30%; margin-bottom:-18px; " /></div>
+                             <div class="text-left hidden-xs hidden-sm hidden-lg"><img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" style="width:40%; margin-bottom:-16px; " /></div>
+                             <div class="text-left hidden-md hidden-lg">          <img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" style="width:46%; margin-bottom:-8px; "/></div>
+                        }
+
+                        <h1 class="text-left hidden-xs hidden-md hidden-sm text-right"><b>@titles[0]...</b></h1>
+                        <h3 class="text-left hidden-xs hidden-lg"><b>@titles[0]...</b></h3>
+                        <h3 class="text-left hidden-sm hidden-md hidden-lg" style="font-size:1.49em;"><b>@titles[0]...</b></h3>
+                       
+                        <div class="text-right">
+                            @if (focus[0].ToString() == "Exclusive")
+
+                            { 
+                                 <a class="btn btn-warning btn-lg hidden-xs- hidden-sm" href='@(Url.Action("Article", "Articles", new { articleID = artID[0] }))' role="button"
+                                      onClick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[0]', eventValue: 1});">Read  <i class="fa fa-external-link"></i></a>
+                                 <a class="btn btn-warning btn-sm hidden-md hidden-lg" href='@(Url.Action("Article", "Articles", new { articleID = artID[0] }))' role="button"
+                                      onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[0]', eventValue: 1});">Read  <i class="fa fa-external-link"></i></a>
+
+                           
+                            }
+                            else if (focus[0].ToString() == "Local")
+                            {
+                                 <a class="btn btn-primary btn-lg hidden-xs hidden-sm" href='@(Url.Action("Article", "Articles", new { articleID = artID[0] }))' target="_self" role="button"
+                                      onClick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[0]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                 <a class="btn btn-primary btn-sm  hidden-md hidden-lg" href='@(Url.Action("Article", "Articles", new { articleID = artID[0] }))' target="_self" role="button"
+                                      onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[0]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                
+
+                            }
+                            else
+                            {
+                                <a class="btn btn-primary btn-lg hidden-xs hidden-sm" href='@(links[0])' target="_blank" role="button"
+                                     onClick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@(titles[0])', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                <a class="btn btn-primary btn-sm hidden-md hidden-lg" href='@(links[0])' target="_blank" role="button"
+                                     onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@(titles[0])', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                           <br /><h5></h5><br />
+                            }
+                             
+
+                        </div>
+                    </div>
+                </div>
+            </div>   
+                       
+            <!--Start with 2nd slide here as first slide is active above
+                //Second Slide start here...
+            -->
+                @for (int i = 1; i < slides.Count(); i++)
+                {
+                    <div class="item">
+                        
+                        <div class="fill hidden-xs hidden-sm hidden-md  " style="background-image: url('App_Imgs/Slider/@images[i]f.jpg'); height: 340px;"></div>
+                        <div class="fill hidden-lg  " style="background-image: url('@("App_Imgs/Slider/" + images[i] + "f.jpg")'); height: 240px; background-position:-50em; "></div>
+                      
+
+                        <div class="col-md-offset-1 col-md-11">
+                            <div class="carousel-caption text-left">
+                                @if (focus[i].ToString() == "Exclusive")
+                                {
+                                    <div class="text-left hidden-xs hidden-sm hidden-md"><img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" style="width:30%; margin-bottom:-18px; " /></div>
+                                    <div class="text-left hidden-xs hidden-sm hidden-lg"><img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" style="width:40%; margin-bottom:-16px; " /></div>
+                                    <div class="text-left hidden-md hidden-lg">          <img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" style="width:46%; margin-bottom:-8px; "/></div>
+                                }
+                                <h1 class="text-left hidden-xs hidden-md hidden-sm"><b>@titles[i]...</b></h1>
+                                <h3 class="text-left hidden-xs hidden-lg"><b>@titles[i]...</b></h3>
+                                <h4 class="text-left hidden-sm hidden-md hidden-lg" style="font-size: 1.375em;"><b>@titles[i]...</b></h4>
+
+                                <div class="text-left">
+                                    @if (focus[i].ToString() == "Exclusive")
+                                    {                                          
+                                       @*<a class="btn btn-warning btn-lg" href="@links[i]" role="button">Read </a>*@
+                                        <a class="btn btn-warning btn-lg hidden-xs hidden-sm hidden-md" href='@(Url.Action("Article", "Articles", new { articleID = artID[i] }))' target="_self" role="button"
+                                              onClick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[i]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                        <a class="btn btn-warning btn-sm hidden-md hidden-lg" href='@(Url.Action("Article", "Articles", new { articleID = artID[i] }))' target="_self" role="button"
+                                             onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[i]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                    }
+                                    else if (focus[i].ToString() == "Local")
+                                    {
+                                        <a class="btn btn-primary btn-lg hidden-xs hidden-sm" href='@(Url.Action("Article", "Articles", new { articleID = artID[i] }))' target="_self" role="button" onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[0]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                        <a class="btn btn-primary btn-sm hidden-md hidden-lg" href='@(Url.Action("Article", "Articles", new { articleID = artID[i] }))' target="_self" role="button" onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[0]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+
+                                    }
+
+                                    else//other
+                                    {
+                                         <a class="btn btn-primary btn-lg hidden-xs hidden-sm" href="@links[i]" target="_blank" role="button" onClick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[i]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                         <a class="btn btn-primary btn-sm hidden-md hidden-lg" href="@links[i]" target="_blank" role="button" onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@titles[i]', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                } 
+
+
+        </div>  
+
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </div>
+

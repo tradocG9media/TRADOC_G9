@@ -1,0 +1,72 @@
+﻿@using ARCIC.Models
+@using ARCIC.App_Code;
+
+@{
+    var data = Article.GetArticles().Where(x => x.dataSet == "exclusive");
+    
+            
+  
+}
+@functions {
+
+    //public static string GetSourceLogo(string source)
+    //{
+    //    if (source == "tradoc")
+    //    {
+            
+    //    }
+    //}
+
+}
+
+<br /><br />
+    <!--CUAS-->
+<div class="row">
+
+    @foreach (var item in data)
+    {
+        <div class="col-md-4">    
+            <!--Identify Source-->
+            <div class="panel panel-default">
+                <div class="list-group text-left">
+                    <div class="list-group-item small">
+                        <a href="@item.sourceLink" class="btn-link clearfix" role="button" target="_blank"><img class="img-responsive pull-left" src='@("../App_Imgs/App/SourceLogos/" + item.source + ".png")' />
+                           <span class=""> @item.source</span>
+                        </a>
+                    </div>
+                </div>
+                <!--Pick an image-->
+                @if (item.imageURL.Contains("http://") || item.imageURL.Contains("https://"))
+                {
+                    <img style="margin-bottom: 8px;" class="card-img-top img-responsive" alt="Card image cap"  src='@(item.imageURL)'/>
+                }
+                else if (item.imageURL.Contains("../") || item.imageURL.Contains("~/"))
+	            {
+		             <img style="margin-bottom: 8px;" class="card-img-top img-responsive" alt="Card image cap"  src='@(item.imageURL)'/>
+	            }
+                else
+                {
+                    <img style="margin-bottom: 8px;" class="card-img-top img-responsive" alt="Card image cap"  src='@("App_Imgs/Content/" + item.imageURL + "f.jpg")'/>
+                }
+
+                <div class="panel-body">
+                    @* <div>
+                            <span class="text-warning text-uppercase"><span class="text-primary">@helpers.loe(item.pLOE)</span> <b>@item.pLOE </b></span>
+                        </div>*@
+                    <div class=" clearfix">
+                        <h5 class="card-title"><strong>@item.title</strong></h5>
+                        <div class="card-text"><small class="text-muted">@item.author  @item.pubDate </small></div>
+                    </div>
+                    <small class="clearfix"> <span class="pull-right">
+                        <a onClick="ga('send', 'event', { eventCategory: 'Download',  eventAction: 'Home Page Download @item.title', eventLabel: 'Clicked @item.link', eventValue: 1});"
+                             href="@item.link" target="_blank">Read</a> <i class="fa fa-file-pdf-o"></i></span></small>
+                    
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+
+</div>

@@ -1,0 +1,141 @@
+﻿
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Leadership Professional Readings (LPD)";
+    var Data = ViewBag.currReading;   
+    IEnumerable<Reading> Archives = ViewBag.Archives;
+    //var Data = Archives.Skip(2).Take(1);
+    int sideBarSkip = 3;
+    int sideBarTake = 13;
+   // int FirstAfterSkip = Archives[9].series;   
+
+    
+    
+}
+
+  <!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header"><b>Professional Readings</b>
+            <small></small>
+        </h1>
+        <ol class="breadcrumb hidden-xs hidden-sm">
+            <li><a href="/Home">Home</a>
+            </li>
+            <li class="active">Leadership Professional Development</li>
+            <li class="active">Professional Readings</li>
+        </ol>
+    </div>
+
+
+    <div class="col-md-8">
+        @foreach (var item in Data)
+        {
+            <!--Current Reading-->
+            <div class="row clearfix">
+                <div class="">
+                    <!--OVERVIEW-->
+                    <section class="">
+                        <h3>Reading <span class="text-primary"><b>#@item.series @item.descTitle</b></span></h3>
+                        <ul class="list-inline">
+                            <li><b>Access:</b> <span>@item.siteAccess</span></li>
+                            <li><b>Type:</b> <span>@item.siteType</span></li>
+                            <li class="text-muted">@item.entDate.ToLongDateString()</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="panel panel-default">
+                    <!--Content Block READING-->
+                    <div class="panel-body clearfix">
+                        <p class="pull-right">
+                            <img class="img-responsive img-rounded" src='@("../App_Imgs/LPD-Sources/" + item.sourceLogo + "t.png")' style="margin:6px; " />
+                        </p>
+                        <h2><b>@item.title</b></h2>
+                        <ul class="list-inline text-muted">
+                            <li>By: @item.authors /</li>
+                            <li>Published: @item.pubDate</li>
+                            <li><a href="@item.siteURL" target="@item.siteTarget">Read More  @*<i class="fa fa-external-link"></i></a></li>*@</a>
+                        </ul>
+                        <article>
+                           
+                            <p>@Html.Raw(Shorten.ShortStr(item.comment, 7265))</p>
+                        </article>
+                        <div>
+                            <!--AWFC-->
+                            @Html.Partial("~/Views/LPD/_lpdawfc.cshtml")
+
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+     
+          }
+    </div>
+
+
+
+    <div class="col-md-4">
+
+        <div class="alert alert-success" role="alert">
+            <a class="" href="~/LPD/Archives" onclick="ga('send', 'event', { eventCategory: 'Search',  eventAction: 'Clicked Internal Link', eventLabel: 'Clicked LPD Search Link', eventValue: 1});"><b>Search LPD Archives</b> <i class="fa fa-search"></i></a>
+        </div>
+
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="text-muted"><b>Recent Readings</b></h4>
+                </div>
+                <div class="list-group">
+                    
+                    @foreach (var i in Archives.Take(3))
+                    {
+                        <div class="list-group-item clearfix">
+                           <b> @i.title</b>
+                            <ul class="card-text list-unstyled">
+                                <li class="text-muted">
+                                     @i.source 
+                                </li>
+                                <li> @i.authors, @i.pubDate</li>
+                               
+                            </ul>
+                            <div class="btn btn-default btn-sm">
+                                <a href="@Url.Action("_archives", "LPD", new { articleSeries = i.series })" onClick="ga('send', 'event', { eventCategory: 'Document',  eventAction: 'Professional Reading recent LPD', eventLabel: 'Clicked @(i.lpdID + i.title)', eventValue: 1});">LTG McMaster's Comments #@i.series @i.descTitle </a>
+                            </div>
+                        </div>                       
+                    }
+                </div>
+            </div>
+
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="text-muted"><b>Archived Readings</b></h4>
+                </div>
+                <div class="list-group">
+                    @foreach (var i in Archives.Skip(sideBarSkip).Take(sideBarTake))
+                    {
+                        <div class="list-group-item clearfix">
+                            <a href="@Url.Action("_archives", "LPD", new { articleSeries = i.series })" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Document',  eventAction: 'Professional Reading archived outbound link', eventLabel: 'Clicked @(i.lpdID + i.title)', eventValue: 1});">@Shorten.ShortStr(i.title,38)</a> 
+                            #@i.series  @i.descTitle                      
+                            
+                        </div>
+                    }
+                </div>
+                @*<div class="panel-footer"><a href='@Url.Action("/Archives","LPD", new {series = 94})' class="btn btn-default">Full LPD Archives</a></div>*@
+                <div class="panel-footer text-center"><a class="btn btn-primary btn-sm" href="/LPD/Archives/"> Full LPD Archives</a></div>
+
+            </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+   

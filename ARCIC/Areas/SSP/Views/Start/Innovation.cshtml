@@ -1,0 +1,149 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Innovation";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+   
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Innovation</h1>
+            <p> Why is Innovation important?</p>
+            <p>
+                Conflicts in the future, like those in the past, will ultimately be resolved on land. Hence, Army forces must be able to create sustainable political outcomes by defeating enemies and adversaries on the land and in the air, maritime, space, and cyberspace domains. To do this, innovation is critical.  Innovation is the result of critical and creative thinking and the conversion of new ideas into valued outcomes.  Innovation drives the development of new tools and methods that permit Army forces to stay ahead of determined enemies and accomplish missions.  To innovate the Army thinks clearly about future-armed conflict; learns in a focused, sustained and collaborative manner; analyzes what it learns to identify capability gaps and prioritize potential solutions to overmatch future enemies, and then implements those solutions to ensure the Joint Force’s ability to win.
+
+            </p>
+            <p>
+                The tenet of innovation challenges Army leaders to anticipate changing conditions to ensure that Army forces are manned, trained, and equipped to overmatch enemies in order to seize, retain, and exploit the initiative.  Through innovation, the Army continues to provide the foundational capabilities that enable the Joint Force to prevent conflict, shape security environments, and win in a complex world.
+
+            </p>
+
+            @*<p>
+                    <a class="btn btn-primary btn-large">Call to action!</a>
+                </p>*@
+        </header>
+        <hr>
+       
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b> Learning Innovation </b></h4>
+                        <blockquote class="blockquote">
+                            <p>
+                                "Our most valuable asset, and arguably our most significant asymmetric advantage inherent in the American military and the United States Army, for we come from a society of improvisers, a society of tinkerers, innovators, problem solvers, techno-savvy at an early age. An independence of action comes natural to all Americans. Self-starting initiative, disdain of boundaries and rules, non-linear critical thinking, and an aggressive will to win, coupled with an eternal optimism to overcome all obstacles to achieve the objective. All of that is hard-wired in the national DNA of an American soldier."
+                                
+                            </p>
+                            <footer>General Mark Milley, CSA</footer>
+                        </blockquote>
+                        <p>
+                            The topic of innovation is particularly relevant to today's Army given the challenges in today's complex world and the uncertainty of the future. Our Army's ability to counter and confront a variety of enemies from peer competitors with sophisticated and advanced weapons to elusive violent extremists that seek asymmetric advantages is the cornerstone of our nation's security. Our future is neither knowable nor known; therefore, we must review history and lessons learned, evaluate potential missions, identify emerging technologies, and assess threats and adversaries to capitalize on opportunities that will better prepare us for the next war in whatever context that conflict will emerge.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b> An Approach to the Study of Innovation</b></h4>
+                        <p>
+                            When approaching the study of innovation, review military history and identify militaries that successfully innovated. Examine why some militaries were successful and characterize their military culture: Were leaders amenable to change and open to new ideas? Did they have systems in place that enabled the development of ideas or were they laden with multiple levels of bureaucracy? Did they accept failure? Did they collaborate internally or externally? Also, examine the root causes of militaries that failed. Finally, assess your branch, division, directorate, and ARCIC leadership and use the reflection questions to determine if you are in an environment that fosters creativity and flexibility of thought.
+
+                        </p>
+                       
+                    </div>
+                </div>
+                <!--Reflections-->
+                @helpers.Reflectoins(
+               "What obstacles prevent innovation?  How are they overcome?",
+               "What systems are in place to capture new ideas?",
+               "What are the systems that enable people to effectively communicate and collaborate?  How often do members of the community of practice collaborate to solve complex problems?",
+               "When and under what conditions does adaptation become innovation?",
+               "How does the organization handle change? Are the systems that are in place agile and responsive to change?",
+               "What is an innovative culture? If you don’t have an innovative culture, how can you build one?  What role does organizational culture play in innovation?")
+
+            </div>
+            <!--Articles-->
+            <div class="col-md-4">
+                @Html.Partial("_article")
+                <!--Videos-->
+                @Html.Partial("_video")
+            </div>
+        </div>
+
+        <!-- Books -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row">
+           
+               <div class="row">
+                    @helpers.SSPBook(
+           "The innovator's dilemma: when new technologies cause great firms to fail by Christensen, Clayton M.",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/2615.The_Innovator_s_Dilemma",
+           "Christensen.jpg")
+         
+                @helpers.SSPBook(
+           "Dealing with Darwin: how great companies innovate at every phase of their evolution by Moore, Geoffrey A.",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/129516.Dealing_with_Darwin?from_search=true",
+           "Moore.jpg")
+              
+                  @helpers.SSPBook(
+           "Smarter faster better: the secrets of being productive in life and business by Duhigg, Charles",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/25733966-smarter-faster-better?from_search=true",
+           "Duhigg.jpg")
+           
+             
+                   @helpers.SSPBook(
+           "Military Innovation in the Interwar Period Revised ed. Edition by Murray, Williamson",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/178439.Military_Innovation_in_the_Interwar_Period?from_search=true",
+           "Murray.jpg")
+               </div>
+           
+             
+ <div class="row">
+     @helpers.SSPBook(
+           "Winning the Next War by Stephen Rosen",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/250856.Winning_the_Next_War?ac=1&from_search=true",
+           "RosenCopy.jpg")
+           
+              
+                    @helpers.SSPBook(
+           "The Sources of Military Doctrine by Posen, Barry R.",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/1271063.The_Sources_of_Military_Doctrine?ac=1&from_search=true",
+           "Posen.jpg")
+           
+              
+ @helpers.SSPBook(
+           "Arms and Innovation: Entrepreneurship and Alliances in the Twenty-First Century Defense Industry by Hask, James",
+           "Click Review Now! to see a preview",
+           622,
+           "http://www.goodreads.com/book/show/2611213-arms-and-innovation?ac=1&from_search=true",
+           "Hask.jpg")
+ </div>
+           
+                       
+           
+
+        </div>
+    </div>
+</div> 

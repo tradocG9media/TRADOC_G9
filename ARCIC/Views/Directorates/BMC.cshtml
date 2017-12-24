@@ -1,0 +1,255 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Joint Moderniazation Command (Formerly BMC)";    
+}
+
+<!--BMC Page Content-->
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+
+            <div class="col-md-8">               
+                <h1 class="page-header"><b>USA Joint Modernization Command</b></h1>
+                <ol class="breadcrumb hidden-xs hidden-sm">
+                    <li><a href="/Home/">Home</a>
+                    </li>
+                    <li><a href="/Home/About">About</a>
+                    </li>
+                    <li class="active">USAJMC</li>
+                </ol>
+            </div>
+            </div>
+
+<div class="row">              
+    
+        <!-- Intro Content -->   
+            <div class="col-md-4">
+                <div class="thumbnail">
+                     <p><img class="img-responsive" src="~/App_Imgs/Leadership/McKenrick-about-750.jpg" alt=""></p>
+                    <div class="caption text-center">                        
+                        <h4 class="text-primary"><b>MG Terrence J. McKenrick</b><br>
+                            <small>Commanding General</small>
+                        </h4>
+                        <p></p>
+                        <div class="btn-group text-center">
+                            <div class="btn btn-default"><a href="/Leadership/bmc_director_bio"><i class="fa fa-word"></i> Bio</a>
+                            </div>
+                            <div class="btn btn-default disabled"><a href="#">Q&A Coming Soon</a>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            <div class="thumbnail">
+                    <p><img class="img-responsive" src="~/App_Imgs/Leadership/Engram-about-750.jpg" alt=""></p>
+                    <div class="caption text-center">                        
+                        <h4 class="text-primary"><b>CSM Wilbert E. Engram Jr.</b><br>
+                            <small>Command Sergeant Major</small>
+                        </h4>                        
+                        <div class="btn-group text-center">
+                            <div class="btn btn-default">
+                                <a href="/Leadership/bmc_csm_bio"> <i class="fa fa-word"></i> Bio</a>
+                            </div>
+                            @*<div class="btn btn-default"><a href="#"></a>
+                            </div>*@                           
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+
+  <!--Mission-->
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>Mission</b></h4>
+                        <p>JMC executes operationally realistic and rigorous Network Integration Evaluation (NIE) and Army Warfighting Assessment (AWA) exercises to provide Soldier feedback on emerging concepts and capabilities that will improve the combat effectiveness of the Joint Force. </p>
+                        <h4><b>Key Initiatives</b></h4>
+                        <p>The JMC and two other organizations of the Network Integration Partners--the U.S. Army Test and Evaluation Command (ATEC) and the System of Systems, Engineering and Integration Directorate (SoSEI), under the Assistant Secretary of the Army for Acquisition, Logistics and Technology ASA(ALT)-have been conducting semiannual Network Integration Evaluations since the spring of 2011. During these NIEs, the Partners assess networked and non-networked capabilities to determine their implications across DOTMLPF. NIEs are designed to evaluate deliberate and rapid acquisition solutions, as well as integrate and mature the Army's tactical network. With the NIE's primary purpose to accomplish required evaluations in support of Program of Record milestones and funding decisions, the Army will measure success by what is learned when it puts these networked capabilities in the hands of Soldiers in the field for evaluation</p>
+                        <p>Beginning in FY17, JMC will execute one Network Integration Evaluation (NIE) and one Army Warfighting Assessment (AWA) per year. Both events lay on top of a two to three week Decisive Action Training Environment with a brigade combat team, additional enablers and a division or corps simulation wrap-around. Both events are designed to deliver the Mission Command Network 2020 and assess interim solutions to Army Warfighting Challenges. Both events are designed to enable the Agile Process and generate Soldier and leader feedback on concepts and capabilities that will improve system performance. During an NIE, JMC coordinates with Army Test and Evaluation Command (ATEC) to execute formal tests of mission command systems and network programs of record. AWAs are the capstone event for Force 2025 Maneuvers and do not have the constraints of formal testing. Leveraging the unique capabilities of Fort Bliss, White Sands Missile Range, and Holloman Air Force Base, AWAs provide a Triple Payoff of Training Readiness, Future Force Development, and Joint and Multinational Interoperability. </p>
+                        <h4><b>Current Objectives</b></h4>
+                        <p>During NIE 16.2 the primary effort of the combined JMC team will be focused on data collection and assessments for these capabilities:</p>
+                        
+                        
+                    </div>
+                    <ul class="list-group">
+                            <li class="list-group-item">Mid-Tier Networked Vehicular Radio Operational Assessment (MNVR)</li>
+                            <li class="list-group-item">Warfighter Information Network Increment 3 Network Operations (WIN-T Inc3 NetOps)</li>
+                            <li class="list-group-item">Common Operating Environment version 1.1 (COE V1.1) Assessment</li>
+                            <li class="list-group-item">Command Post Computing Environment version 2 (CPCE V2) DOTMLPF reporting</li>
+                            <li class="list-group-item">Spider Increment 1A Initial Operational Test and Evaluation</li>
+                            @*<li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>*@
+                        </ul>
+
+                    <p class="panel-body">The exercise will take place from 23 April - 15 May 2016 at Fort Bliss, TX. JMC will continue their planning efforts ISO AWA 17 scheduled for October 2016.</p>
+                </div>
+            </div>    
+         
+               
+        <!-- Divisions -->
+         
+             <div class="col-lg-12">
+              <h2 class="page-header"><b>Divisions</b></h2>
+            </div>  
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img00.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Brigade Modernization Integration Division (BMID)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Recommends and modifies through the capabilities integration enterprise forum process across war fighting functions in partnership with all stakeholders, proponents, Centers of Excellence, and Program Managers.</p>
+                      
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/JMC-img01.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Effects</b></h4>                        
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <br />
+                        <p class="text-left">The Effects Division has the mission to look at future design, command information and strategic communications.</p>
+                        
+                        <br /><br /><br />
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img02.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>G2</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <br />
+                        <p class="text-left">Leads internal and external agencies and stakeholders to coordinate, plan, prepare and execute JMC intelligence and security requirements supporting Brigade Modernization.</p>
+                       
+                        <br />
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive"src="~/App_Imgs/App/bmc-img03.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>G3 Operations and Plans</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <br />
+                        <p class="text-left">The JMC G3 develops future plans, establishes priorities and directs current operations for the command.</p>
+                       
+                         <br /> <br /> <br /> <br />
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img04.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>G6</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <br />
+                        <p class="text-left">Recommends and modifies through the capabilities integration enterprise forum process across war fighting functions in partnership with all stakeholders, proponents, Centers of Excellence, and Program Managers.</p>
+                       
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img05.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Mission Command Complex (MCC)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Recommends and modifies through the capabilities integration enterprise forum process across war fighting functions in partnership with all stakeholders, proponents, Centers of Excellence, and Program Managers.</p>
+                      
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img06.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Network Integration Division (NID)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Recommends and modifies through the capabilities integration enterprise forum process across war fighting functions in partnership with all stakeholders, proponents, Centers of Excellence, and Program Managers.</p>
+                       
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img07.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Sustainment (G1, G4, G8)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <br />
+                        <p class="text-left">Recommends and modifies through the capabilities integration enterprise forum process across war fighting functions in partnership with all stakeholders, proponents, Centers of Excellence, and Program Managers.</p>
+                        
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/bmc-img08.jpg" alt="">
+                    <div class="caption">
+                        <h4><b> Training and Evaluation Division (TED)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Recommends and modifies through the capabilities integration enterprise forum process across war fighting functions in partnership with all stakeholders, proponents, Centers of Excellence, and Program Managers.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+
+
+            @*<div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="">
+                            <h2 class="page-header"><b>JMC in the News</b></h2>
+                        </div>                       
+                         
+                                    
+                            <div class="col-md-2 col-sm-4 col-xs-6 col-md-2">
+                                <img class="img-responsive customer-img" src='@("..~/App_Imgs/Exclusives/" + item.imageURL + "t.jpg")' alt="">
+                                <div>@item.artID</div>
+                                <div>@item.title</div>
+                            </div>
+                           
+                         
+                    </div>
+                </div>
+            </div>*@
+        
+
+        <!-- Our Customers -->
+
+       
+        </div>
+        <!-- /.row -->
+
+
+
+

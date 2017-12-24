@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ARCIC.Models.Spotlight>
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+
+@{
+    ViewBag.Title = "Spotlight";
+   
+    int currSpotlight = Globals.currSpotlight;
+    List<ARCIC.Models.Spotlight> Archives = ViewBag.Archives;
+    var ArchivesMini = Archives.Skip(5).Take(5);
+    var Recent = Archives.Skip(1).Take(1);
+    
+    var currSpot = ViewBag.CurrSpot;   
+}
+
+
+<div class="row">
+    @foreach (var item in currSpot)
+    {
+        <div class="col-md-8 pull-left">
+            <h1 class="page-header"><b>ARCIC Spotlight</b></h1>
+                <ol class="breadcrumb hidden-xs hidden-sm">
+                    <li><a href="/Home">Home</a></li>
+                     <li><a href="/News">News</a></li>
+                    <li class="active">Spotlight</li>
+                </ol>
+        </div>
+        <div class="col-md-8">              
+       
+        <!--Current Spotlight-->
+        
+             <h3><b>@item.mainArea</b></h3>        
+            <div class="panel panel-default">
+               <img class="img-responsive" src='@("/App_Imgs/Content/" + item.imageFilename + "f.jpg")' style="padding: 0px;" />
+                <div class="panel-body">
+                    <p class="">                        
+                        <small></small>
+                         </p>
+                    <h3 class=""><b>@item.imageTitle</b></h3>
+                   
+                    <p>@Html.Raw(item.imageCaption)</p> 
+                    
+                   @* <div class="btn-group btn-group-lg">
+                        <a href="@item.pAll" class="btn btn-primary clearfix" role="button" target="_blank">Video1 <i class="fa fa-external-link"></i></a>
+                        <a href="@item.imageLink" class="btn btn-primary clearfix" role="button" target="_blank">Video 2 <i class="fa fa-external-link"></i></a>
+                    </div>*@
+                </div>
+                @*<div class="panel-footer">Hello</div>*@
+            </div>      
+
+        </div>  
+        
+         <!--Sidbear Archives-->       
+        <div class="col-md-4">
+            <h3 class="text-muted"><b>Recent Spotlights</b> </h3>
+            <div class="list-group">
+               
+                @foreach (var entry in Recent)
+                {
+                   
+                            <div class="list-group-item clearfix">
+                                <div class="row" style="margin-top:-10px;"><img class="img-responsive center-block" src='@("App_Imgs/Content/" + entry.imageFilename + "f.jpg")' style="margin-bottom: 10px;" /></div>
+                                <h4 class="list-group-item-heading"><b>@entry.imageTitle</b></h4>
+                               
+                                <p class="list-group-item-text">@Shorten.ShortStr(entry.imageCaption, 188) <span><a href='@Url.Action("Index", "Spotlight", new { slideOrder = entry.slideOrder })'>Read</a></span></p>
+                            <p>@entry.imageDate</p>
+                           </div>  
+                
+                }               
+               
+            </div>
+
+
+            <h3 class="text-muted"><b>Archived Spotlights</b> </h3>
+            <div class="list-group">               
+                @foreach (var entry in ArchivesMini)
+                {
+                   
+                        //Present archives
+                        <div class="list-group-item">
+                            <div class=""> <a href='@Url.Action("Index", "Spotlight", new { slideOrder = entry.slideOrder })'>@entry.imageTitle</a> </div>
+                            <p class="list-group-item-text"></p>
+                        </div>   
+                    
+                }               
+               <div class="text-center"><a class="list-group-item" href="/Spotlight/Archives"><span class="btn btn-default">Full Spotlight Archives</span></a></div>
+            </div>
+        </div>
+}
+
+</div>
+
+

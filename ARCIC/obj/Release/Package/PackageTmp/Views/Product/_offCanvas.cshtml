@@ -1,0 +1,262 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{ 
+    var data = Article.GetArticles().Where(x => x.dataSet == "exclusive");
+    var dataLPD = Reading.GetReadings();
+    var HQNews = data.Where(x => x.pDirectorate == "Army Capabilities Integration Center (Headquarters)").Take(1);
+    var CDDNews = data.Where(x => x.pDirectorate == "Capabilities Development Directorate").Take(1);
+    var CDLDNews = data.Where(x => x.pDirectorate == "Concept Development and Learning Directorate").Take(1);
+    var F2025BNews = data.Where(x => x.pDirectorate == "Force 2025 and Beyond Directorate").Take(1);
+    var IAPDNews = Spotlight.GetSpotlights().Where(x => x.mainArea == "International Army Programs").FirstOrDefault();
+    var JMCNews = data.Where(x => x.pDirectorate == "Joint Modernization Command Directorate").Take(1);
+
+    var arcicNews = HQNews.Union(CDDNews).Union(CDLDNews).Union(F2025BNews).Union(JMCNews);
+
+    var foo = data.ToList().Where(x => x.artID == 111).FirstOrDefault();
+    var fooReading = dataLPD.ToList().Where(x => x.lpdID == 141).FirstOrDefault();
+}
+
+<style>
+    .jumbotron h2 {
+        font-weight:bold;
+        font-size:1.976em;
+    }
+    #Directorates li button {
+        width:122px;
+        /*
+        padding:6px;
+        margin: 4px 4px;
+        font-size:1.25em;
+        font-weight:bold;
+        border: solid thin black;*/
+    }
+    #Directorates li:hover {
+         /*color:brown;
+         background-color:gold;*/
+    }
+    #Directorates li:nth-child(1) button {
+        /*color:brown;
+        background-color:gold;*/
+        font-weight:bold;
+    }
+</style>
+
+
+<div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-12 col-md-9">
+        @*<p class="float-right hidden-md-up">
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
+        </p>*@
+        <div class="jumbotron">
+            <h2>Gen Perkins on Multi-Domain Battle: Joint Combined Arms Concept For the 21st Century</h2>
+            <p>@Shorten.ShortStr("During most of our recent history, the only domain that has been truly contested has been the land domain. The joint force has enjoyed an unprecedented level of freedom of action in the air, space, maritime and cyber domains. This will not be the case in the future. Contemporary and emerging threats seek to gain control of contested spaces not only in the air and on land but at sea, in space and cyberspace as well as the electromagnetic spectrum and the cognitive dimension of human perception. Thus, the increasing number of adversaries who learned to attack the air, maritime, space and cyberspace domain superiority premises of current Army and joint doctrine challenge the U.S. military’s ability to achieve military and political objectives.",144)</p>
+        </div>
+
+
+    <!--ARCIC Video-->
+    <div class="well text-center">
+        <h1 class="text-center"><b class="text-uppercase">ARCIC OVERVIEW (Video)</b></h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KaTLRduYC8g" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    @*DIRECTORATES MENU*@        
+        
+        <div class="well" style="margin-top:40px; margin-bottom:40px;">   
+            <h1 class="text-center"><b class="text-uppercase">DIRECTORATES</b></h1>        
+            <ul id="Directorates" class="list-inline text-center">
+                <li><button type="button" class="btn btn-primary">ARCIC HQ </button> </li>
+                <li><button type="button" class="btn btn-default">CDD </button> </li>
+                <li><button type="button" class="btn btn-default">CDLD </button> </li>
+                <li><button type="button" class="btn btn-default">F2025B</button> </li>
+                <li><button type="button" class="btn btn-default">IAPD </button> </li>
+                <li><button type="button" class="btn btn-default">JMC @*<span class="badge">7</span>*@</button> </li>
+            </ul>
+       
+            <div class="row">
+                <div class="col-md-6">
+                    @helpers.Article(foo.title, foo.description, foo.author, foo.source, foo.pubDate, foo.imageURL)
+                </div>
+                <ul class="col-md-6 list-group">
+                    <li class="list-group-item disabled"><b>RELATED CONTENT</b></li>
+                    @foreach (var item in data.Take(5))
+                    {
+                        <li class="list-group-item">@item.title</li>
+                    }
+                </ul>
+            </div>  
+           
+        </div>
+
+
+    @*PROFESSIONAL DEVELOPENT LPD READING*@
+  <div class="row" style="padding-top:8px; padding-bottom:40px;">
+      <div class="col-md-12 clearfix">
+          <h1 class="text-center"><b class="text-uppercase">Professional Readings</b> <i class="fa fa-bookmark"></i></h1>
+          <h3 class="text-muted text-center">Reading <span class="label label-primary">#@fooReading.series</span></h3>
+          @helpers.LPDReading(fooReading.title, fooReading.description, fooReading.authors, fooReading.source, fooReading.pubDate, fooReading.sourceLogo)
+
+      </div>
+  </div>
+
+
+        <!--DIRECTORATE NEWS-->
+        <div class="row" style="padding-top:40px; padding-bottom:40px;">
+            <h1 class="text-center"><b>DIRECTORATE NEWS</b> <i class="fa fa-newspaper-o"></i></h1>
+
+            @foreach (var item in arcicNews)
+            {
+                <div class="col-6 col-lg-4 clearfix" style="height:auto;">
+                    @content.ShowImageInternal(item.entDate,item.pDirectorate, item.imageURL, "")                       
+                    <div>@content.SocialIcons(true, "","", item.pLOE)</div>                  
+                     
+                    <h3>@Shorten.ShortStr(item.title, 58)</h3>                   
+                    <p>
+                        <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                    </p>
+                   
+                </div>
+            }
+
+         <!--Add Spotlight model for IAPD -->
+            <div class="col-6 col-lg-4" style="height:auto;">
+                @content.ShowImageIAPD(IAPDNews.imageFilename,IAPDNews.mainArea,IAPDNews.imageLink, "")
+                <h3>@ARCIC.App_Code.Shorten.ShortStr(IAPDNews.imageTitle, 58)</h3>
+                @*<p>@Html.Raw(ARCIC.App_Code.Shorten.ShortStr(item.description,122))</p>*@
+                <p>
+                    <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                </p>
+            </div>
+
+
+        </div><!--/row-->
+
+
+    <!--Events-->
+        <div class="row" style="padding-top:8px; padding-bottom:40px;">
+            <div class="col-md-12 clearfix">
+                <h1 class="text-center"><b class="text-uppercase">Distinguished Speaker Series (DSS)</b> <i class="fa fa-microphone"></i></h1>
+                <h3 class="text-muted text-center"><i class="fa fa-map-marker fa-lg"></i> <span class="label label-primary">June 22, 2017 | Fort Eustis Club, | Fort Eustis Va.  </span></h3>
+
+                <div class="text-center">
+                    <h3 class="">US Strategy at the End of the Asian Century</h3>
+                    <h4>Dr. Michael Auslin <a href="#">Bio <i class="fa fa-file-pdf-o"></i></a></h4>
+                    <p><img class="img-responsive center-block" src="http://arcic.army.mil/App_Imgs/LPD-Speakers/Dr-Michael-Auslin_01t.jpg" /></p>
+                </div>
+
+            </div>
+        </div>
+
+ 
+
+        @*AWFC*@
+        <div class="row" style="padding-top:8px; padding-bottom:40px;">
+            <div class="col-md-12 clearfix">
+                <h1 class="text-center"><b class="text-uppercase">ARMY WARFIGHTING CHALLENGES</b></h1>
+                <h4 class="text-muted text-center">As Of April 2017 Updates to Army Warfighting Challenges <span class="label label-primary">#8, #10</span></h4>
+
+                <div class="row clearfix panel-body">
+                    <div class="col-md-6 pull-right">
+                        <p>
+                            <img class="img-responsive" src="~/App_Imgs/Content/MG-Dyess_750_01f.jpg" />
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            You can help develop these Warfighting Challenges by joining the AWFC discussion on milSuite! Join individuals from across the Community of Practice contribute insights and solutions that will be heard by Army Senior Leaders. Join the community, and help build the Future Force today!
+                            To learn more, visit our <a href="#">milWiki</a> site or, to collaborate, visit our <a href="#">milSuite</a> site.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    @*NEWS*@
+    <div class="row"  style="padding-top:40px; padding-bottom:40px;">   
+        <h1 class="text-center"><b>NEWS</b> <i class="fa fa-newspaper-o"></i></h1>  
+        
+        @foreach (var item in data.Take(6))
+        {
+            <div class="col-6 col-lg-4" style="height:auto;">
+                @content.ShowImageInternal(item.entDate, item.author,item.imageURL,item.pLOE)  
+                <h3>@ARCIC.App_Code.Shorten.ShortStr(item.title,58)</h3>
+                @*<p>@Html.Raw(ARCIC.App_Code.Shorten.ShortStr(item.description,122))</p>*@
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+               
+                
+            </div>
+        }          
+      
+        </div><!--/row-->
+      
+
+    @*ARCIC PHOTOS ON FLICKR*@
+    <div class="row">
+        <div class="col-md-12">           
+
+            <div class="alert alert-warning">
+                <h1 class="text-center text-warning"><b>ARCIC PHOTOS FLICKR</b> <i class="fa fa-flickr text-primary"></i></h1>
+               <div class="">
+                   <div class="row">
+                       
+                           @foreach (var item in data.Take(12))
+                           {
+                            <div class="col-md-3">
+                                <img class="img-responsive" style="padding-top:4px; padding-bottom:4px;" src='@("../App_Imgs/Content/" + item.imageURL + "f.jpg")' />
+                               
+                            </div>
+                           }
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    </div><!--End Row-->
+
+   
+
+    <!--Sidebar-->
+    <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
+    <div><b class="text-danger">TECH</b></div>
+        <div class="list-group">          
+            <a href="#" class="list-group-item">Joint Modernization Command </a>
+            <a href="#" class="list-group-item">Capabilities Development</a>
+            <a href="#" class="list-group-item">Unified Quest</a>
+            <a href="#" class="list-group-item">Network Integration Evaluation</a>           
+            <a href="#" class="list-group-item">RAS Strategy <span class="glyphicon glyphicon-file"></span></a>
+            <a href="#" class="list-group-item">AWFC Flyer <span class="glyphicon glyphicon-file"></span></a> 
+        </div>
+    </div><!--/span-->
+
+    <!--Social Media Sidebar-->
+    <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
+        <div><b class="text-danger">GROUND COMBAT VEHICLES</b></div>
+        <div class="list-group">            
+            <a href="#" class="list-group-item">JLTV </a>
+            <a href="#" class="list-group-item">Stryker</a>
+            <a href="#" class="list-group-item">Unified Quest</a>
+            <a href="#" class="list-group-item">Network Integration Evaluation</a>           
+        </div>
+    </div>
+
+    <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
+        <div><b class="text-danger">UPCOMING EVENTS</b></div>
+        <div class="list-group">           
+            <a href="#" class="list-group-item"> 
+                <p class="text-muted">DSS</p>                
+            <article>    
+                <div class="">US Strategy at the End of the Asian Century</div>
+                <div class="text-muted">Dr. Michael Auslin</div>
+                <div class="text-muted">22 June 2017 | Ft. Eustis Club</div>
+            </article>
+            </a>
+            
+            
+            
+        </div>
+    </div>
+</div>

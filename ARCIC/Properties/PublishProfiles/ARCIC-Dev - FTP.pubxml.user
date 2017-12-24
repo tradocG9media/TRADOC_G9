@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8zBuk+p25UeJjxCpAuQUmQAAAAACAAAAAAAQZgAAAAEAACAAAAAkllChjbEOwx2/gdgCKL9oqVwCTBuJ2cFWs8XQs6gpiwAAAAAOgAAAAAIAACAAAAD/rQv/myIDg0wxxKJWxekHkrhq+SfujF7f5TSTYWb/roAAAAAmNs5Hh7AMu0Wj3Hi/t9wdKh7dU+l7U356ohLtET5aj3Kq6NZ5c18sVfFnG1GwndNiYUsz1oRj2ycqOxGJJBt74ZoPVmGcNriNnLdNcB/sk/SnllXLjci+w6zHdMqkF75nh17GQKI8r8I6V69qsMgdxNAuIJDpdIyvXG+pTVaIYUAAAACi0D7h6ZuuEvyaQYV3YSxFh28Fm0wnMTxs/vLe4HTHVusgU+HIIjvUcRr5SU8VN4n3vYDAt3/faRNNMF8nxaiv</EncryptedPassword>
+    <_PublishTargetUrl>ftp://gcws-prod-bn1-001.ftp.azurewebsites.usgovcloudapi.net/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

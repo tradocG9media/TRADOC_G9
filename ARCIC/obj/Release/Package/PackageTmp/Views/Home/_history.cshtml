@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ARCIC.Models.Article>
+@using ARCIC.App_Code;
+@using ARCIC.Models;
+@{ 
+    //var history = Model.ToList().Where(x => x.dataSet == "exclusive").Where(x => x.pGroup == "history");
+    var history = ARCIC.Models.Article.GetArticles().Where(x => x.dataSet == "exclusive").Where(x => x.pGroup == "history").FirstOrDefault();
+}
+<div class="col-md-6">  
+    @*IsInternal*@  
+    <div class="panel panel-default text-center">
+        <div class="panel-heading"><h4>@history.pConnection</h4></div>
+        <img class="img-responsive" src='@("../App_Imgs/" + history.pFocus + history.imageURL + "f.jpg")' />
+        <div class="panel-body clearfix center-block">
+                <h3><b>@history.title</b></h3>
+        </div>
+        <div class="panel-footer">
+            <p>
+                Full story at
+                <a href="@history.link" @Html.Raw(Article.Tracker.OutboundLink(history.title))>
+                <abbr title="Joint Base Langley-Eustis" style="cursor:pointer;">JBLE</abbr>
+                </a> <i class="fa fa-external-link"></i>
+            </p>
+        </div>
+    </div>
+</div>

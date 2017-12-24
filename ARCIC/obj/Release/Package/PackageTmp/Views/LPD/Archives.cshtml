@@ -1,0 +1,142 @@
+﻿@model IEnumerable<Reading>
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Leadership Professional Readings Archives";
+    IEnumerable<Reading> data = Reading.GetReadings();   
+    IEnumerable<Reading> Results = ViewBag.Results;
+    string SearchWord = ViewBag.Input;
+    var NumIsNumber = ViewBag.isNumber;
+}
+
+<br />
+ <h1 class="page-header"><b>Professional Readings Archives</b></h1>
+<div class="row">   
+    
+ <!--Search Panel-->
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                     <form method="post" class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="searchStr">Search</label>
+                           
+                            
+
+
+                            <div class="input-group" onClick="ga('send', 'event', { eventCategory: 'LPD Search',  eventAction: 'Click LPD', eventLabel: '', eventValue: 1});">
+                                <div class="input-group-addon">Search:</div>
+                                <input type="text" class="form-control" name="searchEntry" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <form class="hide">
+                        <label for="title">Search:</label>
+                        <input type="text" name="searchEntryx" />
+                        <button type="submit" name="submit">Search</button>
+                    </form>
+                    <h1></h1>
+                    <div>
+                        <div>The above search function is a basic tool utilized by searching keywords or Reading series by number. 
+                            <p class="text-muted">When searching by <span class="text-primary">keywords and short phrases </span>simply type the word or phrase in the search box. If you are searching a <span class="text-primary">Reading by series</span> simply type the series number i.e. (99) <span class="text-primary">omitting the parentheses, and any additional symbols/characters</span>.</p>
+                        <p style="color:red;"><b class="text-muted">Note: </b> Search terms are case sensitive. Subsequent updates will be provided with case sensitivity improvements.
+                            <span>If you have any questions or problems using the search feature please contact the <a href="mailto:usarmy.pentagon.hqda.mbx.arcic-webmaster@mail.mil" target="_blank">ARCIC Webmaster.</a></span>
+                        </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!--Search Results-->  
+
+        <!--Results Message-->
+        <div class="list-group">
+            <div class="list-group-item active">
+              
+                 <h4><b>Results:</b>  <span>@Results.Count()</span>
+
+                    @if (Results.Count() < 1)
+                    {
+                       <span>Reading's referenced</span> 
+                    }
+                    else if (Results.Count() == 1) 
+	                {
+		                 <span>Reading referenced</span>
+	                }
+                    else
+                   {
+                     <span>Reading's referenced</span>                          
+                    }
+
+                    <div style="color: white;">[ <i> @SearchWord</i> ]</div>
+
+               </h4>
+            </div>
+
+            <!--Results Layout-->
+            @foreach (var item in Results)
+            {
+                <div class="list-group-item">
+                    
+                    <h4><span class="text-primary">#@item.series @item.descTitle</span> @item.title</h4>
+                    <ul class="list-inline small">
+                        <li>@item.authors</li>
+                        <li>@item.pubDate</li>
+                        <li>@item.source</li>
+                    </ul>
+                    <p>@Html.Raw(Shorten.ShortStr(item.comment, 812)) <a href="@Url.Action("_archives", "LPD", new { articleSeries = item.series})" onClick="ga('send', 'event', { eventCategory: 'Archives',  eventAction: 'Click Internal Link', eventLabel: 'Clicked LPD #@item.series', eventValue: 1});">[View Full...]</a></p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!--Sidebar-->
+    <div class="col-md-4">
+        <div class="list-group">
+            
+            @foreach (var item in data.Take(1))
+            {
+                 <h3 class="list-group-item text-muted text-center">Current Reading </h3>
+                <div class="list-group-item">
+                    <div class="card">
+                        <img alt="LPD Photo" class="card-img-top img-responsive" src='@("/App_Imgs/LPD-Sources/" + item.sourceLogo  + "t.png")' />
+                        <div class="card-block text-center">
+                            <h4 class="card-title"><b>@item.title</b></h4>
+                            <ul class="list-inline small">
+                                <li>@item.authors</li>
+                                <li>@item.pubDate</li>
+                            </ul>
+                            <p class="card-text">@Html.Raw(TruncateWithLink.Truncate(item.description,642,Url.Action("_archives","LPD",new { articleSeries = item.series})))</p>
+                            <a class="btn btn-primary btn-sm" href="@Url.Action("ProfessionalReadings", "LPD", new { articleSeries = item.series })">(@item.series @item.descTitle) - Director's Comments</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="list-group">
+            <h3 class="list-group-item text-muted text-center">Recent Archives
+            </h3>
+           
+            <!--Short List-->
+            @foreach (var item in data.Skip(1).Take(12))
+            {
+                <a class="list-group-item" href="@Url.Action("_archives", "LPD", new {articleSeries = item.series })">
+                    <h5 class="text-primary"><b>#@item.series @item.descTitle</b> @item.title</h5>
+                    <div class="small">@item.authors, @item.pubDate</div>
+                </a>
+            }          
+            
+        </div>
+    </div>
+
+
+    </div>
+

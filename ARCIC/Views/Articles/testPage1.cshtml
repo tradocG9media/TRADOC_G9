@@ -1,0 +1,117 @@
+﻿@model IEnumerable<ARCIC.Models.ArticleModels>
+@using System.Xml;
+@using System.Linq;
+@using System.Xml.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "testPage1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   // var articles = Model;
+    //var content = ViewBag.exclusive;
+
+    var article = (from x in XDocument.Load(global.serverPath + "App_Data/articles-complete.xml").Descendants("complete")
+                   where (string)x.Attribute("id").Value == "exclusive"
+                   from a in x.Elements("article")
+                   where a.Element("artID").Value == "85"
+
+                   select new ArticleModels
+                   {
+                       artID = a.Element("artID").Value,
+                       frozen = (Int32.Parse(a.Element("frozen").Value)),
+                       archive = (Int32.Parse(a.Element("archive").Value)),
+                       entDate = a.Element("entDate").Value,
+                       modDate = a.Element("modDate").Value,
+                       sortDate = a.Element("sortDate").Value,
+                       title = a.Element("title").Value,
+                       pubDate = a.Element("pubDate").Value,
+                       author = a.Element("author").Value,
+                       link = a.Element("link").Value,
+                       source = a.Element("source").Value,
+                       guid = a.Element("guid").Value,
+                       description = a.Element("description").Value,
+                       pGroup = a.Element("placement").Element("group").Value,
+                       pAll = a.Element("placement").Element("all").Value,
+                       pLOE = a.Element("placement").Element("lineofeffort").Value,
+                       pDirectorate = a.Element("placement").Element("directorate").Value,
+                       pInitiative = a.Element("placement").Element("initiative").Value,
+                       pConnection = a.Element("placement").Element("connection").Value,
+                       pFocus = a.Element("placement").Element("focus").Value,
+                       imageURL = a.Element("imageURL").Value,
+                   });
+        
+                   
+         <br /><br /><br /><br />          
+      foreach (var item in article)
+      {
+        <!-- Content Row -->
+        <div class="row">           
+            <!-- Content Article  -->
+            <div class="col-md-8 clearfix">
+               <div class="panel panel-default">
+                   <div class="panel-body">
+                        <img class="img-responsive thumbnail" src='@("/App_Imgs/Exclusives/" + item.imageURL + "f.jpg")' />
+                        <h1 class="">
+                     <b>@item.title</b></h1>
+                 
+                <div class="text-muted">@item.author</div>
+                <div>@item.pubDate</div>
+                       
+                      @* <p>@Html.Raw(item.description)</p>*@
+                       <article>
+                           <h4><b><i><span class="text-muted">G9:</span> Dr. Hutchinson, what was the purpose behind the Mad Scientist Megacities Conference?</i></b></h4>
+                           <p><span class="">Dr. Hutchinson:</span> By 2050, 60% of the world’s population is expected to reside in cities. Adversaries are increasingly moving to environments where U.S. advantages in detection, standoff, and precision firepower may be constrained. Further, the potential for Army involvement within cities may be exacerbated by global challenges including: liberal trade and economic coordination; climate change; nuclear proliferation; responsibility to protect, and failing states and ungoverned areas. With this in mind, we conducted a conference to address four primary objectives in how to operate in Megacities: situational understanding, freedom of movement and protection, expeditionary operations, and future training challenges.</p>
+
+
+                           <h4><b><i><span class="text-muted">G9:</span> What were some of your key findings in developing situational understanding?  </i></b></h4>
+                           <p><span class="text-warning"></span>We found that the challenge of megacities is density, not just in people, but also in data and infrastructure. Having an understanding of terrain is key, particularly physical overlaid with cyber-social. We noticed that invisible geography requires understanding of the formal and informal social networks, not obvious to those unfamiliar with the region. Big data analytics of social media will provide access to a population’s collective intelligence; insights which are achieved through examination of aggregate behaviors. Finally, developing common data sets for megacity models is critical for building a Commander’s visualization. Although each megacity is unique (demographics, infrastructure, threats), there are similarities in data to frame analysis.  </p>
+
+                           <h4><b><i><span class="text-muted">G9: </span>Can you give us any additional insights that your team found in the area of developing situational understanding?</i></b></h4>
+                           <p><span class="text-warning"></span>Dr. Hutchinson: For one, cyber-social analysis can lead to a better understanding of drivers of instability in megacities like disease vectors. Surveillance through integrated sensor architectures, of which humans are a critical component, is required to achieve accurate, timely diagnosis during a humanitarian crisis. We also found that the interconnectedness of biosecurity underpins a “one health” concept. The health of the planet cannot be maintained by ensuring health in first world countries. In fact, disease does not recognize socio-economic borders.  </p>
+
+                           <h4><b><i><span class="text-muted">G9:</span>So, cyber-social analysis is an important aspect of understanding the Human Dimension operating in the future environment? </i></b></h4>
+                           <p><span class="text-warning"></span>Dr. Hutchinson: Cyber space is a human space, a global commons of human practice, rapidly becoming the preferred space to engage. The future will be increasingly populated by a new species: Homo sapiens sapiens.net, which will live their entire lives connected to a global virtual network. Homosapiens.net will gravitate towards virtual environments for learning and engagement, and this virtual world will change the concept of identity. </p>
+
+                           <h4><b><i><span class="text-muted">G9: </span>What type of protection appears to be preeminent when operating in a megacity?</i></b></h4>
+                           <p><span class="text-warning"></span>Dr. Hutchinson: When considering protection, medical considerations proved to be preeminent. First, humanitarian missions will require a surge capacity due to the sheer density of people. Response forces require innovative ways to manage waste disposal and protective suits with communications for long duration operations. ‘Hot Zone Robotics’ could mitigate some of the problems with golden hour care for thousands of casualties. We believe robots will be capable of conducting triage, providing emotional support, remotely diagnosing, and providing basic care. </p>
+
+                            <h4><b><i><span class="text-muted">G9: </span>G9: What are some of the future improvements you believe will enhance the Army’s ability to perform expeditionary operations in a megacity?</i></b></h4>
+                           <p><span class="text-warning"></span>Dr. Hutchinson: As you know, laying siege to a megacity or dense urban area is an outdated notion. With this in mind, we see tremendous advances in the use of avatars as a force enabler in conducting megacity operations. Avatars in the field will be capable of face-to-face interactions and conducting interviews, as well as assist Leaders in language translation and decision making. Human/machine teaming will outperform a group of humans working together or a computer working independently. This teaming is critical if the environment is too dangerous, imposing restrictions on human access. Unmanned systems will provide many opportunities for freedom of movement. Vertical Takeoff and Landing is critical in megacities. </p>
+
+                            <h4><b><i><span class="text-muted">G9: </span>G9:  What are the training challenges involved in preparing for future megacity missions?</i></b></h4>
+                           <p><span class="text-warning"></span>Dr. Hutchinson: Due to the challenges replicating a megacity training area, virtual environments will be needed to emulate specific areas and provide home station training repetitions. Interdisciplinary collaboration is critical to understanding and addressing complex problems in megacities.  Most of this expertise will be outside of the Army. TRADOC is assessing the need for a megacity study center to synchronize TRADOC’s learning efforts and to increase outreach to external organizations like ASU.</p>
+
+                           <h4><b><i><span class="text-muted">G9: </span>G9: What is currently being done to prepare the future force for megacity operations?</i></b></h4>
+                           <p><span class="text-warning"></span>The ARCIC Future Warfare Division used the initial findings from the ASU event to inform the Unified Quest Deep Futures Wargame 2050 and these will be included in the Future Operational Environment 2050 paper. The Maneuver Center of Excellence used conference findings to further their development of the megacity training site and curriculum at Fort Hamilton, New York. </p>
+
+                           <h4><b><i><span class="text-muted">G9: </span>G9: Where can someone find the articles written about the Mad Scientist Conference?  What can we expect to be released in the future? </i></b></h4>
+                           <p><span class="text-warning"></span>Dr. Hutchinson: In coordination with TRADOC, Small Wars Journal published 23 papers on megacity topics. These papers and the conference findings are primary sources for the CSA directed megacity white paper being authored by ARCIC.  </p>
+
+                       </article>
+                   </div>
+               </div>               
+            </div>
+
+
+           <!-- Sidebar Column -->           
+                    
+            <div class="col-md-4">              
+                 <h3 class="text-muted"><i class="fa fa-archive"></i> <b>Recent Q&A's</b></h3>              
+                       
+                                                  
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+          
+      }
+             
+    
+}
+<br /><br />
+
+    
+
+

@@ -1,0 +1,163 @@
+﻿@model IEnumerable<ARCIC.Models.Article>
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+@using ARCIC_Class;
+@{
+
+                ViewBag.Title = "Home Test";
+                var hotLinks = HotLinks.GetHotLinks();
+                int currReading = Globals.currLPD;
+
+                var dataPDF = EventModel.Archives("PDF")[0];
+                DateTime dataChkPDF = Convert.ToDateTime(dataPDF.entDate);
+                var dataDSS = EventModel.Archives("DSS")[0];
+                DateTime dateChkDSS = Convert.ToDateTime(dataDSS.entDate);
+                var dataOPD = EventModel.Archives("OPD")[0];
+                DateTime dataChkOPD = Convert.ToDateTime(dataOPD.entDate);
+
+
+                var reading = Reading.GetReadings().Take(1);
+
+                var popularData = ARCIC.Models.Article.GetArticles()
+                   .Where(x => x.dataSet == "exclusive")
+                   .Where(x => x.pGroup == "popular")
+                   .Where(x => x.archive != "Yes")
+                   .Take(6);
+
+                var data = ARCIC.Models.Article.GetArticles();
+                var mdb = data
+                .Where(x => x.pType == "Video" || x.pType == "Article")
+                .Where(x => x.pGroup == "mdb")
+                .Take(3).OrderByDescending(x => Convert.ToDateTime(x.entDate));
+
+                var Video = Globals.video.OrderByDescending(x => x.entDate);
+
+                IEnumerable<ARCIC.Models.Article> articles = ViewBag.Articles;
+                IEnumerable<ARCIC.Models.Article> news = articles.Where(x => x.pGroup == "news").Where(x => x.frozen != "1").Take(8);
+                
+                HashSet <ARCIC.Models.Article> myHashSet = new HashSet<ARCIC.Models.Article>();
+
+
+            }
+
+            @section featured {
+
+            }
+
+<!--ADVERTISING BUTTONS-->
+<div id="advertising" class="text-center">
+    <div role="group" aria-label="Basic example">
+        <a class="btn btn-default" href='@hotLinks.Find(x => x.name == "RAS").url' target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Document', eventAction: 'Download', eventLabel: 'RAS Strategy PDF', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>RAS <i class="fa fa-file-pdf-o"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="@hotLinks.Find(x => x.name == "flickr").url" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Photos', eventAction: 'Clicked', eventLabel: 'Flickr Photos', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>ARCIC Photos <i class="fa fa-flickr"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="@hotLinks.Find(x => x.name == "youTube").url" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Video', eventAction: 'Play', eventLabel: 'youTube adaptingthearmy playlist', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>Playlist <i class="fa fa-youtube-play"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="@hotLinks.Find(x => x.name == "csm travers blog").url" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Blog', eventAction: 'Click', eventLabel: 'CSM Traver&apos;s Blog', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>CSM Traver's Blog <i class="fa fa-external-link"></i></b>
+            </span>
+        </a>
+        <a class="btn btn-default" href="../App_Documents/AWA.pdf" target="_blank"
+           onClick="ga('send', 'event', { eventCategory: 'Document', eventAction: 'Download', eventLabel: 'AWA PDF', eventValue: 1}); data">
+            <span class="text-textColor">
+                <b>JWA <i class="fa fa-download"></i></b>
+            </span>
+        </a>
+
+        @if (dataChkPDF > DateTime.Now)
+            {
+            <a class="btn btn-default" href="/Event?Group=PDF">
+                <span class="text-textColor">
+                    <b>PDF <i class="fa fa-microphone"></i></b>
+                </span>
+            </a>
+            }
+        @if (dataChkOPD > DateTime.Now)
+        {
+            <a class="btn btn-default" href="/Event?Group=OPD">
+                <span class="text-textColor">
+                    <b>OPD <i class="fa fa-microphone"></i></b>
+                </span>
+            </a>
+            }
+        @if (dateChkDSS > DateTime.Now)
+    {
+            <a class="btn btn-default" href="/Event?Group=DSS">
+                <span class="text-textColor">
+                    <b>DSS <i class="fa fa-microphone"></i></b>
+                </span>
+            </a>
+            }
+        <!--LPD Weekly-->
+        <a class="btn btn-default" href='@("../LPD/ProfessionalReadings?articleSeries=" + currReading)'>
+            <span class="text-primary"><b>Reading #@currReading <i class="fa fa-file-text-o"></i></b> </span>
+        </a>
+    </div>
+
+</div>
+
+<br />
+
+<!--Framework-->
+
+<div class="text-center"><h3 class="label label-default">STRING Search</h3></div>
+
+<!-- Military News -->
+<!-- Capabilities -->
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3><b>Cyber Results</b> <span class="badge">@articles.Count()</span></h3>
+
+               @foreach (var item in articles.OrderByDescending(x => x.artID))
+               {                   
+                <div>
+                    @*<div><b>@item.artID/ <span class="text-muted small">@item.entDate</span></b></div>*@                  
+                    
+                    @for (int i = 0; i < ARCIC.Models.Article.GetWordsFromTitle(item.description).Length; i++)
+                    {                      
+                        if (ARCIC.Models.Article.GetWordsFromTitle(item.description)[i].IndexOf("cyber", StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            myHashSet.Add(item);
+                        }  
+                    }
+                </div>
+                <p></p>
+               }
+            </div>
+        </div>
+        @for (int i = 0; i < myHashSet.Count; i++)
+        {
+            <div class="panel-body"><span class="label label-primary">@(i+1)</span> <a href="@myHashSet.ToList()[i].link">@myHashSet.ToList()[i].title</a></div>
+        }
+       
+    </div>
+</div>
+<!-- Joint Forces -->
+<!-- Cyber -->
+<!-- Force Strength -->
+<!-- Human Dimension -->
+<!-- Leadership -->
+<!-- Congress -->
+
+
+
+
+

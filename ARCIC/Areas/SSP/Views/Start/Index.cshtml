@@ -1,0 +1,37 @@
+﻿
+
+@{
+    ViewBag.Title = "Self Study Program / Home";
+    
+
+}
+<link href="~/Areas/SSP/Content/style.css" rel="stylesheet" />
+
+<!--Page-->
+<div class="row">
+    <!--Purpose-->
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="panel-body" @*style="margin-bottom:-212px;"*@>
+                    <h1 id="MainHeader" style="color: white;"><b>Future Force Self Study Program</b></h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("_purpose")
+        </div>
+
+        <div class="col-md-4">
+            @Html.Partial("_arcicProReadingList")
+        </div>
+        <div class="col-md-4">
+            @Html.Partial("_MCOEProReadingList")
+        </div>
+
+    </div>
+    
+
+
+
+</div>

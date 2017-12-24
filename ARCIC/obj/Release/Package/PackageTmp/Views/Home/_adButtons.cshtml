@@ -1,0 +1,81 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    var dataPDF = EventModel.Archives("PDF")[0];
+    DateTime dataChkPDF = Convert.ToDateTime(dataPDF.entDate);
+    var dataDSS = EventModel.Archives("DSS")[0];
+    DateTime dateChkDSS = Convert.ToDateTime(dataDSS.entDate);
+    var dataOPD = EventModel.Archives("OPD")[0];
+    DateTime dataChkOPD = Convert.ToDateTime(dataOPD.entDate);
+
+    var hotLinks = HotLinks.GetHotLinks();
+   // var reading = Reading.GetReadings().Take(1);
+    int currReading = Globals.currLPD;
+}
+
+<div id="advertising" class="text-center">         
+                <div role="group" aria-label="Basic example">
+                    <a class="btn btn-default" href='@hotLinks.Find(x => x.name == "RAS").url' target="_blank"
+                       onClick="ga('send', 'event', { eventCategory: 'Document', eventAction: 'Download', eventLabel: 'RAS Strategy PDF', eventValue: 1}); data">
+                        <span class="text-textColor">
+                            <b>RAS <i class="fa fa-file-pdf-o"></i></b>
+                        </span>
+                    </a>
+                    <a class="btn btn-default" href="@hotLinks.Find(x => x.name == "flickr").url" target="_blank"
+                       onClick="ga('send', 'event', { eventCategory: 'Photos', eventAction: 'Clicked', eventLabel: 'Flickr Photos', eventValue: 1}); data">
+                        <span class="text-textColor">
+                            <b>ARCIC Photos <i class="fa fa-flickr"></i></b>
+                        </span>
+                    </a>
+                    <a class="btn btn-default" href="@hotLinks.Find(x => x.name == "youTube").url" target="_blank"
+                       onClick="ga('send', 'event', { eventCategory: 'Video', eventAction: 'Play', eventLabel: 'youTube adaptingthearmy playlist', eventValue: 1}); data">
+                        <span class="text-textColor">
+                            <b>Playlist <i class="fa fa-youtube-play"></i></b>
+                        </span>
+                    </a>
+                    <a class="btn btn-default" href="@hotLinks.Find(x => x.name == "csm travers blog").url" target="_blank"
+                       onClick="ga('send', 'event', { eventCategory: 'Blog', eventAction: 'Click', eventLabel: 'CSM Traver&apos;s Blog', eventValue: 1}); data">
+                        <span class="text-textColor">
+                            <b>CSM Traver's Blog <i class="fa fa-external-link"></i></b>
+                        </span>
+                    </a>
+                    <a class="btn btn-default" href="../App_Documents/AWA.pdf" target="_blank"
+                       onClick="ga('send', 'event', { eventCategory: 'Document', eventAction: 'Download', eventLabel: 'AWA PDF', eventValue: 1}); data">
+                        <span class="text-textColor">
+                            <b>JWA <i class="fa fa-download"></i></b>
+                        </span>
+                    </a>
+
+                    @if (dataChkPDF > DateTime.Now)
+                    {
+                        <a class="btn btn-default" href="/Event?Group=PDF">
+                            <span class="text-textColor">
+                                <b>PDF <i class="fa fa-microphone"></i></b>
+                            </span>
+                        </a>
+                    }
+                    @if (dataChkOPD > DateTime.Now)
+                    {
+                        <a class="btn btn-default" href="/Event?Group=OPD">
+                            <span class="text-textColor">
+                                <b>OPD <i class="fa fa-microphone"></i></b>
+                            </span>
+                        </a>
+                    }
+                    @if (dateChkDSS > DateTime.Now)
+                    {
+                        <a class="btn btn-default" href="/Event?Group=DSS">
+                            <span class="text-textColor">
+                                <b>DSS <i class="fa fa-microphone"></i></b>
+                            </span>
+                        </a>
+                    }
+                    <!--LPD Weekly-->
+                    <a class="btn btn-default" href='@("../LPD/ProfessionalReadings?articleSeries=" + currReading)'>
+                        <span class="text-primary"><b>Reading #@currReading <i class="fa fa-file-text-o"></i></b> </span>
+                    </a>
+                </div>
+            
+         </div>
+

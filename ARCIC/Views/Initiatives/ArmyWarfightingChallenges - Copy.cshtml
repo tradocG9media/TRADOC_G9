@@ -1,0 +1,131 @@
+﻿@using ARCIC.Models;
+
+@{
+    ViewBag.Title = "ArmyWarfightingChallenges";
+
+    var challenges = AWFChallenges.GetChallenges().ToList();
+}
+
+
+<div class="row">
+    <div class="">       
+        <div class="col-md-8">               
+                <h1 class="page-header"><b>Army Warfighting Challenges</b></h1>
+                <ol class="breadcrumb hidden-xs hidden-sm">
+                    <li><a href="/Home">Home</a> </li>
+                   <li class="active">Initiatives</li>
+                    <li class="active">Army Warfighting Challenges (AWFC)</li>
+                </ol>
+            </div>
+
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <!--Updates Message-->
+                    <div class="text-left">
+                        <div class=""><h3><kbd>Updates</kbd> As of 4/1/2017:</h3></div>
+                        <div>
+                            <b>Challenge Definitions:</b>
+                            <p>
+                                <span class="text-warning">No Changes</span>
+                            </p>
+
+                        </div>
+                        <div><b>Learning Demands:</b></div>
+                        <a href="#Num8"> <kbd>#8</kbd></a>,
+                        <a class="" href="#Num19"><kbd>#19</kbd></a>,
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Start of Army Warfighting Challenges 1-20-->
+
+            @foreach (var item in challenges)
+            {
+
+
+                        <!--If title != "" then display challenge-->
+                if (item.title == "" || item.number == 3 || item.number == 18)
+                {
+
+                }
+                else
+                {
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <!--If 'updated' == 1 then use <kbd> tag-->
+                            <h4 class="text-muted"><b><kbd>Warfighting Challenge #@item.number</kbd></b></h4>
+                            <h2><b>@item.title</b></h2>
+                            <p>@item.desc</p>
+                            <div>
+                                <b>Lead</b>
+                                <p>@item.lead</p>
+                            </div>
+                            <p class="divider-thin"></p>
+                            <div>
+                                <b>Learning Demands</b>
+                                <br />
+                                <ol>
+
+                                    @{
+                                        List<string> dList = new List<string>
+                            {
+                                item.demand1, item.demand2, item.demand3, item.demand4, item.demand5, item.demand6, item.demand7, item.demand8, item.demand9,
+                                item.demand10, item.demand11, item.demand12, item.demand13, item.demand14, item.demand15
+
+                            };
+
+                                        for (int i = 0; i < 14; i++)
+                                        {
+                                            if (dList[i] != "")
+                                            {
+                                                <li style="line-height:1.75em;">@Html.Raw(dList[i])</li>
+                                            }
+                                        }
+                                    }
+
+                                </ol>
+
+                            </div>
+                        </div>
+
+                    </div>
+                                            }
+
+                                        }
+
+        </div>
+
+        <!--sidebar-->
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading clearfix">
+                    <img class="img-responsive pull-left" src="../App_Imgs/App/Icons/milSuite_048.png" style="width: 30px;" />
+                    <h3 class="text-center"><b>&nbsp; Join the Community!</b></h3>
+                </div>
+                <img class="img-responsive" src="../App_Imgs/Content/mcmaster-01f.jpg" />
+                <div class="panel-body">
+                    <h4 class="text-center"><b>Army Warfighting Challenges</b></h4>
+                    <div>
+                        You can help develop these Warfighting Challenges by joining the AWFC discussion on <a href="https://www.milsuite.mil/book/groups/army-warfighting-challenge-awfc-group">milSuite</a>! Join individuals from across the Community of Practice contribute insights and solutions that will be heard by Army Senior Leaders. Join the community, and help build the Future Force today!
+                        <div>
+                            To learn more, visit our <span><a href="https://www.milsuite.mil/wiki/AWFCOpens">milWiki Site</a></span> in a new tab or window or,
+                            to collaborate, visit our <span><a href="https://www.milsuite.mil/book/groups/army-warfighting-challenge-awfc-group">milSuite</a> site.</span>
+                        </div>
+                        <ul class="list-inline text-muted"></ul>
+                    </div>
+                </div>
+                <div class="panel-footer text-center btn btn-group btn-block ">
+
+                    <div class="text-center"><a href="../App_Documents/AWFC-Current.pdf" class="btn btn-default" role="button" target="_blank">Download Flyer</a></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+  </div>

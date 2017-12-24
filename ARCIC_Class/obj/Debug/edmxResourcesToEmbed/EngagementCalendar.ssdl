@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="test01Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EngagementCalendar">
+    <Key>
+      <PropertyRef Name="eventID" />
+    </Key>
+    <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="start_time" Type="date" Nullable="false" />
+    <Property Name="end_time" Type="date" />
+    <Property Name="EventUrl" Type="nvarchar(max)" />
+    <Property Name="stamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityContainer Name="test01ModelStoreContainer">
+    <EntitySet Name="EngagementCalendar" EntityType="Self.EngagementCalendar" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

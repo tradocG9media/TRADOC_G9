@@ -1,0 +1,258 @@
+﻿@model IEnumerable<ARCIC.Models.EventModel>
+@using System.Xml;
+@using System.Linq;
+@using System.Xml.Linq;
+@using ARCIC.App_Code;
+@using ARCIC.Models;
+
+@{ 
+    var groupTag = "";   
+   
+    var EventGroup = ViewBag.EventGroup;
+    var Events = ViewBag.Events;
+    IEnumerable<EventModel> UpcomingEvents = ViewBag.UpcomingEvents;
+    int EventCount = UpcomingEvents.Count();
+    var RecentSpeakers = ViewBag.RecentSpeakers;
+    var ArchivedEvents = ViewBag.ArchivedEvents;
+   
+}
+
+  <br /><br />  
+
+<!--Determing Page Header-->
+<div class="row">
+<div class="col-md-12">                    
+    
+       @if(EventGroup == "DSS")
+        {
+            groupTag = "Distinguished Speaker Series";
+            //UpcomingEvents = EventModel.Event("DSS").Take(1);// Take last DSS entry
+            //RecentSpeakers = Events.Skip(skip).Take(1);
+           // ArchivedEvents = Events.Skip(ArchivesSkip).Take(7);            
+            
+        }
+       else if (EventGroup == "OPD")
+        {
+            groupTag = "Officer Professional Development";
+           // UpcomingEvents = EventModel.Event("OPD").Take(1);// Take last OPD entry
+           // RecentSpeakers = Events.Skip(skip).Take(1);
+           // ArchivedEvents = Events.Skip(ArchivesSkip).Take(7);            
+        }
+       else if (EventGroup == "PDF")
+        {
+            groupTag = "Professional Development Forums";               
+           // UpcomingEvents = EventModel.Event("PDF").Take(1);// Take last PDF entry
+            //RecentSpeakers = Events.Skip(skip).Take(1);
+            //ArchivedEvents = Events.Skip(ArchivesSkip).Take(7);            
+        }
+            <h1 class="page-header"><b>@groupTag</b></h1>
+            <ol class="breadcrumb hidden-xs hidden-sm">
+                <li><a href="/Home">Home</a></li>
+                <li class="active">Leadership Professional Development</li>
+                <li class="active">@EventGroup</li>
+            </ol> 
+</div>
+  
+<!--Display Upcoming Event Page Content-->
+    <div class="col-md-8">
+        @if (EventCount == 0)
+        {
+             <!--Empty Result Display Future Events Message -->           
+                <h3 class="mobile text-center"><b class="text-primary">Future Events</b></h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div>Future speakers and topics are planned for the @EventGroup. Details will be made available when completed. Please check back soon for updates.</div>
+                        <p>* All details subject to change. *</p>
+                    </div>
+                </div>   
+        }
+
+
+        <!--Determine if Event or Speaker-->
+        @foreach (var item in UpcomingEvents)
+        {            
+            if(EventCount > 0)
+            {              
+
+             if (groupTag == "Distinguished Speaker Series")
+                {                    
+                    <h3 class="mobile text-primary text-center"><b>Upcoming Speaker</b>  </h3> 
+                }
+                else
+                {
+                    <h3 class="mobile text-primary text-center"><b>Upcoming Event</b>  </h3>       
+                }        
+                
+            <div class="text-center">
+                <p class="text-center">@item.eventDate  |  @item.eventTime  |   @item.eventVenue |  @item.eventLocation </p>
+            </div>                         
+           
+            
+            <div class="panel panel-warning">
+                <div class="panel-heading clearfix">
+                    @if (item.speakerPhoto != "TBD")
+                    {
+                        <img class="imp-repsonsive img-rounded pull-left" src='@("../App_Imgs/LPD-Speakers/" + item.speakerPhoto + "t.jpg")' style="width: 100px; margin:9px;"/> 
+                    }
+                    else
+                    { <!--No photo--> }
+
+                    <h2 class="mobile"><b>@item.speakerName</b></h2>
+                    <div class="list-inline text-muted">
+                        <h4>
+                            @if (item.speakerBio != "TBD")
+                            {
+                                <a href="@item.speakerBio" target="_blank" onClick="ga('send', 'event', { eventCategory: 'Professional Development',  eventAction: '@(item.lpdGroup + "-Event clicked" + item.speakerName + " Bio")', eventLabel: '@(item.lpdGroup + item.speakerName + " Bio" + item.speakerBio)', eventValue: 1});">Biography <i class="fa fa-file-pdf-o"></i> </a>
+                                        
+                            }
+                            else
+                            {   <!--No Bio--> }
+
+                            @if (item.readAhead != "TBD")
+                            {
+                                <span class="text-muted">Read Ahead:</span>
+                                <a href="@item.readAhead" target="_blankRead">Document</a> 
+                            }
+                            else
+                            {<!--No readadhead--> }
+                        </h4>                        
+                    </div>
+                    <h4>@item.eventTitle</h4>
+                </div>
+
+                <div class="panel-body clearfix">
+                    <p class="pull-right">
+                        @if (item.eventPict != "TBD")
+                        {
+                            <img class="img-responsive img-rounded" src='@("../App_Imgs/LPD-Topics/" + item.eventPict + "t.jpg")' style="margin: 9px; width: 88px;" />
+                        }
+                        else
+                        {<!--No Photo--> }
+                    </p>
+                    <article>
+                        <p>@Html.Raw("<b>Synopsis:</b>" + item.eventDesc)</p>
+                    </article>
+                    <ul class="list-inline">                        
+                        <li><b>POC:</b> @item.pocName</li>
+                        <li><b><i class="fa fa-envelope"></i></b> <a href='@("mailto:" + item.pocEmail)'>Email</a></li>
+                        <li><b><i class="fa fa-phone"></i></b> @item.pocPhone</li>
+                    </ul>
+                </div>
+            </div>
+                                        
+            }           
+                   
+        }
+
+
+
+         <!--Recent--> 
+            @foreach (var i in RecentSpeakers)
+            {         
+            <!--Show Previoius Recent Item-->
+            <h3 class="text-center"><b class="text-muted">Recent Speaker</b></h3>
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        @if (i.speakerPhoto != "TBD")
+                        {
+                            <img class="imp-repsonsive img-rounded pull-left" src='@("../App_Imgs/LPD-Speakers/" + i.speakerPhoto + "t.jpg")' style=" width: 100px; margin:9px;"/>
+                        }
+                        else
+                        {<!--No photo-->}
+                        <h3 class="mobile"><b>@i.speakerName</b></h3>
+                        <div class="list-inline text-muted">
+                            <p><a href="@i.speakerBio" target="_blank">Biography <i class="fa fa-file-pdf-o"></i></a> </p>                            
+                        </div>
+                        <h4>@i.eventTitle</h4>
+                    </div>
+                    <div class="panel-body clearfix">
+                        <article>
+                            <p>@Html.Raw("<b>Synopsis:</b>" + Shorten.ShortStr(i.eventDesc, 1000))</p>
+                        </article>
+                    </div>
+                    <div class="list-group">                                               
+                        <div class="list-group-item clearfix text-muted"> @i.eventDate  |  @i.eventTime  |   @i.eventVenue |  @i.eventLocation 
+                            <div class="pull-right">@if (i.youTubeEmbedURL != "TBD")
+                                                    {
+                                      <a class="pull-right text-muted" href="@i.youTubeEmbedURL" onClick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: 'Clicked DSS @i.eventTitle / @i.speakerName', eventValue: 1});" target="_blank">Play <i class="fa fa-youtube-play fa-3x text-primary"></i></a>
+                                  }</div>
+                        </div>
+                    </div>
+                </div>
+            }      
+
+
+
+        <!--Archives-->
+          <div class="panel panel-default">
+                <div class="panel-heading clearfix">
+                    <h3><b class="text-muted">Archives</b></h3>
+                </div>
+                <div class="list-group clearfix">   
+                    @foreach (var q in ArchivedEvents)
+                    {
+                        if (Convert.ToDateTime(q.entDate) > global.archiveDate)
+                        {                           
+                            <div class="list-group-item clearfix">
+                                <img alt="@q.speakerName" class="card-img-top img-responsive img-rounded pull-left text-muted" src='@("../App_Imgs/LPD-Speakers/" + q.speakerPhoto + "t.jpg")' style="width:69px; margin:12px;"/>
+                                <h3 class="pull-left"><b>@q.speakerName</b></h3>
+
+                                <div>
+                                    @if (q.youTubeEmbedURL != "TBD")
+                                {
+
+                                    <h4 class="card-text">
+                                        <a href="@q.youTubeEmbedURL" target="_blank">
+                                            <span class="text-muted" style="padding-left:18px;">Play</span>
+                                            <i class="fa fa-youtube-play fa-2x"></i>
+                                        </a>
+                                    </h4>
+                                }
+                                else
+                                {
+                                    if (EventGroup == "Distinguished Speaker Series")
+                                    {
+                                        <h4 class="card-text text-center"><span class="text-warning">Video not available at this time</span> </h4>
+                                    }
+                                }
+                            </div>
+                                
+                                <div class="text-muted">
+                                    <h4>@q.eventTitle</h4>
+                                    @q.eventDate  |  @q.eventTime  |   @q.eventVenue |  @q.eventLocation
+                                </div>
+                                              
+                            </div>
+                        }
+                    }
+                </div>
+            </div>   
+    </div>
+
+<!--Sidebar-->
+@*<div class="col-md-4">
+    <h3 class="text-muted"><b>New Section Coming Soon</b></h3>
+    <div class="panel panel-default">
+        <div class=" list-group">
+            <div class="card list-group-item">
+                <div class="card-block clearfix">
+                    <img alt="Card image cap" class="card-img-top img-responsive img-rounded pull-left" src='@("../App_Imgs/LPD-Speakers/" + item.speakerPhoto + "t.jpg")' style="width:59px; margin:6px;">
+                    <h4><b></b></h4>
+                    <h5 class="card-title"><span class="text-muted">Thank you for your patience while updates and improvements are being made to ARCIC's website.</span></h5>
+                    <p class="card-text pull-right"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+
+   
+
+
+
+  </div>  
+
+

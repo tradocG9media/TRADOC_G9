@@ -1,0 +1,126 @@
+﻿@model IEnumerable<ARCIC.Models.Article>
+@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Exclusive";
+    var article = ViewBag.Data;
+        
+}
+
+
+
+<div class="row">
+         
+        <h1 class="page-header">ARCIC</h1>
+
+        <div class="col-md-12">
+               @foreach (var item in article)
+    {                    
+        
+              <!-- Content Article  -->
+              <div class="col-md-8 clearfix">
+                 @if (item.pType == "Exclusive")
+                     {
+                        <p><img class="center-block" src="~/App_Imgs/App/Icons/Exclusive_032.png" /></p>
+                     }
+
+                  <div class="panel panel-default">
+                      <img class="img-responsive thumbnail" src='@("../App_Imgs/Exclusives/" + item.imageURL + "f.jpg")' style="margin-bottom: 0px;" />
+                      <div class="panel-body clearfix"> 
+                          
+                          @if (item.artID == 86)
+                          {
+                              //Disclaimer 
+                              <img class="img-responsive" src="http://cdn.warontherocks.com/wp-content/themes/_m/img/logo.png" style="width:148px;"/>
+                              <h5>"This article was originally published at <a href="http://warontherocks.com" target="_blank">War on the Rocks</a> , an online magazine on strategy, defense, and foreign affairs.  It is reposted with permission."</h5>
+                            
+                          }                          
+                                                   
+                          <h1><b>@item.title</b></h1>
+                          @if (item.pGroup == "/App_Documents/Bios/Nadia-Schadlow.pdf")
+                          {
+                              <div class="text-muted">@item.author | <a href="@item.pGroup" target="_blank">Biography</a></div>
+                          }
+                          else
+                          {
+                            
+                          }
+                          @*<div class="cleafix">@item.pubDate <a class="btn btn-primary pull-right" href="@item.link" target="_blank">Mad Scientist Video Discussions</a></div>*@                          
+                        
+                            <hr />
+                         
+                          <p class="text-muted">@Html.Raw(item.description)</p>                    
+                      
+                      </div>
+                  </div>
+              </div>   
+        
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><b>Multimedia</b></h4></div>
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            @*<img class="img-responsive media-object" alt="Generic placeholder image" src='@("../App_Imgs/Exclusives/" + item.imageURL + "f.jpg")' style="width:66px;"/>*@
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        @*<h4 class="media-heading">Play Video <i class="fa fa-youtube-play"></i></h4>      *@    
+                        Coming            
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><b>Documents</b></h4></div>
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            @*<img class="img-responsive media-object" alt="Generic placeholder image" src='@("../App_Imgs/Exclusives/" + item.imageURL + "f.jpg")' style="width:66px;"/>*@
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        @*<h4 class="media-heading">Play Video <i class="fa fa-youtube-play"></i></h4>      *@    
+                        Coming            
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><b>News</b></h4></div>
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            @*<img class="img-responsive media-object" alt="Generic placeholder image" src='@("../App_Imgs/Exclusives/" + item.imageURL + "f.jpg")' style="width:66px;"/>*@
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        @*<h4 class="media-heading">Play Video <i class="fa fa-youtube-play"></i></h4>      *@    
+                        Coming            
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>       
+    }
+        </div>
+       @* <section class="col-md-4">
+            <h3>Recent Exclusives</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Comming</li>
+            </ul>
+        </section>*@
+    </div>
+

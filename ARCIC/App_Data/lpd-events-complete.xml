@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+DSS,OPD,PDF-->
+
+
+<lpd>
+  <event>
+    <lpdID>50</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>OPD</lpdGroup>
+    <entDate>11/7/2017 12:00:00</entDate>
+    <sortDate>20171107120000</sortDate>
+    <eventDate>Nov 07, 2017</eventDate>
+    <eventTime>1100-1200</eventTime>
+    <eventTitle>Advance Your Strategic Thinking Skills: Methods to Master the Building Blocks</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div> 
+      <p>Dr. Angela Karrasch, Chief, U.S. Army Research Institute (ARI), Fort Leavenworth Research Unit will conduct an LPD on how to "Advance Your Strategic Thinking Skills: Methods to Master the Building Blocks." Dr. Karrasch will examine techniques to ask smarter and more strategic questions, identify relationships, and imagine probable and possible futures.  </p>
+      </div>]]>
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Wylie Theater</eventVenue>
+    <eventPict>Angela-Karrasch-2017-11-07-OPD_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Dr. Angela Karrasch</speakerName>
+    <speakerTitle>Chief, Fort Leavenworth Research Unit  </speakerTitle>
+    <speakerOrg>U.S. Army Research Institute (ARI)</speakerOrg>
+    <speakerBio>../App_Documents/Bios/Angela-Karrasch-bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Angela-Karrasch_01</speakerPhoto>
+    <hostOrg>TRADOC Deputy Chief of Staff, G-3/5/7</hostOrg>
+    <pocName>MAJ Corey Hill</pocName>
+    <pocPhone>757-501-5388</pocPhone>
+    <pocEmail>corey.d.hill8.mil@mail.mil</pocEmail>
+    <readAhead>../App_Documents/ReadAhead/Karrasch-Readahead.pdf</readAhead>
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>49</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>OPD</lpdGroup>
+    <entDate>10/23/2017 12:00:00</entDate>
+    <sortDate>20171023120000</sortDate>
+    <eventDate>Oct 23, 2017</eventDate>
+    <eventTime>1400-1530</eventTime>
+    <eventTitle>TRADOC Civilian Training, Education and Leader Development</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div> 
+      <p>Mr. Dave Brinkley will conduct a presentation on training, education, and leader development opportunities for Department of Army Civilians within the organization.</p>
+      </div>]]>
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Wylie Theater</eventVenue>
+    <eventPict>Dave-Brinkley-2017-10-19_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Mr. Dave Brinkley, Senior Executive Service</speakerName>
+    <speakerTitle>Deputy Chief of Staff, G-1/4  </speakerTitle>
+    <speakerOrg>Headquarters, U.S. Army Training and Doctrine Command </speakerOrg>
+    <speakerBio>../App_Documents/Bios/Dave-Brinkley-bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Dave-Brinkley_01</speakerPhoto>
+    <hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+    <pocName>MAJ Corey Hill</pocName>
+    <pocPhone>757-501-5388</pocPhone>
+    <pocEmail>corey.d.hill8.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>48</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>PDF</lpdGroup>
+    <entDate>10/19/2017 12:00:00</entDate>
+    <sortDate>20171019120000</sortDate>
+    <eventDate>Oct 19, 2017</eventDate>
+    <eventTime>1000-1100</eventTime>
+    <eventTitle>How to Build a Soldier</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div> 
+      <p>A major provision of the National Defense Authorization Act (NDAA) of 2017 is to increase Army personnel by 28,000.  What does that all mean to TRADOC and how do we build Soldiers to the timelines as the NDAA mandates?  In this forum, Mr. Paschal will discuss the many intricacies and complexities of the building process as well the impacts across TRADOC and the Army.</p>
+      </div>]]>
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Morelli Auditorium</eventVenue>
+    <eventPict>David-Paschal-2017-10-19_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>David Paschal</speakerName>
+    <speakerTitle>Assistant Deputy Chief of Staff, G-3/5/7 and the Deputy G-37 for Training  </speakerTitle>
+    <speakerOrg>Headquarters, U.S. Army Training and Doctrine Command </speakerOrg>
+    <speakerBio>../App_Documents/Bios/SES-David-Paschal-bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>David-Paschal_01</speakerPhoto>
+    <hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+    <pocName>Pete Dolan </pocName>
+    <pocPhone>757-501-6357</pocPhone>
+    <pocEmail>peter.p.dolan.civ@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <youTubeEmbedURL>https://youtu.be/1fq61Lg8wYI</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>47</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>DSS</lpdGroup>
+    <entDate>10/26/2017 12:00:00</entDate>
+    <sortDate>20171026120000</sortDate>
+    <eventDate>Oct 26, 2017</eventDate>
+    <eventTime>1430-1600</eventTime>
+    <eventTitle>Leadership in a Complex World</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div> 
+      <p>ARCIC will host General (US Army Retired) Jack Keane, former Vice Chief of Staff of the Army, for the next Distinguished Speaker Series on 26 October 2017 at the Fort Eustis Club. The event will consist of a keynote address and discussion on "Leadership in a Complex World". This is a great opportunity to discuss leadership in our increasingly complex world with one of our Army’s most influential leaders.
+      We kindly ask any current or former senior leadership to RSVP to the Point of Contact below at joseph.c.bell2.mil@mail.mil not later than 19 October.
+      </p>
+      </div>]]>
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Fort Eustis Club</eventVenue>
+    <eventPict>TBD</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>General (U.S. Army Retired) John M. Keane</speakerName>
+    <speakerTitle>Senior Managing Director, Keane Advisors, LLC </speakerTitle>
+    <speakerOrg>Keane Advisors, LLC</speakerOrg>
+    <speakerBio>../App_Documents/Bios/Gen-John-Keane-bio2.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Gen-John-Keane_01</speakerPhoto>
+    <hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+    <pocName>MAJ Joe Bell </pocName>
+    <pocPhone>757-501-6369</pocPhone>
+    <pocEmail>joseph.c.bell2.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>46</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>OPD</lpdGroup>
+    <entDate>09/06/2017 12:00:00</entDate>
+    <sortDate>20170906120000</sortDate>
+    <eventDate>Sept 6, 2017</eventDate>
+    <eventTime>1300-1400</eventTime>
+    <eventTitle>Leaders vs. Managers</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div>   
+      Leaders vs. Managers:  defining the differences between the two, discussing the roles of each in the Army, and identifying how both are essential in high-performing organizations. 
+      </div>]]>
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Wylie Theater, Fort Eustis</eventVenue>
+    <eventPict>2017-09-06_OPD_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Major Davin E. Bridges</speakerName>
+    <speakerTitle>Doctor of Public Health and publisher of the monthly leadership pamphlet “Developing Yourself”  </speakerTitle>
+    <speakerOrg>US Army Training and Doctrine Command (TRADOC)</speakerOrg>
+    <speakerBio>../App_Documents/Bios/Maj-Davin-Bridges-bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Maj-Davin-Bridges_01</speakerPhoto>
+    <hostOrg>TRADOC Operations, Plans, and Training</hostOrg>
+    <pocName>Captain Matthew Spencer</pocName>
+    <pocPhone>757-501-5711</pocPhone>
+    <pocEmail>matthew.m.spencer9.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>45</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>OPD</lpdGroup>
+    <entDate>07/28/2017 12:00:00</entDate>
+    <sortDate>20170728120000</sortDate>
+    <eventDate>July 28, 2017</eventDate>
+    <eventTime>1100-1200</eventTime>
+    <eventTitle>Leadership and Decision Making</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div>The US Army Training and Doctrine Command’s Command Sergeant Major will conduct an interactive discussion on leadership and decision making.   
+      <div>
+      </div>]]>
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Wylie Theater, Fort Eustis</eventVenue>
+    <eventPict>2017-07-28_OPD_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Command Sergeant Major David Davenport</speakerName>
+    <speakerTitle>TRADOC Command Sergeant Major</speakerTitle>
+    <speakerOrg>US Army Training and Doctrine Command (TRADOC)</speakerOrg>
+    <speakerBio>../App_Documents/Bios/CSM-Davenport-bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>CSM-David-Davenport_01</speakerPhoto>
+    <hostOrg>TRADOC Deputy Chief of Staff, G-3/5/7</hostOrg>
+    <pocName>CPT Seth Fort</pocName>
+    <pocPhone>757-501-5715</pocPhone>
+    <pocEmail>seth.r.fort.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>44</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>DSS</lpdGroup>
+    <entDate>06/22/2017 12:00:00</entDate>
+    <sortDate>20170622120000</sortDate>
+    <eventDate>June 22, 2017</eventDate>
+    <eventTime>1430-1600</eventTime>
+    <eventTitle>US Strategy at the End of the Asian Century</eventTitle>
+    <eventDesc>
+      <![CDATA[ 
+      <div>
+      <b>Read Ahead:</b>
+      <div>
+      <a href="https://www.foreignaffairs.com/articles/china/2011-02-20/chinas-search-grand-strategy" target="_blank">www.foreignaffairs </a>| 
+      <a href="https://academic.oup.com/cjip/article/7/2/153/438673/From-Keeping-a-Low-Profile-to-Striving-for" target="_blank">academic.oup.com </a>| 
+      <a href="https://www.themonthly.com.au/issue/2015/september/1441029600/hugh-white/lines-sand" target="_blank">www.themonthly.com </a>| 
+      <a href="https://www.wsj.com/articles/asias-precarious-rise-1488559173" target="_blank">www.wsj.com </a>| 
+      <a href="https://www.nationalreview.com/magazine/2017-02-06-0000/donald-trump-china-policy" target="_blank">www.nationalreview.com </a>
+      </div>
+            
+      </div>]]>
+      The more important Asia has become on the global stage, the more glaring have its flaws become. The region is deeply fractured, threatened by economic stagnation, political upheaval and flashpoints that could trigger new wars. And in our more integrated global society, its troubles could quickly become everyone else’s. Much of the world’s attention in the coming decades will be devoted not just to accommodating Asia’s growing power but to managing and mitigating its growing risks.
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Fort Eustis Club</eventVenue>
+    <eventPict>2017-06-22_DSS_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Dr. Michael Auslin</speakerName>
+    <speakerTitle>Author and Director of Japan Studies</speakerTitle>
+    <speakerOrg>American Enterprise Institute (AEI)</speakerOrg>
+    <speakerBio>../App_Documents/Bios/Dr-Michael-Auslin.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Dr-Michael-Auslin_01</speakerPhoto>
+    <hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+    <pocName>Mr. Christopher Odachowski</pocName>
+    <pocPhone>(757) 501-5927</pocPhone>
+    <pocEmail>christopher.t.odachowski.civ@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>    
+    <youTubeEmbedURL>https://youtu.be/lHE2a8ogToY </youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>43</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>PDF</lpdGroup>
+    <entDate>04/21/2017 12:00:00</entDate>
+    <sortDate>20170421120000</sortDate>
+    <eventDate>April 21, 2017</eventDate>
+    <eventTime>1000-1130</eventTime>
+    <eventTitle>An Australian Perspective on Multi-Domain Battle</eventTitle>
+    <eventDesc>
+      Among many the subjects Dr. Palazzo will cover in this forum, much of the discussion will center on the many facets and intricacies of the question: When Joint is Not Enough, Is Multi-Domain the Answer?
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Morelli Auditorium</eventVenue>
+    <eventPict>2017-04-21-Australian-Military-Operations-In-Vietnam_PDF_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Dr. Albert Palazzo</speakerName>
+    <speakerTitle>Director</speakerTitle>
+    <speakerOrg>Australian Army Research Center</speakerOrg>
+    <speakerBio>../App_Documents/Bios/Dr-Albert-Palazzo-Bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Dr-Albert-Palazzo_01</speakerPhoto>
+    <hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+    <pocName>LTC David P. McLain III</pocName>
+    <pocPhone>(757) 501-5227</pocPhone>
+    <pocEmail>david.p.mclain.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <!--TBD-->
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+  <event>
+    <lpdID>42</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>OPD</lpdGroup>
+    <entDate>05/19/2017 12:00:00</entDate>
+    <sortDate>20170519120000</sortDate>
+    <eventDate>May 19, 2017</eventDate>
+    <eventTime>1300-1400</eventTime>
+    <eventTitle>Army Business and Budgeting Practices</eventTitle>
+    <eventDesc>
+      Lieutenant General (Retired) Spoehr, former Director, the Army Office of Business Transformation, will conduct an interactive discussion on the Army's business and budgeting practices.
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Wylie Theater</eventVenue>
+    <eventPict>2017-05-19-The-Heritage-Foundation_OPD_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>Mr. Thomas W. Spoehr </speakerName>
+    <speakerTitle>Director, Center for National Defense, The Heritage Foundation </speakerTitle>
+    <speakerOrg>N/A</speakerOrg>
+    <speakerBio>../App_Documents/Bios/Thomas-W-Spoehr-Bio.pdf</speakerBio>
+    <!--TBD-->
+    <speakerPhoto>Thomas-W-Spoehr_01</speakerPhoto>
+    <hostOrg>Training and Doctrine Command’s Operations, Plans, and Training</hostOrg>
+    <pocName>CPT Seth Fort</pocName>
+    <pocPhone>757-501-5715</pocPhone>
+    <pocEmail>seth.r.fort.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <!--TBD-->
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>
+	<!--
+  Speakers decided not speaker after McMaster's left.
+  <event>
+		<lpdID>43</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>04/07/2017 12:00:00</entDate>
+		<sortDate>20170407120000</sortDate>
+		<eventDate>7 April, 2017</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>The Power of Film</eventTitle>
+		<eventDesc>
+          Ms. Obaid-Chinoy will talk about the way her documentaries can be used and have been used to inspire change within culture and even the law.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club</eventVenue>
+		<eventPict>2017-04-07_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Sharmeen Obaid-Chinoy</speakerName>
+		<speakerTitle>Documentary Filmmaker </speakerTitle>
+		<speakerOrg>N/A</speakerOrg>
+		<speakerBio>../App_Documents/Bios/Sharmeen-Obaid-Chinoy-Bio.pdf</speakerBio>
+		--><!--TBD--><!--
+		<speakerPhoto>Sharmeen-Obaid-Chinoy_01</speakerPhoto>
+		<hostOrg>US Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Evelyn Spence</pocName>
+		<pocPhone>757-501-6361</pocPhone>
+		<pocEmail>evelyn.m.spence.civ@mail.mil</pocEmail>
+		<readAhead>https://en.wikipedia.org/wiki/Sharmeen_Obaid-Chinoy </readAhead>
+		--><!--TBD--><!--
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>42</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>04/27/2017 12:00:00</entDate>
+		<sortDate>20170427120000</sortDate>
+		<eventDate>April 27, 2017</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>A Life at War</eventTitle>
+		<eventDesc>
+          Lessons Learned in Four Decades from Vietnam to Operation Iraqi Freedom
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club</eventVenue>
+		<eventPict>2017-04-27_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Joseph L. Galloway </speakerName>
+		<speakerTitle>Senior military Correspondent and Best Selling Author </speakerTitle>
+		<speakerOrg>N/A</speakerOrg>
+		<speakerBio>../App_Documents/Bios/Joseph-Galloway.pdf</speakerBio>
+		--><!--TBD--><!--
+		<speakerPhoto>Joseph-Galloway_01</speakerPhoto>
+		<hostOrg>US Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Troy Frye</pocName>
+		<pocPhone>757-501-5923</pocPhone>
+		<pocEmail>troy.a.frye.civ@mail.mil</pocEmail>
+		<readAhead>http://www.weweresoldiers.net</readAhead>
+		--><!--TBD--><!--
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>-->
+  
+  <event>
+    <lpdID>41</lpdID>
+    <frozen>0</frozen>
+    <archive>0</archive>
+    <lpdGroup>OPD</lpdGroup>
+    <entDate>03/22/2017 12:00:00</entDate>
+    <sortDate>20170322120000</sortDate>
+    <eventDate>March 22, 2017</eventDate>
+    <eventTime>1100-1200</eventTime>
+    <eventTitle>Leadership and Decision Making</eventTitle>
+    <eventDesc>
+      Colonel (Retired) Reeder will conduct an interactive discussion on leadership and decision making, while reflecting on his 30 years of service as an Army Aviator and his time as a Prisoner of War.
+    </eventDesc>
+    <eventLocation>Fort Eustis, VA</eventLocation>
+    <eventVenue>Wylie Theater</eventVenue>
+    <eventPict>2017-01-30_OPD_01</eventPict>
+    <eventDiscussion>Yes</eventDiscussion>
+    <eventQandA>Yes</eventQandA>
+    <speakerName>William S. Reeder Jr., </speakerName>
+    <speakerTitle>Ph.D., Colonel, U.S. Army (Retired) and author</speakerTitle>
+    <speakerOrg>N/A</speakerOrg>
+    <speakerBio>../App_Documents/Bios/COL-Retired-William-Reeder-Bio.pdf</speakerBio>Asy
+    <!--TBD-->
+    <speakerPhoto>William-Reeder_01</speakerPhoto>
+    <hostOrg>Army Training and Doctrine Command’s Operations, Plans and Training</hostOrg>
+    <pocName>CPT Seth Fort</pocName>
+    <pocPhone>757-501-5801</pocPhone>
+    <pocEmail>seth.r.fort.mil@mail.mil</pocEmail>
+    <readAhead>TBD</readAhead>
+    <!--TBD-->
+    <youTubeEmbedURL>TBD</youTubeEmbedURL>
+    <comment>Empty</comment>
+  </event>	
+	<event>
+		<lpdID>40</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>01/26/2017 12:00:00</entDate>
+		<sortDate>20170126120000</sortDate>
+		<eventDate>January 26, 2017</eventDate>
+		<eventTime>1100-1200</eventTime>
+		<eventTitle>Rapid Equipping Force (REF)</eventTitle>
+		<eventDesc>
+			The REF was established as a quick reaction capability to work directly with units to identify urgent capability gaps and provide non-standard equipment solutions. In order to best serve the operational force, the REF is working with forward units to predict potential challenges the Army may face in new environments. The REF connects Soldiers with scientists and engineers to provide immediate, in-theater solutions.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Wylie Theater</eventVenue>
+		<eventPict>2017-01-26_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>LTC Steven Delgado</speakerName>
+		<speakerTitle>REF Outreach and Assessments Chief</speakerTitle>
+		<speakerOrg>Rapid Equipping Force, US Army Training and Doctrine Command</speakerOrg>
+		<speakerBio>TBD</speakerBio>Asy
+		<!--TBD-->
+		<speakerPhoto>LTC-Steven-Delgado_01</speakerPhoto>
+		<hostOrg>Army Training and Doctrine Command’s Operations, Plans and Training</hostOrg>
+		<pocName>CPT Seth Fort</pocName>
+		<pocPhone>757-501-5801</pocPhone>
+		<pocEmail>seth.r.fort.mil@mail.mil</pocEmail>
+		<readAhead>TBD</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>39</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>12/01/2016 12:00:00</entDate>
+		<sortDate>20161201120000</sortDate>
+		<eventDate>December 1, 2016</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>Strategies of Conquest and Control in the Sown, the Steppe, and the Wilderness: Landscapes, Logistics, and Governance </eventTitle>
+		<eventDesc>
+			Military historians and military planners tend to focus on military operations associated with initial conquest:  marches, battles, sieges, perhaps raids, devastations, etc.  For most of history, such "operations" were intended to expand the resource base of the aggressor. They were about conquest and the ensuing rearrangement of political authority that benefited from that resource base.  Historians and military planners have spent less time thinking about how a conquering society accomplishes that rearrangement and resource extraction.  How does the winner manage or control those territories or peoples after an initial military victory?  Furthermore, most military historians examine conquest by and of hierarchical sedentary agricultural societies, mostly states.  This presentation compares agricultural states to tribal societies on the steppe and in the wilderness, and examines how the landscapes affect the logistics of conquest and control.  In the end, the strong role of the military in a post-conquest rearrangement of political authority means that logistical systems are key to shaping strategies of control.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club </eventVenue>
+		<eventPict>2016-10-18_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Wayne E. Lee, PhD</speakerName>
+		<speakerTitle>Professor of History </speakerTitle>
+		<speakerOrg>University of North Carolina</speakerOrg>
+		<speakerBio>../App_Documents/Bios/Wayne-Lee-biography.pdf </speakerBio>Asy
+		<!--TBD-->
+		<speakerPhoto>Dr-Wayne-E-Lee_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Lieutenant Colonel Matt Rasmussen</pocName>
+		<pocPhone>(757) 501-6371</pocPhone>
+		<pocEmail>matthew.s.rasmussen.mil@mail.mil</pocEmail>
+		<readAhead>TBD</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>https://youtu.be/w6WiMpqjHZ8</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>38</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>11/17/2016 12:00:00</entDate>
+		<sortDate>20161117120000</sortDate>
+		<eventDate>November 17, 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Promotion Boards </eventTitle>
+		<eventDesc>
+			This presentation will outline the processes and procedures behind an Army promotion board and provide an informed prospective for Soldiers who may soon be assessed by a board’s proceedings.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Wylie Theater</eventVenue>
+		<eventPict>2016-09-19_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Colonel Nathan Hunsinger</speakerName>
+		<speakerTitle>Director, Training Operations Management Activity</speakerTitle>
+		<speakerOrg>Training and Doctrine Command’s Operations, Plans, and Training</speakerOrg>
+		<speakerBio>../App_Documents/Bios/COL-Hunsinger-Bio.pdf </speakerBio>Asy
+		<!--TBD-->
+		<speakerPhoto>COL-Nathan-Hunsinger_01</speakerPhoto>
+		<hostOrg>Training and Doctrine Command</hostOrg>
+		<pocName>CPT Seth Fort</pocName>
+		<pocPhone>757-501-5801</pocPhone>
+		<pocEmail>seth.r.fort.mil@mail.mil</pocEmail>
+		<readAhead>TBD</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>37</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>09/15/2016 12:00:00</entDate>
+		<sortDate>20160915120000</sortDate>
+		<eventDate>September 15, 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Army University Overview </eventTitle>
+		<eventDesc>
+			This presentation will encompass an overview of The Army University establishment, organizational structure, responsibilities across the learning enterprise and key initiatives.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2016-09-15_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Colonel Greg Penfield</speakerName>
+		<speakerTitle>Vice Provost for Learning Systems</speakerTitle>
+		<speakerOrg>The Army University</speakerOrg>
+		<speakerBio>../App_Documents/Bios/COL-Gregg-Penfield.pdf </speakerBio>Asy
+		<!--TBD-->
+		<speakerPhoto>Col-Gregg-Penfield_01</speakerPhoto>
+		<hostOrg>Training and Doctrine Command’s Operations, Plans, and Training</hostOrg>
+		<pocName>Major Corey Hill</pocName>
+		<pocPhone>757-501-5806</pocPhone>
+		<pocEmail>corey.d.hill8.mil@mail.mil</pocEmail>
+		<readAhead>TBD</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>36</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>PDF</lpdGroup>
+		<entDate>09/23/2016 12:00:00</entDate>
+		<sortDate>20160830120000</sortDate>
+		<eventDate>September 23, 2016</eventDate>
+		<eventTime>1500-1630</eventTime>
+		<eventTitle>The New German Security Policy and the Future Role of the Bundeswehr</eventTitle>
+		<eventDesc>
+			The 2016 White Paper on Security Policy and the Future of the Bundeswehr is the key German policy document on security policy.  It is a strategic review of the current state and future course of German security policy.  It is thus the principle guideline for security policy decisions and measures of the country.  It establishes a framework in terms of concepts and content and provides starting points for strengthening the whole-of-government approach and developing further ministerial strategies.  The White Paper defines Germany’s ambition to play an active and substantial role in security policy.  It reflects Germany’s identity and understanding of security policy.  On the basis of German values, national interests and an analysis of the security environment, it defines Germany’s strategic priorities and translates them into key areas of engagement for German security policy.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2016-08-30_PDF_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Brig Gen Carsten Breuer</speakerName>
+		<speakerTitle>Director, White Paper 2016 on Security Policy and the Future of the Bundeswehr </speakerTitle>
+		<speakerOrg>Federal Republic of Germany, Ministry of Defence</speakerOrg>
+		<speakerBio>../App_Documents/Bios/BG_Breuer_Bio.pdf </speakerBio>
+		<!--TBD-->
+		<speakerPhoto>BG-Carsten-Breuer_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Terrance M. Stenger</pocName>
+		<pocPhone>757-501-5320</pocPhone>
+		<pocEmail>terrance.m.stenger.civ@mail.mil</pocEmail>
+		<readAhead>../App_Documents/LPD/Read-Ahead-German-Government-2016-White-Paper.pdf</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>35</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>08/18/2016 12:00:00</entDate>
+		<sortDate>20160818120000</sortDate>
+		<eventDate>18 August 2016, 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>The Army’s Asymmetrical Warfare Group</eventTitle>
+		<eventDesc>
+			This presentation will be an overview and introduction to the Army’s Asymmetrical Warfare Group (AWG) to include its operational structure and
+			framework, AWG's role in supporting the Army in complex environments and
+			the evolution of AWG. The presentation will finish with a 15 minute discussion.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2016-08-18_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Major Rick Luce </speakerName>
+		<speakerTitle>Group Operations Officer </speakerTitle>
+		<speakerOrg>Asymmetrical Warfare Group</speakerOrg>
+		<speakerBio>TBD</speakerBio>
+		<!--TBD-->
+		<speakerPhoto>TBD</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Major Corey D. Hill</pocName>
+		<pocPhone>757-501-5806</pocPhone>
+		<pocEmail>corey.d.hill8.mil@mail.mil</pocEmail>
+		<readAhead>TBD</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>34</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>08/19/2016 12:00:00</entDate>
+		<sortDate>20160819120000</sortDate>
+		<eventDate>August 19, 2016</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>Enabling Practitioner-driven Innovation: Balancing Genius with Mastery</eventTitle>
+		<eventDesc>
+			The majority of research about new innovation models focus upon generating revolutionary grand design shifts as a way to assure military dominance. Left largely under-appreciated in current dialogue, however, are the accompanying processes of adaptation and improvisation and their impressive roles in driving military change. In particular, new innovation models overemphasize the role of "private industry genius" without examining the means
+			by which preexisting organizational knowledge is required to transform contemporary practices with future war fighting potential.  Drawing on historical and contemporary case studies across the U.S. Armed Services, this presentation invites consideration of the relationship among these processes in order to try to rebalance the discourse on military innovation.
+
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club</eventVenue>
+		<eventPict>2016-08-19_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Dr. Nina Kollars</speakerName>
+		<speakerTitle>Assistant Professor of Government</speakerTitle>
+		<speakerOrg>Franklin &amp; Marshall College</speakerOrg>
+		<speakerBio>/App_Documents/Bios/Nina-Kollars.pdf </speakerBio>
+		<!--TBD-->
+		<speakerPhoto>Mrs-Nina-Kollars_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Lieutenant Colonel Lori A. Sessano</pocName>
+		<pocPhone>(757) 501-5748</pocPhone>
+		<pocEmail>lori.a.sessano@mail.mil</pocEmail>
+		<readAhead>../App_Documents/LPD/Readahead-Dr-Nina-Kollars.pdf</readAhead>
+		<!--TBD-->
+		<youTubeEmbedURL>https://youtu.be/gmpgt0QCOok</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>The 
+	<event>
+		<lpdID>33</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>07/28/2016 12:00:00</entDate>
+		<sortDate>20160728120000</sortDate>
+		<eventDate>July 28, 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Operational Environment and Threat</eventTitle>
+		<eventDesc>
+			This presentation will cover current threats across the globe as well as a brief projection of the future operational environment. It will feature topics ranging from the Islamic State to the Zeka virus to robotics. The presentation will be at the UNCLASSIFIED//FOUO level.
+
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2016-07-28_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Luke Shabro</speakerName>
+		<speakerTitle>Intelligence Analyst</speakerTitle>
+		<speakerOrg>US Army Training and Doctrine Command G-2</speakerOrg>
+		<speakerBio>../App_Documents/Bios/Luke-Shabro.pdf </speakerBio><!--TBD-->
+		<speakerPhoto>Mr-Luke-Shabro_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Major McKeal Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail>mckeal.l.rodgers.mil@mail.mil</pocEmail>
+		<readAhead>../App_Documents/LPD/OPD_Threat_Briefing_UNCLASS.pdf</readAhead><!--TBD-->
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>32</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>06/02/2016 12:00:00</entDate>
+		<sortDate>20160602120000</sortDate>
+		<eventDate>June 02, 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Pacific Pathways and Thoughts on Leadership</eventTitle>
+		<eventDesc>
+			BG Robert Ulses will be leading a discussion on Pacific Pathways and its role in supporting US Pacific Command’s objectives and Army readiness.  He will also discuss leadership with the group.
+
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2016-06-02_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Brigadier General Robert J. Ulses</speakerName>
+		<speakerTitle>Deputy Chief of Staff for Operations, Plans, and Training</speakerTitle>
+		<speakerOrg>US Army Training and Doctrine Command (TRADOC) G-3/5/7</speakerOrg>
+		<speakerBio>../app_Documents/Bios/Ulses-bio.pdf</speakerBio>
+		<speakerPhoto>Ulses_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Major McKeal "MIKE" Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail></pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>31</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>06/17/2016 12:00:00</entDate>
+		<sortDate>20160617120000</sortDate>
+		<eventDate>June 17, 2016</eventDate>
+		<eventTime>0900-1030</eventTime>
+		<eventTitle>The Evil We Know: The Future of Putin's Russia and Russia Without Putin</eventTitle>
+			<eventDesc>
+				A new world began when the Iron Curtain fell. In the years that
+				followed, celebration and unification masked growing complacency in the
+				West. Russia failed to build democratic institutions strong enough to
+				outlast its first elected president and just nine years after the USSR
+				ceased to exist, Russia elected Vladimir Putin. Sixteen years later, Putin
+				continues to challenge the free world wherever he can, from Ukraine to
+				Syria. Meanwhile, he is turning Russia into a possibly dangerous regime-one
+				that is increasingly well-funded with active conventional forces. But there
+				are various groups that could act against him should the opportunity arise.
+				Garry Kasparov will discuss Putin's motivations, goals, and tactics, and
+				what the most likely scenarios are for a post-Putin future in Russia.
+
+			</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club</eventVenue>
+		<eventPict>2016-06-17_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Garry Kasparov</speakerName>
+		<speakerTitle>World Chess Champion for 22 Years and Author</speakerTitle>
+		<speakerOrg></speakerOrg>
+		<speakerBio>../app_Documents/Bios/Garry-Kasparov-bio.pdf</speakerBio>
+		<speakerPhoto>Garry-Kasparov_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC), Lieutenant General H. R. McMaster</hostOrg>
+		<pocName>Ms. Evelyn Spence</pocName>
+		<pocPhone>757-501-6361</pocPhone>
+		<pocEmail>evelyn.m.spence.civ@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>30</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>03/24/2016 12:00:00</entDate>
+		<sortDate>20160324120000</sortDate>
+		<eventDate>24 March 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>The Army Gender Integration Implementation Plan	</eventTitle>
+		<eventDesc>
+			The presentation will lay out how the Army will ensure the best qualified Soldier, regardless of gender, will have the opportunity to serve in any Military Occupational Specialty (MOS).
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium Building 950</eventVenue>
+		<eventPict>2016-03-11_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Jack Myers</speakerName>
+		<speakerTitle>TRADOC Soldier2020 Task Force</speakerTitle>
+		<speakerOrg>Army Training and Doctrine Command (TRADOC)</speakerOrg>
+		<speakerBio></speakerBio>
+		<speakerPhoto>Mr-Jack-Myers_01</speakerPhoto>
+		<hostOrg>Training and Doctrine Command’s Operations, Plans, and Training</hostOrg>
+		<pocName>Major McKeal Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail>mckeal.l.rodgers.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>29</lpdID>
+		<frozen>1</frozen>
+		<archive>0</archive>
+		<lpdGroup>PDF</lpdGroup>
+		<entDate>02/05/2016 12:00:00</entDate>
+		<sortDate>20160205143000</sortDate>
+		<eventDate>5 February 2016</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>ARCIC Command Information Brief</eventTitle>
+		<eventDesc>
+			LTG McMaster will discuss with his work force several key topics to include ARCICs new Vision/Mission/Intent statements, the state of the ARCIC, the world state of affairs and key tasks to accomplish in the next several months.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club </eventVenue>
+		<eventPict>ARCIC_PDF_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Lieutenant General H. R. McMaster</speakerName>
+		<speakerTitle>Director</speakerTitle>
+		<speakerOrg>Army Capabilities Integration Center (ARCIC)</speakerOrg>
+		<speakerBio>http://www.arcic.army.mil/Leadership/arcichq-dir-bio.aspx</speakerBio>
+		<speakerPhoto>McMaster-HR-LTG-ASU_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Major Leilani Packett</pocName>
+		<pocPhone>(757) 501-5481</pocPhone>
+		<pocEmail>Leilani.c.packett.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>28</lpdID>
+		<frozen>1</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>04/08/2016 12:00:00</entDate>
+		<sortDate>20160408120000</sortDate>
+		<eventDate>8 April 2016</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>
+			Back to the Future: Stability Operations and Defense Support of Civil Authorities (DSCA)
+
+		</eventTitle>
+		<eventDesc>
+			The Army has executed more stability and DSCA missions than any other.  In order to consolidate gains to produce strategic outcomes, the stability phase of operations is
+			crucial.  Many of the skills used in stability operations are the same as will be required in DSCA.  These missions rely inherently on the citizen-soldier nature of the US Army, and increasingly on the capabilities resident in the Reserve Components.
+
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club</eventVenue>
+		<eventPict>2016-02-02_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Major General Ricky L. Waddell </speakerName>
+		<speakerTitle>Commander</speakerTitle>
+		<speakerOrg>76th Operational Response Command, Salt Lake City, Utah</speakerOrg>
+		<speakerBio>../app_Documents/Bios/MG-Waddell-BIO-76th-ORC.pdf</speakerBio>
+		<speakerPhoto>MG-Rickey-L-Waddell_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Angela M. DiGiosaffatte</pocName>
+		<pocPhone>(757) 501-5341</pocPhone>
+		<pocEmail>angela.m.digiosaffatte.civ@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>https://youtu.be/jkjFLXjDKbc</youTubeEmbedURL>
+
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>27</lpdID>
+		<frozen>1</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>02/23/2016 12:00:00</entDate>
+		<sortDate>20160223120000</sortDate>
+		<eventDate>23 February 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>
+			Navigating the Ethical Minefield - A Primer for Commanders and Staff
+		</eventTitle>
+		<eventDesc>
+			This will be a 1-hour presentation covering fundamental ethical
+			issues commonly encountered by Commanders and their Staff.  Its purpose
+			is to prepare officers to address common concerns and spot potential issues in
+			performance of their current duties and follow-on assignments.  A group of
+			attorneys will also collaborate to deliver an interactive briefing and address questions
+			from the audience.
+		</eventDesc>
+		<eventLocation>Fort Eustis, Virginia</eventLocation>
+		<eventVenue>Morelli Auditorium Building 950</eventVenue>
+		<eventPict>2016-01-26-OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Captain Adam J. Bester</speakerName>
+		<speakerTitle>Contract and Fiscal Law Attorney</speakerTitle>
+		<speakerOrg>Office of the Staff Judge Advocate</speakerOrg>
+		<speakerBio></speakerBio>
+		<speakerPhoto>CPT-Adam-J-Bester_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command</hostOrg>
+		<pocName>Major McKeal Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail>mckeal.l.rodgers.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>26</lpdID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>04/10/2016 12:00:00</entDate>
+		<sortDate>20160410163000</sortDate>
+		<eventDate> </eventDate>
+		<eventTime>Please check back with us at a later date.</eventTime>
+		<eventTitle>
+			Goldwater-Nichols Revisited
+		</eventTitle>
+		<eventDesc>
+		Given that 30 years have transpired since initial implementation of the Goldwater-Nichols reforms, and with our hard-earned experience in two more recent long-term conflicts, General (Retired) Schwartz will examine what adaptations are called for in current defense organization, acquisition processes and personnel policy.
+		</eventDesc>
+		<eventLocation>Fort Eustis, Virginia</eventLocation>
+		<eventVenue>Fort Eustis Club (FEC)</eventVenue>
+		<eventPict>2015-12-10-DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>General Norton A. Schwartz, US Air Force (Retired) 19th Chief of Staff of the Air Force</speakerName>
+		<speakerTitle>President and CEO</speakerTitle>
+		<speakerOrg>Business Executives for National Security (BENS)</speakerOrg>
+		<speakerBio>../app_Documents/Bios/Schwartz_Norton.pdf</speakerBio>
+		<speakerPhoto>Gen-Norton-Schwartz_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center</hostOrg>
+		<pocName>Major Leilani Packett</pocName>
+		<pocPhone>(757) 501-5481</pocPhone>
+		<pocEmail>Leilani.c.packett.mil@mail.mil</pocEmail>
+		<readAhead>http://www.armed-services.senate.gov/imo/media/doc/Schwartz_12-10-15.pdf</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>25</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>12/15/2015 12:00:00</entDate>
+		<sortDate>20151215130000</sortDate>
+		<eventDate>December 15, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>
+			Russo-Ukrainian War Lessons Learned
+		</eventTitle>
+		<eventDesc>
+		This Officer Professional Development will cover lessons learned from the conflict and how recent events impact US interests.	
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-12-03-OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Dr. Phillip A. Karber</speakerName>
+		<speakerTitle>President, The Potomac Foundation and Professor, Georgetown University</speakerTitle>
+		<speakerOrg></speakerOrg>
+		<speakerBio>http://www.thepotomacfoundation.org/experts/phillip-a-karber-2/</speakerBio>
+		<speakerPhoto>Dr-Phillip-Karber_01</speakerPhoto>
+		<hostOrg>Training and Doctrine Command’s Operations, Plans, and Training</hostOrg>
+		<pocName>Major McKeal Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail>mckeal.l.rodgers.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>24</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>01/27/2016 12:00:00</entDate>
+		<sortDate>20160127120000</sortDate>
+		<eventDate>January 27, 2016</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>
+			Promotion Board Proceedings
+		</eventTitle>
+		<eventDesc>
+			This Officer Professional Development session will serve to increase officer's knowledge on the promotion board process; from board member identification and instructions to the identification of selectee/non-selects for promotion. Upon completion of this session officers will know what actions to take to ensure their files are prepared to be reviewed by board members.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-10-20-OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>LTC Ricardo L. Sierra-Guzman</speakerName>
+		<speakerTitle>Commander, Fort Eustis-Story Army Support Activity</speakerTitle>
+		<speakerOrg>Fort Eustis/Joint Base Langley-Eustis, VA</speakerOrg>
+		<speakerBio>../app_Documents/Bios/SierraGuzman-Ricardo.pdf</speakerBio>
+		<speakerPhoto>SierraGuzman-Ricardo_01</speakerPhoto>
+		<hostOrg>Training and Doctrine Command’s Operations, Plans, and Training</hostOrg>
+		<pocName>Major McKeal Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail>mckeal.l.rodgers.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>	
+	<event>
+		<lpdID>23</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>10/20/2015 12:00:00</entDate>
+		<sortDate>20151019163000</sortDate>
+		<eventDate>October 20, 2015</eventDate>
+		<eventTime>1200-1330</eventTime>
+		<eventTitle>
+			The Army's Transition from Army Force Generation (ARFORGEN) to Sustainable Readiness Model (SRM)
+		</eventTitle>
+		<eventDesc>
+			This Officer Professional Development will cover current initiatives, how the Army intends to shift from the ARFORGEN readiness model to SRM and an overview of SRM.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-10-08-OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Chris Barbour</speakerName>
+		<speakerTitle>Senior Plans Analyst</speakerTitle>
+		<speakerOrg>Army Training and Doctrine Command (TRADOC)</speakerOrg>
+		<speakerBio>../app_Documents/Bios/Barbour-Christopher.pdf</speakerBio>
+		<speakerPhoto>Christopher-Barbour_01</speakerPhoto>
+		<hostOrg>Training and Doctrine Command’s Operations, Plans, and Training</hostOrg>
+		<pocName>Major McKeal Rodgers</pocName>
+		<pocPhone>757-501-5805</pocPhone>
+		<pocEmail>mckeal.l.rodgers.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>22</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>PDF</lpdGroup>
+		<entDate>10/02/2015 12:00:00</entDate>
+		<sortDate>20151002163000</sortDate>
+		<eventDate>2 October 2015</eventDate>
+		<eventTime>1300-1500</eventTime>
+		<eventTitle>
+			Life After the Army – Retirement Advice
+		</eventTitle>
+		<eventDesc>
+			Lieutenant General (Retired) Kathleen M. Gainey and Brigadier General (Retired) Edward P. Donnelly will provide retirement advice about life after the Army through an interactive session of dialogue followed by a Q&amp;A Session.
+
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-09-28-PDF_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Lieutenant General (Retired) Kathleen M. Gainey and Brigadier General (Retired) Edward P. Donnelly</speakerName>
+		<speakerTitle></speakerTitle>
+		<speakerOrg></speakerOrg>
+		<speakerBio></speakerBio>
+		<speakerPhoto>Ret-Kathleen-Gainey-and-Ret-Edward-Donnelly_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Major NaTasha M. Wayne</pocName>
+		<pocPhone>(757) 501-6323</pocPhone>
+		<pocEmail>Natasha.m.wayne.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>21</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>9/17/2015 12:00:00</entDate>
+		<sortDate>20150917130000</sortDate>
+		<eventDate>September 17, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>What is Joint Professional Military Education (JPME) and why do I need it?</eventTitle>
+		<eventDesc>Mr. Chris Rizzo, will lead a discussion focused on education Officers on what JPME courses are available, what and why it is important for Officers, what JPME courses lead to what sort of “joint” assignments, as well as what is coming in the future. This OPD will help Officers better chart their personal military career path as well as give them the knowledge to assist junior Officers in mapping their career paths during mentoring and counseling sessions.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-09-17-OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Chris Rizzo </speakerName>
+		<speakerTitle>Army War College and Senior Service College Program Manager</speakerTitle>
+		<speakerOrg>: Office of the Deputy Chief of Staff, Headquarters Department of the Army Training Directorate (G-37)</speakerOrg>
+		<speakerBio></speakerBio>
+		<speakerPhoto>Mr-Rizzo-Chris_01</speakerPhoto>
+		<hostOrg>Headquarters, Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>McKeal “Mike” Rodgers</pocName>
+		<pocPhone>(757) 501-5805</pocPhone>
+		<pocEmail>Mckeal.l.rodgers.mil@mail.mil </pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>20</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>PDF</lpdGroup>
+		<entDate>04/28/2015 12:00:00</entDate>
+		<sortDate>20150428163000</sortDate>
+		<eventDate>April 28, 2015</eventDate>
+		<eventTime>1530-1700</eventTime>
+		<eventTitle>
+			Problems with the Requirements Process and Opportunities to Improve
+		</eventTitle>
+		<eventDesc>
+			</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>0</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. James C. Cooke</speakerName>
+		<speakerTitle>Assistant Deputy Under Secretary of the Army Test and Evaluation</speakerTitle>
+		<speakerOrg>Headquarters, Department of the Army</speakerOrg>
+		<speakerBio>http://www.amsaa.army.mil/TECMIPT/docs/MrCooke-bio.pdf</speakerBio>
+		<speakerPhoto>Mr-James-Cooke_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Lieutenant Colonel Corey B. Chasse</pocName>
+		<pocPhone>(757) 501-6380</pocPhone>
+		<pocEmail>corey.b.chasse.mil@mail.mil</pocEmail>
+		<readAhead></readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>19</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>11/06/2015 12:00:00</entDate>
+		<sortDate>20151106163000</sortDate>
+		<eventDate>November 6, 2015</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>
+			Ghost Fleet: What Can Fiction Tell Us About the Future of War
+		</eventTitle>
+		<eventDesc>
+			The United States, China, and Russia eye each other across a 21st century version of the Cold War. But what if it ever turned hot? In the spirit of early Tom Clancy, Ghost Fleet is a page-turning imagining of how World War III might play out. But what makes it even more notable is how the book smashes together the techno thriller and nonfiction genres. It is a novel, but with 400 endnotes, showing how every trend and technology featured in book— no matter how sci-fi it may seem — is real. It lays out the future of technology and war, while following a global cast of characters fighting at sea, on land, in the air and in two new places of conflict: outer space and cyberspace. Author P.W. Singer will speak to ARCIC about the book and its lessons for the future of war.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club</eventVenue>
+		<eventPict>2015-08-31_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>P. W. Singer</speakerName>
+		<speakerTitle>Author, Strategist and Senior Fellow</speakerTitle>
+		<speakerOrg>New America Foundation</speakerOrg>
+		<speakerBio>http://www.pwsinger.com/biography.html </speakerBio>
+		<speakerPhoto>Mr-Peter-W-Singer_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Mr. Peter P. Dolan</pocName>
+		<pocPhone>(757) 501-6357</pocPhone>
+		<pocEmail>peter.p.dolan.civ@mail.mil</pocEmail>
+		<readAhead>http://www.ghostfleetbook.com/the-book/</readAhead>
+		<youTubeEmbedURL>https://youtu.be/2TNvYFJ_MWw</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>18</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>PDF</lpdGroup>
+		<entDate>9/01/2015 12:00:00</entDate>
+		<sortDate>20150831163000</sortDate>
+		<eventDate>August 31, 2015</eventDate>
+		<eventTime>1330-1500</eventTime>
+		<eventTitle>
+			Experiences as Commander, Combined Joint Task Force-Horn of Africa
+		</eventTitle>
+		<eventDesc>
+			MG Grigsby's comments and discussion will be based on his experience of 16 months as the Commander of the Combined Joint Task Force-Horn of Africa
+			(CJTF-HOA), the singular enduring U.S. military presence on the continent of
+			Africa.
+		</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-09-01_PDF_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Major General Wayne W. Grigsby</speakerName>
+		<speakerTitle>Commanding General</speakerTitle>
+		<speakerOrg>1st Infantry Division, Fort Riley Kansas</speakerOrg>
+		<speakerBio>http://www.riley.army.mil/AboutUs/Leaders/Display/tabid/97/Article/612472/major-general-wayne-w-grigsby-jr.aspx</speakerBio>
+		<speakerPhoto>RET-Wayne-Grigsby-Jr_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Mr. Peter P. Dolan</pocName>
+		<pocPhone>(757) 501-6357</pocPhone>
+		<pocEmail>peter.p.dolan.civ@mail.mil</pocEmail>
+		<readAhead>http://smallwarsjournal.com/jrnl/art/twelve-lessons-from-sixteen-months-reflections-of-a-cjtf-hoa-commander</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+    <event>
+        <lpdID>17</lpdID>
+        <frozen>0</frozen>
+        <archive>0</archive>
+        <lpdGroup>DSS</lpdGroup>
+        <entDate>8/21/2015 12:00:00</entDate>
+        <sortDate>20150821163000</sortDate>
+        <eventDate>August 21, 2015</eventDate>
+        <eventTime>1430-1600</eventTime>
+        <eventTitle>The Challenges of the "Now" and  What they Mean for America's  Land Forces</eventTitle>
+        <eventDesc>As the Army prepares to win in a complex world it is important to understand what that world will probably look like from a warfighting perspective. This presentation synthesizes my work on Israel in Lebanon and Gaza, U.S. operations in the 2008 Battle of Sadr City, and the importance of armor in combined arms operations across the range of military operations. While the U.S. Army has been deeply engaged in two wars, the security environment has been changing. Our potential adversaries have capabilities that we have not confronted since the Vietnam War. Thus, the ultimate purpose of this presentation is to help the members of the Army Capabilities Integration Center better prepare our Army for the challenges the future surely holds.</eventDesc>
+        <eventLocation>Fort Eustis, VA</eventLocation>
+        <eventVenue>Fort Eustis Club (FEC)</eventVenue>
+        <eventPict>2015-08-21_DSS_01</eventPict>
+        <eventDiscussion>Yes</eventDiscussion>
+        <eventQandA>Yes</eventQandA>
+        <speakerName>Dr. Dave Johnson</speakerName>
+        <speakerTitle>Senior Historian</speakerTitle>
+        <speakerOrg>RAND Corporation</speakerOrg>
+        <speakerBio>http://www.rand.org/about/people/j/johnson_david_e.html#publications</speakerBio>
+        <speakerPhoto>Mr-David-Johnson_01</speakerPhoto>
+        <hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+        <pocName>Mr. Peter P. Dolan</pocName>
+        <pocPhone>(757) 501-6357</pocPhone>
+        <pocEmail>peter.p.dolan.civ@mail.mil</pocEmail>
+        <readAhead>http://www.rand.org/pubs/monographs/MG1085.html</readAhead>
+        <youTubeEmbedURL>https://www.youtube.com/watch?v=liFqylvXA_k</youTubeEmbedURL>
+        <comment>Empty</comment>
+    </event>
+	<event>
+		<lpdID>16</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>6/22/2015 12:00:00</entDate>
+		<sortDate>20150622130000</sortDate>
+		<eventDate>June 22, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Leadership from a Senior NCO's Perspective</eventTitle>
+		<eventDesc>Command Sergeant Major Davenport will lead a discussion on what senior NCO's expect from junior and senior officers at Training and Doctrine Command (TRADOC) and Forces Command (FORSCOM).</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-06-22_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>CSM David S. Davenport Sr.</speakerName>
+		<speakerTitle>Command Sergeant Major</speakerTitle>
+		<speakerOrg>Training and Doctrine Command</speakerOrg>
+		<speakerBio>http://www.tradoc.army.mil/SitewideContent/Bios/CmdSGMDavenportbio.pdf</speakerBio>
+		<speakerPhoto>CSM-David-Davenport_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Captain Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>Derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>15</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>5/26/2015 12:00:00</entDate>
+		<sortDate>20150526130000</sortDate>
+		<eventDate>May 26, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Thoughts on Leadership</eventTitle>
+		<eventDesc>BG Gabram's presentation will focus on what is required from future officers and the behavior needed to succeed in a complex world.  The presentation will also focus on the balance between professional and personal requirements in the Army.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-05-28_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Brigadier General Douglas M. Gabram</speakerName>
+		<speakerTitle>Deputy Chief of Staff for Operations, Plans, and Training</speakerTitle>
+		<speakerOrg>US Army Training and Doctrine Command (TRADOC) G-3/5/7</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>BG-Douglas-Gabram_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Captain Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>Derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>14</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>4/24/2015 12:00:00</entDate>
+		<sortDate>20150424130000</sortDate>
+		<eventDate>April 24, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Emerging Operational Environment in Ukraine</eventTitle>
+		<eventDesc>This presentation will present a brief summary of the major reorganization of Russia's ground forces in recent years that are reflected in operations in support of separatists in Ukraine since the Spring of 2014, as well as an assessment of the trends in the operations and composition of both of those forces.  Also discussed will be the forces of both the Army of the Ukraine and pro-Ukrainian volunteer groups and the challenges they are facing in their fight against Russian-backed separatists.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-04-24_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Carl E. Pales</speakerName>
+		<speakerTitle>Senior Intelligence Officer, Central and South Asia/Eurasia Regional Center</speakerTitle>
+		<speakerOrg>National Ground Intelligence Center</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Mr-Carl-Pales_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Captain Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>Derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>13</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>PDF</lpdGroup>
+		<entDate>3/18/2015 12:00:00</entDate>
+		<sortDate>20150413100000</sortDate>
+		<eventDate>April 13, 2015</eventDate>
+		<eventTime>1000-1130</eventTime>
+		<eventTitle>A Strong Europe</eventTitle>
+		<eventDesc>US Army Europe is operating under a framework called A Strong Europe. This is the Army's contribution to what NATO and US European Command do. It's about the relationships we have. It's about the network, the logistical infrastructure; the ability to move forces and capabilities in and around the alliance. It's the linkage of training areas. It's all part of Army Strong, Strong Europe.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-04-13_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Lieutenant General Ben Hodges</speakerName>
+		<speakerTitle>Commanding General</speakerTitle>
+		<speakerOrg>United States Army Europe (USAREUR)</speakerOrg>
+		<speakerBio>http://www.eur.army.mil/leaders/USAREURCommander.htm</speakerBio>
+		<speakerPhoto>LTG-Ben-Hodges_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Lieutenant Colonel Corey B. Chasse</pocName>
+		<pocPhone>757-501-6380</pocPhone>
+		<pocEmail>corey.b.chasse.mil@mail.mil</pocEmail>
+		<readAhead>http://www.eur.army.mil/pdf/USArmyEurope_Trifold.pdf</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>12</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>3/10/2015 12:00:00</entDate>
+		<sortDate>20150508130000</sortDate>
+		<eventDate>May 8, 2015</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>Policy, Politics, Strategy and Decision Making</eventTitle>
+		<eventDesc>Topic of discussion will be on the growing rift between policy, politics, strategy decision making and operational planning and decision making. This was the subject in his most recent book, "Before the First Shots Are Fired: How America Can Win Or Lose Off The Battlefield."</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club (FEC)</eventVenue>
+		<eventPict>2015-05-08_DSS_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>General (Retired) Tony Zinni </speakerName>
+		<speakerTitle>Keynote Speaker and Author</speakerTitle>
+		<speakerOrg>US Marine Corps Retired</speakerOrg>
+		<speakerBio>http://rhodesprofessors.cornell.edu/RhodesProfsZinni.html</speakerBio>
+		<speakerPhoto>Gen-R-Tony-Zinni_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC)</hostOrg>
+		<pocName>Lieutenant Colonel Corey B. Chasse</pocName>
+		<pocPhone>757-501-6380</pocPhone>
+		<pocEmail>corey.b.chasse.mil@mail.mil</pocEmail>
+		<readAhead>http://www.amazon.com/Before-First-Shots-Are-Fired/dp/1137279389</readAhead>
+		<youTubeEmbedURL>http://www.youtube.com/watch?v=o4mjuT9tEZI</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>11</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>1/16/2015 12:00:00</entDate>
+		<sortDate>20150325130000</sortDate>
+		<eventDate>March 25, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Islamic State of Iraq and the Levant - Threat Tactic Report</eventTitle>
+		<eventDesc>Mr. Phillips will be giving a Threat Tactic Report on the Islamic State of Iraq and the Levant (ISIL).</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-03-25_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Gary E. Phillips</speakerName>
+		<speakerTitle>Senior Intelligence Advisor</speakerTitle>
+		<speakerOrg>TRADOC G-2 Intelligence Support Activity (TRISA)</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Mr-Gary-Phillips_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Captain Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>Derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>10</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>1/16/2015 12:00:00</entDate>
+		<sortDate>20150220130000</sortDate>
+		<eventDate>February 20, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Army Cyber Overview</eventTitle>
+		<eventDesc>Today's broad and rapidly changing global operational environment means the Department of Defense and the nation are required to function within an increasingly competitive, congested, and contested cyberspace and electromagnetic spectrum. This presentation focuses on an Army Cyber overview and its involvement in strategic land power.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-02-18_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Joseph S. Purser</speakerName>
+		<speakerTitle>Strategic Initiatives Group (SIG)</speakerTitle>
+		<speakerOrg>Army Cyber Command and Second Army</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Mr-Joseph-Purser_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Captain Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>Derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>9</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>1/16/2015 12:00:00</entDate>
+		<sortDate>20150126130001</sortDate>
+		<eventDate>January 26, 2015</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>The Human Dimension</eventTitle>
+		<eventDesc>To provide officer professional development to officers so they are able to obtain a better understanding of the Human Dimension Concept.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium, Building 950</eventVenue>
+		<eventPict>2015-01-26_OPD_02</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Ellis Crum, Deputy and Major Dan Sukman</speakerName>
+		<speakerTitle>Army Strategist</speakerTitle>
+		<speakerOrg>Human Dimension Division</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Mr-Ellis-Crum_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Mr. Ellis Crum</pocName>
+		<pocPhone>757-501-6418</pocPhone>
+		<pocEmail>harold.e.crum.civ@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>8</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>1/8/2015 12:00:00</entDate>
+		<sortDate>20150126120000</sortDate>
+		<eventDate>January 26, 2015</eventDate>
+		<eventTime>1100-1200</eventTime>
+		<eventTitle>TRADOC Functional Area 49 Officers Update</eventTitle>
+		<eventDesc>To provide officer professional development to FA49 officers in the areas of career paths, being effective analysts in the Army of Preparation, new OER &amp; Evaluations and how to navigate assignments based on strengths and how to build new skills (Career Progression).</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>2015-01-26_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Major General Cedric Wins</speakerName>
+		<speakerTitle>Director, Capabilities Developments Directorate</speakerTitle>
+		<speakerOrg>Army Capabilities Integration Center</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Wins-Cedric-BG-ASU_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Major Natasha Wayne</pocName>
+		<pocPhone>757-501-6323</pocPhone>
+		<pocEmail>natasha.wayne@us.army.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>7</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>1/6/2015 12:00:00</entDate>
+		<sortDate>20150123160000</sortDate>
+		<eventDate>January 23, 2015</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>Naval Innovation in the Interwar Period 1920-1940</eventTitle>
+		<eventDesc>In 1914, the armies and navies that faced each other were alike right down to the strengths of their companies and battalions and the designs of their battleships and cruisers. Differences were of degree rather than essence. During the interwar period, however, the armed forces grew increasingly asymmetrical, developing different approaches to the same problems. This presentation of major military innovations in the 1920s and 1930s explores differences in exploitation by the seven major military powers. It investigates how and why innovation occurred or did not occur. This presentation also focuses on several instances of how military services developed new technology and weapons and incorporated them into their doctrine, organization and styles of operations.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Fort Eustis Club (FEC)</eventVenue>
+		<eventPict>2015-01-23_DSS_02</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Dr. Williamson Murray</speakerName>
+		<speakerTitle>Professor Emeritus of History</speakerTitle>
+		<speakerOrg>Ohio State University</speakerOrg>
+		<speakerBio>http://history.osu.edu/directory/murray1</speakerBio>
+		<speakerPhoto>Mr-Williamson-Murray_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC), US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Mr. Rick Barr</pocName>
+		<pocPhone>757-501-5319</pocPhone>
+		<pocEmail>richard.c.barr.civ@mail.mil</pocEmail>
+		<readAhead>http://www.cambridge.org/us/academic/subjects/history/military-history/successful-strategies-triumphing-war-and-peace-antiquity-present</readAhead>
+		<youTubeEmbedURL>http://www.youtube.com/watch?v=46ecqBkcp4g</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>6</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>12/12/2014 12:00:00</entDate>
+		<sortDate>20141212163000</sortDate>
+		<eventDate>December 12, 2014</eventDate>
+		<eventTime>1500-1630</eventTime>
+		<eventTitle>Army Operating Concept (AOC)</eventTitle>
+		<eventDesc>This is an overview of TRADOC Pamphlet 525-3-1, The U.S. Army Operating Concept, Win in a Complex World</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Jacobs Theater</eventVenue>
+		<eventPict>2014-12-12_OPD_01</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Brigadier General Christopher McPadden</speakerName>
+		<speakerTitle>Director, Concept Development and Learning Directorate (CDLD)</speakerTitle>
+		<speakerOrg>Army Capabilities Integration Center</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Mcpadden-Christopher-BG-ASU_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>Mr. Mike Redman</pocName>
+		<pocPhone>757-501-5214</pocPhone>
+		<pocEmail>michael.k.redman.civ@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>5</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>11/21/2014 12:00:00</entDate>
+		<sortDate>20141121130000</sortDate>
+		<eventDate>November 21, 2014</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>The Army Warfighting Challenges</eventTitle>
+		<eventDesc>Lieutenant General McMaster discusses the Army's Warfighting Challenges and how they drive the Army Operating Concept.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>0</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Lieutenant General H. R. McMaster</speakerName>
+		<speakerTitle>Director, Army Capabilities Integration Center</speakerTitle>
+		<speakerOrg>Army Capabilities Integration Center</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>McMaster-HR-LTG-ASU_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>CPT Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>4</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>11/14/2014 12:00:00</entDate>
+		<sortDate>20141114160000</sortDate>
+		<eventDate>November 14, 2014</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>The US Army: Recovering from the Last War, Preparing for the Future War</eventTitle>
+		<eventDesc>Empty</eventDesc>
+		<eventLocation>Ft. Eustis</eventLocation>
+		<eventVenue>Club Eustis</eventVenue>
+		<eventPict>2014-11-14_DSS_01</eventPict>
+		<eventDiscussion>No</eventDiscussion>
+		<eventQandA>No</eventQandA>
+		<speakerName>Dr. Brian McAllister Linn</speakerName>
+		<speakerTitle>Professor of History and Ralph R. Thomas Professor in Liberal Arts</speakerTitle>
+		<speakerOrg>Texas A&amp;M University</speakerOrg>
+		<speakerBio>http://history.tamu.edu/faculty/linn.shtml</speakerBio>
+		<speakerPhoto>Dr-Brian-McAllister-Linn_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC), US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>MAJ David L. McNatt</pocName>
+		<pocPhone>757-501-5487</pocPhone>
+		<pocEmail>david.l.mcnatt.mil@mail.mil</pocEmail>
+		<readAhead>http://www.hup.harvard.edu/catalog.php?isbn=9780674034792</readAhead>
+		<youTubeEmbedURL>http://www.youtube.com/watch?v=R7VtYgecImQ</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>3</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>10/16/2014 12:00:00</entDate>
+		<sortDate>20141016130000</sortDate>
+		<eventDate>October 16, 2014</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Regional Alignment of Brigade Combat Teams</eventTitle>
+		<eventDesc>Mr. Henry Franke discusses the Regional Alignment of Brigade Combat Teams concept.  This concept would drive the training of units and create more cooperation between the Army and its foreign partners.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>0</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>Mr. Henry Franke</speakerName>
+		<speakerTitle>Deputy Director, Concept Development and Learning Directorate (CDLD)</speakerTitle>
+		<speakerOrg>Army Capabilities Integration Center</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Mr-Henry-Franke_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>CPT Derek Rondeau</pocName>
+		<pocPhone>757-501-6037</pocPhone>
+		<pocEmail>derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>2</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>DSS</lpdGroup>
+		<entDate>9/25/2014 12:00:00</entDate>
+		<sortDate>20140925160000</sortDate>
+		<eventDate>September 25, 2014</eventDate>
+		<eventTime>1430-1600</eventTime>
+		<eventTitle>Technology and Armed Conflict</eventTitle>
+		<eventDesc>Empty</eventDesc>
+		<eventLocation>Ft. Eustis</eventLocation>
+		<eventVenue>Wylie Theater, Building 705</eventVenue>
+		<eventPict>2014-09-25_DSS_01</eventPict>
+		<eventDiscussion>No</eventDiscussion>
+		<eventQandA>No</eventQandA>
+		<speakerName>Dr. Alex Roland</speakerName>
+		<speakerTitle>Professor (PhD) History Emeritus</speakerTitle>
+		<speakerOrg>Duke University</speakerOrg>
+		<speakerBio>https://history.duke.edu/people/alex-roland</speakerBio>
+		<speakerPhoto>Dr-Alex-Roland_01</speakerPhoto>
+		<hostOrg>Army Capabilities Integration Center (ARCIC), US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>LTC Corey Chassé</pocName>
+		<pocPhone>703-501-6380</pocPhone>
+		<pocEmail>corey.b.chasse.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>http://www.youtube.com/watch?v=4l2e0ePHUik</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+	<event>
+		<lpdID>1</lpdID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<lpdGroup>OPD</lpdGroup>
+		<entDate>9/17/2014 12:00:00</entDate>
+		<sortDate>20140917130000</sortDate>
+		<eventDate>September 17, 2014</eventDate>
+		<eventTime>1200-1300</eventTime>
+		<eventTitle>Leadership: The Soldier of Today and Tomorrow</eventTitle>
+		<eventDesc>General Perkins describes the past and future of armed conflict and how Army Leaders must adapt to meet the challenges of the future.</eventDesc>
+		<eventLocation>Fort Eustis, VA</eventLocation>
+		<eventVenue>Morelli Auditorium</eventVenue>
+		<eventPict>0</eventPict>
+		<eventDiscussion>Yes</eventDiscussion>
+		<eventQandA>Yes</eventQandA>
+		<speakerName>General David G. Perkins</speakerName>
+		<speakerTitle>Commanding General</speakerTitle>
+		<speakerOrg>Training and Doctrine Command (TRADOC)</speakerOrg>
+		<speakerBio>0</speakerBio>
+		<speakerPhoto>Perkins-David-GEN-ASU_01</speakerPhoto>
+		<hostOrg>US Army Training and Doctrine Command (TRADOC)</hostOrg>
+		<pocName>CPT Derek Rondeau</pocName>
+		<pocPhone>757-501- 6037</pocPhone>
+		<pocEmail>derek.j.rondeau.mil@mail.mil</pocEmail>
+		<readAhead>0</readAhead>
+		<youTubeEmbedURL>TBD</youTubeEmbedURL>
+		<comment>Empty</comment>
+	</event>
+</lpd>
+
+
+
+
+

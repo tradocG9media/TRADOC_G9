@@ -1,0 +1,106 @@
+﻿@using ARCIC.App_Code;
+@using ARCIC.Models;
+
+@{
+    var spotlight = Spotlight.GetSpotlights().Take(1).ToList();
+    }
+
+<!--Advertising Home Page-->
+<style>
+    div#youtube-transparent {
+        position:relative;
+        left: -20px;
+        top:-47px;
+        z-index:82000;
+        display: block;
+        /*margin-bottom:-14px;*/
+        opacity: .45;      
+           
+    }
+</style>
+
+
+<!--Multi Domain Battle Document-->
+<div class="col-md-4 text-center">
+        <div class="panel panel-default clearfix">
+            <p>
+               <a href="~/App_Documents/Multi_Domain_Battle.pdf" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Document',  eventAction: 'Clicked', eventLabel: 'Home Page Document Multi-Domain Battle PDF', eventValue: 1});">
+                <img class="img-responsive" src="App_Imgs/Content/multi-domain-battle.jpg" />
+            </a>
+
+            </p>
+          <div class="panel-body">
+              <p class="text-left">
+                  The emerging operational environment indicates future operations will be significantly different than those of the recent past . US forces will likely confront sensor-rich militaries of peer states and proxies employing precision-guided munitions on highly lethal battlefields that can restrict Joint Force freedom of maneuver and action.
+              </p>
+
+              <p class="pull-left text-center small">
+               <a class="" href="~/App_Documents/Multi_Domain_Battle.pdf" onclick="ga('send', 'event', { eventCategory: 'Document',  eventAction: 'Clicked', eventLabel: 'Clicked Home Page Document Multi-Domain Battle', eventValue: 1});"
+                    target="_blank">View Document <i class="fa fa-file-pdf-o"></i>                    
+               </a>               
+            </p>
+             <p class="pull-right text-cente text-primary">
+                <a href="https://www.dvidshub.net/video/485976/ausa-2016-multi-domain-battle-ensuring-joint-force-freedom-action-future-war" 
+                  class="small"  onClick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: 'Home Page Multi-Domain Battle AUSA Video', eventValue: 1});" target="_blank">
+                   Watch AUSA Video                   
+                </a>
+                  <i class="fa fa-youtube-play"></i>
+            </p>
+          </div>
+        </div>
+    </div>
+
+<!--usarmy.mil article-->
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <img class="img-responsive" src="https://www.army.mil/e2/c/images/2016/11/09/456731/size0.jpg" />
+       <div class="panel-body">
+            <h4><b>With multi-domain concept, Army aims for 'window of superiority'</b></h4>
+           <p>Sean Kimmons, November 14,2016</p>    
+                  @{
+                      string blurb = " One tactic the Army is now considering as part of its drive to achieve windows of domain superiority in future battles is the strategic deployment of artillery along coastlines to sink enemy warships. With such windows of superiority, created from a mixed use of land, air, sea, cyber and space domains, U.S. military units would maneuver freely to penetrate and defeat enemy strongholds.";
+                     
+                       <p>@Shorten.ShortStr(blurb,155) ...</p>
+                       }         
+               
+
+       <div class="pull-right text-primary">
+           <a href="https://www.army.mil/article/178137/with_multi_domain_concept_army_aims_for_superiority"
+                class="btn-link small" target="_blank" role="button" onclick="ga('send', 'event', { eventCategory: 'Article',  eventAction: 'Clicked Outbound Link (usarmy.mil)', eventLabel: 'Home Page With multi-domain concept, Army aims for windows of superiority', eventValue: 1});">
+               Read on usarmy.mil 
+               
+           </a> <i class="fa fa-external-link"></i>
+
+       </div>
+       </div>
+    </div>
+</div>
+
+@foreach (var item in spotlight)
+{
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <img class="img-responsive pull-left" src="../App_Imgs/App/Logos/ARCIC-Emblem.png" style="width:41px;" /> 
+                 <h4><span class="">&nbsp; <b>SPOTLIGHT</b></span> </h4></div>
+            <img class="img-responsive" src='@("App_Imgs/Content/" + item.imageFilename + "f.jpg")'  />
+            <div class="panel-body clearfix">              
+                <h4><b>@item.imageTitle</b></h4>
+                <div class="small text-warning">
+                </div>
+                <p>
+                    @Html.Raw(TruncateWithLink.Truncate(item.imageCaption, 315, item.imageLink))
+                </p>
+                <div class="text-primary pull-right"><a href="@item.mainPage" class="small">@item.mainArea </a> </div>
+            </div>
+        </div>
+    </div>
+}
+
+      
+
+
+
+
+
+

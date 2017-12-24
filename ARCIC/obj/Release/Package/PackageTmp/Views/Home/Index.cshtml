@@ -1,0 +1,88 @@
+﻿@using ARCIC.Models;
+
+@{
+    ViewBag.Title = "Home";
+}
+
+@section featured {
+<!-- Header Carousel -->
+    @{
+//TODO
+//Determine if Html.Partial or RenderPartial is faster
+    }
+    @Html.Partial("_carousel")
+
+}
+
+<div class="clearfix">
+
+    <!--ADVERTISING BUTTONS-->
+    @Html.Partial("_adButtons")
+    <br />  
+
+    <!--LPD, AWFC, Spotlight-->
+    <div style="padding:8px;">
+        <h3 class="text-uppercase">
+            &nbsp;<b>Spotlight</b> <img class="img-responsive pull-left" src="../App_Imgs/App/Logos/ARCIC-Emblem.png" style="width: 26px;" />
+        </h3>
+    </div>
+
+    <!--LPD/Professional Readings-->
+    <div class="col-md-4">        
+            @Html.Partial("_reading")       
+    </div>
+    @Html.Partial("_framework")
+
+
+    <!--Spotlight-->
+    <div class="col-md-12">
+        <div class="row">
+            @Html.Partial("_spotlight")
+        </div>        
+    </div>
+
+
+    <!-- Popular -->
+    <div class="">
+        <div class="col-md-12">
+            <h3 class="text-uppercase"><i class="fa fa-th-large" style="color: #228B22;"></i> <b>Popular</b></h3>
+        </div>
+
+        @Html.Partial("_popular")
+    </div>
+
+</div>
+
+<div class="row">
+    <!--AD4 Multi-Domain -->
+    <div class="col-md-12">
+        <h3 class="">
+            <i class="fa fa-th-large" style="color:#A52A2A;"></i> <b>Multi-Domain Battle</b>
+            <small style="text-transform:capitalize;">
+                @content.cHref("../App_Documents/Multi-Domain-Battle-Evolution-of-Combined-Arms.pdf", "_blank", "Multi-Domain Battle: Evolution of Combined Arms for the 21st Century 2025-2040 Version 1.0", "Document", "Download")
+                <i class="fa fa-file-pdf-o"></i>
+            </small>
+        </h3>
+    </div>
+    @Html.Partial("_multiDomainBattle")
+</div>
+
+<!--Video-->
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-uppercase"> <i class="fa fa-th-large" style="color:#e06000;"></i> <b>Video</b></h3>
+    </div>
+    @Html.Partial("_video")
+</div>
+
+<!-- News -->
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-uppercase"> <i class="fa fa-th-large" style="color:#1E90FF;"></i> <b>In The News</b></h3>
+    </div>
+    @Html.Partial("_arcic_in_the_news")
+</div>
+<!--Modals-->
+<br />
+
+

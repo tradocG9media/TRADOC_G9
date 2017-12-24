@@ -1,0 +1,97 @@
+﻿
+@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Analyze";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+   @* <div>
+        @Html.Partial("_subPurpose")
+    </div>*@
+
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Analyze</h1>
+            <p>Why Does Analyze Matter?</p>
+            <p>
+                To analyze is to examine methodically and in detail the constitution or structure of an idea, plan, weapons, tactics or strategy, typically for purposes of explanation and interpretation.  After the think and learn actions, analyze is the next action. To compete in the complex future Army leaders must analyze problems, situations, technology, solutions, the future operating environment and the enemy.
+            </p>
+            <p>
+                Army leaders must analyze a wide ranging field of challenges such as the identification of capability gaps, potential solution approaches, and how the enemy forces will use their technology, tactics and strategy. A finely tuned intellectual analytical foundation is essential to the overall effectiveness of the Army in future battle.
+
+            </p>
+
+            @*<p>
+                    <a class="btn btn-primary btn-large">Call to action!</a>
+                </p>*@
+        </header>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>An Approach to the Study of Analyze</b></h4>
+                        <p>
+One must analyze about future armed conflict in a focused, sustained, and shared manner to identify capability gaps and opportunities to achieve tactical and campaign success. Leaders must analyze various problems to prioritize solutions to ensure that our Army has the capability and capacity to accomplish future missions. In addition, one must analyze one’s own performance, and how to improve the unit’s performance.
+
+                        </p>
+                       
+                    </div>
+                </div>
+                <!--Reflections-->
+                @helpers.Reflectoins(
+               "What obstacles must be overcome to analyze a problem?",
+               "What are the essential elements of analyzing in the Army?",
+               "What role does an organizational institution or culture play in determining how to analyze?",
+               "How does a leader analyze his capabilities? How does a unit analyze its capabilities?",
+               "How does a leader foster a mindset to show the value of analyzing to his or her junior leaders?",
+               "")
+
+            </div>
+              <div class="col-md-4">
+                @Html.Partial("_article")
+            </div>
+            <div class="col-md-4">
+                @Html.Partial("_video")
+            </div>
+            <!--Articles-->
+          
+            
+        </div>
+
+        <!-- Books -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row">
+            @helpers.SSPBook(
+           "Finding the Target: The Transformation of American Military Policy, by Frederick W. Kagan.",
+           "In Finding the Target, Frederick Kagan describes the three basic transformations within the U.S. military since Vietnam. First was the move to an all-volunteer force and a new generation of weapons systems in the 1970s. Second was the emergence of stealth technology and precision-guided munitions in the 1980s. Third was the information technology that followed the fall of the Soviet Union and the first Golf War. This last could have insured the U.S. continuing military preeminence, but this goal was compromised by Clinton's drawing down of our armed forces in the 1990s and Bush's response to 9/11 and the global war on terror. ",
+           660,
+           "http://www.worldcat.org/title/finding-the-target-the-transformation-of-american-military-policy/oclc/67375072&referer=brief_results",
+           "Kagan.jpg")
+            @helpers.SSPBook(
+           "Concrete Hell: Urban Warfare from Stalingrad to Iraq, by Louis A. DiMarco.",
+           "In Concrete Hell, Louis DiMarco, a retired US Army lieutenant colonel and author of key tactical manuals, describes the evolution of urban combat across the last half of the twentieth century. He makes a compelling argument that future conflict will “largely occur in cities” and that the “keys to understanding the conflicts of the future are illustrated in the urban battlefields of the past.” In particular, the author predicts that future urban combat will combine elements of conventional combat, such as that seen in Stalingrad in 1942, with unconventional combat.",
+           622,
+           "http://www.worldcat.org/title/concrete-hell-urban-warfare-from-stalingrad-to-iraq/oclc/779264542&referer=brief_results",
+           "DiMarco.jpg")
+            @helpers.SSPBook(
+           "The Psychology of Strategy: Exploring Rationality in the Vietnam War, by Kenneth Payne.",
+           "In Psychology of Strategy, Kenneth Payne argues that ‘making and enacting strategy is an inherently psychological activity’.  He uses the wartime deliberations of U.S. presidents Lyndon Johnson and Richard Nixon to examine how psychological factors influence decision-making and the development of strategy.",
+           660,
+           "http://www.worldcat.org/title/psychology-of-strategy-exploring-rationality-in-the-vietnam-war/oclc/924638433/viewport",
+           "Payne.jpg")          
+
+        </div>
+    </div>
+</div>
+

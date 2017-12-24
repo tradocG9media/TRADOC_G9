@@ -1,0 +1,59 @@
+﻿@using ARCIC.Models;
+@model IEnumerable<Article>
+
+@{
+    //NEWS ARTICLES HOME PAGE   
+    IEnumerable<Article> articles = ViewBag.Articles;   
+    IEnumerable<Article> news = articles.Where(x => x.pGroup == "news").Where(x => x.frozen != "1").Take(12);
+
+    }
+
+@foreach (var item in news)
+{
+    //Determine which link contains http for external tracking
+    if (item.link.Contains("http"))
+    {
+        <div class="col-md-3">
+            <div class="panel panel-default" style="height:242px;">
+                <div class="panel-body clearfix">
+                    <h5 class="">@item.title</h5>
+                    <p>@Html.Raw(Article.GetImage(item.imageURL, "Content/"))</p>
+                    <div class="text-center">
+                        <small>
+                            <span class="text-muted">@item.author</span> |  <a href="@item.link" target="_blank" @Html.Raw(Article.Tracker.NewsOutbound(item.title + " - (From In the News Home Page)"))>@item.source</a> <i class="fa fa-external-link"></i>
+                        </small>
+                    </div>
+                    <div class="text-center">
+                        <small class="small">
+                            @*<small>@item.pDirectorate</small>*@
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+        else
+        {
+        <div class="col-md-3">
+                <div class="panel panel-default" style="height:242px;">
+                    <div class="panel-body clearfix">
+                            <h5 class="">@item.title</h5>
+                            <p>@Html.Raw(Article.GetImage(item.imageURL, "Content/"))</p>
+                            <div class="text-center">
+                                <small>
+                                    <span class="text-muted">@item.author</span> |  <a href = "@item.link" target="_blank" @Html.Raw(Article.Tracker.NewsInternal(item.title + " - (From In the News Home Page)"))>@item.source</a> <i class="fa fa-external-link"></i>
+                                </small>
+                            </div>
+                            <div class="text-center">
+                                <small class="small">
+
+                                </small>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    }
+
+
+}
+

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<ARCIC_Class.Survey>
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+@using ARCIC_Class;
+@{
+    ViewBag.Title = "Home Test";
+}
+<br />
+ 
+        <div class="col-md-6 col-md-offset-3">
+            <div>
+                <p><b>ARCIC's customer satisfaction survey.</b></p>
+                <p>Thank you for taking a moment to complete this short survey to help ARCIC improve its web content.
+                The survey should only take 3 minutes to complete. All answers are strictly for the purpose of improving ARCIC's website content.</p>
+                <p>
+                    Thank you 
+                </p>
+            </div>
+            <div class="text-center"><h3 class="label label-default">WEB CONTENT SURVEY</h3></div>
+            <form class="alert alert-success">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">1. @SurveyQuestions.GetQuestions()[1]</label>                   
+                        <div class="col-md-12">
+                            <a href="~/" target="_blank">http://www.arcic.army.mil</a>
+                        </div>                   
+                    <div class="col-md-12 checkbox">
+                        <div><input type="checkbox" id="q11"> I feel like exploring</div>
+                        <div><input type="checkbox" id="q12"> Not sure how to find anything</div>
+                        <div><input type="checkbox" id="q13"> Nothing interest me</div>
+                    </div>
+                    <div>
+                        <div class="">Other:</div>
+                        <textarea class="form-control" rows="1" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">2. @SurveyQuestions.GetQuestions()[2]</label>
+                    <div class="checkbox">
+                        <div><input type="checkbox" id="q21"> Likely</div>
+                        <div><input type="checkbox" id="q22"> Not likely</div>
+                        <div><input type="checkbox" id="q23"> Unsure</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">3. @SurveyQuestions.GetQuestions()[3]</label>
+                    <textarea class="form-control" rows="1" id="q3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">4. @SurveyQuestions.GetQuestions()[4]</label>
+                    <textarea class="form-control" rows="1" id="q4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">5. @SurveyQuestions.GetQuestions()[5]</label>
+                    <textarea class="form-control" rows="1" id="q5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">6. @SurveyQuestions.GetQuestions()[6]</label>
+                    <textarea class="form-control" rows="1" id="q6"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">7. @SurveyQuestions.GetQuestions()[7]</label>
+                    <div class="checkbox">
+                        <div><input type="checkbox"> ARCIC News banner</div>
+                        <div><input type="checkbox"> Directorate news</div>
+                        <div><input type="checkbox"> General Army news</div>
+                        <div><input type="checkbox"> ARCIC Leadership</div>
+                        <div><input type="checkbox"> Professional Development</div>
+                        <div><input type="checkbox"> Army Warfighting Challenges</div>
+                        <div><input type="checkbox"> Initiatives</div>
+                    </div>
+                    <div>
+                        <div class="">Other:</div>
+                        <textarea class="form-control" rows="1" id="q7"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">8. @SurveyQuestions.GetQuestions()[8]</label>
+                    <textarea class="form-control" rows="1" id="q8"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">9. @SurveyQuestions.GetQuestions()[9]</label>
+                    <textarea class="form-control" rows="1" id="q9"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">10. @SurveyQuestions.GetQuestions()[10]</label>
+                    <div class="radio">
+                        <div><input type="radio" name="q10yes">Yes</div>
+                        <div><input type="radio" name="q10no">No</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+

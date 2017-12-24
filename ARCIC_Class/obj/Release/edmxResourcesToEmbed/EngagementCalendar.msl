@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="test01ModelStoreContainer" CdmEntityContainer="MasterDBConnectionContext">
+    <EntitySetMapping Name="EngagementCalendars">
+      <EntityTypeMapping TypeName="test01Model.EngagementCalendar">
+        <MappingFragment StoreEntitySet="EngagementCalendar">
+          <ScalarProperty Name="eventID" ColumnName="eventID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="EventUrl" ColumnName="EventUrl" />
+          <ScalarProperty Name="stamp" ColumnName="stamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

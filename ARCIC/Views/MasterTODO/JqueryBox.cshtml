@@ -1,0 +1,73 @@
+﻿@using ARCIC.Models
+@using System.Web.Mvc;
+
+
+<script>
+    $('section').hide();
+</script>
+
+@{
+    ViewBag.Title = "JqueryBox";
+    IEnumerable<Article> data = ViewBag.data;
+    var ts1 = data.Where(x => x.description.Contains("robotics"));
+    var ts2 = data.Where(x => x.description.Contains("autonomous"));
+    var ts3 = data.Where(x => x.pConnection.Contains("robotics"));
+    var totalStories = ts1.Union(ts2).Union(ts3).Distinct();
+    int totalStoriesCount = totalStories.Count();
+   
+}
+
+<style>
+    .whiteBox {
+        display:block;
+        opacity:.58;
+        margin-top:-34px;
+        margin-bottom:12px;
+        
+    }
+</style>
+
+<div class="well col-md-2">
+    <a data-flip-widget="mag" href='@("https://flipboard.com/@tim3lo3/arcic-h0bgslrfy")'>View my Flipboard Magazine.</a>
+    <script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
+</div>
+
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>Robotics and Autonomous Systems Strategy</h4>
+            <div><img class="img-responsive" src="~/App_Imgs/Content/4-myths-about-combat-vehicles-debunked-by-Lt-Gen-McMaster_01f.jpg" />
+                <div class="whiteBox small">
+                    <div class="btn-group" style="width: 100%; margin-left:0; margin-right:0;">                        
+                        <div id="rcBtn" style="width:155.769pt;" class="btn btn-default"><p class="label label-primary"><span class="">@totalStoriesCount</span></p> Related Content  <i class="fa fa-long-arrow-up"></i></div>
+                        <div style="width:35%;" class="btn btn-default">Share <i class="fa fa-share"></i></div>
+                    </div>
+                </div>
+            </div>
+            <p>Innovation is critical for both the operational and institutional Army to ensure that our Soldiers, leaders, and teams are prepared to win in future armed conflict. Innovation challenges... <a href="#">[army.mil]</a> </p>
+       
+        </div>
+        
+              <!--Related Sliding Content-->
+              <section class="relatedC">
+                  <div class="text-primary text-center"><b>Related Content</b></div>
+                  <ul class="list-group clearfix" style="margin-bottom:0;">
+                      @foreach (var item in totalStories)
+                        {
+                          <li class="list-group-item">
+                              <p class="pull-left"> @Html.Raw(Article.GetImageWidth(item.imageURL, "41", item.entDate))</p>
+                              <div>@ARCIC.App_Code.Shorten.ShortStr(item.title,60)</div>
+                              <div class="small text-muted">@item.author/ @ARCIC.App_Code.Shorten.ShortStr(item.source,26)</div>
+                          </li>
+                      }
+                  </ul>
+              </section>
+              @*<div class="btn-group" style="width: 100%; margin-left:0; margin-right:0;">                 
+                  <div id="rcBtn" style="width:262px;" class="btn btn-default"><span class="badge">Related Content @totalStoriesCount</span>  <i class="text-success fa fa-dot-circle-o"></i></div>
+                  <div style="width:25%;" class="btn btn-default">Share <i class="fa fa-share"></i></div>
+              </div>*@  
+           
+    </div>
+    
+</div>
+

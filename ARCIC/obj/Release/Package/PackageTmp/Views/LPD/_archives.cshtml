@@ -1,0 +1,135 @@
+﻿@model IEnumerable<ARCIC.Models.Reading>
+@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+@{
+    var Challenges = AWFChallenges.GetChallenges();
+    var NewList = new List<string>();
+    
+    //var lpd = ViewBag.popup;    
+    //var spot = SpotlightDict.GetSpotlight("19");
+}
+
+
+<br />
+ <h1 class="page-header"><b>Professional Readings Archives</b></h1>
+<div class="row clearfix">
+    
+     @foreach (var item in Model)
+     {   
+         
+         
+         <div class="col-md-8">
+             <div class="panel panel-default clearfix">
+                  
+                <div class="panel-body">
+                     <div class="pull-left">                     
+                     <ul class="pager" style="padding: 0px;">
+                         <li><a href='@Url.Action("_archives", "LPD", new { articleSeries = item.series - 1 })' role="button"> < Previous</a></li>
+                         <li><a href='@Url.Action("_archives", "LPD", new { articleSeries = item.series + 1 })' role="button">Next ></a></li>
+                     </ul>
+                 </div>
+                 <div class="pull-right">                     
+                     <ul class="pager" style="padding: 0px;">
+                         <li><a href="/LPD/FullArchives"> << Back to Full Archives</a></li>
+                         
+                     </ul>
+                 </div>
+
+                </div>
+                 
+
+                 <div class="panel-body text-left clearfix">
+                     <div class="clearfix">
+                         <p class="pull-right">
+                             <img class="img-responsive img-rounded" src='@("../App_Imgs/LPD-Sources/" + item.sourceLogo + "t.png")' style="margin:6px; " />
+                         </p>
+                         <h3>Reading <span class="text-primary"><b>#@item.series @item.descTitle</b></span></h3>
+                         <h2><b>@item.title</b></h2>
+                         <ul class="list-inline text-muted">
+                             <li>By: @item.authors /</li>
+                             <li>Published: @item.pubDate</li>
+                             <li><a href="@item.siteURL" target="@item.siteTarget">Read More  @*<i class="fa fa-external-link"></i></a></li>*@</a>
+                         </ul>
+                         <section class="">                             
+                             <ul class="list-inline">
+                                 <li><b>Access:</b> <span>@item.siteAccess</span></li>
+                                 <li><b>Type:</b> <span>@item.siteType</span></li>
+                                 <li class="text-muted">@item.entDate.ToLongDateString()</li>
+                             </ul>
+                         </section>
+                         <hr />
+                         <article>
+                             <p>@Html.Raw(item.comment)</p>
+                         </article>
+                     </div>
+                
+
+                        <!--Army Warfightin Challenges-->
+                        @if (item.archive != "")
+                        {
+                            string input = item.archive;
+                            NewList = AWFChallenges.GetMatches(input);
+                            NewList.Reverse();
+                           
+                            <!--Challenges-->
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <h5 class="text-center list-group-heading">The following <a class="" href="~/Initiatives/ArmyWarfightingChallenges">Army Warfighting Challenges</a> are directly related to this week's topic: </h5>
+                                </div>
+
+                                @foreach (var n in NewList)
+                                {                                    
+                                    <div class="list-group-item">
+                                        <h5><span><b class="text-primary">#@n</b> </span><b>@Challenges[Int32.Parse(n)].title:</b></h5>
+                                        <p>@Challenges[Int32.Parse(n)].desc</p>
+                                    </div>
+                                }
+
+                                <h5></h5>
+                                @Html.Partial("_lpdFooter")
+                            </div>
+
+                        }
+                        else
+                        {  @Html.Partial("_lpdFooter") }
+
+                             
+                     
+                     <div class="panel-body">
+                     <div class="pull-left">                     
+                     <ul class="pager" style="padding: 0px;">
+                         <li><a href='@Url.Action("_archives", "LPD", new { articleSeries = item.series - 1 })' role="button"> < Previous</a></li>
+                         <li><a href='@Url.Action("_archives", "LPD", new { articleSeries = item.series + 1 })' role="button">Next ></a></li>
+                     </ul>
+                 </div>
+                 <div class="pull-right">                     
+                     <ul class="pager" style="padding: 0px;">
+                         <li><a href="/LPD/FullArchives"> << Back to Full Archives</a></li>
+                         
+                     </ul>
+                 </div>
+
+                </div>               
+                    </div>
+
+                 </div>
+
+
+
+                
+             </div>
+      
+        
+         
+         
+     }       
+
+</div>
+
+
+

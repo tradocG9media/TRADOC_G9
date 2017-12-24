@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARCICModels.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EngagementCalendar">
+    <Key>
+      <PropertyRef Name="eventID" />
+    </Key>
+    <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="start_time" Type="date" Nullable="false" />
+    <Property Name="end_time" Type="date" />
+    <Property Name="EventUrl" Type="nvarchar(max)" />
+    <Property Name="stamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="EOCalendar">
+    <Key>
+      <PropertyRef Name="eventID" />
+    </Key>
+    <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="start_time" Type="datetime" Nullable="false" />
+    <Property Name="end_time" Type="datetime" />
+    <Property Name="recurring" Type="nvarchar" MaxLength="50" />
+    <Property Name="stamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="day" Type="nchar" MaxLength="20" />
+    <Property Name="desc" Type="nvarchar" MaxLength="50" />
+    <Property Name="entry" Type="nvarchar(max)" />
+    <Property Name="author" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="MainArticle">
+    <Key>
+      <PropertyRef Name="artID" />
+    </Key>
+    <Property Name="artID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="imgUrl" Type="nvarchar(max)" />
+    <Property Name="imgCaption" Type="nvarchar(max)" />
+    <Property Name="author" Type="nvarchar(max)" />
+    <Property Name="authorEmail" Type="nvarchar(max)" />
+    <Property Name="authorSource" Type="nvarchar(max)" />
+    <Property Name="postDate" Type="datetime" />
+    <Property Name="archiveDate" Type="datetime" />
+    <Property Name="sortDate" Type="datetime" />
+    <Property Name="pubDate" Type="datetime" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="sourceName" Type="nvarchar(max)" />
+    <Property Name="sourceUrl" Type="nvarchar(max)" />
+    <Property Name="_type" Type="nvarchar(max)" />
+    <Property Name="loe" Type="nchar" MaxLength="50" />
+    <Property Name="directorate" Type="nvarchar(max)" />
+    <Property Name="cta" Type="nvarchar(max)" />
+    <Property Name="promote" Type="nvarchar(max)" />
+    <Property Name="repostDate" Type="datetime" />
+    <Property Name="googleTrack" Type="nchar" MaxLength="10" />
+    <Property Name="group" Type="nvarchar(max)" />
+    <Property Name="connection" Type="nvarchar(max)" />
+    <Property Name="initiative" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="sku" Type="nchar" MaxLength="10" />
+    <Property Name="price" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Source">
+    <Key>
+      <PropertyRef Name="sourceId" />
+    </Key>
+    <Property Name="sourceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="logo" Type="nvarchar(max)" />
+    <Property Name="type" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="SSPArticle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="postDate" Type="datetime" />
+    <Property Name="category" Type="nvarchar(max)" />
+    <Property Name="stamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SSPVideo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="postDate" Type="datetime" />
+    <Property Name="category" Type="nvarchar(max)" />
+    <Property Name="stamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="artID" />
+    </Key>
+    <Property Name="artID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="author" Type="nvarchar(max)" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="pubDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="postDate" Type="datetime" />
+    <Property Name="link" Type="nvarchar(max)" />
+    <Property Name="img" Type="nvarchar(max)" />
+    <Property Name="group" Type="nvarchar(max)" />
+    <Property Name="typ" Type="nvarchar(max)" />
+    <Property Name="source" Type="nvarchar(max)" />
+    <Property Name="sourceLogo" Type="nvarchar(max)" />
+    <Property Name="archive" Type="nvarchar(max)" />
+    <Property Name="directorate" Type="nvarchar(max)" />
+    <Property Name="connection" Type="nvarchar(max)" />
+    <Property Name="lineofeffort" Type="nvarchar(max)" />
+    <Property Name="initiative" Type="nvarchar(max)" />
+    <Property Name="focus" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fname" Type="nvarchar(max)" />
+    <Property Name="lname" Type="nvarchar(max)" />
+    <Property Name="org" Type="nvarchar(max)" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="permissions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="ARCICModelsStoreContainer">
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EngagementCalendar" EntityType="Self.EngagementCalendar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EOCalendar" EntityType="Self.EOCalendar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Event" EntityType="Self.Event" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MainArticle" EntityType="Self.MainArticle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Source" EntityType="Self.Source" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SSPArticle" EntityType="Self.SSPArticle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SSPVideo" EntityType="Self.SSPVideo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

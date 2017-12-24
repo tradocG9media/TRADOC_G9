@@ -1,0 +1,41 @@
+﻿@using ARCIC.Models;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+@model ARCIC.Models.SSPVideo
+
+@{
+    var data = ViewBag.video;
+    IEnumerable<SSPVideo> videos = data;
+    
+    }
+
+@if (videos.Count() > 0)
+{
+    <br />
+    <div class="list=group">
+        <div class="list-group-item active">
+            <h4><b>Video</b></h4>
+        </div>
+
+
+        @foreach (var item in videos)
+        {
+            <div class="list-group-item">
+                <h5>@item.title</h5>
+                @*<p>@item.desc</p>*@
+                <a href="@item.url" target="_blank">  Go to article <i class="fa fa-external-link"></i>  </a>
+            </div>
+        }
+    </div>
+}else
+{
+    <br />
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4><b>Videos</b></h4>
+            <p>Check back later</p>
+        </div>
+    </div>
+    
+    
+}

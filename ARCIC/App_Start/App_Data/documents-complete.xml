@@ -1,0 +1,2601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - -->
+<!-- THIS DATA FILE IS USED TO POPULATE THE /ARTICLES/EXCLUSIVE.ASPX PAGE.        -->
+<!-- - -->
+<!-- IT IS SEPARATE FROM THE RSS FEEDS SPECIFICALLY BECAUSE ADDITIONAL TAGS       -->
+<!-- AND INFORMATION ARE NOT PERMITTED IN THE RSS XML FORMAT.  THESE APP_DATA     -->
+<!-- FOLDERS WILL BE THE PRIMARY DATA RESOURCES AND WHAT IS PLACED IN OTHER       -->
+<!-- DATA FOLDERS WILL BE GENERATED FROM HERE.                                    -->
+<!-- - -->
+<!-- FOR TAGS THAT WILL BE REUSED WITHIN THE RSS FEED, WE WILL REUSE THOSE        -->
+<!-- TAGS HERE.  THAT WAY IT IS A SIMPLE AUTOMATED PROCESS TO COPY THE            -->
+<!-- doc TAG CONTENTS TO AN RSS FEED ITEM TAG.                                   -->
+<!-- - -->
+<!-- imageURL IS STRUCTURED AS FOLLOWS:                                           -->
+<!-- [DATE]-[ARTICLE TYPE]-[ARTICLE ORDER]-[ARTICLE ID]-[PHOTO COUNT][SIZE].JPG   -->
+<!-- DATE= YYYYMMDD                                                               -->
+<!-- ARTICLE TYPE = 01: EXCLUSIVE, 02: MILITARY/GOVERNMENT, 03: PUBLIC            -->
+<!-- ARTICLE ORDER = IF THERE ARE MULTIPLE ARTICLES ON THE SAME DAY, THEIR ORDER  -->
+<!-- ARTICLE ID = THE docID OF THE ARTICLE WITHIN THE XML FILE                   -->
+<!-- PHOTO COUNT = IF THERE ARE MULTIPLE PHOTOS FOR A SINGLE ARTICLE              -->
+<!-- SIZE = t: THUMB (125w x 100h), p: PAGE (320w x 240h), f: FULL (800w x 600h)  -->
+<!-- - -->
+
+<documents>	
+	<doc>
+		<docID>84</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/10/2016 12:00:00</entDate>
+		<sortDate>20160810000000</sortDate>
+		<pubDate>25-29 Jan, 2016</pubDate>
+		<docURL>../app_Documents/UQ/</docURL>
+		<docFilename>UQ16_Future_Force_Design_II-Report.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Unified Quest</source>
+		<title>Future Force Design II FINAL REPORT</title>
+		<description>
+			The purpose of the Unified Quest 2016 Future Force Design II (FFD-II) Seminar was to examine how theater armies, corps, and divisions operate in 2030 across the range of military operations – including the ability to serve as Army Forces (ARFOR) Commander, Combined Joint Force Land Component Commander (CJFLCC), or Commander, Joint Task Force (JTF) – to inform development of operational and organizational (O&amp;O) concepts. Four regionally aligned working groups staffed with Army service component command (ASCC), corps, and division planners, red team personnel, personnel from Army Training and Doctrine Command (TRADOC) G-2, and representatives from the Army Centers of Excellence (CoE)/Capability Development Integration Directorates (CDID) addressed Army Warfighting Challenges. Using four scenario extracts, these working groups examined assigned and emerging tasks by organizational echelon to determine gaps and opportunities affecting the performance of the 2030 force. Because of these activities, this event yielded insight into the roles, functions, and tasks of future echelons above brigade, described interdependencies by echelon, and contributed to the CoE CDIDs’ further operational and organizational (O&amp;O) concept development.
+		</description>
+		<authors>ARCIC Future Warfare Division</authors>
+		<publication>Report</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort>Think</lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection>Unified Quest</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>/Initiatiaves/UnifiedQuest</pageURL>
+		<imageURL>0</imageURL>
+	</doc>	
+	<doc>
+		<docID>83</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/10/2016 12:00:00</entDate>
+		<sortDate>20160810000000</sortDate>
+		<pubDate>29 April, 2016</pubDate>
+		<docURL>../app_Documents/UQ/</docURL>
+		<docFilename>UQ16_Future_Force_Design_I-Report.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Unified Quest</source>
+		<title>Future Force Design I FINAL REPORT</title>
+		<description>
+			Unified Quest (UQ) is the Army Chief of Staff’s future study plan. UQ 2016 is a twelve-month program that seeks to explore, develop, and refine the Operations and Organizations (O&amp;O) concepts required for the Army, as a part of the joint force, to win in a complex world. Emphasizing Anti-access and Area Denial (A2/AD), the study explored the development of Future Force Formations at four echelons (Brigade, Division, Corps, and Theater Army). The UQ study is synchronized with Unified Challenge (UC), under the auspices of F2025M: Army’s Campaign of Learning, for the purpose of allowing ARCIC to inform O&amp;O concepts at the Strategic, Operational, and Tactical levels.
+		</description>
+		<authors></authors>
+		<publication>Report</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort>Think</lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection>Unified Quest</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>/Initiatiaves/UnifiedQuest</pageURL>
+		<imageURL>0</imageURL>
+	</doc>	
+	<doc>
+		<docID>82</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/03/2016 12:00:00</entDate>
+		<sortDate>20160803000000</sortDate>
+		<pubDate>26 May, 2016</pubDate>
+		<docURL>../app_Documents/UC/</docURL>
+		<docFilename>UC_17_ INFORMATION_PAPER_02JUN16.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Unified Challenge</source>
+		<title>Overview of Unified Challenge FY17</title>
+		<description>
+			Think. In FY 17, UC will explore O&amp;O concepts, force designs, and innovative technologies that will improve how the Army operates in the future (2025-2030 timeframe). Specifically, we will explore possible solutions to issues such as: how the Army, against a near-peer threat conducts reconnaissance and security operations; conducts Joint Combined Arms Maneuver without air superiority; exercises Mission Command and synchronizes operations across all domains; and develops capable formations through echelonment, allocation, and force pooling. Additionally, Unified Challenge provides opportunities for the operational force to influence future force development while training commanders and their staffs.
+		</description>
+		<authors>LTC Sakimura</authors>
+		<publication>Info Paper</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort>Think</lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Challenge</initiative>
+			<connection>Unified Challenge</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>/Initiatiaves/UnifiedChallenge</pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>81</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/03/2016 12:00:00</entDate>
+		<sortDate>20160803000000</sortDate>
+		<pubDate>8 July, 2016</pubDate>
+		<docURL>../app_Documents/UC/</docURL>
+		<docFilename>UC_16_2_ Info_Paper-8JUL16.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Unified Challenge</source>
+		<title>Overview of Unified Challenge 16.2</title>
+		<description>
+			Think. UC 16.2 assesses initial F2025 O&amp;O formations for Theater Army (TA), Corps and Division to include employment of initial Brigades and innovative technologies that will improve how the Army operates in the future (2025-2030 timeframe) to: Refine/update the F2025M capabilities needed by the TA, Corps and Division; Assess current formations for modification and identify new formations required in 2025 and beyond; Refine/update what F2025M formations need to be organic or task-organized to the TA, Corps and Division. These solutions will inform O&amp;O development and feed into future Unified Quest events. Additionally, Unified Challenge 16.2 provides opportunities for the operational force to influence future force development while training commanders and their staffs.
+		</description>
+		<authors>LTC Matherne</authors>
+		<publication>Info Paper</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort>Learn</lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Challenge</initiative>
+			<connection>Unified Challenge</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>/Initiatiaves/UnifiedChallenge</pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>80</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/03/2016 12:00:00</entDate>
+		<sortDate>20160803000000</sortDate>
+		<pubDate>26 Feb, 2016</pubDate>
+		<docURL>../app_Documents/UC/</docURL>
+		<docFilename>UC_16_1_Information_Paper_09MAR_2016V3.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Unified Challenge</source>
+		<title>Unified Challenge 16.1 Game-Based Experiment</title>
+		<description>
+			The Mission Command Center of Excellence (MCCoE) leads the UC 16.1 game-based experiment (GAMEXp), 14-25 MAR 16, at Fort Leavenworth, KS in order to experiment with O&amp;O Concepts within the framework for Theater Army, Corps and Division formations established by the Unified Quest Future Force Design Seminars I &amp; II. This experiment focuses on Brigade Concept Teams (BCT), functional brigades, multi-functional brigades, and other formations directly influenced by the Theater Army (TA), Corps and Divisions and will provide the initial assessment of the baseline concepts for formations required in F2025B.
+		</description>
+		<authors>MAJ Ed Delnero</authors>
+		<publication>Info Paper</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort>Learn</lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Challenge</initiative>
+			<connection>Unified Challenge</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>/Initiatiaves/UnifiedChallenge</pageURL>
+		<imageURL>img-uc80</imageURL>
+	</doc>
+	<doc>
+		<docID>79</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>12/22/2015 12:00:00</entDate>
+		<sortDate>20151106000000</sortDate>
+		<pubDate>November 06, 2015</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>CVMS_SEP_Master.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>The US Army Combat Vehicle Modernization Strategy</title>
+		<description>
+			This document provides an enduring U.S. Army combat vehicle modernization strategy
+			(CVMS). The strategy establishes the ends, ways and means to modernize Army combat vehicles
+			in the near-, mid- and far- terms to meet the mobility, protection and lethality capability
+			requirements of future Army formations.
+		</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>79</imageURL>
+	</doc>
+	<doc>
+		<docID>78</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/22/2015 12:00:00</entDate>
+		<sortDate>20150622000000</sortDate>
+		<pubDate>June 22, 2015</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC-WhitePaper-ST-Needs-Info-Paper.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>ARCIC White Paper S&amp;T Needs Info Paper</title>
+		<description>
+			This information paper provides an overview of TRADOC's science and
+			technology imperatives for Force 2025 and Beyond (F2025B).  Science and
+			technology is a critical enabler that will help the Army achieve the
+			capabilities required for the future force and win in a complex world.
+		</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Concept Development and Learning Directorate</directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>78</imageURL>
+	</doc>
+	<doc>
+		<docID>77</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>07/31/2015 12:00:00</entDate>
+		<sortDate>20150710000000</sortDate>
+		<pubDate>July 10, 2015</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>AWFC-Information-Paper-10JUL15.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Army Warfighting Challenges (AWFC) INFORMATION PAPER</title>
+		<description>The Army uses the AWFC analytical framework to focus prioritized efforts on first-order enduring military challenges and as the organizing construct to lead future force development. AWFCs are enduring first-order problems, the solutions to which improve the combat effectiveness of the current and future force. The AWFC methodology integrates near- (today to 2020), mid- (2020 to 2030), and far-term (2030 to 2040 and beyond) modernization efforts for the Army. Fully implemented, the AWFC framework sustains collaboration across the broadest community of practice (CoP) by providing a common foundation for Army concept and capability development.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Initiatives/army-warfighting-challenges.aspx</pageURL>
+		<imageURL>77</imageURL>
+	</doc>
+	<doc>
+		<docID>76</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>3/17/2015 12:00:00</entDate>
+		<sortDate>20150312000000</sortDate>
+		<pubDate>March 12, 2015</pubDate>
+		<docURL>../App_Documents/</docURL>
+		<docFilename>ARCIC_Executive-Report_Unified-Quest-2014_Win-In-A-Complex-World_12Mar15.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Unified Quest 2014 Win in a Complex World Executive Report</title>
+		<description>Unified Quest is the Army Chief of Staff's future study plan, and recently concluded a yearlong effort investigating emerging tactical, operational and strategic challenges in a plausible operating environment.</description>
+		<authors></authors>
+		<publication>Report</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>76</imageURL>
+	</doc>
+	<doc>
+		<docID>75</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>03/04/2015 12:00:00</entDate>
+		<sortDate>20150303000000</sortDate>
+		<pubDate>March 3, 2015</pubDate>
+		<docURL>http://usacac.army.mil/CAC2/MilitaryReview/Archives/English/</docURL>
+		<docFilename>MilitaryReview_20150430_art005.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Continuity and Change: The Army Operating Concept and Clear Thinking About Future War</title>
+		<description>Expert knowledge is a pillar of our military profession, and the ability to think clearly about war is fundamental to developing expert knowledge across a career of service. Junior leaders must understand war to explain to their soldiers how their unit's actions contribute to the accomplishment of campaign objectives. Senior officers draw on their understanding of war to provide the best military advice to civilian leaders.</description>
+		<authors>Lt. Gen. H.R. McMaster, Ph.D., U.S. Army</authors>
+		<publication>Military Review</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>75</imageURL>
+	</doc>
+	<doc>
+		<docID>74</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>03/04/2015 12:00:00</entDate>
+		<sortDate>20150115000000</sortDate>
+		<pubDate>January 15, 2015</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_OneSheet_Strategic-Landpower-Initiative_15JAN2015.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Strategic Landpower Initiative</title>
+		<description>The Strategic Landpower Initiative One Sheet is meant to explain what the benefits and key points are of Strategic Landpower, as well as the benefits of Joint Concepts for Human Aspects of Military Operations and Integrated Campaigning.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Strategic Landpower Task Force</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>74</imageURL>
+	</doc>
+	<doc>
+		<docID>73</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/11/2015 12:00:00</entDate>
+		<sortDate>20141114000000</sortDate>
+		<pubDate>November 14, 2014</pubDate>
+		<docURL>http://www.slideshare.net/adaptingthearmy/</docURL>
+		<docFilename>army-operating-concept-team-teach</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Army Operating Concept Team Teach</title>
+		<description>The purpose of the Army Operating Concept Team Teach is to provide uniformed and civilian leaders across the Army and it's Joint, Interorganizational and multinational partners with an understanding of the Army's vision of future conflict as described in the U.S. Army Operating Concept: Win in a Complex World.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Concept Development and Learning Directorate</directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection></connection>
+			<focus>Concepts</focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>73</imageURL>
+	</doc>
+	<doc>
+		<docID>72</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/11/2015 12:00:00</entDate>
+		<sortDate>20140804000000</sortDate>
+		<pubDate>August 4, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_WhitePaper_Science-And-Technology-Lines-of-Effort-for-a-Future-Expeditionary-Army_16SEP14.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>White Paper: Science and Technology Lines of Effort for a Future Expeditionary Army</title>
+		<description>The primary purpose of the S&amp;T Lines of effort is to provide clear and concise articulation of the capabilities needed and leading technologies that stand to fundamentally change the force in the decade of the 2030s. The Army requires expeditionary technology driven capabilities allowing rapid deployment of scalable, operationally significant forces on short notice to austere locations to conduct the full Range of Military Operations immediately upon arrival, often in persistent anti-access / area denial environments.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Concept Development and Learning Directorate</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>72</imageURL>
+	</doc>
+	<doc>
+		<docID>71</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/11/2015 12:00:00</entDate>
+		<sortDate>20140818000000</sortDate>
+		<pubDate>August 18, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_InformationPaper_TRADOC-Technology-and-Capability-Objectives-for-Force-2025-and-Beyond_18AUG14.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Info Paper: TRADOC Technology and Capability Objectives for Force 2025 and Beyond</title>
+		<description>Stemming from a CSA tasking after the October 2013 Strategy and Future Force Review, TRADOC initiated a deliberate effort to identify and analyze emerging candidate technology solutions to inform the Army's Science and Technology (S&amp;T) decisionmakers on the needs of the Warfighter.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Concept Development and Learning Directorate</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>71</imageURL>
+	</doc>
+	<doc>
+		<docID>70</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>04/30/2016 12:00:00</entDate>
+		<sortDate>20160430000000</sortDate>
+		<pubDate>Mar. 16, 2016</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>AWFC-Current.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Flyer: Army Warfighting Challenges</title>
+		<description>The Army Warfighting Challenges flyer for the 2014 Association of the United States Army Annual Meeting identifies the Army's enduring first order problems, the solutions to which will improve current and future force combat effectiveness.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Initiatives/army-warfighting-challenges.aspx</pageURL>
+		<imageURL>70</imageURL>
+	</doc>
+	<doc>
+		<docID>69</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/07/2014 12:00:00</entDate>
+		<sortDate>20141007000000</sortDate>
+		<pubDate>October 7, 2014</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>TP525-3-1.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Operating Concept: Win in a Complex World</title>
+		<description>(TRADOC Pamphlet 525-3-1) The Army is the Nation's principal military force organized, trained, and equipped for prompt and sustained operations on land. As one of the critical elements in our national defense strategy, the Army must continually adapt to changing conditions and evolving threats to our security. An essential part of that adaptation is the development of new ideas to address future challenges.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/operating.aspx</pageURL>
+		<imageURL>69</imageURL>
+	</doc>
+	<doc>
+		<docID>68</docID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>10/07/2014 12:00:00</entDate>
+		<sortDate>20141007000000</sortDate>
+		<pubDate>October 7, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>TRADOC_AUSA_Force2025AndBeyond-UnifiedLandOperations-WinInAComplexWorld_07OCT2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>Force 2025 &amp; Beyond - Unified Land Operations, Win in a Complex World</title>
+		<description>This pamphlet provides an overview of Force 2025 and Beyond, TRADOC's planning framework to realize the Army's Strategic Vision and deliver the Army we need for the Future.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>68</imageURL>
+	</doc>
+	<doc>
+		<docID>67</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/01/2014 12:00:00</entDate>
+		<sortDate>20141001000000</sortDate>
+		<pubDate>October 1, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_AUSA-Quadfold_TheUSArmyOperatingConcept_01OCT2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Quadfold: The U.S. Army Operating Concept</title>
+		<description>The Army, as part of joint, interorganizational, and multinational teams, protects the homeland, shapes security environments to prevent conflict, and engages regionally to respond to and resolve crises.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>67</imageURL>
+	</doc>
+	<doc>
+		<docID>66</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/06/2014 12:00:00</entDate>
+		<sortDate>20140806000000</sortDate>
+		<pubDate>August 6, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>TRADOC_Memo_Force-2025-and-Beyond-Setting-the-Course_06AUG2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>Force 2025 and Beyond: Setting the Course</title>
+		<description>Secretary of the Army John McHugh and Chief of Staff Ray Odierno discuss how the United States faces a rapidly changing global security environment that is volatile, unstable and increasingly threatening to U.S. interests. They agree that now is the time for the Army to examine how to adapt to face future challenges within this dynamic environment.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>66</imageURL>
+	</doc>
+	<doc>
+		<docID>65</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>06/09/2014 12:00:00</entDate>
+		<sortDate>20140521000000</sortDate>
+		<pubDate>May 21, 2014</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>TP525-3-7.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Human Dimension Concept</title>
+		<description>(TRADOC Pam 525-3-7) TRADOC Pam 525-3-7 provides a framework for how we will select, develop, sustain, and transition Soldiers and Civilians for the U.S. Army. It reinforces the tenets of the Army Professional Campaign, the Army Leader Development Strategy, and the Army Learning Model. It emphasizes the need to capitalize on advances in science and technology to ensure that our Army maintains its competitive advantage. It explores the strategies required to reinforce and integrate human dimension ideas within the Army's Human Capital Enterprise. It also brings character development to the forefront, stressing the importance of Army Values through a career of service.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/human-dimension.aspx</pageURL>
+		<imageURL>65</imageURL>
+	</doc>
+	<doc>
+		<docID>64</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>05/08/2014 12:00:00</entDate>
+		<sortDate>20140508000001</sortDate>
+		<pubDate>May 8, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_Report_Unified-Quest-14_Strategic-Trends-Analysis_08MAY2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Strategic Trends Analysis: The Landscape of Future Conflict</title>
+		<description>The Army Capabilities Integration Center's (ARCIC) Future Warfare Division leads the Army Chief of Staff's future study plan, Unified Quest. By exploring the future operational environment of 2030-2040, we inform today's strategic decisions through a vision of future conflict. The following trends are derived from Unified Quest events, National Intelligence Council documents, and other strategic trends reports.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>64</imageURL>
+	</doc>
+	<doc>
+		<docID>63</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>05/08/2014 12:00:00</entDate>
+		<sortDate>20140508000000</sortDate>
+		<pubDate>May 8, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_Report_Unified-Quest-14_The-Megacity-Operational-Challenges-for-Force-2025-and-Beyond_08MAY2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>The Megacity: Operational Challenges for Force 2025 and Beyond</title>
+		<description>The Army Chief of Staff's future study plan, Unified Quest, recently examined how military forces might conduct operations in or around a megacity and approaches to achieve military success in urban environments in 2030-2040. The Army Capabilities Integration Center (ARCIC) Future Warfare Division, in conjunction with its counterparts from the U.S. Army Special Operations Command, the CSA's Strategic Studies Group, and the United Kingdom's Ministry of Defence, hosted the Focused Environment Seminar (FES) 4-7 February 2014 to explore urban operations in a megacity.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>63</imageURL>
+	</doc>
+	<doc>
+		<docID>62</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>03/15/2014 12:00:00</entDate>
+		<sortDate>20140315000000</sortDate>
+		<pubDate>March 15, 2014</pubDate>
+		<docURL>http://www.dtic.mil/doctrine/new_pubs/</docURL>
+		<docFilename>jp1_02.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Defense Technical Information Center</source>
+		<title>Joint Publication 1-02: Department of Defense Dictionary of Military and Associated Terms</title>
+		<description>The Joint Publication 1-02, Department of Defense Dictionary of Military and Associated Terms sets forth standard US military and associated terminology to encompass the joint activity of the Armed Forces of the United States. These military and associated terms, together with their definitions, constitute approved Department of Defense (DOD) terminology for general use by all DOD components.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>62</imageURL>
+	</doc>
+	<doc>
+		<docID>61</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>03/12/2014 12:00:00</entDate>
+		<sortDate>20140312000000</sortDate>
+		<pubDate>March 12, 2014</pubDate>
+		<docURL>http://armypubs.army.mil/doctrine/DR_pubs/dr_a/pdf/</docURL>
+		<docFilename>adp6_0_new.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army</source>
+		<title>ADP 6-0: Mission Command</title>
+		<description>Army Doctrine Publication (ADP) 6-0 presents the Army's guidance on command, control, and the mission command warfighting function. This publication concisely describes how commanders, supported by their staffs, combine the art of command and the science of control to understand situations, make decisions, direct action, and accomplish missions.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Doctrine</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>61</imageURL>
+	</doc>
+	<doc>
+		<docID>60</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/24/2014 12:00:00</entDate>
+		<sortDate>20140224000000</sortDate>
+		<pubDate>February 24, 2014</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-8-5.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Functional Concept for Engagement</title>
+		<description>(TRADOC Pam 525-8-5) This concept describes broad capabilities the Army will require to enable engagement and its application in decisive action. The concept describes the need for Army forces to enter an area of operations on foreign soil; communicate with local leaders and populace; assess needs; understand the situation, and develop capacity-building programs; and direct efforts toward achieving outcomes consistent with U.S. interests.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>60</imageURL>
+	</doc>
+	<doc>
+		<docID>59</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/20/2014 12:00:00</entDate>
+		<sortDate>20140220000002</sortDate>
+		<pubDate>February 20, 2014</pubDate>
+		<docURL>http://www.slideshare.net/adaptingthearmy/</docURL>
+		<docFilename>2014-wausa-network-integration-evaluation</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Network Integration Evaluations</title>
+		<description>At the 2014 Winter AUSA, BG Charlton discussed the future of Network Integration Evaluations. Topics included insights into system complexity and compatibility, key objectives and the flow of future events. BG Charlton also discussed how to improve relations with industry following NIEs.</description>
+		<authors>
+			<author>BG John Charlton</author>
+		</authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>59</imageURL>
+	</doc>
+	<doc>
+		<docID>58</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/20/2014 12:00:00</entDate>
+		<sortDate>20140220000001</sortDate>
+		<pubDate>February 20, 2014</pubDate>
+		<docURL>http://www.slideshare.net/adaptingthearmy/</docURL>
+		<docFilename>2014-wausa-technology-to-support-strategic-landpower-in-2025</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Strategic Landpower and Force 2025 and Beyond</title>
+		<description>At the 2014 Winter AUSA, MG Hix discussed strategic landpower and the implications for technology in an operational context.</description>
+		<authors>
+			<author>MG William Hix</author>
+		</authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>58</imageURL>
+	</doc>
+	<doc>
+		<docID>57</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>02/20/2014 12:00:00</entDate>
+		<sortDate>20140220000000</sortDate>
+		<pubDate>February 20, 2014</pubDate>
+		<docURL>http://www.slideshare.net/adaptingthearmy/</docURL>
+		<docFilename>2014-wausa-science-and-technology</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>S&amp;T Focus: Force 2025 and Beyond</title>
+		<description>At the 2014 Winter AUSA, COL Cross discussed how science and technology affects Force 2025 and Beyond, the challenge - Will Today's Investments Secure the Future?, imperatives for change: Emerging Threats and the Need to be Expeditionary, and ready for the future: Considerations for 2025 &amp; Beyond.</description>
+		<authors>
+			<author>COL Christopher Cross</author>
+		</authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>57</imageURL>
+	</doc>
+	<doc>
+		<docID>56</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/28/2014 12:00:00</entDate>
+		<sortDate>20140128000000</sortDate>
+		<pubDate>January 28, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_Pamphlet_AmericasArmy-GloballyResponsiveRegionallyEngaged_28JAN2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Americas Army: Globally Responsive, Regionally Engaged</title>
+		<description>The All-Volunteer Army will remain the most highly trained and professional land force in the world. It is uniquely organized with the capability and capacity to provide expeditionary, decisive landpower to the Joint Force and ready to perform across the range of military operations to Prevent, Shape, and Win in support of Combatant Commanders to defend the Nation and its interests at home and abroad, both today and against emerging threats.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>56</imageURL>
+	</doc>
+	<doc>
+		<docID>55</docID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/23/2014 12:00:00</entDate>
+		<sortDate>20140123000002</sortDate>
+		<pubDate>January 23, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>USArmy_Slide_Army-Vision-Force-2025-And-Beyond_23JAN2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Army Vision for Force 2025 and Beyond</title>
+		<description>The All‐Volunteer Army will remain the most highly trained and professional land force in the world. It is uniquely organized with the capability and capacity to provide expeditionary, decisive landpower to the Joint Force and ready to perform across the range of military operations to Prevent, Shape, and Win in support of Combatant Commanders to defend the Nation and its interests at home and abroad, both today and against emerging threats.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>55</imageURL>
+	</doc>
+	<doc>
+		<docID>54</docID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/23/2014 12:00:00</entDate>
+		<sortDate>20140123000001</sortDate>
+		<pubDate>January 23, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>USArmy_WhitePaper_Army-Vision-Force-2025_23JAN2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Army Vision for Force 2025</title>
+		<description>The future global security environment points to further instability, and as the Army remains a guardian of the Nation's security, it continues to change in the near-term, evolve in the mid-term, and innovate in the long-term.1 As the Army retains overmatch, we redesign the force to meet America's future needs.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>54</imageURL>
+	</doc>
+	<doc>
+		<docID>53</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/23/2014 12:00:00</entDate>
+		<sortDate>20140123000000</sortDate>
+		<pubDate>January 23, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>USArmy_WhitePaper_Force-2025-Maneuvers_23JAN2014.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Force 2025 Maneuvers</title>
+		<description>Force 2025 Maneuvers provides the means to evaluate and validate expeditionary capabilities for the Brigade Combat Team (BCT), retain overmatch through 2025, and set conditions for fundamental changes to the Army beyond 2025. To accomplish these objectives, Force 2025 Maneuvers includes wargaming, exercises, experiments, evaluations, and other efforts focused on determining how the Army organizes and designs the force. Ultimately, in the operational and organization concept for Force 2025, the Army explores and validates organizational structures and integrated DOTMLPF solutions needed to optimize the force to accomplish its assigned missions in the future.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>53</imageURL>
+	</doc>
+	<doc>
+		<docID>52</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/10/2014 12:00:00</entDate>
+		<sortDate>20140110000000</sortDate>
+		<pubDate>January 10, 2014</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Strategic-Landpower-Call-For-Ideas.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Strategic Landpower - Call for Ideas</title>
+		<description>Reinforcing the discussion on Strategic Landpower, the U.S. Training and Doctrine Command (TRADOC) is looking for ideas and thought pieces on this subject. They are looking to foster and expand the discussion regarding the tenants and ideas of Strategic Landpower - what it should be and how it should shape along DOTMLPF functions.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Strategic Landpower Task Force</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>52</imageURL>
+	</doc>
+	<doc>
+		<docID>51</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>11/20/2013 12:00:00</entDate>
+		<sortDate>20131120000001</sortDate>
+		<pubDate>November 20, 2013</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>TRADOC_Summary_Army-Campaign-Of-Learning-Senior-Leader-Seminar_20Nov2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Army Campaign of Learning - Senior Leader Seminar</title>
+		<description>The November 2013 Army Campaign of Learning Senior Leader Seminar was the culminating event in a series of efforts that comprised the Army's 2013 Campaign of Learning (CoL). The seminar format allowed senior leaders to discuss and elicit comment on significant insights from the 2013 Campaign including Deep Futures exploration, Brigade Modernization Command activities, experimentation, concept development, war-gaming events, seminars, and focused study efforts.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>51</imageURL>
+	</doc>
+	<doc>
+		<docID>50</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>11/20/2013 12:00:00</entDate>
+		<sortDate>20131120000000</sortDate>
+		<pubDate>November 20, 2013</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_Executive-Report_Unified-Quest-2013_Deep-Future-Wargame-2030-2040_20Nov2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Unified Quest 2013 Deep Future Wargame 2030-2040 Executive Report</title>
+		<description>Unified Quest is the Army Chief of Staff's future study plan, and recently concluded a yearlong effort investigating emerging tactical, operational and strategic challenges in a plausible operating environment.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>50</imageURL>
+	</doc>
+	<doc>
+		<docID>49</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>11/01/2013 12:00:00</entDate>
+		<sortDate>20131101000000</sortDate>
+		<pubDate>November 01, 2013</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>US-Army-In-Asia-Pacific-Ensuring-Stability-And-Security_Nov2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>U.S. Army in Asia-Pacific: Ensuring Stability and Security</title>
+		<description>The purpose of this paper is to provide an overview of U.S. Army capabilities and contributions in the Asia-Pacific as we rebalance after more than a decade of war with major deployments to combat in Iraq and Afghanistan. The Army never left the Asia-Pacific, though during this period it had to place greater emphasis on our warfighting responsibilities in those conflicts. Now Asia-Pacific is the home of the largest Army command. Our deterrent and contingency response capabilities have been greatly increased. Our engagement with allies and friendly nations has dramatically expanded and these interactions promise to strengthen and grow the capabilities and capacity of those countries to meet their own, as well as our mutual, security concerns.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>49</imageURL>
+	</doc>
+	<doc>
+		<docID>48</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/28/2013 12:00:00</entDate>
+		<sortDate>20131028000000</sortDate>
+		<pubDate>October 28, 2013</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Strategic-Landpower-White-Paper-28OCT2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Strategic Landpower: Winning the Clash of Wills</title>
+		<description>The recently released White Paper, "Strategic Landpower: Winning the Clash of Wills," identifies a growing problem in linking military action to achieving national objectives. It also describes the requirement for rigorous analysis to determine solutions that will ensure we provide the right capabilities for the nation in an era of fiscal austerity.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Strategic Landpower Task Force</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>48</imageURL>
+	</doc>
+	<doc>
+		<docID>47</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/01/2013 12:00:00</entDate>
+		<sortDate>20131001000000</sortDate>
+		<pubDate>October 01, 2013</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Top-10-Insights-On-The-US-Army-In-Transition_OCT2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Top 10 Insights on the U.S. Army in Transition</title>
+		<description>The U.S. Army is at a strategic inflection point where we will shift from an Army of execution to an Army of preparation. This infographic highlights highlights themes, insights and key data related to this critical transition.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>47</imageURL>
+	</doc>
+	<doc>
+		<docID>46</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/19/2013 12:00:00</entDate>
+		<sortDate>20130819000000</sortDate>
+		<pubDate>August 19, 2013</pubDate>
+		<docURL>http://www.ausa.org/publications/ilw/DigitalPublications/Documents/</docURL>
+		<docFilename>lwp97/index.html</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>Website</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Association of the United States Army</source>
+		<title>Design, Mission Command and the Network: Enabling Organizational Adaptation (ARCIC / AUSA Writing Contest Winner)</title>
+		<description>Congratulations to Lt. Col. Todd A. Schmidt from the Fires Center of Excellence for the selection of his paper, "Design, Mission Command and the Network: Enabling Organizational Adaptation" as the winner of the 2013 writing contest sponsored by ARCIC and Association of United States Army (AUSA) National.</description>
+		<authors>
+			<author>Todd A. Schmidt</author>
+		</authors>
+		<publication>The Land Warfare Papers</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>46</imageURL>
+	</doc>
+	<doc>
+		<docID>45</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>06/15/2013 12:00:00</entDate>
+		<sortDate>20130615000000</sortDate>
+		<pubDate>June 15, 2013</pubDate>
+		<docURL>http://www.ausa.org/publications/armymagazine/archive/2013/06/Documents/</docURL>
+		<docFilename>Gourley2_June2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Association of the United States Army</source>
+		<title>With NIE 13.2, Mission Command Continues to Evolve and Expand</title>
+		<description>As described in the March issue of ARMY Magazine ("Mission Command Applications 'Ebb and Flow' with Army's Network"), the evolution of the U.S. Army's Mission Command capabilities can be viewed as an "ebb and flow" between an emphasis on new hardware developments to expand and strengthen the Army network — integrated and validated through processes and events like the semiannual Network Integration Evaluations (NIE) — and an emphasis on the applications that will run over the network.</description>
+		<authors>
+			<author>Scott R. Gourley</author>
+		</authors>
+		<publication>Army Magazine</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>45</imageURL>
+	</doc>
+	<doc>
+		<docID>44</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>06/01/2013 12:00:00</entDate>
+		<sortDate>20130601000000</sortDate>
+		<pubDate>June 01, 2013</pubDate>
+		<docURL>http://www.ausa.org/publications/armymagazine/archive/2013/06/Documents/</docURL>
+		<docFilename>Gourley1_June2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Association of the United States Army</source>
+		<title>Nett Warrior: Mission Command at the Tactical Edge</title>
+		<description>Seen by many as an essential facilitator at the tactical edge of Mission Command, the U.S. Army's Nett Warrior program highlights the importance of service organizational cooperation — as well as warfighter assessment and field experience — in refining and enhancing tactical capabilities.</description>
+		<authors>
+			<author>Scott R. Gourley</author>
+		</authors>
+		<publication>Army Magazine</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>44</imageURL>
+	</doc>
+	<doc>
+		<docID>43</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>05/01/2013 12:00:00</entDate>
+		<sortDate>20130501000000</sortDate>
+		<pubDate>May 01, 2013</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>TRADOC_Victory-Starts-Here-A-Short-40-Year-History-of-the-US-Army-Training-and-Doctrine-Command_01MAY2013.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Victory Starts Here: A short 40-year history of the U.S. Army Training and Doctrine Command</title>
+		<description>I am pleased to share this monograph, a concise chronicle of what the command has accomplished in the past four decades. At this, the 40-year mark in its history, the US Army Training and Doctrine Command (TRADOC) remains one of the most unique organizations in our Army.</description>
+		<authors>
+			<author>Benjamin King</author>
+		</authors>
+		<publication>Combat Studies Institute Press</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>43</imageURL>
+	</doc>
+	<doc>
+		<docID>42</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>03/01/2013 12:00:00</entDate>
+		<sortDate>20130301000000</sortDate>
+		<pubDate>March 01, 2013</pubDate>
+		<docURL>http://sill-www.army.mil/firesbulletin/2013/Mar-Apr/</docURL>
+		<docFilename>mar_apr.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army</source>
+		<title>Operational Benefits of AIAMD Capability</title>
+		<description>If you are familiar with the Army's Air and Missile Defense (AMD) Strategy, you know that our efforts to develop the Army's Integrated Air and Missile Defense Capability (AIAMD) are central to achieving our long-term objectives. While we still may be three years away from seeing an initial capability fielded, I believe we are overdue a discussion on how it might change the way we fight. With that in mind, I'd like to begin that discussion by addressing what I see as the primary operational benefits of a fully capable AIAMD (Increment 2) force, spanning the full spectrum of anticipated operations in a given theater.</description>
+		<authors>
+			<author>COL Don Fryc</author>
+		</authors>
+		<publication>Fires Bulletin</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Capabilities Developments Directorate</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>42</imageURL>
+	</doc>
+	<doc>
+		<docID>41</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>12/19/2012 12:00:00</entDate>
+		<sortDate>20121219000000</sortDate>
+		<pubDate>December 19, 2012</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-3-0.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Capstone Concept</title>
+		<description>(TRADOC Pam 525-3-0) For generations, the U.S. Army has proudly served the Nation by winning wars, securing peace, and protecting national interests as part of the joint force. From Yorktown to Sadr City, the men and women of the Army demonstrated the ability to force terms upon our enemies when all other options failed. There are many elements of national power, but a force that can root out and defeat our enemies, and exert control to prevent and end conflict remains the foundation of our Nation's ability to deter aggression. Concurrently, through partnership activities, the Army creates shared values and interests that provide for our long-term security, decreasing the likeliness we have to use force in defense of our Nation.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/capstone.aspx</pageURL>
+		<imageURL>41</imageURL>
+	</doc>
+	<doc>
+		<docID>40</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>11/01/2012 12:00:00</entDate>
+		<sortDate>20121101000000</sortDate>
+		<pubDate>November 01, 2012</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Proceedings-USNI_Who-We-Are_GEN-James-Amos_01NOV2012.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Who We Are: In an ever-changing, ever-dangerous world, the Marine Corps remains a constant in our nation's defense</title>
+		<description>From the American Revolution to Afghanistan (this month marks 237 years) Marines have played a key role in the warfighting heritage of our nation. Yet, the Marine Corps is but one arm of a strong team. On the modern battlefield, no element of the joint force fights alone. I am fortunate to stand shoulder-to-shoulder with my fellow service chiefs—each leading their respective branch, each representing the world's finest. It is with pride that Marines take their place among those warriors. Each service fills its unique role in the joint force, but none can win without the others. In fact, this tightly integrated, multi-domain capability is the very essence of what makes the U.S. joint force so powerful.</description>
+		<authors>
+			<author>GEN James Amos, USMC</author>
+		</authors>
+		<publication>Proceedings</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Strategic Landpower Task Force</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>40</imageURL>
+	</doc>
+	<doc>
+		<docID>39</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/01/2012 12:00:00</entDate>
+		<sortDate>20121001000000</sortDate>
+		<pubDate>October 01, 2012</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Military-Operations_Whither-Armor_Clint-Ancker_Vol01-Issue02-Fall2012-Pgs4to8.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Wither Armor?</title>
+		<description>Periodically since its introduction in World War I defense analysts (military and civilian) announce the death of the tank, or wax eloquent on the unsuitability of the tank in various conditions. It has continued to the present day. The argument against the tank usually takes one of three forms. First, the tank is obsolete because an effective counter has been found. Second, the tank cannot be used in certain physical environments (usually the ones declared the most important for warfare at the time). Third, the tank is useless in some form of warfare (the one declared the wave of the future). Yet the tank endures in almost all modern armies today. So the question is: why?</description>
+		<authors>
+			<author>Clint Ancker</author>
+		</authors>
+		<publication>The Journal of Military Operations</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Ground Combat Vehicle</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>39</imageURL>
+	</doc>
+	<doc>
+		<docID>38</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>09/01/2012 12:00:00</entDate>
+		<sortDate>20120901000000</sortDate>
+		<pubDate>September 01, 2012</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Land-Warefare-Papers_Irregular-Warefare-Counterterrorism-Forces-in-Support-of-Counterinsurgency-Operations_William-Oslund_No91-SEPT2012.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Irregular Warfare: Counterterrorism Forces in Support of Counterinsurgency Operations</title>
+		<description>United States counterterrorism (CT) forces have been employed in Afghanistan since October 2001. Over the past decade, the CT force profile and method of operating have evolved. Historically, says the author, the CT force was a secretive organization that did little to directly assist conventional battlespace owners (BSOs) operating in a shared counterinsurgency (COIN) environment; today, the CT force overtly supports BSOs, from the Commander, International Security Assistance Force (COMISAF) to the many dispersed battalion commanders operating throughout Afghanistan. According to the author, the CT force's evolution was born of necessity. As the battlespace became more complex and conventional forces controlled large tracts of land, ensuring operations were mutually supporting aided if not guaranteed the CT force's freedom of action (FOA); conversely, operations that were not fully coordinated routinely inhibited the CT force's FOA.</description>
+		<authors>
+			<author>William B. Ostlund</author>
+		</authors>
+		<publication>The Land Warfare Papers</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>38</imageURL>
+	</doc>
+	<doc>
+		<docID>37</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>09/01/2012 12:00:00</entDate>
+		<sortDate>20120901000000</sortDate>
+		<pubDate>September 01, 2012</pubDate>
+		<docURL>http://armypubs.army.mil/doctrine/DR_pubs/dr_a/pdf/</docURL>
+		<docFilename>adp1.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army</source>
+		<title>ADP 1: The Army</title>
+		<description>This capstone doctrine publication frames how we, as the Soldiers and Civilians of the United States Army, think about the strategic environment, develop and refine doctrine, and chart a course into the future. It is my vision of how the world has changed and how we as an Army will adapt to those changes, ensuring that we remain the world's dominant land force and a crucial contributor to the joint team. A key component of the way ahead is remaining focused on the professionalism of our force. Our Army Values are the essence of who we are, and those values rely on a bedrock of mutual trust among Soldiers, leaders, Families, and the American people that we serve.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Doctrine</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>37</imageURL>
+	</doc>
+	<doc>
+		<docID>36</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/01/2012 12:00:00</entDate>
+		<sortDate>20120801000001</sortDate>
+		<pubDate>August 01, 2012</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Combined-Arms-Decisive-And-Versatile-For-Global-Engagement-And-Regional-Response_AUG2012.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Combined Arms: Decisive and Versatile for Global Engagement and Regional Response</title>
+		<description>Armored forces provide our nation with a flexible force that can respond across the full range of military operations, and a decisive force that can prevent hostilities through deterrence, shape the environment by presence, and win decisively using speed, protected mobility and precision firepower.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>36</imageURL>
+	</doc>
+	<doc>
+		<docID>35</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>08/01/2012 12:00:00</entDate>
+		<sortDate>20120801000000</sortDate>
+		<pubDate>August 01, 2012</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>TRADOC_Paper_Operational-Environments-to-2028-Strategic-Environment-for-Unified-Land-Operations_AUG2012.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Operational Environments to 2028: Strategic Environment for Unified Land Operations</title>
+		<description>The Army does not have the luxury of focusing on any one potential adversary or any one mission type across the range of military operations. Instead, leaders and Soldiers must be exposed to the multiple conditions representing threats that exist across the globe. Potential threats will range from standing conventional and unconventional forces, to irregular militias and paramilitaries, to terrorist groups and criminal elements. Training, education, capabilities development, and concept development should reflect this reality.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>35</imageURL>
+	</doc>
+	<doc>
+		<docID>34</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>06/20/2012 12:00:00</entDate>
+		<sortDate>20120620000000</sortDate>
+		<pubDate>June 20, 2012</pubDate>
+		<docURL>http://www.g8.army.mil/pdf/</docURL>
+		<docFilename>AEMP2013_lq.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Staff, G-8</source>
+		<title>Army Equipment Modernization Plan</title>
+		<description>The Army Equipment Modernization Plan 2013 (ModPlan13) describes the Research, Development and Acquisition (RDA) portion of our Fiscal Year 2013 (FY13) President's Budget request. It is a unique document that breaks down the RDA investments into ten capability portfolio areas, highlights the portfolio accomplishments over the last two years and provides the intent for FY13 investments as well as the way ahead.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>34</imageURL>
+	</doc>
+	<doc>
+		<docID>33</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>06/14/2012 12:00:00</entDate>
+		<sortDate>20120614000000</sortDate>
+		<pubDate>June 14, 2012</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>TRADOC_InformationPaper_History-and-Importance-of-Army-Warfighter-Outcomes_14JUN2012.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>History and Importance of Army Warfighting Outcomes</title>
+		<description>Army Warfighter Outcomes are used to guide and shape the Army's S&amp;T investment. All Army funded 6.2 or 6.3 efforts are linked to specific WFOs. They directly shape Technology Enabled Capability Demonstrations, Joint Capability Technology Demonstrations, Small Business Innovation Research Phase I and II efforts, and articulate the Warfighter's most challenging technology needs to industry and academia.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>33</imageURL>
+	</doc>
+	<doc>
+		<docID>32</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>05/01/2012 12:00:00</entDate>
+		<sortDate>20120501000000</sortDate>
+		<pubDate>May 01, 2012</pubDate>
+		<docURL>http://armypubs.army.mil/doctrine/DR_pubs/dr_a/pdf/</docURL>
+		<docFilename>adp5_0.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army</source>
+		<title>ADP 5-0: The Operations Process</title>
+		<description>Army Doctrine Publication (ADP) 5-0, The Operations Process, constitutes the Army's view on planning, preparing, executing, and assessing operations. 'It accounts for the complex, ever-changing, and uncertain nature of operations and recognizes that a military operation is foremost a human undertaking. As such, this publication emphasizes the philosophy of mission command to include the central role of commanders (supported by their staffs) in driving the operations process.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Doctrine</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>32</imageURL>
+	</doc>
+	<doc>
+		<docID>31</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/05/2012 12:00:00</entDate>
+		<sortDate>20120105000000</sortDate>
+		<pubDate>January 05, 2012</pubDate>
+		<docURL>http://www.defense.gov/news/</docURL>
+		<docFilename>defense_strategic_guidance.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Department of Defense</source>
+		<title>Sustaining U.S. Global Leadership: Priorities for 21st Century Defense</title>
+		<description>The United States has played a leading role in transforming the international system over the past sixty-five years. Working with like-minded nations, the United States has created a safer, more stable, and more prosperous world for the American people, our allies, and our partners around the globe than existed prior to World War II. Over the last decade, we have undertaken extended operations in Iraq and Afghanistan to bring stability to those countries and secure our interests. As we responsibly draw down from these  two operations, take steps to protect our nation's economic vitality, and protect our interests in a world of accelerating change, we face an inflection point. This merited an assessment of the U.S. defense strategy in light of the changing geopolitical environment and our changing fiscal circumstances.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>31</imageURL>
+	</doc>
+	<doc>
+		<docID>30</docID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>11/28/2011 12:00:00</entDate>
+		<sortDate>20111128000000</sortDate>
+		<pubDate>November 28, 2011</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-8-4.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Concept for Building Partner Capacity 2016-2028</title>
+		<description>(TRADOC Pam 525-8-4) Describes the Army's overarching conceptual framework for building partner capacity and the capabilities future Army forces will require to execute this framework.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	
+	<doc>
+		<docID>29</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/01/2011 12:00:00</entDate>
+		<sortDate>20111001000000</sortDate>
+		<pubDate>October 01, 2011</pubDate>
+		<docURL>http://armypubs.army.mil/doctrine/DR_pubs/dr_a/pdf/</docURL>
+		<docFilename>adp3_0.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army</source>
+		<title>ADP 3-0: Unified Land Operations</title>
+		<description>When we published Change 1 to the 2008 edition of (Field Manual) FM 3-0, we captured the most critical lessons of almost ten years of sustained land combat. In this edition, we not only reflect on the past but also look to an uncertain future. Army Doctrine Publication (ADP) 3-0, Unified Land Operations, provides a common operational concept for a future in which Army forces must be prepared to operate across the range of military operations, integrating their actions with joint, interagency, and multinational partners as part of a larger effort.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Doctrine</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>29</imageURL>
+	</doc>
+	<doc>
+		<docID>28</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>07/27/2011 12:00:00</entDate>
+		<sortDate>20110727000000</sortDate>
+		<pubDate>July 27, 2011</pubDate>
+		<docURL>http://www.g8.army.mil/pdf/</docURL>
+		<docFilename>AES2012_hq.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Staff, G-8</source>
+		<title>Army Equipping Strategy</title>
+		<description>The Army Equipping Strategy describes the ends, ways and means the Army will use to ensure Soldiers and units have the right equipment in the quantities needed to accomplish assigned missions in support of Combatant Commander (COCOM) requirements. It describes how equipment and capabilities, provided by the Army Modernization Strategy, are distributed and placed into a unit to synchronize it with its assigned mission. The strategy establishes goals, targets and metrics for achieving a balance between requirements and resources.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>28</imageURL>
+	</doc>
+	<doc>
+		<docID>27</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/20/2011 12:00:00</entDate>
+		<sortDate>20110120000000</sortDate>
+		<pubDate>January 20, 2011</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-8-2.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Learning Concept for 2015</title>
+		<description>(TRADOC Pam 525-8-2) The Army Learning Concept 2015 is an important component of our effort to drive change through a campaign of learning. It describes the learning environment we envision in 2015. It seeks to improve our learning model by leveraging technology without sacrificing standards so we can provide credible, rigorous, and relevant training and education for our force of combat - seasoned Soldiers and leaders. It argues that we must establish a continuum of learning from the time Soldiers are accessed until the time they retire. It makes clear that the responsibility for developing Soldiers in this learning continuum is a shared responsibility among the institutional schoolhouse, tactical units, and the individuals themselves.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/learning.aspx</pageURL>
+		<imageURL>27</imageURL>
+	</doc>
+	<doc>
+		<docID>26</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/07/2011 12:00:00</entDate>
+		<sortDate>20110107000000</sortDate>
+		<pubDate>January 07, 2011</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-8-3.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Training Concept 2012-2020</title>
+		<description>(TRADOC Pam 525-8-3) TRADOC Pam 525-8-3, The U.S. Army Training Concept 2012-2020, expands on the ideas presented in TRADOC Pam 525-3-0 and TRADOC Pam 525-3-1, and identifies training requirements and capabilities necessary to build and sustain an Army that is adaptable in full-spectrum operations in 2012-2020. It emphasizes the importance of achieving boots-on-ground dwell times that will allow both active Army and Reserve component commanders to manage the training of their units. Cognizant of the need to develop adaptive, flexible, and versatile leaders and units, to operate in a complex operational environment, it recognizes the need for unit training to reflect these realities.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/training.aspx</pageURL>
+		<imageURL>26</imageURL>
+	</doc>
+	<doc>
+		<docID>25</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/2011 12:00:00</entDate>
+		<sortDate>20110101000000</sortDate>
+		<pubDate>January 01, 2011</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>GCV-PM_Pamphlet_Why-do-we-need-the-Ground-Combat-Vehicle_01JAN2011.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Why do we need the Ground Combat Vehicle?</title>
+		<description>Our national security will continue to be threatened by complex challenges emanating from traditional nation-states, non-state actors, extremist groups and criminal organizations. The most likely 21 st century adversary will come from hybrid threats combining conventional, irregular, terrorist and criminal capabilities and tactics. To succeed across a wide range of contingencies the Army must be able to operate in a decentralized manner and deliver a nine Soldier infantry squad to a position of decisive advantage, under protection, in all terrain types.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Ground Combat Vehicle</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>25</imageURL>
+	</doc>
+	<doc>
+		<docID>24</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/13/2010 12:00:00</entDate>
+		<sortDate>20101013000000</sortDate>
+		<pubDate>October 13, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-4-1.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Functional Concept for Sustainment 2016-2028</title>
+		<description>(TRADOC Pam 525-4-1) The U.S. Army continues to answer the Nation's call, as it has since its inception over 235 years ago. As we look to the future, our Army faces a complex and uncertain operational environment that will challenge our Soldiers, leaders, and organizations in many ways. Future enemies are likely to emulate the adaptations of recent opponents while taking advantage of emerging technologies and growing instability to pursue their objectives and avoid what they perceive as U.S. military strengths. The challenges of future armed conflict make it an imperative for our Army to produce leaders and forces that exhibit a high degree of operational adaptability.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>24</imageURL>
+	</doc>
+	<doc>
+		<docID>23</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/13/2010 12:00:00</entDate>
+		<sortDate>20101013000004</sortDate>
+		<pubDate>October 13, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-3-6.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Functional Concept for Movement and Maneuver 2016-2028</title>
+		<description>(TRADOC Pam 525-3-6) The U.S. Army continues to answer the Nation's call, as it has since its inception over 235 years ago. As we look to the future, our Army faces a complex and uncertain operational environment that will challenge our Soldiers, leaders, and organizations in many ways. Future enemies are likely to emulate the adaptations of recent opponents while taking advantage of emerging technologies and growing instability to pursue their objectives and avoid what they perceive as U.S. military strengths. The challenges of future armed conflict make it an imperative for our Army to produce leaders and forces that exhibit a high degree of operational adaptability.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>23</imageURL>
+	</doc>
+	<doc>
+		<docID>22</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/13/2010 12:00:00</entDate>
+		<sortDate>20101013000003</sortDate>
+		<pubDate>October 13, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-3-5.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Functional Concept for Protection 2016-2028</title>
+		<description>(TRADOC Pam 525-3-5) The U.S. Army continues to answer the Nation's call, as it has since its inception over 235 years ago. As we look to the future, our Army faces a complex and uncertain operational environment that will challenge our Soldiers, leaders, and organizations in many ways. Future enemies are likely to emulate the adaptations of recent opponents while taking advantage of emerging technologies and growing instability to pursue their objectives and avoid what they perceive as U.S. military strengths. The challenges of future armed conflict make it an imperative for our Army to produce leaders and forces that exhibit a high degree of operational adaptability.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>22</imageURL>
+	</doc>
+	<doc>
+		<docID>21</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/13/2010 12:00:00</entDate>
+		<sortDate>20101013000002</sortDate>
+		<pubDate>October 13, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-3-4.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Functional Concept for Fires 2016-2028</title>
+		<description>(TRADOC Pam 525-3-4) The U.S. Army continues to answer the Nation's call, as it has since its inception over 235 years ago. As we look to the future, our Army faces a complex and uncertain operational environment that will challenge our Soldiers, leaders, and organizations in many ways. Future enemies are likely to emulate the adaptations of recent opponents while taking advantage of emerging technologies and growing instability to pursue their objectives and avoid what they perceive as U.S. military strengths. The challenges of future armed conflict make it an imperative for our Army to produce leaders and forces that exhibit a high degree of operational adaptability.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>21</imageURL>
+	</doc>
+	<doc>
+		<docID>20</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/13/2010 12:00:00</entDate>
+		<sortDate>20101013000001</sortDate>
+		<pubDate>October 13, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-3-3.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Functional Concept for Mission Command 2016-2028</title>
+		<description>(TRADOC Pam 525-3-3) The U.S. Army continues to answer the Nation's call, as it has since its inception over 235 years ago. As we look to the future, our Army faces a complex and uncertain operational environment that will challenge our Soldiers, leaders, and organizations in many ways. Future enemies are likely to emulate the adaptations of recent opponents while taking advantage of emerging technologies and growing instability to pursue their objectives and avoid what they perceive as U.S. military strengths. The challenges of future armed conflict make it an imperative for our Army to produce leaders and forces that exhibit a high degree of operational adaptability.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>20</imageURL>
+	</doc>
+	<doc>
+		<docID>19</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>10/13/2010 12:00:00</entDate>
+		<sortDate>20101013000000</sortDate>
+		<pubDate>October 13, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-2-1.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Functional Concept for Inteligence 2016-2028</title>
+		<description>(TRADOC Pam 525-2-1) The U.S. Army continues to answer the Nation's call, as it has since its inception over 235 years ago. As we look to the future, our Army faces a complex and uncertain operational environment that will challenge our Soldiers, leaders, and organizations in many ways. Future enemies are likely to emulate the adaptations of recent opponents while taking advantage of emerging technologies and growing instability to pursue their objectives and avoid what they perceive as U.S. military strengths. The challenges of future armed conflict make it an imperative for our Army to produce leaders and forces that exhibit a high degree of operational adaptability.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Functional Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/functional.aspx</pageURL>
+		<imageURL>19</imageURL>
+	</doc>
+	<doc>
+		<docID>18</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>09/01/2010 12:00:00</entDate>
+		<sortDate>20100901000000</sortDate>
+		<pubDate>September 01, 2010</pubDate>
+		<docURL>http://www.ausa.org/publications/armymagazine/archive/2010/9/Documents/</docURL>
+		<docFilename>Elfendahl_Toguchi_0910.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>Association of the United States Army</source>
+		<title>Concepts lead change for the Army</title>
+		<description>Ideas matter. As business strategist Richard Rumelt recognized in his list of "strategy sins," pitfalls to strategy are common in today's environment. Interestingly, pitfalls to strategy are also pitfalls to concept development. How an Army creates a vision for employment, assesses strengths and vulnerabilities, and pits those strengths against enemy weakness matters in warfare. The thinking opponent has a clear advantage on any field of battle.</description>
+		<authors>
+			<author>LTC Mark Elfendahl</author>
+			<author>COL Robert M. Toguchi, Ph.D.</author>
+		</authors>
+		<publication>Army Magazine</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>18</imageURL>
+	</doc>
+	<doc>
+		<docID>17</docID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>08/19/2010 12:00:00</entDate>
+		<sortDate>20100819000000</sortDate>
+		<pubDate>August 19, 2010</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>tp525-3-1.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The United States Army Operating Concept 2016-2028</title>
+		<description>(TRADOC Pam 525-3-1) The Army is the Nation's principal military force organized, trained, and equipped for prompt and sustained operations on land. As one of the critical elements in our national defense strategy, the Army must continually adapt to changing conditions and evolving threats to our security. An essential part of that adaptation is the development of new ideas to address future challenges.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/operating.aspx</pageURL>
+		<imageURL>17</imageURL>
+	</doc>
+	<doc>
+		<docID>16</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>04/01/2010 12:00:00</entDate>
+		<sortDate>20100401000000</sortDate>
+		<pubDate>April 01, 2010</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_WhitePaper_Power-and-Energy-Strategy_01APR2010.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Power and Energy Strategy</title>
+		<description>Power and energy grow ever more important to our military capabilities; they enable every system that supports Soldier and unit performance, from mobility and weapons systems to surveillance and communications – not to mention simple heating and cooling. In recent years, several factors have emerged which further complicate the engineering and logistics challenges associated with power and energy; such as, asymmetric threats to logistics and infrastructure, increasing competition for the world's oil supply and concern about global climate change.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative>Operational Energy</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>16</imageURL>
+	</doc>
+	<doc>
+		<docID>15</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>03/15/2010 12:00:00</entDate>
+		<sortDate>20100315000000</sortDate>
+		<pubDate>March 15, 2010</pubDate>
+		<docURL>http://www.gao.gov/assets/310/</docURL>
+		<docFilename>301919.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Government Accountability Office</source>
+		<title>Defense Acquisitions: Opportunities Exist to Position Army's Ground Force Modernization Efforts for Success</title>
+		<description>Since 2003, the Future Combat System (FCS) program has been the centerpiece of the Army's efforts to transition to a lighter, more agile, and more capable combat force. In 2009, however, concerns over the program's performance led to the Secretary of Defense's decision to significantly restructure and ultimately cancel the program. As a result, the Army has outlined a new approach to ground force modernization. This report (1) outlines the Army's preliminary post-FCS plans and (2) identifies the challenges and opportunities the Department of Defense (DOD) and the Army must address as they proceed with Army ground force modernization efforts. To meet these objectives, GAO reviewed key documents, performed analyses, visited test facilities where the Army evaluated FCS equipment, and interviewed DOD and Army officials.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>15</imageURL>
+	</doc>
+	<doc>
+		<docID>14</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>11/01/2009 12:00:00</entDate>
+		<sortDate>20091101000000</sortDate>
+		<pubDate>November 01, 2009</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Armor-Journal_Case-for-Outcomes-Based-Training-and-Education_Chad-Foster_NOV-DEC2009.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>The Case for Outcomes-based Training and Education</title>
+		<description>As a major stationed in Hawaii during the mid-1920s, George S. Patton Jr. spent much of his time writing and discussing topics related to leadership, training, and tactics. Although not an academically distinguished cadet at West Point, Patton was a voracious reader of history throughout his life and he sought to learn all that he could to make himself a better combat leader. One of the most admirable things about Patton was that his love for history was not chained to the thinking of past generations — he understood the lessons of history in context and applied them to contemporary times. In this way, he was a forward-thinker with the wisdom to heed the warnings of the past. It is hardly surprising then that his writings from this period illustrate some key insights that are highly applicable today.</description>
+		<authors>
+			<author>Major Chad R. Foster</author>
+		</authors>
+		<publication>ARMOR</publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>14</imageURL>
+	</doc>
+	<doc>
+		<docID>13</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/13/2009 12:00:00</entDate>
+		<sortDate>20090113000000</sortDate>
+		<pubDate>January 13, 2009</pubDate>
+		<docURL>http://www.asaie.army.mil/Public/Partnerships/doc/</docURL>
+		<docFilename>AESIS_13JAN09_Approved%204-03-09.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>The Assistant Secretary of the Army for Installations, Energy and Environment</source>
+		<title>Army Energy Security Implementation Strategy</title>
+		<description>The United States Military is one of the nation's largest consumers of energy. In 2008 alone the Army spent over $4.1 billion for fuel and energy. We face increasing challenges to reduce consumption, increase efficiency, and make greater use of alternative and renewable energy sources. The Army Energy Security Implementation Strategy (AESIS), approved on 13 January, 2009 by the Senior Energy Council, establishes five strategic energy security goals and outlines a broad approach for accomplishing them. The strategy also focuses on creating a culture of energy awareness throughout the Army.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Operational Energy</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>13</imageURL>
+	</doc>
+	<doc>
+		<docID>12</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>09/01/2008 12:00:00</entDate>
+		<sortDate>20080901000000</sortDate>
+		<pubDate>September 01, 2008</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Tactical-Decision-Games_MANUAL_Imperial-and-Royal-Austro-Hungarian-Marine-Corps_4thGen-SEP2008.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Tactical Decision Games: Imperial and Royal Austro-Hungarian Marine Corps</title>
+		<description>On the modern battlefields of the Global War on Terrorism, the US military is facing enemies that have no state, government, uniform, TT&amp;Ps, SOPs, or goals that resemble those of fighting forces in decades past. Our past enemies, whether or not in uniform, fighting as a conventional force or insurgents, at least had leaders whose goal was governing once they defeated their enemies on the battlefield or in the political arena. In short, they were either a second generation (Soviet military of the Cold War) or third generation (North Vietnamese Army and Viet Cong) military. The current battlefield features a new enemy, a fourth generation enemy. He is defined as being stateless and lacking a clear strategic goal that directly links force with achieving political supremacy in a certain region or state. As a result, many of the lessons that we derived from our past enemies do not apply to this new enemy. This manual seeks to challenge leaders to evaluate tactical situations in a fourth generation context, looking beyond the immediate need of applying fires to the enemy. This manual challenges leaders to consider non-kinetic "fires," civil-military relationships, and finally your unit's standing and respect among the local population.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>12</imageURL>
+	</doc>
+	<doc>
+		<docID>11</docID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>06/11/2008 12:00:00</entDate>
+		<sortDate>20080611000000</sortDate>
+		<pubDate>June 11, 2008</pubDate>
+		<docURL>http://www.tradoc.army.mil/tpubs/pams/</docURL>
+		<docFilename>p525-3-7.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>U.S. Army Training and Doctrine Command</source>
+		<title>The U.S. Army Concept for the Human Dimension in Full Spectrum Operations 2015-2024</title>
+		<description>(TRADOC Pamphlet 525-3-7) In August 2006, I directed a study to take a thoughtful and detailed look at what we are calling the Human Dimension. In looking to an uncertain future in the years 2015 to 2024, we envision an increasingly complex operational environment that will challenge individual Soldiers, their leaders, and their organizations in unprecedented ways. I want this concept to serve as a point of departure for wide-ranging discussion, research, and investigations into what impacts the performance, reliability, flexibility, endurance, and adaptability of an Army made up of Soldiers, their families, civilians, and contractors.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>Concepts</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL>../Concepts/human-dimension.aspx</pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>10</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>05/10/2006 12:00:00</entDate>
+		<sortDate>20060510000000</sortDate>
+		<pubDate>May 10, 2006</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_WhitePaper_Adaptive-Leaders-Course_Teaching-Old-Dogs-New-Tricks_10MAY2006.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Adaptive Leaders Course: Teaching Old Dogs New Tricks</title>
+		<description>The Secretary of the Army and the Army Chief of Staff explicitly state that the U.S. Army is going to adapt its culture to encourage develop and teach Adaptive Leadership. The Army is learning and leaders admit it must reshape its leader educational and training programs as part of a new leader paradigm into what a recent Army magazine article identified as "Learning Organizations."</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>10</imageURL>
+	</doc>
+	<doc>
+		<docID>9</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/13/2006 12:00:00</entDate>
+		<sortDate>20060113000001</sortDate>
+		<pubDate>January 13, 2006</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Scenario-Enabling-Adaptability-03_Military-Policeman_13JAN2006.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Senario Enabling Adaptability 03: Military Policeman</title>
+		<description>"Very few people have ever been killed with the bayonet or saber, but the fear of having their guts explored with cold steel in the hands of battle-maddened men has won many a fight." - PATTON You are scared to death. You may actually have bruises later from the insides of your knees clacking together. You are the new guy in the platoon and you are beginning to question your worth as a soldier.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>8</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/13/2006 12:00:00</entDate>
+		<sortDate>20060113000000</sortDate>
+		<pubDate>January 13, 2006</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Scenario-Enabling-Adaptability-02_Cartonville-Patrol_13JAN2006.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Senario Enabling Adaptability 02: Cartonville Patrol</title>
+		<description>At eleven-fifty, Engineers attach to 1st platoon, machineguns DS to 2nd platoon. I think the enemy has withdrawn - the vehicles at the stadium are abandoned and the snipers to the south are just a delay. Our forces to the north can't be relieved until we've secured the main road. Mission: At thirteen hundred, we attack east and seize the railroad bridge in order to prevent enemy interference with the MSR.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>7</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>12/16/2005 12:00:00</entDate>
+		<sortDate>20051216000000</sortDate>
+		<pubDate>December 16, 2005</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Scenario-Enabling-Adaptability-01_To-Ambush-or-not-to-Ambush_16DEC2005.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Senario Enabling Adaptability 01: To Ambush or not to Ambush</title>
+		<description>The Army addresses adaptability and one of its components, intuition almost daily regarding leader development. This critical unknown brings about intense study but inaccurate answers. Too much speculation of the past implied that technology, information superiority and automated command and control processes were the sole keys to battlefield supremacy in the 21st century. Doctrine writers and Force Developers imagined that the future warfare would be a gigantic artillery duel fought with exceptionally sophisticated munitions against templated enemies. These positions discount the historically vital role of the ground tactical commander, his abilities and the various moral elements indigenous to warfare. Quite simply, technological superiority alone has never won a war. The Army now admits this and is taking measures to develop the decision-making traits among its junior officers as early as possible instead of later in their careers.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>6</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>12/15/2005 12:00:00</entDate>
+		<sortDate>20051215000000</sortDate>
+		<pubDate>December 15, 2005</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Scenario-Enabling-Adaptability-04_My-House.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Senario Enabling Adaptability 04: My House</title>
+		<description>MOUT, considered in Army terms, is a unique environment, both in terms of its essential character and its behavior. Faced with the complexities of this environment, military analysts have resorted to explaining cities as a "system of systems," as if cities were only the product of architectural designs and engineers' drawings. Those would not be cities but monuments. The first, most elementary, feature of MOUT is that it is a place where people have collected more or less permanently. It is therefore to the human qualities of the urban environment the Army decision maker must first look if he hopes to understand how leaders and their units can function in such a place.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>5</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>12/14/2005 12:00:00</entDate>
+		<sortDate>20051214000000</sortDate>
+		<pubDate>December 14, 2005</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>Scenario-Enabling-Adaptability-05_Children-Bearing-Gifts_14DEC2005.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>Senario Enabling Adaptability 05: Children Bearing Gifts</title>
+		<description>The moral level is dominant, over not only the physical but also the mental level. Mentally, many opponents know that they can not stand up to American technology, but the moral level compels them to fight anyway. In SEA 5, we also see the power of weakness. In Asymmetric Warfare, the weak often have more power than the strong. One of the first people to employ the power of weakness was Mahatma Gandhi.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>4</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>12/01/2005 12:00:00</entDate>
+		<sortDate>20051201000000</sortDate>
+		<pubDate>December 01, 2005</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_Handbook_How-to-Create-Adaptive-Leaders_Draft03-DEC2005.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>How to Create Adaptive Leaders</title>
+		<description>Decision-making is central to the United States Army leader. The essence of effective leadership is to make and communicate sound decisions. It is essential for the Army to produce leaders that can make effective decisions in a timely manner by using naturalistic decisionmaking processes such as Recognition Primed Decision-making (RPD) instead of the timely analytical method of the Military Decision-Making Process (MDMP). The MDMP represents the old leader paradigm centered on task-centric proficiency. Future leaders need to become adaptive because of mastering RPD. However, this type of decision-making requires a substantial investment in time for the decision-maker to accumulate an adequate base of knowledge to utilize.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>4</imageURL>
+	</doc>
+	<doc>
+		<docID>3</docID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000002</sortDate>
+		<pubDate>January 01, 1900</pubDate>
+		<docURL>../app_Documents/</docURL>
+		<docFilename>ARCIC_WhitePaper_Squad-and-its-Ground-Combat-Vehicle.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>Download</docGAevent>
+		<source>Army Capabilities Integration Center</source>
+		<title>The Squad and it's Ground Combat Vehicle</title>
+		<description>The Infantry mission is to close with and destroy the enemy by fire, maneuver and close combat. The infantry squad is the foundation of the Brigade Combat Team (BCT) as the lowest tactical unit capable of conducting fire and maneuver. Based on span of control, direct responsibility, and complexity of operations among the population, the squad leader is the Army's most demanding personal leadership position. Through visual, verbal and physical leadership, he executes mission command, using his initiative to translate commander's intent into decisive action.</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Ground Combat Vehicle</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>3</imageURL>
+	</doc>
+	<doc>
+		<docID>2</docID>
+		<frozen>1</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000001</sortDate>
+		<pubDate>January 01, 1900</pubDate>
+		<docURL>http://www.bctmod.army.mil/nie_focus/</docURL>
+		<docFilename>NIE%20Media%20Flyer.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>N/A</source>
+		<title>NIE Media Flyer.pdf - DEAD LINK</title>
+		<description>DEAD LINK - not found in google search</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+	<doc>
+		<docID>1</docID>
+		<frozen>1</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000000</sortDate>
+		<pubDate>January 01, 1900</pubDate>
+		<docURL>http://www.bctmod.army.mil/nie_focus/</docURL>
+		<docFilename>NIE%2012.1%20Media%20Flyer.pdf</docFilename>
+		<docTarget>_blank</docTarget>
+		<docType>PDF</docType>
+		<docAccess>Open</docAccess>
+		<docGAevent>External Reference</docGAevent>
+		<source>N/A</source>
+		<title>NIE 12.1 Media Flyer.pdf - DEAD LINK</title>
+		<description>DEAD LINK - not found in google search</description>
+		<authors></authors>
+		<publication></publication>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+		<pageURL></pageURL>
+		<imageURL>0</imageURL>
+	</doc>
+</documents>
+
+
+
+
+

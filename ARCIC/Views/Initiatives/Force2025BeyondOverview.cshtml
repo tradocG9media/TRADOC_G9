@@ -1,0 +1,145 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Force2025 and Beyond";
+    //var News = Article.GetNewsByInitiative("Force 2025 and Beyond").Take(5);
+    var News = Article.GetArticles().Where(x => x.pInitiative == "Force 2025 and Beyond").Take(5);
+    var NewsTake3 = News.Take(3);
+    //var docsInitiatiave = Document.GetDocumentsByInitiative("F2025 and Beyond");
+    var docsDirectorate = Document.GetDocumentsByDirectorate("F2025 and Beyond");
+}
+<div class="row">
+
+    
+    <div class="col-md-12">
+        <div class="">
+            <h1 class="page-header"><b>Force 2025 and Beyond</b></h1>
+            <ol class="breadcrumb hidden-xs hidden-sm">
+                <li><a href="/Home">Home</a>
+                </li>
+                <li class="active">Initiatives</li>
+                <li class="active">Force 2025 and Beyond</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>What is Force 2025 and Beyond?</h4>
+            </div>
+            <div class="panel-body">
+
+                <p>Force 2025 and Beyond is the Army's strategy to ensure the future joint force can win in a complex world. The Army must meet the demands of the future strategic environment in alignment with its strategic vision and priorities. As such, the Army must make the BCT and enablers leaner while retaining capability, prevent overmatch through 2025, and set the conditions for fundamental change by 2030-40. Through fiscal years (FY) 2015 - 2017, the Army will develop and refine what the Army will become by 2025. To determine the optimal design for the Army of the future, the Force 2025 and Beyond effort consists of activities along three primary lines of effort: force employment; science and technology and human performance optimization; and force design.</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Why Force 2025 and Beyond?</h4>
+            </div>
+            <div class="panel-body">
+
+                <p>
+                    Due to the ever-changing geopolitical environment and improvements in technology, the Army must prepare to fight and win wars while operating as part of our Joint Force and working with multiple partners. By 2025, a leaner, smarter, more lethal, and agile Army must operate differently, enable forces differently, and organize differently to maintain overmatch, capable of responding to a myriad of threats to our nation's national interests, and to set the conditions for fundamental long-term change.
+                </p>
+                <p>Typically, the Army has taken one of two routes in determining the way to optimize the force; one idea is that concepts should drive technological research and development, and the other on the idea that technology drives the way the Army fights conceptually. To maximize the benefits of both approaches in designing the force for 2025, a balanced approach is required to find the right ideas, the right technologies, and combine them in the force design so that overmatch is maintained.</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>What continued efforts does the Army have planned for the future?</h4>
+            </div>
+            <div class="panel-body">
+
+                <p>This initiative will take the support and continuous effort of the Total Army team over many years to bring to reality. In conjunction with FORSCOM, and Army Material Command, TRADOC's Brigade Modernization Command conduct a series of Force 2025 and Beyond Maneuvers. TRADOC and the Army Capabilities Integration Center will incorporate Force 2025 and Beyond ideas into its experimentation. Force 2025 and Beyond Maneuvers will provide the means to evaluate and validate expeditionary capabilities for the Brigade Combat Team (BCT), retain overmatch through 2025, and set conditions for fundamental changes to the Army beyond 2025. To accomplish these objectives, Force 2025 and Beyond Maneuvers includes wargaming, exercises, experiments, evaluations, and other efforts focused on determining how the Army organizes and designs the force.</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Why is this important to the Army?</h4>
+            </div>
+            <div class="panel-body">
+
+                <p>Over the past 14 years of conflict, the Army has proven itself well and Soldiers have displayed mental and physical toughness and courage under fire. Today, the Army is the most versatile, agile, rapidly deployable, and sustainable strategic land force in the world. Ensuring that future Army forces are prepared to win in a complex world requires a focused, sustained and collaborative effort across the institutional Army, the operating force, the joint community, industry, academia, and other inter-organizational and multinational partners. In the future, the Total Army team must support joint force freedom of movement and action through the projection of power from land across the air, maritime, space and cyberspace domains. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--sidebar-->
+    <section class="col-md-4">
+
+        @*<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Social Media</h4>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                  Follow us on twitter Unified Challenge Or contact us at : Joint and Army Experimentation, CDLD, TRADOC Building 950, Ft Eustis VA. 23604-5700
+                </div>
+            </div>
+
+        </div>*@
+
+      @*   <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Video <i class="fa fa-youtube fa-lg"></i></h3>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                    <a href="#">Coming Soon</a>
+                </div>  
+            </div>
+        </div>*@
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3><b>Relevant News</b></h3>
+            </div>
+            <div class="list-group">
+               @foreach (var item in News)
+               {                  
+                   <div class="list-group-item clearfix">
+                       <a href="@item.link" target="_blank">@item.title</a>
+                       <div><span>@item.entDate.ToShortDateString()</span> </div>                      
+                       
+                   </div>  
+               }
+            </div>
+        </div>
+
+
+        @*<div class="panel panel-default">
+            <div class="panel-heading">
+                <h3><b>Documents</b></h3>
+            </div>
+            <div class="list-group">
+               @foreach (var item in docsDirectorate)
+               {                  
+                   <div class="list-group-item clearfix">
+                     <div><span>  <a href='@(item.docURL + item.docFilename)' target="_blank">@item.title</a></span> <i class="fa fa-external-link fa-sm"></i></div>
+                       <div class="clearfix"><span>@item.pubDate</span> , <span class="text-muted">@item.publication</span></div>     
+                   </div>  
+               }
+            </div>
+        </div>*@
+
+        
+    </section>
+
+
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    //TODO News Section with truncated title, 
+    //TODO supportive icons depending on content links (ie., pdf, word, http, ../ARCIC
+    //TODO Dynamically determine how many  rows or columns
+
+
+    var popularData = Article.GetArticles()
+      .Where(x => x.dataSet == "exclusive")
+      .Where(x => x.pGroup == "popular")
+      .Where(x => x.archive != "Yes")
+      .Take(6);
+
+    var data = Article.GetArticles();
+}
+
+<div class="row clearfix">
+    <div class="col-md-12">
+        <h3 class="text-uppercase"><i class="fa fa-th-large" style="color: #228B22;"></i> <b>Popular</b></h3>
+    </div>
+
+    @foreach (var item in popularData)
+    {
+        <div class="col-md-6">
+            <div class="panel panel-default">
+
+                @if (item.imageURL.Contains("http") || item.imageURL.Contains("ftp"))
+                {
+                    <img class="img-responsive center-block" src="@item.imageURL" />
+                }
+                else
+                {
+                    <img class="img-responsive center-block" src='@("../App_Imgs/Content/" + item.imageURL + "f.jpg")' />
+                }
+                <div class="panel-body">
+                    <div class="text-center">
+                        @if (item.title.Length > 50)
+                        {
+                            <h4><b>@Html.Raw(Shorten.ShortStr(item.title, 52))<span class="text-primary" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="@item.title"> ... </span> </b> </h4>
+                        }
+                        else
+                        {
+                            <h4><b>@Html.Raw(item.title) </b> </h4>
+                        }
+
+                       
+                    </div>
+                    <div class="text-center">
+                        @{
+                            //Boolean IsPDF = false;
+                            //var CheckIfPDF = item.link.Substring(item.link.Length - 4);
+                            //if (CheckIfPDF == ".pdf")
+                            //{
+                            //    IsPDF = true;
+                            //}
+                            @*@MasterTODO.CheckIsPDF(item.link)*@
+
+                            if (item.link.Contains("http") && MasterTODO.CheckIsPDF(item.link) == true)
+                            {
+                                <a href="@item.link" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Clicked', eventLabel: '@Html.Raw(item.title) + 'url>' + @item.link', eventValue: 1});"> <span class="text-muted small">@item.source </span> </a><i class="fa fa-external-link"></i>
+                            }
+                            else if (item.link.Contains("http"))
+                            {
+                                <a href="@item.link" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Clicked', eventLabel: '@Html.Raw(item.title) + 'url>' + @item.link', eventValue: 1});"> <span class="text-muted small">@item.source </span> </a><i class="fa fa-external-link"></i>
+
+                            }
+                            else if (MasterTODO.CheckIsPDF(item.link) == true)
+                            {
+                                <a href="@item.link" target="_self" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Clicked', eventLabel: '@Html.Raw(item.title) + 'url>' + @item.link', eventValue: 1});">View </a><i class="fa fa-file-pdf-o"></i>
+
+                            }
+                            else
+                            {
+                                <a href="@item.link" target="_self" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Clicked', eventLabel: '@Html.Raw(item.title) + 'url>' + @item.link', eventValue: 1});">View </a>
+
+                            }
+
+                        }
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                            }
+</div>
+
+
+

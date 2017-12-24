@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MainArticleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MainArticle">
+    <Key>
+      <PropertyRef Name="artID" />
+    </Key>
+    <Property Name="artID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="imgUrl" Type="nvarchar(max)" />
+    <Property Name="imgCaption" Type="nvarchar(max)" />
+    <Property Name="author" Type="nvarchar(max)" />
+    <Property Name="authorEmail" Type="nvarchar(max)" />
+    <Property Name="authorSource" Type="nvarchar(max)" />
+    <Property Name="postDate" Type="datetime" />
+    <Property Name="archiveDate" Type="datetime" />
+    <Property Name="sortDate" Type="datetime" />
+    <Property Name="pubDate" Type="datetime" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="sourceName" Type="nvarchar(max)" />
+    <Property Name="sourceUrl" Type="nvarchar(max)" />
+    <Property Name="_type" Type="nvarchar(max)" />
+    <Property Name="loe" Type="nchar" MaxLength="50" />
+    <Property Name="directorate" Type="nvarchar(max)" />
+    <Property Name="cta" Type="nvarchar(max)" />
+    <Property Name="promote" Type="nvarchar(max)" />
+    <Property Name="repostDate" Type="datetime" />
+    <Property Name="googleTrack" Type="nchar" MaxLength="10" />
+    <Property Name="group" Type="nvarchar(max)" />
+    <Property Name="connection" Type="nvarchar(max)" />
+    <Property Name="initiative" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="MainArticleModelStoreContainer">
+    <EntitySet Name="MainArticle" EntityType="Self.MainArticle" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

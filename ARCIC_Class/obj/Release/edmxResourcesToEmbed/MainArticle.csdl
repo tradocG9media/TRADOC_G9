@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MainArticleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MainArticle">
+    <Key>
+      <PropertyRef Name="artID" />
+    </Key>
+    <Property Name="artID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="imgUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="imgCaption" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="authorEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="authorSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="postDate" Type="DateTime" Precision="3" />
+    <Property Name="archiveDate" Type="DateTime" Precision="3" />
+    <Property Name="sortDate" Type="DateTime" Precision="3" />
+    <Property Name="pubDate" Type="DateTime" Precision="3" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sourceName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sourceUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="C_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="loe" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="directorate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="promote" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="repostDate" Type="DateTime" Precision="3" />
+    <Property Name="googleTrack" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="connection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="initiative" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="MainArticleContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MainArticles" EntityType="Self.MainArticle" />
+  </EntityContainer>
+</Schema>

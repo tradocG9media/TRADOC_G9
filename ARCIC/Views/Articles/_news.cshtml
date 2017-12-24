@@ -1,0 +1,103 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.App_Code;
+@using ARCIC.Models;
+@{
+    //NEWS ARTICLES HOME PAGE
+
+    IEnumerable<Article> articles = Article.GetNewsByCompleteID("exclusive");    // All Articles   
+    IEnumerable<Article> armymil = articles.Where(x => x.source == "army.mil");
+    IEnumerable<Article> dvids = articles.Where(x => x.source == "dvids");
+    IEnumerable<Article> ausa = articles.Where(x => x.source == "ausa");
+
+    IEnumerable<Article> todaysVideo = articles.Where(x => x.pGroup == "Video").Take(1);
+
+    var combinedNews = armymil.Union(dvids).Union(ausa).Distinct().OrderByDescending(x => x.entDate).Where(x => x.pGroup != "Video").Take(3);     // Find Articles // USARMY,DVIDS,AUSA 
+      
+    }
+
+<style>
+    .playBtn{
+        position:relative;
+        display: block;
+        height:32px;
+        left:0;
+        top:1px;
+        margin-top:-42px;
+        margin-bottom:0px;
+        z-index:1000;
+        opacity: .72;
+        color: white;
+        background-color: red;
+        padding:3px  3px;
+        padding-left:6px;
+        padding-right:6px;
+    }
+</style>
+
+@foreach (var item in combinedNews)
+        {
+             <div class="col-md-3">
+                <div class="panel panel-default">   
+                    @if (item.imageURL.Contains("https://") || item.imageURL.Contains("http://"))
+                    {
+                         <img class="card-img-top img-responsive"  alt=""  src='@item.imageURL'/>       
+                    }   
+                    else
+                    {
+                         <img class="card-img-top img-responsive"  alt=""  src='@("App_Imgs/Content/"+ item.imageURL +"f.jpg")'/>       
+                    }            
+                           
+                   @*<div><img class="img-responsive" src="App_Imgs/App/SourceLogos/dvids.png" /></div>*@
+                    <div class="panel-body">
+                        <div class="card-deck-wrapper">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <div>
+                                       @* <span class="text-warning text-uppercase"><span class="text-primary">@helpers.loe(item.pLOE)</span> <b>@item.pLOE </b></span>*@
+                                    </div>
+                                    <div class="card-block clearfix">
+                                        <h5 class="card-title"><strong>@item.title</strong></h5>                                        
+                                        @*<p class="card-text"></p>*@
+                                        <div class="card-text"><small class="text-muted">@item.author  @item.pubDate </small> </div>
+                                       <div><small class="clearfix">@item.source <span class="pull-right"><a href="@item.link" target="_blank">Read </a> <i class="fa fa-external-link"></i></span></small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            
+        }
+
+@foreach (var item in todaysVideo)
+{
+     <!--Video \\ MediaBox Modal w/Option-->
+    <div class="col-md-3">
+        <div class="panel panel-default">
+               <img class="card-img-top img-responsive" alt="Card image cap"  src='@item.imageURL' style="width: 102%;"/>   
+               <div class="playBtn clearfix">
+                   <span class="small">@Shorten.ShortStr(item.title+"...",29)</span>
+                  <a href="@item.link" target="_blank" style="color: white;"> <i class="fa fa-youtube-play fa-2x pull-right"></i> @*<i class="fa fa-soundcloud fa-2x pull-right"></i>*@ </a>
+               </div>
+            <div class="panel-body">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-block clearfix">
+                                <h5 class="card-title"><strong>@item.title</strong></h5>
+                                @*<p class="card-text"></p>*@
+                                <div class="card-text"><small class="text-muted">@item.author  @item.pubDate </small></div>
+                                <div><small class="clearfix text-uppercase"> <span class="pull-right"><a href="@item.link" target="_blank">Read </a><i class="fa fa-external-link"></i></span></small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>            
+}

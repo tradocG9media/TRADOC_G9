@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ARCIC.Models.Article>
+@{ 
+    //IEnumerable<ARCIC.Models.Spotlight> Spotlights = ViewBag.Spotlights;
+    IEnumerable<ARCIC.Models.Article> Articles = ViewBag.Articles;
+
+}
+
+
+    <!--News-->
+    <h3 class="text-warning clearfix">
+    @*<img class="pull-left" src="~/App_Imgs/App/Logos/ARCIC-Emblem-Final.png" style="width:39px; padding-right:8px;" />*@
+     <b> In the News</b></h3>
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            @for (int i = 0; i < Articles.Count(); i++)
+            {
+                if (i == 0)
+                {
+                    <div class="col-md-4">
+                        @if (Articles.ToList()[i].imageURL.Contains("http"))
+                        {
+                            <img class="img-responsive" src="@(Articles.ToList()[i].imageURL)" />
+
+                        }
+                        else
+                        {
+                            <img class="img-responsive" src='@("../App_Imgs/" + Articles.ToList()[i].pFocus + Articles.ToList()[i].imageURL + "f.jpg")' />
+
+                        }
+                    </div>
+
+                        <h3><b>@Articles.ToList()[i].title</b></h3>
+                        <p>@Html.Raw(Articles.ToList()[i].description)</p>
+                        <p><span class="text-muted">@Articles.ToList()[i].source</span> | @Articles.ToList()[i].entDate.ToShortDateString()</p>
+                }
+                else
+                {
+                    <h4><b>@Articles.ToList()[i].title</b></h4>
+                        <div>
+                            @Html.Raw(ARCIC.App_Code.Shorten.ShortStr(Articles.ToList()[i].description, 222))
+                        <span><a href='@("../Articles?artID=" + Articles.ToList()[i].artID)'>[...]</a></span>
+                    </div>
+                        <div><span class="text-muted">@Articles.ToList()[i].source</span> | @Articles.ToList()[i].entDate.ToShortDateString()</div>
+                }
+
+                if (i != Articles.Count() - 1)
+                {
+                    <p class="divider-thin"></p>
+                }
+                else
+                {
+                                        <!--do nothing-->
+                }
+
+            }
+        </div>
+    </div>
+
+   
+    
+
+
+

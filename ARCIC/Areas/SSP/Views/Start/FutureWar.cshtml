@@ -1,0 +1,96 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Future War";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+   @* <div>
+        @Html.Partial("_subPurpose")
+    </div>*@
+
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Future War</h1>
+            <p> Why Does Future War Matter?</p>
+            <p>
+                Anticipating the demands of future armed conflict requires an understanding of continuities in the nature of war as well as an appreciation for changes in the character of armed conflict. Technological advances and changes in strategic guidance, joint operating concepts, and security challenges require the U.S. Army to innovate to ensure that forces are prepared to accomplish future missions.
+            </p>
+            <p>
+                Shifts in the geopolitical landscape caused by competition for power and resources influence the character of armed conflict. These shifts, and violence associated with them, are occurring at a faster pace due to advances in technology, proliferation of information, and the associated increased momentum of human interaction.  However, war will remain a contest of wills.
+            </p>
+
+            @*<p>
+                    <a class="btn btn-primary btn-large">Call to action!</a>
+                </p>*@
+        </header>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b> An Approach to the Study of Future War</b></h4>
+                        <p>
+                            The character of future warfare evolves based upon assigned missions; the operational environment; emerging technologies; and changes in enemy capabilities, objectives, and will. The Army must anticipate change while considering how continuities, such as those reflected in the principles of war, affect how the Army must operate to accomplish future missions.
+
+                        </p>
+                        <p>
+                            Army forces are prepared to do more than fight and defeat enemies; they must possess the capability to translate military objectives into enduring political outcomes. Army forces must have the capability (ability to achieve a desired effect under specified standards and conditions) and capacity (capability with sufficient scale and endurance) to accomplish assigned missions while confronting increasingly dangerous threats in complex operational environments
+
+                        </p>
+                    </div>
+                </div>
+                <!--Reflections-->
+                @helpers.Reflectoins(
+               "What future technologies may influence military strategy and thought in future warfare?",
+               "What are some recent changes in warfare due to technology and how will they affect military art at the tactical and operational levels?",
+               "Consider the most probable scenarios for the Army in future conflict. How different are the potential social, political, cultural and technological contexts we might face?",
+               "How may future war impact the following: the political dimension, the human dimension, uncertainty and that war is a contest of wills?",
+               "What are some possible changes in future warfare and how might they affect military art at the tactical and operational levels?",
+               "")                
+
+            </div>
+            <!--Articles/ Videos-->
+            <div class="col-md-4">
+                @Html.Partial("_article")
+
+                @Html.Partial("_video")
+            </div>
+        </div>
+
+        <!-- Books -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row">
+            @helpers.SSPBook(
+           "The Future of Land Warfare, by Michael E. O’Hanlon.",
+           " In The Future of Land Warfare, Michael O’Hanlon, research director at the Brookings Institution and author of many books on defense issues, argues against the conventional wisdom that large-scale ground warfare is passé.  Instead, he concludes that ground warfare does have a future and a significant one at that.",
+           622,
+           "http://www.worldcat.org/title/future-of-land-warfare/oclc/908375026&referer=brief_results",
+           "OHanlon2.jpg")
+
+            @helpers.SSPBook(
+           "The Future of War: The Re-Enchantment of War in the Twenty-First Century, by Christopher Coker",
+           "Christopher Coker's book investigates whether citizens are 'disenchanted' with state-generated warfare. Coker predicates his argument on two assumptions: future warriors will remain human, and some human beings are born to be natural fighters.  Coker argues that as long as other humans honor their fallen, people will always be willing to assume the role of the warrior. Coker credits modern technology as well as the media for abating the enchantment over killing.",
+           622,
+           "https://www.goodreads.com/book/show/852216.Future_of_War?ac=1&from_search=true",
+           "Coker.jpg")
+
+            @helpers.SSPBook(
+           "Ghost Fleet: A Novel of the Next World War, by Peter Singer and August Cole",
+           "In Ghost Fleet, P.W. Singer, a strategist at New America, and August Cole, a senior fellow at the Atlantic Council, imagine a world war between the United States and a Russo-Sino alliance. While many readers will be interested in the new technologies they describe and the way these influence the conflict, the authors’ depiction of the interaction between people and technologies in the context of a high-stakes competition is arguably the most compelling feature of the book.",
+           622,
+           "https://www.goodreads.com/book/show/22749719-ghost-fleet?from_search=true",
+           "Singer.jpg")
+          
+        </div>
+    </div>
+</div>

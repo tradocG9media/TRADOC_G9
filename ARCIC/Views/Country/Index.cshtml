@@ -1,0 +1,115 @@
+﻿@model IEnumerable<ARCIC.Models.Country>
+
+@{
+    ViewBag.Title = "Index";
+    var data = Model.ToList();
+    //var Austrailia = data.Where(x => x.name == "Australia");
+    //var Belgium = data.Where(x => x.name == "Belgium");
+    //var Brazil = data.Where(x => x.name == "Brazil");
+    //var Canada = data.Where(x => x.name == "Canada");
+    //var China = data.Where(x => x.name == "China");
+    //var Denmark = data.Where(x => x.name == "Denmark");
+    //var Egypt = data.Where(x => x.name == "Egypt");
+    //var Eritrea = data.Where(x => x.name == "Eritrea");
+    //var France = data.Where(x => x.name == "France");
+    //var Germany = data.Where(x => x.name == "Germany");
+    //var Guyana = data.Where(x => x.name == "Guyana");
+    //var Hungary = data.Where(x => x.name == "Hungary");
+    var dataSlim = data.GroupBy(x => x.name).Select(x => x.First());
+
+}
+<br />
+<br />
+<h2>Country Count for Sharon</h2>
+
+
+<div class="row">
+    @*<div class="col-md-2">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @foreach (var item in data.Distinct())
+                {
+                    <p>@item.name</p>
+                }
+            </div>
+        </div>
+    </div>*@
+    <div class="col-md-10">
+        @*<div class="row">
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Austrailia: @Austrailia.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Belgium: @Belgium.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Brazil: @Brazil.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Brazil: @Denmark.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Brazil: @Egypt.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Brazil: @Eritrea.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Brazil: @France.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div><b>Brazil: @Germany.Count()</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    </div>
+</div>
+
+<div>
+    <b>Start:</b>
+    @foreach (var item in dataSlim)
+    {
+        if (item.Id == 2)
+        {
+
+        }
+        else
+        {
+            <div><b>@item.name: @item.name.Count()</b></div>
+        }
+
+    }
+</div>
+

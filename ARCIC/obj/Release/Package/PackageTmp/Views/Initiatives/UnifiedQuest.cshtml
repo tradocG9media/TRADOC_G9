@@ -1,0 +1,428 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Unified Quest";
+   
+    var UQNews = Article.GetArticles().Where(x => x.pInitiative == "Unified Quest").Where(x => x.entDate > Globals.archiveDate); 
+    var UQDocs = Document.GetDocuments().Where(x => x.initiative == "Unified Quest").Where(x => x.entDate > Globals.archiveDate);
+    var UQSpotlight = Spotlight.GetSpotlights().Where(x => x.mainArea == "Unified Quest").Take(1); 
+    
+}
+@functions {
+    public static string getPType(string Category)
+    {
+        //Solving for eventAction
+        string result = "";
+
+        if (Category == "Document")
+        {
+            result = "Download";
+        }
+        else if (Category == "Video")
+        {
+            result = "Play";
+        }
+        else if (Category == "Link")
+        {
+            result = "Click to external content";
+        }
+        //TODO
+
+        return result;
+    }
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="">
+            <h1 class="page-header"><b>Unified Quest</b></h1>
+            <ol class="breadcrumb hidden-xs hidden-sm">
+                <li>
+                    <a href="/Home"> Home </a>
+                </li>
+                <li class="active">Initiatives</li>
+                <li class="active">Unified Quest(UQ)</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <!--Spotlight-->
+
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                       <div class="row">
+                           <div class="col-md-4"> <h3><b>Spotlight</b></h3></div>
+
+                             <div class="col-md-8 text-right"> <h4><a href = "/Spotlight/Archives" > Archived Spotlights</a> <i class="fa fa-archive"></i></h4> </i></div>
+                       </div>
+
+                        </div>
+                        @foreach(var item in UQSpotlight)
+        {
+
+
+                        <img class="img-responsive center-block"  src='@("/App_Imgs/Content/" + item.imageFilename + "f.jpg")' style="padding: 8px;" />
+
+
+                        <div class="panel-body clearfix">
+                            <div class="caption">
+                                 <span class="text-warning text-uppercase"><b>@item.pLoe</b></span>
+                                <div class="divider-thin"></div>
+                                      <h3><b>@item.imageTitle</b></h3>
+                                    @Html.Raw(item.imageCaption)
+                               @* <span><a href = "@item.pGroup" target="_blank">Document</a> <i class="fa fa-file-pdf-o"></i></span>*@
+
+                            </div>
+                        </div>
+                            }
+                    </div>
+
+
+
+        <!--Why is NIE Important to the Army?-->
+        <div class="">
+            <h3><b>Overview</b></h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>Unified Quest(UQ) is the Chief of Staff of the Army’s Title 10 future study plan designed to explore enduring strategic and operational challenges to identify issues and explore solutions critical to current and future development.UQ assists senior Army leaders in making decisions using a variety of credible and plausible mid- to long-range strategic settings to develop or examine a broad set of ideas about future conflict that will impact the Army.The success of UQ relies on the ability to explore ideas from a resource-informed perspective, but not limited by resource-related constraints that typically drive near-term planning and programming. UQ will inform senior-leader Force 2025 Maneuvers: Army’s Campaign of Learning decisions on how best to develop an Army that has the capability and capacity to Win in a Complex World</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--What has the Army done?-->
+        <div class="">
+            <h3><b>Purpose</b></h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div>
+                        <p>Enable Army leaders to understand, visualize, describe, direct, and assess Future Force(2025-2050) development efforts. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--What is planned for the future?-->
+        <div class="">
+            <h3><b>Key Task</b></h3>
+            <div class="panel panel-default">
+                <div class="panel-body clearfix">
+                    <img class="img-responsive pull-right" src="../App_Imgs/Content/UnifiedQuest-logo.png" />
+                    <ul class="" style="list-style: square;">
+                        <li>Understand threats, enemies, and adversaries in context of the future operating environment and future missions.</li>
+                        <li>Refine concepts to maintain a strong foundation for Future Force development.</li>
+                        <li>Evaluate the Future Force under realistic scenarios.</li>
+                        <li>Identify capability gaps and opportunities to improve Future Force effectiveness.</li>
+                        <li>Design the Future Force and develop strategies to ensure that Army forces are prepared to accomplish missions while operating as part of joint, inter-organizational, and multinational teams.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <h3><b>End State</b></h3>
+            <div class="panel panel-default">
+                <div class="panel-body clearfix">
+                    <p>
+                        Future Army forces are prepared to conduct operations promptly, in sufficient scale, and for ample duration to deter conflict and win in a complex world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--2018-->
+        <div class="">
+            <h3 class=""><b>Unified Quest 2018</b></h3>
+            <div class="list-group clearfix">
+
+                <div class="list-group-item" data-toggle="collapse" data-target="#item001">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4 class=""><strong>Multi-Domain Battle as the Foundation of the Future Joint Force</strong> -<small> </small></h4>
+                    <div id="item001" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Unified Quest 2018 studies how Multi-Domain Battle (MDB) serves as the foundation for joint operations in 2035-2050. The purpose is to determine how the Army operates as a part of the joint force against adversaries who expand the conduct of war into multiple domains at extended distances. UQ18 has two focus areas: 1) to determine how U.S. forces deter the escalation of violence, defeat threat operations to destabilize the region, and turn denied spaces into contested spaces should violence escalate; maneuver from contested strategic and operational distances and with sufficient combat power to defeat enemy forces; conduct deep maneuver by air, naval, and/or ground forces to suppress and destroy enemy indirect fire and air defense systems and reserve forces; enable ground forces to defeat the enemy in the close area; and operate in dense urban terrain (defined by physical, human, and cyber-electromagnetic density); and 2) operationalize future robotic and autonomous systems in support of MDB. The outcomes will inform senior leader decisions on the MDB concept and future force development.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item" data-toggle="collapse" data-target="#item002">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4 class=""><strong>Joint Capabilities I </strong>-<small> November 2017</small></h4>
+                    <div id="item002" class="collapse row">
+                        <div class="panel-body">
+                            Joint Capabilities I (JC I) Workshop Nov. 14–17 is the first preparatory event for the 2018 Deep Future Wargame. JC I’s purpose is to understand the relationships between joint and service concepts related to MDB. Participants will first identify and examine areas where service concepts converge and diverge across the joint functional areas. Subsequent subject matter expert discussions will identify implications and recommendations to resolve areas of divergence and enable further concept development. The outcomes will establish a basis to develop future joint capabilities at the Joint Capabilities II seminar in March 2018, and enable joint participation during the 2018 DFWG.                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item " data-toggle="collapse" data-target="#item003">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4 class=""><strong>Future Force Design IV</strong>-<small> December 2017</small></h4>
+                    <div id="item003" class="collapse row">                      
+                        <div class="panel-body">
+                            The first of two HTAFs, How the Army Fights III will explore how the Army COULD fight across multiple domains in the 2030-2050 timeframe.Leaders will link challenges, force design principles and solutions to inform capability gaps by examining how Army formations conduct Joint and Combined Arms Operations(JCAO).
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item " data-toggle="collapse" data-target="#item004">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4 class=""><strong>How the Army Fights V </strong>-<small> January/February 2018 </small></h4>
+                    <div id="item004" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                            How the Army Fights V (HTAF V) Wargame and Senior Leader Seminar, Jan. 22- 26 and Feb. 28, respectively. HTAF V will be the execution tool for the TRADOC-Air Combat Command (ACC) Tabletop Exercise 1 with the wargame executed in late January and the Senior Leader Seminar February 27 during the TRADOC Commander’s Forum. HTAF V will expand upon the lessons learned from Quicklook III—conducted by Maneuver Center of Excellence August 2017—and determine what Army and Air Force capabilities can achieve the desired effects associated with multiple problem sets identified during Quicklook III. Using the MDBoperational framework, HTAF V will examine MDB problem 4 focusing at echelons above brigade against a peer adversary in a future operational environment.  
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item clearfix " data-toggle="collapse" data-target="#item006">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4 class="">
+                        <strong>Joint Capabilities II  </strong>-<small> March 2018 </small>
+                    </h4>
+                    <div id="item006" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                            The Joint Capabilities II Workshop March 20-23 will focus on complementary service capabilities and capacities in a 2035 operational environment and incorporate them into products and tools for participants to use during the Deep Future Wargame. The participants will develop an easy-to-comprehend visual description of relevant service capabilities for joint force planning in a 2035 context. Participants will also develop an understanding of the relationships and interdependencies between service capabilities to include areas where capabilities complement and converge. 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item clearfix " data-toggle="collapse" data-target="#item005">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4 class="">
+                        <strong>Deep Future Wargame </strong>-<small> April/May 2018 </small>
+                    </h4>
+                    <div id="item005" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                          <p>The purpose of the Deep Future Wargame is to understand how the Army can contribute to the multi-service multi-domain capabilities required to defeat a near-peer adversary in a 2035 operational environment. Two planning events precede the wargame: the Core Planning Group (CPG) April 9-13 and the Staff Exercise (STAFFEX) May 7-13. During the CPG in April, participants will develop joint, interagency and multinational concepts of operations to deter and/or defeat an adversary during competition and armed conflict periods in a 2035 multi-domain environment. The May STAFFEX is for participants to refine their concepts of operation to enable optimal learning about future concepts, capabilities, and organizations. </p>
+                           <p>The Deep Future Wargame immediately follows the STAFFEX May 14-18. In this event, participants employ the concepts, capabilities, and concepts of the operation developed in the preparatory events since Joint Capabilities I. Using the MDB and other multi-domain service concepts, participants in five of the working groups will determine how U.S. Forces: </p>
+                            <ul>
+                            <li>Deter the escalation of violence, defeat threat operations to destabilize the region, and turn denied spaces into contested spaces should violence escalate</li>
+                            <li>Maneuver from contested strategic and operational distances and with sufficient combat power in time to defeat enemy forces</li>
+                            <li>Conduct deep maneuver by air, naval, and/or ground forces to suppress and destroy enemy indirect fire and air defense systems and reserve forces</li>
+                            <li>Enable ground forces to defeat the enemy in the close area</li>                                   
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <hr />
+        <!--UQ 2017-->
+        <div class="">
+            <h3 class="text-muted"><b>Unified Quest 2017 - <span class="text-muted">Archived</span></b></h3>
+            <div class="list-group clearfix">
+
+                <div class="list-group-item" data-toggle="collapse" data-target="#item0011">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link"  role="button"><span class="text-muted">OVERVIEW</span></span></h5>
+                    <h4 class="text-muted"><strong>Character of Future War</strong> -<small> November 2016  <strong></strong></small></h4>
+                    <div id = "item0011" class="panel-collapse collapse row">
+                        <div class="panel-body">
+                            The Character of Future War will develop a common understanding of the character of war in the 2030-2050 timeframe.The event will determine what the operational environment will look like, the sources of military power and strategic competitors(with respect to threats and missions), and will identify the implications on the conduct of future military operations.
+
+
+
+                      </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item" data-toggle="collapse" data-target="#item0022">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link"  role="button"><span class="text-muted">OVERVIEW</span></span></h5>
+                    <h4 class="text-muted"><strong>Human Performance Seminar</strong>-<small> December 2016 <strong></strong></small></h4>
+                    <div id = "item0022" class="collapse row">
+                        <div class="panel-body">
+                            Based on the results of the Human Performance Working Group in September 16, the Human Performance Seminar will determine the desired characteristics of Soldiers, civilians and contractors required in the 2050 operational environment, and the capabilities needed to succeed in high-intensity conflict.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item " data-toggle="collapse" data-target="#item0033">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link"  role="button"><span class="text-muted">OVERVIEW</span></span></h5>
+                    <h4 class="text-muted"><strong>How the Army Fights III</strong>-<small> February 2017 <strong></strong></small></h4>
+                    <div id = "item0033" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                            The first of two HTAFs, How the Army Fights III will explore how the Army COULD fight across multiple domains in the 2030-2050 timeframe.Leaders will link challenges, force design principles and solutions to inform capability gaps by examining how Army formations conduct Joint and Combined Arms Operations(JCAO).
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item " data-toggle="collapse" data-target="#item0044">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link"  role="button"><span class="text-muted">OVERVIEW</span></span></h5>
+                    <h4 class="text-muted"><strong>Future Force Design III Seminar</strong>-<small> March 2017 <strong></strong></small></h4>
+                    <div id = "item0044" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                            Future Force Design III will ensure that capability sets enable achievement of the learning objectives in the Deep Future Wargame.Three working groups will discuss how well the capability set descriptions enable the employment of the future force, how each capability set enables fighting in accordance with the Army Concept Framework, and what key adjustments are needed in the capability set description.
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item clearfix " data-toggle="collapse" data-target="#item0066">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link"  role="button"><span class="text-muted">OVERVIEW</span></span></h5>
+                    <h4 class="text-muted"><strong>Deep Future Wargame 2017 </strong>-<small> May 2017 <strong></strong></small>
+                    </h4>
+                    <div id = "item0066" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                            The Deep Future Wargame will determine how the Army fights across multiple domains in the 2030-2050 timeframe as part of a join, inter-organizational, and multinational force.Three working groups will determine how well future forces:  shape the environment; set the theater; conduct forcible entry operations; conduct dispersed joint and combined-arms and wide-area security operations; and how well future forces transition between phases and consolidate gains.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item clearfix " data-toggle="collapse" data-target="#item0055">
+                    <h5 class="col-sm-2 pull-right"><span class="btn-link"  role="button"><span class="text-muted">OVERVIEW</span></span></h5>
+                    <h4 class="text-muted"><strong>How the Army Fights IV</strong>-<small> August 2017 <strong></strong></small>
+                    </h4>
+                    <div id = "item0055" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                            The last HTAF, How the Army Fights IV, will explore how the Army COULD fight across multiple domains in the 2030-2050 timeframe.Leaders will link challenges, force design principles and solutions to inform capability gaps.
+
+
+                       </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Sidbar-->
+    <section class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <h4><b>Army Space Power 2035</b> <i class="fa fa-youtube fa-lg pull-right"></i></h4>
+            </div>
+            <div class="">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="320" height="215" src="https://www.youtube.com/embed/QBH61gT3Cck?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+           @* <div class="panel-body">
+
+            </div>*@
+        </div>
+
+
+        <div class="list-group">
+            <div class="list-group-item clearfix" style="padding-top: 14px;">
+                @Twitter.FollowButton(userName: "UnifiedQuest", showCount: true, largeButton: true, language: "en")
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3><b>Relevant News</b></h3>
+            </div>
+            <div class="list-group">
+                @foreach (var item in UQNews)
+
+                {
+                    //string pCategory = getPType(item.pType);
+
+                    <div class="list-group-item">
+                        <div>@item.title</div>
+                        <div class="clearfix small">
+                            @item.entDate.ToShortDateString() <span class="pull-right">
+                                <a href="@item.link" target="_blank"
+                                    onClick="ga('send', 'event', { eventCategory: '@item.pType)', eventAction: '@getPType(item.pType)', eventLabel: '@item.title (@item.link)', eventValue: 1});">View</a>
+                            </span>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+       
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3><b>Documents</b></h3>
+            </div>
+            <div class="list-group">
+               @foreach(var item in UQDocs)
+    {
+        if (item.entDate > global.archiveDate)
+        {
+                   <div class="list-group-item clearfix">
+                      <div class="row">
+                           <div class="col-md-1">
+                               <i class="fa fa-file-pdf-o fa-lg"></i>
+                       </div>
+                       <div class="col-md-10">
+                               <div><a href = '@(item.docURL + item.docFilename)' target="_blank">@item.title<i class="fa fa-external-link fa-xs"></i></a></div>
+                               <small>@item.pubDate</small>
+                           </div>
+                      </div>
+
+                   </div>
+                   }
+
+               }
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3><b>2016 Archives</b></h3>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                    Future Force Design I Seminar
+                </div>
+                <div class="list-group-item">
+                    Future Force Design II Seminar
+                </div>
+                <div class="list-group-item">
+                    How the Army Fights I
+                </div>
+                <div class="list-group-item">
+                    Deep Future Wargame
+                </div>
+                <div class="list-group-item">
+                    How the Army Fights II
+                </div>
+                <div class="list-group-item">
+                    Senior Leader Seminar
+                </div>
+                <div class="list-group-item">
+                    Human Performance Working Group
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+</div>
+
+
+
+<!--end row-->
+

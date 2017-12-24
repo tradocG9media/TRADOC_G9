@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ARCICModelsStoreContainer" CdmEntityContainer="ARCICDbContext2">
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="ARCICModels.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EngagementCalendars">
+      <EntityTypeMapping TypeName="ARCICModels.EngagementCalendar">
+        <MappingFragment StoreEntitySet="EngagementCalendar">
+          <ScalarProperty Name="eventID" ColumnName="eventID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="EventUrl" ColumnName="EventUrl" />
+          <ScalarProperty Name="stamp" ColumnName="stamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EOCalendars">
+      <EntityTypeMapping TypeName="ARCICModels.EOCalendar">
+        <MappingFragment StoreEntitySet="EOCalendar">
+          <ScalarProperty Name="eventID" ColumnName="eventID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="recurring" ColumnName="recurring" />
+          <ScalarProperty Name="stamp" ColumnName="stamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="ARCICModels.Event">
+        <MappingFragment StoreEntitySet="Event">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="entry" ColumnName="entry" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainArticles">
+      <EntityTypeMapping TypeName="ARCICModels.MainArticle">
+        <MappingFragment StoreEntitySet="MainArticle">
+          <ScalarProperty Name="artID" ColumnName="artID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+          <ScalarProperty Name="imgCaption" ColumnName="imgCaption" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="authorEmail" ColumnName="authorEmail" />
+          <ScalarProperty Name="authorSource" ColumnName="authorSource" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="archiveDate" ColumnName="archiveDate" />
+          <ScalarProperty Name="sortDate" ColumnName="sortDate" />
+          <ScalarProperty Name="pubDate" ColumnName="pubDate" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="sourceName" ColumnName="sourceName" />
+          <ScalarProperty Name="sourceUrl" ColumnName="sourceUrl" />
+          <ScalarProperty Name="C_type" ColumnName="_type" />
+          <ScalarProperty Name="loe" ColumnName="loe" />
+          <ScalarProperty Name="directorate" ColumnName="directorate" />
+          <ScalarProperty Name="cta" ColumnName="cta" />
+          <ScalarProperty Name="promote" ColumnName="promote" />
+          <ScalarProperty Name="repostDate" ColumnName="repostDate" />
+          <ScalarProperty Name="googleTrack" ColumnName="googleTrack" />
+          <ScalarProperty Name="group" ColumnName="group" />
+          <ScalarProperty Name="connection" ColumnName="connection" />
+          <ScalarProperty Name="initiative" ColumnName="initiative" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ARCICModels.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="sku" ColumnName="sku" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sources">
+      <EntityTypeMapping TypeName="ARCICModels.Source">
+        <MappingFragment StoreEntitySet="Source">
+          <ScalarProperty Name="sourceId" ColumnName="sourceId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSPArticles">
+      <EntityTypeMapping TypeName="ARCICModels.SSPArticle">
+        <MappingFragment StoreEntitySet="SSPArticle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="stamp" ColumnName="stamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSPVideos">
+      <EntityTypeMapping TypeName="ARCICModels.SSPVideo">
+        <MappingFragment StoreEntitySet="SSPVideo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="stamp" ColumnName="stamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="ARCICModels.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="artID" ColumnName="artID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="pubDate" ColumnName="pubDate" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="group" ColumnName="group" />
+          <ScalarProperty Name="typ" ColumnName="typ" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="sourceLogo" ColumnName="sourceLogo" />
+          <ScalarProperty Name="archive" ColumnName="archive" />
+          <ScalarProperty Name="directorate" ColumnName="directorate" />
+          <ScalarProperty Name="connection" ColumnName="connection" />
+          <ScalarProperty Name="lineofeffort" ColumnName="lineofeffort" />
+          <ScalarProperty Name="initiative" ColumnName="initiative" />
+          <ScalarProperty Name="focus" ColumnName="focus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ARCICModels.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="org" ColumnName="org" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="permissions" ColumnName="permissions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

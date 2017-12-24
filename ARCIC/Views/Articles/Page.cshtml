@@ -1,0 +1,86 @@
+﻿@model IEnumerable<ARCIC.Models.Article>
+
+@{
+    ViewBag.Title = "Page";
+    //var data = ViewBag.Data;
+   // var news = ViewBag.News;
+
+}
+<style>
+    img { width: 100%; }
+</style>
+<div class="row">
+
+    @*<img src="~/App_Imgs/Content/MSCoE-Fort-Leonard-Wood-host-TRADOC-Command-Forum-2017-05-18_01f.jpg" />*@
+@if (ViewBag.Id == -1)
+{
+    <div class="col-md-8 alert alert-warning">
+        <p>No content available</p>
+    </div>
+
+
+}
+else
+{
+    <div class="col-md-8">
+        <h1 class="page-header"><b>@Model.ToList()[0].title</b></h1>
+    </div>
+
+    <div class="col-md-7">
+
+        <div class="">
+            <p>@Model.ToList()[0].author | <a href="@Model.ToList()[0].sourceLink" target="_blank">@Model.ToList()[0].source</a> | @Model.ToList()[0].pubDate</p>
+        </div>
+
+        <div class="panel panel-default">
+            @if (Model.ToList()[0].imageURL.Contains("http"))
+            {
+                <img class="img-responsive" src="@Model.ToList()[0].imageURL" />
+            }
+            else if (Model.ToList()[0].entDate > Convert.ToDateTime("12/31/2015 12:00:00"))
+            {
+                <img class="img-responsive" src='@("/App_Imgs/Content/" + Model.ToList()[0].imageURL + "f.jpg")' />
+            }
+            else if (Model.ToList()[0].dataSet == "exclusive")
+            {
+                <img class="img-responsive" src='@("/App_Imgs/" + Model.ToList()[0].dataSet + "s/" + Model.ToList()[0].imageURL + "f.jpg")' />
+            }
+            else if (Model.ToList()[0].dataSet == "military")
+            {
+                <img class="img-responsive" src='@("/App_Imgs/Mil/" + Model.ToList()[0].imageURL + "f.jpg")' />
+            }
+            else if (Model.ToList()[0].dataSet == "public")
+            {
+                <img class="img-responsive" src='@("/App_Imgs/Content/" + Model.ToList()[0].imageURL + "f.jpg")' />
+            }
+            else
+            {
+                <img class="img-responsive" src='@("/App_Imgs/Content/" + Model.ToList()[0].imageURL + "f.jpg")' />
+            }
+            <div class="panel-body">
+                <div>
+                    <p>@Html.Raw(Model.ToList()[0].description)</p>
+                    <p class=""><span class="text-muted"><a href="@Model.ToList()[0].sourceLink" target="_blank">@Model.ToList()[0].source</a></span> </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+
+
+    @*<div class="col-md-4">
+        <h3 class="text-muted">Archives</h3>      
+            <ul class="list-group">
+                @foreach (var item in news)
+                {
+                    <li class="list-group-item">
+                        <div>@item.title</div>
+                        <p class=""><span class="text-muted"><a href="@item.sourceLink" target="_blank">@item.source</a> </span> | @Convert.ToDateTime(item.entDate).ToShortDateString()</p>
+                    </li>                   
+                }
+            </ul>       
+    </div>*@
+</div>
+

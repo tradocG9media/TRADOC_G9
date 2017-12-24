@@ -1,0 +1,238 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.App_Code;
+@using ARCIC.Models;
+
+@{
+    //NEWS ARTICLES HOME PAGE
+    //DateTime.Now.Month
+   string[] months = new string[] {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov","dec"};
+   
+
+    var dec = Globals.articles
+        .Where(x => x.dataSet == "exclusive")
+        .Where(x => x.entDate >= Convert.ToDateTime("12/01/2016"))
+        .Where(x => x.entDate <= Convert.ToDateTime("12/31/2016"))
+        .OrderByDescending(x => x.entDate);  //    
+    
+    var nov = Globals.articles
+        .Where(x => x.dataSet == "exclusive")
+        .Where(x => x.entDate >= Convert.ToDateTime("11/1/2016"))
+        .Where(x => x.entDate <= Convert.ToDateTime("11/30/2016"))
+        .OrderByDescending(x => x.entDate);  //  
+
+    var oct = Globals.articles
+    .Where(x => x.dataSet == "exclusive")
+    .Where(x => x.entDate >= Convert.ToDateTime("10/01/2016"))
+    .Where(x => x.entDate <= Convert.ToDateTime("10/31/2016"))
+    .OrderByDescending(x => x.entDate);  //   
+
+    var sep = Globals.articles
+    .Where(x => x.dataSet == "exclusive")
+    .Where(x => x.entDate >= Convert.ToDateTime("09/01/2016"))
+    .Where(x => x.entDate <= Convert.ToDateTime("09/30/2016"))
+    .OrderByDescending(x => x.entDate);  //  
+
+
+        
+    
+}
+
+<h2 class="page-header"><b>News</b></h2> 
+    
+<div class="row">
+     <div class="col-md-12">
+                <h4>2016</h4>
+                <h3 class="text-uppercase"><i class="fa fa-th-large" style="color: #228B22;"></i> <b>December</b></h3>
+            </div>
+
+    @foreach (var item in dec)
+    {             
+    
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            @if (item.archive == "mil")
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("App_Imgs/Mil/" + item.imageURL + "f.jpg")'/>
+            }
+            else
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("/App_Imgs/Content/" + item.imageURL + "f.jpg")'/>
+            }
+
+            <div class="panel-body">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-block clearfix">
+                                <h5 class="card-title"><strong>@item.title</strong></h5>
+                                @*<p class="card-text"></p>*@
+                                <div class="card-text">
+                                    <div class="text-muted">@item.author</div>
+                                    <div class="text-muted">@item.pubDate </div>
+                                </div>
+                                <div><small class="clearfix text-uppercase">@item.source <span class="pull-right"><a href="@item.link" target="_blank">Read </a><i class="fa fa-external-link"></i></span></small></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>              
+            
+    }
+</div>
+   
+ 
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-uppercase"><i class="fa fa-th-large" style="color: #ff6a00;"></i> <b>November</b></h3>
+    </div>
+
+    @foreach (var item in nov)
+    {              
+    
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            @if (item.archive == "mil")
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("App_Imgs/Mil/" + item.imageURL + "f.jpg")'/>
+            }
+            else if(item.imageURL.Contains("https") || item.imageURL.Contains("http"))
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@item.imageURL")'/>
+            }
+            else
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("/App_Imgs/Content/" + item.imageURL + "f.jpg")'/>
+                
+            }
+
+            <div class="panel-body">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-block clearfix">
+                                <h5 class="card-title"><strong>@item.title</strong></h5>
+                                @*<p class="card-text"></p>*@
+                                <div class="card-text">
+                                    <div class="text-muted">@item.author</div>
+                                    <div class="text-muted">@item.pubDate </div>
+                                </div>
+                                <div><small class="clearfix text-uppercase">@item.source <span class="pull-right"><a href="@item.link" target="_blank">Read </a><i class="fa fa-external-link"></i></span></small></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>              
+            
+    }
+ 
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-uppercase"><i class="fa fa-th-large" style="color: #0094ff;"></i> <b>October</b></h3>
+    </div>
+
+    @foreach (var item in oct)
+    {              
+    
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            @if (item.archive == "mil")
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("App_Imgs/Mil/" + item.imageURL + "f.jpg")'/>
+            }
+            else if(item.imageURL.Contains("https") || item.imageURL.Contains("http"))
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@item.imageURL")'/>
+            }
+            else
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("/App_Imgs/Content/" + item.imageURL + "f.jpg")'/>
+                
+            }
+
+            <div class="panel-body">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-block clearfix">
+                                <h5 class="card-title"><strong>@item.title</strong></h5>
+                                @*<p class="card-text"></p>*@
+                                <div class="card-text">
+                                    <div class="text-muted">@item.author</div>
+                                    <div class="text-muted">@item.pubDate </div>
+                                </div>
+                                <div><small class="clearfix text-uppercase">@item.source <span class="pull-right"><a href="@item.link" target="_blank">Read </a><i class="fa fa-external-link"></i></span></small></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>              
+            
+    }
+ 
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="text-uppercase"><i class="fa fa-th-large" style="color: #0094ff;"></i> <b>September</b></h3>
+    </div>
+
+    @foreach (var item in sep)
+    {              
+    
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            @if (item.archive == "mil")
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("App_Imgs/Mil/" + item.imageURL + "f.jpg")'/>
+            }
+            else if(item.imageURL.Contains("https") || item.imageURL.Contains("http"))
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@item.imageURL")'/>
+            }
+            else
+            {
+                <img class="card-img-top img-responsive" alt="Card image cap"  src='@("/App_Imgs/Content/" + item.imageURL + "f.jpg")'/>
+                
+            }
+
+            <div class="panel-body">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-block clearfix">
+                                <h5 class="card-title"><strong>@item.title</strong></h5>
+                                @*<p class="card-text"></p>*@
+                                <div class="card-text">
+                                    <div class="text-muted">@item.author</div>
+                                    <div class="text-muted">@item.pubDate </div>
+                                </div>
+                                <div><small class="clearfix text-uppercase">@item.source <span class="pull-right"><a href="@item.link" target="_blank">Read </a><i class="fa fa-external-link"></i></span></small></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>              
+            
+    }
+ 
+</div>

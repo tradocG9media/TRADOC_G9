@@ -1,0 +1,50 @@
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\ARCIC_Class.dll.config
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\ARCIC_Class.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\ARCIC_Class.pdb
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.xml
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\obj\Release\ARCIC_Class.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\obj\Release\ARCIC_Class.pdb
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\obj\Release\ARCIC_Class.csprojResolveAssemblyReference.cache
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\ARCIC_Class.dll.config
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\ARCIC_Class.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\ARCIC_Class.pdb
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.xml
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\obj\Release\ARCIC_Class.csprojResolveAssemblyReference.cache
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\obj\Release\ARCIC_Class.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\obj\Release\ARCIC_Class.pdb
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\ARCIC_Class.dll.config
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\ARCIC_Class.dll
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\ARCIC_Class.pdb
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\EntityFramework.dll
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\EntityFramework.xml
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\obj\Release\ARCIC_Class.dll
+C:\Users\timmy\Documents\SITES\TRADOC\vs2017\ARCIC_Class\obj\Release\ARCIC_Class.pdb
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\ARCIC_Class.dll.config
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\ARCIC_Class.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\ARCIC_Class.pdb
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\EntityFramework.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\EntityFramework.xml
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\obj\Release\ARCIC_Class.csproj.CoreCompileInputs.cache
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\obj\Release\ARCIC_Class.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCIC_Class\obj\Release\ARCIC_Class.pdb
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\ARCIC_Class.dll.config
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\ARCIC_Class.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\ARCIC_Class.pdb
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\EntityFramework.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\EntityFramework.xml
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\obj\Release\ARCIC_Class.csprojResolveAssemblyReference.cache
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\obj\Release\ARCIC_Class.csproj.CoreCompileInputs.cache
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\obj\Release\ARCIC_Class.dll
+C:\Users\timmy\Documents\Visual Studio 2017\Projects\ARCICWEB\ARCIC_Class\obj\Release\ARCIC_Class.pdb

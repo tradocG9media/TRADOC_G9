@@ -1,0 +1,54 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "ARCIC Director's Biography";
+    var currReading = Globals.currLPD;
+}
+
+
+<div class="row">
+
+    @helpers.PageTitleSimple("MG Robert “Bo” Dyess", "","About","Biography")
+
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div>
+            <p>Major General Robert M. “Bo” Dyess assumed duties as the Acting Director, Army Capabilities Integration Center. @*on 6 July 2015*@. </p>
+            <p>After graduating from Appomattox County High School, in Virginia, he received an appointment to the United States Military Academy (USMA) at West Point, NY. Upon graduation in 1982, MG Dyess was commissioned as an Infantry Officer. </p>
+            <p>During his 30 years of service, MG Dyess held command and staff assignments including: Platoon Leader, Battalion Adjutant, Rifle Company Commander, Headquarters Company Commander, Battalion Operations Officer, Deputy Division G-3, and Brigade Executive Officer during assignments in the 82d Airborne Division at Fort Bragg NC, the 3d Infantry Division (Mechanized) in both Germany and at Fort Stewart, GA, and in the Eighth U.S. Army, Korea. During this time, he also served as a Tactical Officer, United States Army School of the Americas in Panama, participated in combat operations during OPERATION URGENT FURY in Grenada, and served as a Force Integration Officer in the Pentagon. From 2000 to 2008, MG Dyess served as a Force Integration Officer & Force Management Officer with the First Army at Fort Gillem, GA and, later, as the Director, Force Integration at United States Army Forces Command, Fort McPherson, GA. From June 2008 until August 2009, he served as the Division Chief for Force Integration, Combined Security Assistance Command - Afghanistan, & OPERATION ENDURING FREEDOM, Afghanistan. Upon redeployment from Afghanistan, he assumed duty as the Director, Requirements Integration, Army Capabilities Integration Center (ARCIC), from August 2009 until May 2012. From 2012 to 2015, he was the Director of Force Development on the Army Staff at the Pentagon.</p>
+            <p>MG Dyess is a graduate of the Infantry Officer Basic and Advanced Courses; United States Army Command and General Staff College; Army Force Management Course; Air War College; and the Joint and Combined Warfighting School.</p>
+            <p>He holds a Masters of Science in Systems Engineering from Virginia Polytechnic Institute and State University and a Masters of Science in Strategic Studies from the United States Air University, Maxwell AFB, Alabama.</p>
+            <p>His military decorations include: Distinguished Service Medal, two Legion of Merits, two Bronze Stars, the Defense Meritorious Service Medal, five Meritorious Service Medals, two Army Commendation Medals, two Army Superior Unit Awards, the Combat Infantryman’s Badge, the Ranger Tab, and the Senior Parachutist Badge.</p>
+            <p>MG Dyess is married to the former Sharon Hall of Brunswick, Georgia. The Dyesses have one daughter, Ms. Marilyn Dyess, a recent graduate of the College of William & Mary in Williamsburg, Virginia.</p>
+
+        
+        
+        </div>
+    </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><b>MG Robert “Bo” Dyess
+Deputy Commanding General, Futures/Director, ARCIC</b>
+</h4>
+                </div>
+                <div class="panel-body clearfix">
+                    <p>
+                        
+                        <img class="img-responsive" src="../App_Imgs/Leadership/Dyess-about-750.jpg" />
+                    </p>
+                    <p>View our Professional Reading area for what ARCIC Leaders are reading & talking about in Professional Development.</p>
+                    <div class="text-center"><a class="btn btn-primary" href="@Url.Action("ProfessionalReadings","LPD" , new { articleSeries = currReading })" >Professional Readings</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</div>
+
+

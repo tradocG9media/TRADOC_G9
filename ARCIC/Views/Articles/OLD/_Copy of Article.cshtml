@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ARCIC.Models.ArticleModels>
+@{
+    ViewBag.Title = "Articles";    
+   
+    var articles = ViewBag.exclusives;
+    var article = ViewBag.exclusive;
+    //var article = Model;
+}
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-9">
+                <h1 class="page-header"><b>Article</b>                   
+                    <small>
+                       archives
+                   </small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/Articles">Article</a>
+                    </li>
+                    <li class="active">Archives</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-lg-8">                
+                      
+               @foreach (var item in article)
+                {
+                    <h2 class=""><b>@item.title</b></h2>
+                    <div class="text-muted">
+                        <div>@item.pubDate</div>
+                        <div>@item.author</div> 
+
+                    </div>  
+                <p></p>
+                }     
+                 
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+<div class="row">
+    <br />
+    <h3 class="text-muted"><b>Archvies</b></h3>
+
+    @*@Html.Partial("~/Views/Articles/_articleArchives.cshtml") *@
+
+    @foreach (var item in articles)
+                {
+                    <h4 class=""><b>@item.title</b></h4>
+                    <div class="text-muted">
+                        <div>@item.pubDate</div>
+                        <div>@item.author</div> 
+
+                    </div>  
+                <p></p>
+                }       
+    <br />
+    <br />
+ 
+    <div>
+        <h1></h1>
+    </div>
+</div>

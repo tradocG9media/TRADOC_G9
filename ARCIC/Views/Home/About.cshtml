@@ -1,0 +1,225 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "About ARCIC";
+}
+
+<!--About Page Content-->
+
+        <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="page-header"><b>ARCIC</b>
+                <small>Adapting The Army... Innovating for the Future</small>
+            </h1>
+            <ol class="breadcrumb hidden-xs hidden-sm">
+                <li><a href="/Home/">Home</a>
+                </li>
+                <li class="active">About</li>
+            </ol>
+        </div>
+    </div>
+       
+        <!-- /.row -->
+<div class="row">
+        <!-- Intro Content -->   
+            <!--Misison, Vision, Intent-->
+            <div class="col-md-8">
+                <h3><b>Army Capabilities Integration Center</b> </h3>
+                <h4><b><u>Mission</u></b></h4>
+                <p>The ARCIC develops concepts, learns, and integrates capabilities to improve our Army and ensure the effectiveness of the Joint Force. </p>
+                <h4><b><u>Vision</u></b></h4>
+                <p>A team of trusted professionals who collaborate, learn, and innovate to turn ideas into valued outcomes and ensure that the Joint Force wins in future armed conflict. </p>
+                <h4><b><u>Intent</u></b></h4>
+                <p><b>Purpose:</b> Innovate to ensure that Army forces are prepared to provide multiple options for combatant commanders; present multiple dilemmas to enemies; integrate efforts of multiple partners; and operate across multiple domains. </p>
+                <div>
+                    <div>
+                        <b class="text-primary">Think:</b> <i class="text-warning">Think</i> clearly about future armed conflict and develop a sound conceptual foundation for Army modernization.
+                    </div>
+                    <div>
+                        <b class="text-primary">Learn:</b> <i class="text-warning">Learn</i> about future armed conflict in a focused, sustained, and collaborative manner to identify capability gaps and opportunities to achieve overmatch.
+                    </div>
+                    <div>
+                        <b class="text-primary">Analyze</b>: <i class="text-warning">Analyze</i> what we learn to prioritize solutions to ensure that our Army has the capability and capacity to accomplish future missions.
+                    </div>
+                    <div>
+                        <b class="text-primary">Implement:</b> <i class="text-warning">Implement</i> solutions to increase the rate of innovation and maintain our differential advantage over capable and determined enemies.
+                    </div>
+                </div>
+                
+                    <h4><b>End State</b></h4><div> Resilient Soldiers, adaptive leaders, and cohesive teams are capable of defeating enemy organizations, controlling terrain, securing populations, consolidating gains, and preserving joint force freedom of action in the land, air, maritime, space, and cyberspace domains. </div>
+                <p></p>
+            </div>
+
+            <!--McMaster-->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/McMaster-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>LTG H.R. McMaster</b><br>
+                            <small>Deputy Commanding General, Futures / Director, ARCIC</small>
+                        </h3>
+                        <p>View our Professional Reading area for what ARCIC Leaders are reading & talking about in Professional Development.</p>
+                        <h4 class="text-warning"><b>Welcome to Incoming Personnel</b></h4>
+                        <p><i class="fa fa-quote-left"></i> It is with great pleasure that I welcome you and your family to the Army Capabilities Integration Center, HQ TRADOC. What an exciting time to be in our Army as we embark on evolving the future force! 
+                            <i class="fa fa-quote-right"></i>  <a class="btn-link" href="~/Home/Welcome" role="button">Full welcome statement</a>
+                        </p>
+                        <p>@helpers.SeoCall2Action("Bio","/Leadership/arcic_director_bio")</p>
+                    </div>
+                </div>                
+            </div>
+   
+        <!-- /.row -->
+
+        <!-- Team Members --> 
+            <div class="col-lg-12">
+                <h2 class="page-header"><b>Our Team</b></h2>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Dyess-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>MG Robert Dyess</b><br>
+                            <small>Deputy Director</small>
+                        </h3>
+                        <p></p>
+                        @helpers.SeoCall2Action("Bio","/Leadership/arcic_deputy_director_bio")
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Travers-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>CSM Stephen Travers</b><br>
+                            <small>Command Sergeant Major</small>
+                        </h3>
+                        <p></p>
+                        @helpers.SeoCall2Action("Bio","/Leadership/arcic_csm_bio")
+                    </div>
+                </div>
+            </div>
+                      
+            <hr />                      
+            
+             <div class="col-lg-12">
+                <h2 class="page-header"><b>Directorates</b></h2>
+            </div>  
+             <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/McKenrick-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>Joint Modernization Command (JMC)</b><br></h3>
+                        <h4 class="text-primary"><b>MG Terrence J. McKenrick</b><br>
+                            <small>Commanding General</small>
+                        </h4>
+                        <div class="btn-group">
+                            <div class="btn btn-default">@Html.ActionLink("Bio", "bmc_director_bio","Leadership")</div>
+                            <div class="btn btn-default">@Html.ActionLink("Visit JMC", "BMC","Directorates")</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Komar-David-BG-ASU_01f.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>Capabilities Development <br />
+                            (CDD)</b>
+                        </h3>  
+                        <h4 class="text-primary"><b>BG David P. Komar</b><br>
+                            <small>Director</small>
+                        </h4>   
+                      <div class="btn-group">
+                            <div class="btn btn-default">@Html.ActionLink("Bio", "cdd_director_bio","Leadership")</div>
+                            <div class="btn btn-default">@Html.ActionLink("Visit CDD", "CDD","Directorates")</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Odom-about-750.jpg" alt="" style="visibility:visible;">                  
+                    <div class="caption">
+                        <h3><b>Concepts Development & Learning (CDLD)</b></h3>
+                        <h4 class="text-primary"><b>BG Mark W. Odom</b><br>
+                            <small>Director</small><br /><br />
+                        </h4>              
+                        
+                         <div class="btn-group">
+                            <div class="btn btn-default">@Html.ActionLink("Bio", "cdld_director_bio","Leadership")</div>
+                            <div class="btn btn-default">@Html.ActionLink("Visit CDLD", "CDLD","Directorates")</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Zampelli-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>ARCIC Plans and Operations</b><br></h3>
+                        <h4 class="text-primary"><b>COL Zampelli</b><br>
+                            <small>Director</small>
+                        </h4>
+                        <p></p>
+                        
+                        <div class="btn-group">
+                            <div class="btn btn-default">@Html.ActionLink("Bio", "f2025b_director_bio","Leadership")</div>
+                            <div class="btn btn-default">@Html.ActionLink("Visit F2025B", "F2025B","Directorates")</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Melton-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>International Army Programs
+                            (IAPD)</b>
+                        </h3> 
+                        <h4 class="text-primary"><b>Mr. Edward Melton</b><br>
+                            <small>Director</small>
+                        </h4>                      
+                        <p></p>
+                        
+                         <div class="btn-group">
+                            <div class="btn btn-default">@Html.ActionLink("Bio", "iapd_director_bio","Leadership")</div>
+                            <div class="btn btn-default">@Html.ActionLink("Visit IAPD", "IAPD","Directorates")</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/Leadership/Smith-about-750.jpg" alt="">
+                    <div class="caption">
+                        <h3><b>TRADOC G9</b></h3>
+                        <br />
+                        <h4 class="text-primary"><b>Mr. Rickey Smith</b><br>
+                            <small>Deputy Chief of Staff, G-9</small>
+                        </h4>               
+                      
+                        <p></p>
+                         
+                         <div class="btn-group">
+                            <div class="btn btn-default">@Html.ActionLink("Bio", "g9_director_bio","Leadership")</div>
+                            <div class="btn btn-default">@Html.ActionLink("Visit G9", "G9","Directorates")</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      
+        <!-- /.row -->
+
+        </div>
+
+<hr />

@@ -1,0 +1,41 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{      
+    int currReading = Globals.currLPD;
+    var reading = Reading.GetReadings().Take(1);    
+ }           
+
+
+ @foreach (var item in reading)
+ {   
+         <div class="panel panel-default">                     
+            <img class="img-responsive" src='@("../App_Imgs/LPD-Sources/" + item.sourceLogo + "t.png")' style="width: 100%" />
+                             
+             <div class="panel-body">  
+                 <div class="text-center clearfix">                       
+                         <h4 class="text-center text-uppercase text-warning"><span>Reading  #@item.series @item.descTitle</span></h4>
+                    </div>
+
+                 <h3><b>@item.title</b></h3>    
+                @* @helpers.Ellipse(28,item.title,"LPD/ProfessionalReadings?articleSeries=" + currReading)   *@                      
+                                  
+                 <p>@Html.Raw(Shorten.ShortStr(item.comment,433))
+                      <a href='@("../LPD/ProfessionalReadings?articleSeries=" + currReading) '>[...]</a>
+                 </p>            
+             </div>
+             <div class="panel-footer text-center">
+                 <a href='@("../LPD/ProfessionalReadings?articleSeries=" + currReading)'>@item.commentTitle</a>
+             </div>
+         </div>
+      
+    }        
+
+
+
+

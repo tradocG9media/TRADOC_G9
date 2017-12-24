@@ -1,0 +1,108 @@
+﻿@model IEnumerable<ARCIC.Models.EngagementCalendar>
+@{
+    ViewBag.Title = "Engagement Opportunities Calendar";
+    var getasOfDate = Model.Where(x => x.title == "As of Date").FirstOrDefault();
+    var asOfDate = getasOfDate.start_time.ToShortDateString();
+
+    var currentEvents = Model.Where(x => x.start_time >= DateTime.Now).OrderBy(x => x.start_time);
+    var pastEvents = Model.Where(x => x.start_time < DateTime.Now).OrderBy(x => x.start_time);
+}
+
+<h2>Engagement Opportunities as of <span class="text-muted small">@asOfDate</span></h2>
+<div class="alert alert-warning">
+    <div><b>Disclaimer:</b></div>
+    <p>
+        This List is maintained for the purpose of providing our community of practice awareness of developing efforts, initiatives a
+        nd opportunities for professional engagement.  The appearance of an event on this list does not imply the ARCIC, TRADOC, or the
+        ARMY endorses the event or organization hosting the event, or will fund participation in the event
+    </p>
+</div>
+
+
+<div class="">
+    @*<h2>Past Events</h2>*@
+    <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Past Events</button></p>
+    
+    <div id="demo" class="collapse">
+        <!--Past Events-->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Past Events</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in pastEvents)
+                        {
+                            if (item.title == "As of Date")
+                            {
+                                //skip
+                            }
+                            else
+                            {
+                                <tr class="text-muted">
+                                    <td><a href="@item.EventUrl" target="_blank" style="color:grey;">@item.title</a></td>
+                                    <td>@item.start_time.ToShortDateString()</td>
+                                    <td>@Convert.ToDateTime(item.end_time).ToShortDateString()</td>
+                                    <td>@item.desc</td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Current Events-->
+<div class="panel panel-default">
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Future Events</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in currentEvents)
+                {
+                    if (item.title == "As of Date")
+                    {
+                        //skip
+                    }
+                    else if (item.end_time < DateTime.Now)
+                    {
+                        <tr class="text-muted">
+                            <td><a href="@item.EventUrl" target="_blank" style="color:grey;">@item.title</a></td>
+                            <td>@item.start_time.ToShortDateString()</td>
+                            <td>@Convert.ToDateTime(item.end_time).ToShortDateString()</td>
+                            <td>@item.desc</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td><a href="@item.EventUrl" target="_blank">@item.title</a></td>
+                            <td>@item.start_time.ToShortDateString()</td>
+                            <td>@Convert.ToDateTime(item.end_time).ToShortDateString()</td>
+                            <td>@item.desc</td>
+                        </tr>
+                    };
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

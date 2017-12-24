@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Army Capabilities Integration Center</title>
+    <link rel="icon" href="@Url.Content("/favicon.ico")" type="image/x-icon" />
+    @* <link rel="icon" href="favicon.ico?id=1" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico?id=1" type="image/x-icon" />*@
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/font-awesome/css/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="//www.google-analytics.com/analytics.js" async=""></script>
+    <script src="http://www.google-analytics.com/plugins/ua/linkid.js" async="" type="text/javascript"></script>
+    <link href="~/Content/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        @Html.Partial("_navigation")
+    </div>
+    <div style="margin-top:50px; background-image:url('../Areas/SSP/_appImages/background2.jpg'); height:454px; background-repeat:no-repeat; background-size:100%">
+        <div class="container">
+            @*<h1 style="color: white; font-size:4.1em; padding: 200px 144px;"><b>Self Study Program</b></h1>*@
+        </div>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>

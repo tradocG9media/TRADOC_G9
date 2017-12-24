@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MainArticleModelStoreContainer" CdmEntityContainer="MainArticleContext">
+    <EntitySetMapping Name="MainArticles">
+      <EntityTypeMapping TypeName="MainArticleModel.MainArticle">
+        <MappingFragment StoreEntitySet="MainArticle">
+          <ScalarProperty Name="artID" ColumnName="artID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+          <ScalarProperty Name="imgCaption" ColumnName="imgCaption" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="authorEmail" ColumnName="authorEmail" />
+          <ScalarProperty Name="authorSource" ColumnName="authorSource" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="archiveDate" ColumnName="archiveDate" />
+          <ScalarProperty Name="sortDate" ColumnName="sortDate" />
+          <ScalarProperty Name="pubDate" ColumnName="pubDate" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="sourceName" ColumnName="sourceName" />
+          <ScalarProperty Name="sourceUrl" ColumnName="sourceUrl" />
+          <ScalarProperty Name="C_type" ColumnName="_type" />
+          <ScalarProperty Name="loe" ColumnName="loe" />
+          <ScalarProperty Name="directorate" ColumnName="directorate" />
+          <ScalarProperty Name="cta" ColumnName="cta" />
+          <ScalarProperty Name="promote" ColumnName="promote" />
+          <ScalarProperty Name="repostDate" ColumnName="repostDate" />
+          <ScalarProperty Name="googleTrack" ColumnName="googleTrack" />
+          <ScalarProperty Name="group" ColumnName="group" />
+          <ScalarProperty Name="connection" ColumnName="connection" />
+          <ScalarProperty Name="initiative" ColumnName="initiative" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

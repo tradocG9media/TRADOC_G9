@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Links>
+  <link>
+    <id>1</id>
+    <name>youTube</name>
+    <url>https://www.youtube.com/user/usarmytradoc/playlists</url>
+    <icon></icon>
+    <c2a></c2a>
+  </link>
+  <link>
+    <id>2</id>
+    <name>flickr</name>
+    <url>https://www.flickr.com/photos/126443182@N05/albums/</url>
+    <icon></icon>
+    <c2a></c2a>
+  </link>
+  <link>
+    <id>3</id>
+    <name>facebook</name>
+    <url>https://www.facebook.com/AdaptingtheArmy/</url>
+    <icon></icon>
+    <c2a></c2a>
+  </link>
+  <link>
+    <id>4</id>
+    <name>csm travers blog</name>
+    <url>http://tradocnews.org/tag/csm-travers/ </url>
+    <icon></icon>
+    <c2a></c2a>
+  </link>
+  <link>
+    <id>4</id>
+    <name>RAS</name>
+    <url>../App_Documents/RAS_Strategy.pdf</url>
+    <icon></icon>
+    <c2a></c2a>
+  </link>
+
+
+
+
+
+</Links>

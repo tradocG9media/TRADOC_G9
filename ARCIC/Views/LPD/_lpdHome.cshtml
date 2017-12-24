@@ -1,0 +1,41 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{      
+    int currReading = Globals.currLPD;
+    var LPDS = Reading.LPD(currReading);    
+ }           
+
+
+ @foreach (var item in LPDS)
+ {   
+     <div class="col-md-4">
+         <div class="panel panel-default">
+             <div class="panel-heading clearfix">
+                 <h4 class="text-muted text-center"><span><b>Reading  #@item.series @item.descTitle</b></span></h4>
+             </div>             
+                     <img class="img-responsive" src='@("App_Imgs/LPD-Sources/" + item.sourceLogo + "t.png")' style="width: 100%" />                 
+             <div class="panel-body">
+                 @*<div class="small text-center">@item.entDate.ToLongDateString()</div>*@
+                 <div class="text-center">
+                     <span class="text-warning text-uppercase"><span class="text-primary">@helpers.loe("Learn")</span> <b>Learn </b></span>
+                 </div>
+                  <div class="divider-thin"><h5></h5></div>
+                 <h4 class=""><b>@item.title</b></h4>
+                 <div class="text-muted">
+                     <div><b>@item.authors</b>, <span>@item.pubDate</span></div>
+                     
+                 </div>                
+                     <p>@Html.Raw(ShortenInOut.ShortStr(item.comment,0,344)) @Html.Raw(AnchorEllipse.Ellipse("LPD/ProfessionalReadings?articleSeries="+currReading))</p>                
+             </div>
+             <div class="panel-footer text-center">
+                 <a href="@Url.Action("../LPD/ProfessionalReadings", new { articleSeries = currReading })" class="btn-link " role="button">LTG McMaster's Full Comments</a>
+             </div>
+         </div>
+     </div>  
+    }        

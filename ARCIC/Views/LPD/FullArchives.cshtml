@@ -1,0 +1,105 @@
+﻿
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Pro Full Archives";
+    IEnumerable<Reading> data = Reading.GetReadings();
+    var curr = ViewBag.currLPD;
+}
+    @{
+        IEnumerable<Reading> Archives = Reading.GetReadings();
+        int sideBarSkip = 3;
+        int sideBarTake = 13;
+        // int FirstAfterSkip = Archives[9].series;  
+        var Challenges = AWFChallenges.GetChallenges();
+        var NewList = new List<string>();
+        var currData = data.Where(x => x.series == Globals.currLPD);
+    }
+
+
+<div class="row">
+    <h1 class="page-header"><b>Professional Readings Full Archives</b></h1>
+
+    <div class="col-md-4">       
+        <div class="list-group">
+            @foreach (var item in data.Take(1))
+            {
+                <a class="list-group-item active">
+                    <div class="small">Series: @item.series @item.descTitle</div>
+                    <h5 class="list-group-item-heading">@item.title</h5>
+                    <div><b>@item.entDate.ToShortDateString()</b></div>
+                    
+                </a>   
+            }
+
+            @foreach (var item in data.Skip(1).Take(data.Count()))
+            {
+                
+                <a href="@Url.Action("_archives", "LPD", new { articleSeries = item.series })" class="list-group-item">
+                    <div class="text-warning small">Series: @item.series @item.descTitle                       
+
+                    </div>
+                    <h5 class="list-group-item-heading">@item.title</h5>
+                    <div><b>@item.entDate.ToShortDateString()</b></div>
+                   
+                </a>   
+            }                
+        </div>        
+    </div>
+
+
+     <div class="col-md-8">
+    <!--Display Panel-->
+    @foreach (var item in currData)
+    {
+        
+       
+        <div class="panel panel-default">
+            <img class="img-responsive" src='@("/App_Imgs/LPD-Sources/" + item.sourceLogo + "t.png")' />
+       <div class="panel-body">                 
+        <h2 class="page-header"><b>@item.title</b></h2>
+                 <h4 class="text-primary">Series: @item.series @item.descTitle<b> <span class="label label-primary">@item.entDate.ToShortDateString()</span></b></h4>
+        <div class="clearfix"><a class="pull-right" href="@item.siteURL" target="_blank">Read <i class="fa fa-external-link"></i></a></div>
+        <p class="">@Html.Raw(item.comment)</p>
+
+            </div>
+        </div>
+  
+        
+        <section>
+                                    <!--Army Warfightin Challenges-->
+                        @if (item.archive != "")
+                        {
+                            string input = item.archive;
+                            NewList = AWFChallenges.GetMatches(input);
+                            NewList.Reverse();
+                           
+                            <!--Challenges-->
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <h5 class="text-center list-group-heading">The following <a class="" href="~/Initiatives/ArmyWarfightingChallenges">Army Warfighting Challenges</a> are directly related to this week's topic: </h5>
+                                </div>
+
+                                @foreach (var n in NewList)
+                                {                                    
+                                    <div class="list-group-item">
+                                        <h5><span><b class="text-primary">#@n</b> </span><b>@Challenges[Int32.Parse(n)].title:</b></h5>
+                                        <p>@Challenges[Int32.Parse(n)].desc</p>
+                                    </div>
+                                }
+
+                                <h5></h5>
+                                @Html.Partial("_lpdFooter")
+                            </div>
+
+                        }
+                        else
+                        {  @Html.Partial("_lpdFooter") }
+         </section>
+    }
+    
+
+  </div>
+
+</div>

@@ -1,0 +1,48 @@
+﻿
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+
+@{
+    ViewBag.Title = "testPage1";
+   
+    var Media = ARCIC.Models.Media.GetMedia();
+}
+
+<h1 class="page-header">testPage1</h1>
+
+
+<div class="col-md-4">
+      @foreach (var item in Media)
+            {
+                if (global.archiveDate < Convert.ToDateTime(item.entDate) && item.loe == "Analyze")
+                {
+                    //Display Upcoming Event
+                    <h3 class="text-primary text-center"><b>Video Archives</b>  </h3>
+                                    
+                        <div class="panel panel-warning">
+                            <div class="panel-heading clearfix">                            
+                              @*<img class="imp-repsonsive img-rounded pull-left" src='@("/App_Imgs/LPD-Speakers/" + item.speakerPhoto + "t.jpg")' style=" width: 100px; margin:9px;"/> *@
+                                 <h4><b>@item.title</b></h4>                                                         
+                            </div>
+                            <div class="panel-body clearfix">                                                        
+                            
+                                <article>
+                                    <p>@Html.Raw("<b>Synopsis:</b>" + item.desc)</p>
+                                </article>
+                                <article>
+                                   @* <p>@helpers.Google("button", "My Button", "text-muted", "http://www.cnn.com", "_blank","Document", "Download","AWA")</p>*@
+                                </article>
+                            </div>
+                        </div>
+
+             
+               }
+             else
+             {
+                <!--Empty Result Content-->
+              
+             }
+           }
+
+</div>

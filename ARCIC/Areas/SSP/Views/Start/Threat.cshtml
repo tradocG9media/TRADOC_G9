@@ -1,0 +1,58 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Threat";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+ 
+    <div class="clearfix">
+     
+
+        <!-- Books -->
+       <div class="col-md-12">
+              <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Threat</h1>           
+        </header>
+        <hr>
+
+           <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+       </div>
+        <div class="">
+
+            @helpers.SSPBook(
+           "The Unquiet Frontier: Rising Rivals, Vulnerable Allies, and the Crisis of American Power, by Jakub J. Grygiel and A. Wess Mitchell",
+           "From the Baltic to the South China Sea, newly assertive authoritarian states sense an opportunity to resurrect old empires or build new ones at America's expense. Hoping that U.S. decline is real, nations such as Russia, Iran, and China are testing Washington's resolve by targeting vulnerable allies at the frontiers of American power.",
+           622,
+           "https://www.goodreads.com/book/show/26597327-the-unquiet-frontier?from_search=true",
+           "Grygiel.jpg")
+            @helpers.SSPBook(
+           "A Sense of the Enemy: The High Stakes History of Reading Your Rival’s Mind, by Zachary Shore",
+           "In A Sense of the Enemy, Zachary Shore examines how certain government leaders have tried to think like their enemies.  In doing so he poses two questions: What produces strategic empathy (the skill of understanding what drives and constrains one’s adversary? How has strategic empathy, or the lack of it, shaped pivotal periods in twentieth-century conflict?  The author argues that, while it remains important to be aware of prior patterns of leader decision-making, what is most important is to identify when and how leaders break from those patterns.",
+           622,
+           "https://www.goodreads.com/book/show/17847539-a-sense-of-the-enemy?from_search=true",
+           "Shore.jpg")
+            @helpers.SSPBook(
+           "Organizations at War in Afghanistan & Beyond, by Abdulkader H. Sinno",
+           "In Organizations at War, Abdulkader Sinno observes that ‘ethnic groups, social classes, civilizations, religions, and nations do not engage in conflict or strategy interaction – organizations do. He argues that because engaging in conflict requires ‘coordination, mobilization, and manipulation of information’, detailed studies of organizations are necessary to understand ‘how conflicts begin, evolve, and conclude. ",
+           622,
+           "http://www.worldcat.org/title/organizations-at-war-in-afghanistan-and-beyond/oclc/726824220&referer=brief_results",
+           "Sinno.jpg")
+        </div>
+
+
+        <!--Articles-->
+             <div class="col-md-3">
+                
+                @Html.Partial("_article")
+                @Html.Partial("_video")
+              
+     
+               
+        
+    </div>
+</div> 
+
+

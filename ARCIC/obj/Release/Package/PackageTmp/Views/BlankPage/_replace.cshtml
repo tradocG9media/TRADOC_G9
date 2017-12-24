@@ -1,0 +1,115 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+@using System.Text.RegularExpressions;
+
+
+
+
+   @* Nouns ending in s, z, x, sh, and ch form the plural by adding – es
+    Nouns ending in – y preceded by a consonant is formed into a plural by changing – y to – ies.
+    Nouns ending in y preceded by a vowel form their plurals by adding – s. (e.g. boy, boys; day, days)
+    Most nouns ending in o preceded by a consonant is formed into a plural by adding es
+    Some nouns ending in f or fe are made plural by changing f or fe to – ves. (e.g. beef, beeves; wife, wives)
+
+    details at - www.lovetolearnplace.com/Grammar/singular&pluralnouns.html#anchor1709890
+   *@
+
+
+@{    
+    string userInput = "Means"; // Word to grab from within phrase (Science Fiction)
+    Regex regex = new Regex(userInput, RegexOptions.IgnoreCase);
+    
+    List<Reading> data = Reading.Archives();
+    //List<Reading> dataComments = data.Where(x => x.comment != "").ToList(); //All
+    List<Reading> dataComments = data.Where(x => x.comment.Contains(regex.ToString())).ToList();
+    Regex regexIgnoreComments = new Regex(data[0].comment, RegexOptions.IgnoreCase);
+    
+    List<Reading> newx = dataComments.Where(x => x.series == 107).ToList();
+    
+    //RegEx Working Case
+    var sentence = newx[0].comment; // dataComments.First().comment;
+    var newSentence = Html.Raw(regex.Replace(regexIgnoreComments.ToString(), "<span class='label label-primary'><b>"+regex+"</b></span></kbd>"));
+          
+    
+    var txtL = 1000;// adjust on Event/s ie
+}
+
+<div class="col-md-8">
+    <div class="panel panel-primary">
+        <div class="panel-body">
+            <h4><b>Search term:</b> <span><small>@userInput</small></span></h4>
+            <h4><b>Results: @dataComments.Count()</b></h4>
+            
+        </div>
+    </div>
+</div>
+
+<div class="col-md-8">
+    
+<h3>Regex Sample:</h3>
+<hr /><br />
+    <article>
+      @{          
+          //var regexComment = new Regex(regex.ToString(), RegexOptions.IgnoreCase);
+          //var newSentenceComment = Html.Raw(regexComment.Replace(dataComments[0].comment, "<kbd><b class='' sytle='color: white;'>" + regex.ToString() + "</b></kbd>"));
+          //var outputComment = Html.Raw(newSentenceComment);
+
+          //var regexx = new Regex("camel", RegexOptions.IgnoreCase);
+          // var newSentencex = regex.Replace(sentence, "horse");
+          
+          <div>
+                            
+              @if (ExtensionMethods.Contains(sentence, regex.ToString(), StringComparison.InvariantCultureIgnoreCase))
+              {
+                 foreach (var item in dataComments)
+                  {
+                      var outputComments = Html.Raw(item.comment.Replace(regex.ToString(), "<kbd><b class='' sytle='color: white;'> &nbsp;" + regex.ToString() + "&nbsp;</b></kbd>"));
+                      var outputTitle = Html.Raw(item.title.Replace(regex.ToString(), "<kbd><b class='' sytle='color: white;'> &nbsp;" + regex.ToString() + "&nbsp;</b></kbd>"));
+                      var outputSource = Html.Raw(item.source.Replace(regex.ToString(), "<kbd><b class='' sytle='color: white;'> &nbsp;" + regex.ToString() + "&nbsp;</b></kbd>"));
+                      var outputAuthor = Html.Raw(item.authors.Replace(regex.ToString(), "<kbd><b class='' sytle='color: white;'> &nbsp;" + regex.ToString() + "&nbsp;</b></kbd>"));
+                      var id = item.series + item.descTitle;
+                  <div class="">
+                      <div class="panel panel-default">
+                          <div class="panel-body">                              
+                                  
+                                  <h4 class="text-muted">#@item.series</h4>
+                                  <h4>@outputTitle</h4>
+                                  <p>@outputAuthor <span class="text-muted">@outputSource</span></p>
+                                  <div class="divider-thin" style="margin-top: -8px; margin-bottom: 16px;"></div>                    
+                                       
+                                  <p>@Html.Raw(Shorten.ShortStr(outputComments.ToHtmlString(), txtL)) &nbsp; &nbsp;  </p>
+                                  <div class="clearfix"><a class="pull-right" href="#@id" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">[ Show All <i class="fa fa-plus"></i>]</a></div>
+                   
+                                  <br />
+                                  <div class="collapse" id="@id">
+                                      <div class="card card-block">
+                                          <p>@Html.Raw(ShortenInOut.ShortStr(outputComments.ToHtmlString(), (txtL - 1), txtL + 12000)) &nbsp; &nbsp; </p>
+                                          <div class="clearfix"><a class="pull-right" href="#@id" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">[ Close <i class="fa fa-minus"></i>]</a></div>
+                                      </div>
+                                  </div>
+                                   
+                          </div>
+                      </div>
+                  </div>
+            
+                    }
+              }
+
+          </div>
+       }
+     
+    </article>
+</div>
+
+<div class="col-md-8">
+   @* <article>
+       <h4><b>Sample:</b></h4>
+       
+        @newSentence
+    </article>*@
+
+
+    @newSentence
+</div>
+
+

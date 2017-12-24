@@ -1,0 +1,62 @@
+﻿@using System.Collections;
+@using System.Linq;
+@using System.Xml.Linq;
+@using ARCIC.Models;
+
+
+<h1>   </h1> <h5><br /></h5>
+@{
+    ViewBag.Title = "ArmyWarfightingChallenges";
+    IEnumerable<AWFChallenges> data = AWFChallenges.GetChallenges();
+    //IEnumerable<AWFChallenges> demands = data.Where(x => x.demands != "");
+  
+        
+    ArrayList demandList = new ArrayList();
+   // var z = AWFChallenges.GetDemands();
+   var z = from q in XDocument.Load(Globals.serverPath + "App_Data/awf-challenges.xml").Descendants("demands")
+                       where q.Element("demand").Value != ""
+
+            select q;
+   
+    
+}
+
+
+<div class="row">
+
+    @foreach (var item in data.Skip(1))
+    {
+        
+        <div class="col-md-8">
+            <div class="list-group-item">
+                <h2 class="text-muted"><b>Warfighting Challenge #@item.number</b></h2>
+                <h4><b>@item.title</b></h4>
+                <p>@item.desc</p>
+                <div>
+                    <p><b>Lead-</b> @item.lead</p>                                      
+                </div>
+                 <div class="divider-thin"></div>
+                <h5>
+                    <b>Learning Demands</b>                   
+                   
+                </h5>
+               
+
+               @* <ol>
+                    @foreach (var d in demandList)
+                    {
+                        <li>@d</li>
+                    }
+                </ol>*@
+            </div>
+        </div>        
+    }
+
+    <hr />
+</div>
+
+
+
+
+
+

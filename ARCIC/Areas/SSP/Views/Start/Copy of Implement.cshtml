@@ -1,0 +1,109 @@
+﻿
+@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Implement";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+  
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Implement</h1>
+            <p>  Why Does Implement Matter?</p>
+            <p>
+                To implement is to put a decision, plan, or agreement into effect. After think, learn, analyze, as the last step, one takes action to implement a plan, procedure or course of action. For example, the Army’s ability to sustain operations on land is essential to the Joint Force’s ability to implement foreign policy and achieve favorable outcomes consistent with U.S. interests.
+
+            </p>
+            <p>
+                Implementation is important to the leader due to the fact that it allows the coordination of a process, product or weapon system from development of concepts to capabilities to implement change within the Army.
+
+            </p>
+            @*<p>
+                    <a class="btn btn-primary btn-large">Call to action!</a>
+                </p>*@
+        </header>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b> An Approach to the Study of Implement</b></h4>
+                        <p>
+                            The study of implementation illustrates how solutions can increase the rate of innovation within the Army and maintain the differential advantages over capable and determined enemies.  The leader can study implementation to foresee and deliver solutions to improve combat effectiveness of the current and future force. One must understand the follow on effects of implementation on future war to include the impact on tactics, strategy and enemy actions.
+
+                        </p>
+                        <p>
+                            Solutions delivered to the soldier that equip him to win the future war are the outcomes of successful implementation.  Implementation is the final step in the think – learn – analyze – implement cycle.
+
+                        </p>
+                    </div>
+                </div>
+                <!--Reflections-->
+                @helpers.Reflectoins(
+               "What obstacles prevent optimum implementation?",
+               "What are the essential elements of implementation in the Army?",
+               "What role does an organizational institution or culture play in determining implementation?",
+               "How does a leader implement wisely? How does a unit implement new capabilities?",
+               "How does a leader foster a mindset to teach the value of implementation to his or her junior leaders?",
+               "")
+
+            </div>
+            <!--Articles/ Videos-->
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>Articles</b></h4>
+                       @helpers.SSPArticle(
+                      "France’s War in Mali Lessons for an Expeditionary Army by Michael Shurkin",
+                      "Retrieved from.  France fielded a relatively small force put together using small, scalable combined arms task organized units as basic building blocks and conducted a campaign that emphasized speed and maneuver over force protection.",
+                      "http://www.rand.org/content/dam/rand/pubs/research_reports/RR700/RR770/RAND_RR770.pdf")
+                        @helpers.SSPArticle(
+                        "Transforming the Force:  The 11th Air Assault Division (Test) from 1963-65 by Major Tom C. Graves.",
+                        "The paper is an in-depth study of the 11th Air Assault Division (test) from 1963-65 when the Army conducted extensive experimentation with airmobility and helicopter operations. This led to fundamental precepts of airmobility doctrine for the U.S. Army.",
+                        "http://www.dtic.mil/dtic/tr/fulltext/u2/a381779.pdf")
+                        @helpers.SSPArticle(
+                        "Recalibrating Requirements by Steve Stark and Margaret Roth in Army AL&T Magazine, January - March 2017.",
+                        "With the help of groundbreaking efforts by professional combat developers, requirements writers and program managers, ARCIC is looking to thaw the glacial pace of acquisition and speed capabilities to the warfighter as the Army warms to new ways of doing business, welcoming innovation and involving industry early and often.",
+                        "http://usaasc.armyalt.com/?iid=149666#folio=28")
+                                                
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>Videos</b></h4>                       
+                        <p>Check back later</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Books -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+      
+        <!-- Page Features -->
+        <div class="row">
+            @helpers.SSPBook(
+           "Elvis’s Army, by Brian McAllister Linn",
+           " In an era that threatened Soviet-American thermonuclear annihilation, the army declared it could limit atomic warfare to the battlefield. It not only adopted a radically new way of fighting but also revamped its equipment, organization, concepts, and training practices. From massive garrisons in Germany and Korea to nuclear tests to portable atomic weapons, the army reinvented itself. In Elvis’s Army, Brian Linn traces the origins, evolution, and ultimate failure of the army’s attempt to transform itself for atomic warfare.",
+           622,
+           "https://www.goodreads.com/book/show/31843836-elvis-s-army?ac=1&from_search=true",
+           "Linn2.jpg")
+            @helpers.SSPBook(
+           "Fast Tank and Heavy Bombers: Innovation in the U.S. Army, 1917-1945, by David E. Johnson",
+           "Johnson examines the U.S. Army's innovations for both armor and aviation between the world wars, arguing that the tank became a captive of the conservative infantry and cavalry branches, while the airplane's development was channeled by air power insurgents bent on creating an independent air force.",
+           622,
+           "https://www.goodreads.com/book/show/1059420.Fast_Tanks_and_Heavy_Bombers?from_search=true",
+           "Johnson.jpg")
+        </div>
+    </div>
+</div>	

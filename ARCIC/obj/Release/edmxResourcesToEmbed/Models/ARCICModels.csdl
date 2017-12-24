@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARCICModels" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EngagementCalendar">
+    <Key>
+      <PropertyRef Name="eventID" />
+    </Key>
+    <Property Name="eventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="start_time" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="end_time" Type="DateTime" Precision="0" />
+    <Property Name="EventUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="EOCalendar">
+    <Key>
+      <PropertyRef Name="eventID" />
+    </Key>
+    <Property Name="eventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="start_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="end_time" Type="DateTime" Precision="3" />
+    <Property Name="recurring" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="day" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="entry" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MainArticle">
+    <Key>
+      <PropertyRef Name="artID" />
+    </Key>
+    <Property Name="artID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="imgUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="imgCaption" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="authorEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="authorSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="postDate" Type="DateTime" Precision="3" />
+    <Property Name="archiveDate" Type="DateTime" Precision="3" />
+    <Property Name="sortDate" Type="DateTime" Precision="3" />
+    <Property Name="pubDate" Type="DateTime" Precision="3" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sourceName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sourceUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="C_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="loe" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="directorate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="promote" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="repostDate" Type="DateTime" Precision="3" />
+    <Property Name="googleTrack" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="connection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="initiative" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sku" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Source">
+    <Key>
+      <PropertyRef Name="sourceId" />
+    </Key>
+    <Property Name="sourceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SSPArticle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="postDate" Type="DateTime" Precision="3" />
+    <Property Name="category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stamp" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SSPVideo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="postDate" Type="DateTime" Precision="3" />
+    <Property Name="category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stamp" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="artID" />
+    </Key>
+    <Property Name="artID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pubDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="postDate" Type="DateTime" Precision="3" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="typ" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="source" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sourceLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="archive" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="directorate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="connection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="lineofeffort" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="initiative" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="focus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="org" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="permissions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ARCICDbContext2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="EngagementCalendars" EntityType="Self.EngagementCalendar" />
+    <EntitySet Name="EOCalendars" EntityType="Self.EOCalendar" />
+    <EntitySet Name="Events" EntityType="Self.Event" />
+    <EntitySet Name="MainArticles" EntityType="Self.MainArticle" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Sources" EntityType="Self.Source" />
+    <EntitySet Name="SSPArticles" EntityType="Self.SSPArticle" />
+    <EntitySet Name="SSPVideos" EntityType="Self.SSPVideo" />
+    <EntitySet Name="Tables" EntityType="Self.Table" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

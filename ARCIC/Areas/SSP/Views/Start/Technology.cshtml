@@ -1,0 +1,114 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Technology";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+    
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Technology</h1>           
+        </header>
+        <hr>
+         <!-- Books -->
+         <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                   
+              <div class="row">
+                     @helpers.SSPBook(
+           "The Army after Next: The First Postindustrial Army, by Thomas Adams",
+           "An examination of the way the U.S. Army and Department of Defense (DOD) have tried to create the capabilities promised by the high-tech Revolution in Military Affairs (RMA).  It is also the only in-depth account of the effect RMA and transformation concepts had on the American operations in Afghanistan and Iraq.",
+           622,
+           "https://www.goodreads.com/book/show/4091332-the-army-after-next?from_search=true",
+           "Adams.jpg")
+                @helpers.SSPBook(
+           "Wired for War: The Robotics Revolution and Conflict in the 21st Century, by Peter Singer",
+           "We are beginning to see a massive shift in military technology that threatens to make the stuff of I, Robot and the Terminator real.  Pilots in Nevada are killing terrorists in Afghanistan remotely.  Scientists are debating how smart and how lethal to make their current robotic prototypes.",
+           622,
+           "http://www.worldcat.org/title/wired-for-war-the-robotics-revolution-and-conflict-in-the-twenty-first-century/oclc/277241234&referer=brief_results",
+           "Singer3.jpg")
+                @helpers.SSPBook(
+           "Cybersecurity and Cyberwar, by Peter Singer.  Dependence on computers has had a transformative effect on human society.",
+           " Cybernetics is woven into the core functions of virtually every basic institution, including our oldest ones.  War is one such institution, and the digital revolution's impact on it has been profound.  The American military, which has no peer, is almost completely reliant on high-tech computer systems.",
+           622,
+           "http://www.worldcat.org/title/cybersecurity-and-cyberwar-what-everyone-needs-to-know/oclc/802324804&referer=brief_results",
+           "Singer2.jpg")
+             
+              </div>
+              <div class="row">
+                       @helpers.SSPBook(
+           "The Pursuit of Power: Technology, Armed Force, and Society since A.D. 1000 by William Hardy McNeill",
+           "William H. McNeill explores a millennium of human upheaval and traces the path by which we have arrived at the dilemmas that now confront us.  McNeill moves from the crossbow - banned by the Church in 1139 as too lethal for Christians to use against one another - to the nuclear missile, from the sociological consequences of drill in the seventeenth century to the emergence of the military-industrial complex in the twentieth.",
+           622,
+           "https://www.goodreads.com/book/show/99396.The_Pursuit_of_Power?from_search=true",
+           "McNeill.jpg")
+                     @helpers.SSPBook(
+           "Technology and War: from 2000 B.C. to the present, by Martin Van Creveld",
+           "This book provides an analysis of the impact of technology on warfare throughout the centuries. In this impressive work, Martin van Creveld considers man's use of technology over the past 4,000 years and its impact on military organization, weaponry, logistics, intelligence, communications, transportation, and command.",
+           622,
+           "https://www.goodreads.com/book/show/1126756.Technology_and_War?from_search=true",
+           "Creveld.jpg")
+           @helpers.SSPBook(
+           "A Rage for Order, the Middle East in Turmoil, from Tahrir Square to ISIS, by Robert F. Worth",
+           "This book tracks the tormented legacy of what was once called the Arab Spring. Writing with bold literary ambition, the distinguished New York Times correspondent Robert F. Worth introduces a riveting cast of characters.  Combining dramatic storytelling with an original analysis of the Arab world today, A Rage for Order captures the psychological and actual civil wars raging throughout the Middle East and explains how the dream of an Arab renaissance gave way to a new age of discord.",
+           622,
+           "https://www.goodreads.com/book/show/29875848-a-rage-for-order?from_search=true",
+           "Worth.jpg")
+                </div>
+              <div class="row">
+              
+           @helpers.SSPBook(
+           "On the Origins of War and the Preservation of Peace, by Donald Kagan",
+           "By lucidly revealing the common threads that connect the ancient confrontations between Athens and Sparta and between Rome and Carthage with the two calamitous world wars of the 20th century and the Cuban Missile Crisis, Kagan reveals new insights into the nature of war--and peace--that are vitally important and often surprising.",
+           622,
+           "http://www.worldcat.org/title/on-the-origins-of-war-and-the-preservation-of-peace/oclc/30399247&referer=brief_results",
+           "Kagan2.jpg")
+           @helpers.SSPBook(
+           "Waging War: A World History from Prehistory to the Present, by Wayne E. Lee",
+           "In Waging War, Wayne E. Lee describes the emergence of military innovations and systems, examining how they were created and then how they moved or affected other societies. These innovations are central to most historical narratives, including the development of social complexity, the rise of the state, the role of the steppe horseman, the spread of gunpowder, the rise of the west, the bureaucratization of military institutions, the industrial revolution and the rise of firepower, strategic bombing and nuclear weapons, and the creation of 'people's war.'",
+           622,
+           "https://www.goodreads.com/book/show/26262721-waging-war?from_search=true",
+           "Lee.jpg")
+ @helpers.SSPBook(
+           "Invisible Armies: An Epic History of Guerrilla Warfare from Ancient Times to the Present, by Max Boot",
+           "In Invisible Armies, author Max Boot, a senior fellow at the Council on Foreign Relations and the author of two previous books on related topics, examines guerrilla warfare from ancient times to the present day, concluding that ‘it is a form of combat that has been immanent in all cultures, at all times, whenever one side was too weak to face another in open battle.",
+           622,
+           "https://www.goodreads.com/book/show/13812166-invisible-armies?from_search=true",
+           "Boot.jpg")
+
+           </div>
+
+                <div class="row">
+                      @helpers.SSPBook(
+           "The Science of War: Defense Budgeting, Military Technology, Logistics, and Combat Outcomes, by Michael E. O’Hanlon",
+           "In The Science of War, Michael O’Hanlon observes that “recognizing scientific methods in defense analysis to be imprecise, we must nonetheless strive to understand, improve, and employ them.”  At the same time, he notes that “studying the science of war should never be seen as a substitute for studying the art, history, and contemporary aspects of warfare.”",
+           622,
+           "https://www.goodreads.com/book/show/7020023-the-science-of-war?from_search=true",
+           "OHanlon.jpg")   
+                </div>
+                                    
+
+            </div>
+            <!--Articles/ Videos-->
+            <div class="col-md-4 pull-right">
+                
+                @Html.Partial("_article")
+                @Html.Partial("_video")
+              
+            </div>
+        </div>        
+
+        <!-- Page Features -->
+        <div class="row">           
+
+        </div>
+    </div>
+</div> 

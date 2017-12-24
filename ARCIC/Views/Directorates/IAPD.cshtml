@@ -1,0 +1,113 @@
+﻿@model ARCIC.Models.Spotlight
+@{
+    ViewBag.Title = "International Army Programs Directorate";
+    //var Articles = ViewBag.Articles;
+    //var Spotlights = ViewBag.Spotlights;
+    //IEnumerable<ARCIC.Models.Spotlight> Spotlights = ViewBag.Spotlights;
+
+}
+
+<!--F2025B Page Content-->
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-8">               
+                <h1 class="page-header"><b>International Army Programs</b></h1>
+                <ol class="breadcrumb hidden-xs hidden-sm">
+                      <li><a href="/Home/">Home</a>
+                    </li>
+                     <li><a href="/Home/About">About</a>
+                    </li>
+                    <li class="active">IAPD</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Intro Content -->
+        
+        <!-- /.row -->
+<!--News-->
+<!--SOP-->
+<div class="row">
+    <div class="col-md-8">
+    @Html.Partial("_DirectorateNews")
+
+
+        <!-- Divisions -->
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4><b>Mission</b></h4>
+                <p>IAPD manages and coordinates TRADOC international activities to synchronize the exchange of DOTMLPF-P information with Army Service Component Command (ASCC) priority countries, including allies and treaty partners, in order to enhance current and future operational capabilities; increase interoperability; and build partnerships.</p>
+                <h4><b>Overview</b></h4>
+                <p>The International Army Programs Directorate (IAPD) is responsible for Title 10 Security Cooperation Activities and the guiding annual TRADOC Campaign Support Plan. IAPD directs TRADOC's OCONUS Liaison Officer Program covering 11 allied nations and 5 Army Service Component Commands (ASCC). Additionally, IAPD manages TRADOC's Military Personnel Exchange and Foreign Liaison Officer (FLO) Programs. There are 78 FLOs from 17 countries assigned to HQ TRADOC, the Centers of Excellence, and their Branch Schools. IAPD also programs, plans, coordinates, and executes TRADOC support to ASCC Theater Security Cooperation Plans, Army-Army and TRADOC level bilateral staff talks, and distinguished foreign visits. Lastly, IAPD provides opportunities to integrate and expand bilateral partner nation and alliance contributions to ARCIC's concepts and capabilities development activities in order to strengthen coalition capabilities.</p>
+                <h4><b>Key Initiatives</b></h4>
+                <p>IAPD's efforts in completing the Building Partner Capacity Concept (TRADOC PAM 525-8-4) and Capabilities Based Assessment (CBA) established the foundation for the recently approved "Engagement" Warfighting Function (WfF) being led by US Army Special Operations Command. The directorate will continue to represent the Building Partnerships Joint Capability Area to integrate security cooperation related required capabilities, gaps, and solutions into the Army's Capabilities Needs Analysis process until the Engagement WfF CBA is complete. IAPD will also facilitate several efforts focused on interoperability to include:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Partner participation in future Network Integration Evaluations and Army Warfighting Assessments</li>
+                    <li class="list-group-item">Partner participation in the Decisive Action Training Environment</li>
+                    <li class="list-group-item">Foreign Liaison Officer Interoperability Council</li>
+                </ul>
+            </div>        
+        </div>
+    </div>
+
+
+    <!--Sidebar-->
+    <div class="col-md-4">
+        <div class="text-muted"><h3><b>Leadership</b></h3></div>
+        <div class="thumbnail">
+            <p><img class="img-responsive" src="~/App_Imgs/Leadership/Melton-about-750.jpg" alt=""></p>
+            <div class="caption text-center">
+                <h4 class="text-primary">
+                    <b>Mr. Edward Melton</b><br>
+                    <small>Director</small>
+                </h4>
+                <p></p>
+                <div class="btn-group text-center">
+                    <div class="btn btn-default">
+                        <a href="/Leadership/iapd_director_bio"><i class="fa fa-word"></i> Bio</a>
+                    </div>
+                    <div class="btn btn-default disabled">
+                        <a href="#"><i class="fa fa-questio"></i> Q&A</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <h3 class="text-muted"><b>Divisions</b></h3>       
+     
+               <div class="text-center">
+                   <div class="thumbnail">
+                       <img class="img-responsive" src="~/App_Imgs/App/iapd-img01.jpg" alt="">
+                       <div class="caption">
+                           <h4><b>International Operations Division</b></h4>
+                           <h3 class="text-primary">
+                               <b></b>
+                               <small></small>
+                           </h3>
+                           <p class="text-left">Executes a range of military-to-military activities, to include TRADOC senior leader foreign travel, visits, conferences, and exchanges.</p>
+                          
+                           <br />
+                       </div>
+                   </div>
+               </div>
+               <div class="text-center">
+                   <div class="thumbnail">
+                       <img class="img-responsive" src="~/App_Imgs/App/iapd-img02.jpg" alt="">
+                       <div class="caption">
+                           <h4><b>Liaison and Exchange Division</b></h4>
+                           <h3 class="text-primary">
+                               <b></b>
+                               <small></small>
+                           </h3>
+
+                           <p class="text-left">Manages the TRADOC International Engagement Strategy. Manages the TRADOC Liaison Officer and Foreign Liaison Officer Programs.</p>
+                         
+                           <br />
+                       </div>
+                   </div>
+               </div> 
+    </div>
+</div>
+

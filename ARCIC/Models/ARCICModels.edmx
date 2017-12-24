@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ARCICModels.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="EngagementCalendar">
+          <Key>
+            <PropertyRef Name="eventID" />
+          </Key>
+          <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="desc" Type="nvarchar(max)" />
+          <Property Name="start_time" Type="date" Nullable="false" />
+          <Property Name="end_time" Type="date" />
+          <Property Name="EventUrl" Type="nvarchar(max)" />
+          <Property Name="stamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="EOCalendar">
+          <Key>
+            <PropertyRef Name="eventID" />
+          </Key>
+          <Property Name="eventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="desc" Type="nvarchar(max)" />
+          <Property Name="start_time" Type="datetime" Nullable="false" />
+          <Property Name="end_time" Type="datetime" />
+          <Property Name="recurring" Type="nvarchar" MaxLength="50" />
+          <Property Name="stamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="date" Type="datetime" />
+          <Property Name="day" Type="nchar" MaxLength="20" />
+          <Property Name="desc" Type="nvarchar" MaxLength="50" />
+          <Property Name="entry" Type="nvarchar(max)" />
+          <Property Name="author" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MainArticle">
+          <Key>
+            <PropertyRef Name="artID" />
+          </Key>
+          <Property Name="artID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="desc" Type="nvarchar(max)" />
+          <Property Name="imgUrl" Type="nvarchar(max)" />
+          <Property Name="imgCaption" Type="nvarchar(max)" />
+          <Property Name="author" Type="nvarchar(max)" />
+          <Property Name="authorEmail" Type="nvarchar(max)" />
+          <Property Name="authorSource" Type="nvarchar(max)" />
+          <Property Name="postDate" Type="datetime" />
+          <Property Name="archiveDate" Type="datetime" />
+          <Property Name="sortDate" Type="datetime" />
+          <Property Name="pubDate" Type="datetime" />
+          <Property Name="url" Type="nvarchar(max)" />
+          <Property Name="sourceName" Type="nvarchar(max)" />
+          <Property Name="sourceUrl" Type="nvarchar(max)" />
+          <Property Name="_type" Type="nvarchar(max)" />
+          <Property Name="loe" Type="nchar" MaxLength="50" />
+          <Property Name="directorate" Type="nvarchar(max)" />
+          <Property Name="cta" Type="nvarchar(max)" />
+          <Property Name="promote" Type="nvarchar(max)" />
+          <Property Name="repostDate" Type="datetime" />
+          <Property Name="googleTrack" Type="nchar" MaxLength="10" />
+          <Property Name="group" Type="nvarchar(max)" />
+          <Property Name="connection" Type="nvarchar(max)" />
+          <Property Name="initiative" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar(max)" />
+          <Property Name="sku" Type="nchar" MaxLength="10" />
+          <Property Name="price" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Source">
+          <Key>
+            <PropertyRef Name="sourceId" />
+          </Key>
+          <Property Name="sourceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="url" Type="nvarchar(max)" />
+          <Property Name="logo" Type="nvarchar(max)" />
+          <Property Name="type" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SSPArticle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar(max)" />
+          <Property Name="desc" Type="nvarchar(max)" />
+          <Property Name="url" Type="nvarchar(max)" />
+          <Property Name="postDate" Type="datetime" />
+          <Property Name="category" Type="nvarchar(max)" />
+          <Property Name="stamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SSPVideo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar(max)" />
+          <Property Name="desc" Type="nvarchar(max)" />
+          <Property Name="url" Type="nvarchar(max)" />
+          <Property Name="postDate" Type="datetime" />
+          <Property Name="category" Type="nvarchar(max)" />
+          <Property Name="stamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Table">
+          <Key>
+            <PropertyRef Name="artID" />
+          </Key>
+          <Property Name="artID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar(max)" />
+          <Property Name="author" Type="nvarchar(max)" />
+          <Property Name="desc" Type="nvarchar(max)" />
+          <Property Name="pubDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="postDate" Type="datetime" />
+          <Property Name="link" Type="nvarchar(max)" />
+          <Property Name="img" Type="nvarchar(max)" />
+          <Property Name="group" Type="nvarchar(max)" />
+          <Property Name="typ" Type="nvarchar(max)" />
+          <Property Name="source" Type="nvarchar(max)" />
+          <Property Name="sourceLogo" Type="nvarchar(max)" />
+          <Property Name="archive" Type="nvarchar(max)" />
+          <Property Name="directorate" Type="nvarchar(max)" />
+          <Property Name="connection" Type="nvarchar(max)" />
+          <Property Name="lineofeffort" Type="nvarchar(max)" />
+          <Property Name="initiative" Type="nvarchar(max)" />
+          <Property Name="focus" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fname" Type="nvarchar(max)" />
+          <Property Name="lname" Type="nvarchar(max)" />
+          <Property Name="org" Type="nvarchar(max)" />
+          <Property Name="email" Type="nvarchar(max)" />
+          <Property Name="phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="permissions" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="ARCICModelsStoreContainer">
+          <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EngagementCalendar" EntityType="Self.EngagementCalendar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EOCalendar" EntityType="Self.EOCalendar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Event" EntityType="Self.Event" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MainArticle" EntityType="Self.MainArticle" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Source" EntityType="Self.Source" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SSPArticle" EntityType="Self.SSPArticle" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SSPVideo" EntityType="Self.SSPVideo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ARCICModels" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EngagementCalendar">
+          <Key>
+            <PropertyRef Name="eventID" />
+          </Key>
+          <Property Name="eventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="start_time" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="end_time" Type="DateTime" Precision="0" />
+          <Property Name="EventUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="stamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="EOCalendar">
+          <Key>
+            <PropertyRef Name="eventID" />
+          </Key>
+          <Property Name="eventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="start_time" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="end_time" Type="DateTime" Precision="3" />
+          <Property Name="recurring" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="stamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="DateTime" Precision="3" />
+          <Property Name="day" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="entry" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MainArticle">
+          <Key>
+            <PropertyRef Name="artID" />
+          </Key>
+          <Property Name="artID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="imgUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="imgCaption" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="authorEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="authorSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="postDate" Type="DateTime" Precision="3" />
+          <Property Name="archiveDate" Type="DateTime" Precision="3" />
+          <Property Name="sortDate" Type="DateTime" Precision="3" />
+          <Property Name="pubDate" Type="DateTime" Precision="3" />
+          <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sourceName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sourceUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="C_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="loe" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="directorate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="promote" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="repostDate" Type="DateTime" Precision="3" />
+          <Property Name="googleTrack" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="connection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="initiative" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sku" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Source">
+          <Key>
+            <PropertyRef Name="sourceId" />
+          </Key>
+          <Property Name="sourceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SSPArticle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="postDate" Type="DateTime" Precision="3" />
+          <Property Name="category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="stamp" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SSPVideo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="postDate" Type="DateTime" Precision="3" />
+          <Property Name="category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="stamp" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Table">
+          <Key>
+            <PropertyRef Name="artID" />
+          </Key>
+          <Property Name="artID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="pubDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="postDate" Type="DateTime" Precision="3" />
+          <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="typ" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sourceLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="archive" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="directorate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="connection" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="lineofeffort" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="initiative" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="focus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="org" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="permissions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ARCICDbContext2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Countries" EntityType="Self.Country" />
+          <EntitySet Name="EngagementCalendars" EntityType="Self.EngagementCalendar" />
+          <EntitySet Name="EOCalendars" EntityType="Self.EOCalendar" />
+          <EntitySet Name="Events" EntityType="Self.Event" />
+          <EntitySet Name="MainArticles" EntityType="Self.MainArticle" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Sources" EntityType="Self.Source" />
+          <EntitySet Name="SSPArticles" EntityType="Self.SSPArticle" />
+          <EntitySet Name="SSPVideos" EntityType="Self.SSPVideo" />
+          <EntitySet Name="Tables" EntityType="Self.Table" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ARCICModelsStoreContainer" CdmEntityContainer="ARCICDbContext2">
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="ARCICModels.Country">
+              <MappingFragment StoreEntitySet="Country">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EngagementCalendars">
+            <EntityTypeMapping TypeName="ARCICModels.EngagementCalendar">
+              <MappingFragment StoreEntitySet="EngagementCalendar">
+                <ScalarProperty Name="eventID" ColumnName="eventID" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="start_time" ColumnName="start_time" />
+                <ScalarProperty Name="end_time" ColumnName="end_time" />
+                <ScalarProperty Name="EventUrl" ColumnName="EventUrl" />
+                <ScalarProperty Name="stamp" ColumnName="stamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EOCalendars">
+            <EntityTypeMapping TypeName="ARCICModels.EOCalendar">
+              <MappingFragment StoreEntitySet="EOCalendar">
+                <ScalarProperty Name="eventID" ColumnName="eventID" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="start_time" ColumnName="start_time" />
+                <ScalarProperty Name="end_time" ColumnName="end_time" />
+                <ScalarProperty Name="recurring" ColumnName="recurring" />
+                <ScalarProperty Name="stamp" ColumnName="stamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Events">
+            <EntityTypeMapping TypeName="ARCICModels.Event">
+              <MappingFragment StoreEntitySet="Event">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="day" ColumnName="day" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="entry" ColumnName="entry" />
+                <ScalarProperty Name="author" ColumnName="author" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MainArticles">
+            <EntityTypeMapping TypeName="ARCICModels.MainArticle">
+              <MappingFragment StoreEntitySet="MainArticle">
+                <ScalarProperty Name="artID" ColumnName="artID" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="imgUrl" ColumnName="imgUrl" />
+                <ScalarProperty Name="imgCaption" ColumnName="imgCaption" />
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="authorEmail" ColumnName="authorEmail" />
+                <ScalarProperty Name="authorSource" ColumnName="authorSource" />
+                <ScalarProperty Name="postDate" ColumnName="postDate" />
+                <ScalarProperty Name="archiveDate" ColumnName="archiveDate" />
+                <ScalarProperty Name="sortDate" ColumnName="sortDate" />
+                <ScalarProperty Name="pubDate" ColumnName="pubDate" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="sourceName" ColumnName="sourceName" />
+                <ScalarProperty Name="sourceUrl" ColumnName="sourceUrl" />
+                <ScalarProperty Name="C_type" ColumnName="_type" />
+                <ScalarProperty Name="loe" ColumnName="loe" />
+                <ScalarProperty Name="directorate" ColumnName="directorate" />
+                <ScalarProperty Name="cta" ColumnName="cta" />
+                <ScalarProperty Name="promote" ColumnName="promote" />
+                <ScalarProperty Name="repostDate" ColumnName="repostDate" />
+                <ScalarProperty Name="googleTrack" ColumnName="googleTrack" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="connection" ColumnName="connection" />
+                <ScalarProperty Name="initiative" ColumnName="initiative" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="ARCICModels.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="sku" ColumnName="sku" />
+                <ScalarProperty Name="price" ColumnName="price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sources">
+            <EntityTypeMapping TypeName="ARCICModels.Source">
+              <MappingFragment StoreEntitySet="Source">
+                <ScalarProperty Name="sourceId" ColumnName="sourceId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="logo" ColumnName="logo" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SSPArticles">
+            <EntityTypeMapping TypeName="ARCICModels.SSPArticle">
+              <MappingFragment StoreEntitySet="SSPArticle">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="postDate" ColumnName="postDate" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="stamp" ColumnName="stamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SSPVideos">
+            <EntityTypeMapping TypeName="ARCICModels.SSPVideo">
+              <MappingFragment StoreEntitySet="SSPVideo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="postDate" ColumnName="postDate" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="stamp" ColumnName="stamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tables">
+            <EntityTypeMapping TypeName="ARCICModels.Table">
+              <MappingFragment StoreEntitySet="Table">
+                <ScalarProperty Name="artID" ColumnName="artID" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="pubDate" ColumnName="pubDate" />
+                <ScalarProperty Name="postDate" ColumnName="postDate" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="img" ColumnName="img" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="typ" ColumnName="typ" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="sourceLogo" ColumnName="sourceLogo" />
+                <ScalarProperty Name="archive" ColumnName="archive" />
+                <ScalarProperty Name="directorate" ColumnName="directorate" />
+                <ScalarProperty Name="connection" ColumnName="connection" />
+                <ScalarProperty Name="lineofeffort" ColumnName="lineofeffort" />
+                <ScalarProperty Name="initiative" ColumnName="initiative" />
+                <ScalarProperty Name="focus" ColumnName="focus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="ARCICModels.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="org" ColumnName="org" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="permissions" ColumnName="permissions" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,19 @@
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\ARCIC_Class.dll.config
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\ARCIC_Class.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\ARCIC_Class.pdb
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.xml
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\obj\Debug\ARCIC_Class.dll
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\obj\Debug\ARCIC_Class.pdb
+C:\Users\tfosque\Documents\SITES\ARCIC-Azure\ARCIC-Staging\ARCIC_Class\obj\Debug\ARCIC_Class.csprojResolveAssemblyReference.cache
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\ARCIC_Class.dll.config
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\ARCIC_Class.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\ARCIC_Class.pdb
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.xml
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\obj\Debug\ARCIC_Class.dll
+C:\Users\tfosq\OneDrive\Documents\My Web Sites\TRADOC\ARCIC-Staging\ARCIC_Class\obj\Debug\ARCIC_Class.pdb

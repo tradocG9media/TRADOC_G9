@@ -1,0 +1,64 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+@{
+    // String AnchorLink;
+    // AnchorLink = "<" + "a href=" + "/Home/About" + " target=_blank>" + "[...]" + "</a>";
+   // <b>@Html.Raw(AnchorLink)</b>    
+    
+}
+
+<!-- Mission Section -->     
+<div class="panel panel-default">              
+    <div class="panel-body">
+        <ul class="nav nav-tabs" id="myTab">
+            <li class="active" role="button"><a data-target="#mission" data-toggle="tab">Mission</a></li>
+            <li role="button"><a data-target="#vision" data-toggle="tab">Vision</a></li>
+            <li role="button"><a data-target="#intent" data-toggle="tab">Intent</a></li>            
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="mission">
+                <div class="panel-body">The ARCIC develops concepts, learns, and integrates capabilities to improve our Army and ensure the effectiveness of the Joint Force.  </div>
+           <br /><br />
+                 </div>
+            <div class="tab-pane" id="vision">
+                <div class="panel-body">A team of trusted professionals who collaborate, learn, and innovate to turn ideas into valued outcomes and ensure that the Joint Force wins in future armed conflict. </div>
+               <br />
+            </div>
+            <div class="tab-pane" id="intent">
+                <div class="panel-body">
+                    @Html.Raw(Shorten.ShortStr("<b>Purpose:</b> Innovate to ensure that Army forces are prepared to provide multiple options for combatant commanders; present multiple dilemmas to enemies; integrate efforts of multiple partners; and operate across multiple domains.",210))
+                    @Html.Raw(AnchorEllipse.Ellipse("/Home/About"))
+                </div>
+          
+                 </div>            
+        </div>
+                
+    </div>
+</div>
+
+
+
+        <!--Vision-->
+      @*  <div class="col-md-4">
+            <div class="panel panel-default">              
+                <div class="panel-body">
+                    <h4><b>Vision</b></h4>
+                    <p>A team of trusted professionals who collaborate, learn, and innovate to turn ideas into valued outcomes and ensure that Joint forces win in future armed conflict. </p>
+                  
+                </div>
+            </div>
+        </div>*@
+
+        <!--Intent-->
+       @* <div class="col-md-4">
+                <div class="panel panel-default">                   
+                    <div class="panel-body">
+                        <h4><b>Intent</b> <span><small><a href="/Home/About" class="btn-link" role="button" data-toggle="popover" data-trigger="hover" data-content="Think, Learn, Analyze, Implement"><i class="fa fa-info-circle"></i> Learn more </a></small></span></h4>
+                        <p>
+                            <b>Purpose:</b> @Shorten.ShortStr("Innovate to ensure that Army forces are prepared to provide multiple options for combatant commanders; present multiple dilemmas to enemies; integrate efforts of multiple partners and operate across multiple domains.", 180)
+
+                        </p>
+                    </div>
+                </div>
+            </div>*@

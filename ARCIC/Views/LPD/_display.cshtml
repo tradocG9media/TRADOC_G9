@@ -1,0 +1,19 @@
+﻿@model ARCIC.Models.Reading
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    IEnumerable<Reading> data = ViewBag.Archives;
+    var currLPD = ViewBag.currLPD;
+    
+}
+<!--display current LPD-->
+@foreach (var item in currLPD)
+{
+    
+        <h4 class="text-primary">Series: @item.series <b> <span class="label label-primary">@item.entDate.ToShortDateString()</span></b></h4>
+        <h2 class="page-header"><b>@item.title</b></h2>
+        <div class="clearfix"><a class="pull-right" href="@item.siteURL" target="_blank">Read <i class="fa fa-external-link"></i></a></div>
+        <p class="">@Html.Raw(item.comment)</p>
+    
+}     

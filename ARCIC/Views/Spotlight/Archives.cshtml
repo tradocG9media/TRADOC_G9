@@ -1,0 +1,152 @@
+﻿@model IEnumerable<ARCIC.Models.Spotlight>
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+
+@{
+    ViewBag.Title = "Spotlight Archives";
+   
+    var Archives = ViewBag.DataArchives;
+    var CurrSpot = ViewBag.CurrSpot;    
+    int currSpot = Globals.currSpotlight;
+    
+}
+
+
+<div class="row">
+  
+        <div class="col-md-8 pull-left">
+            <h1 class="page-header"><b>ARCIC Spotlight Archived</b></h1>
+                <ol class="breadcrumb hidden-xs hidden-sm">
+                    <li><a href="/Home">Home</a></li>
+                     <li><a href="/News">News</a></li>
+                    <li class="active">Spotlight</li>
+                </ol>
+
+          @foreach (var item in Archives)
+              {
+                  if (item.slideOrder != currSpot) //Omit the current spotlight
+                  {
+                           
+                  <div class="panel panel-default clearfix">                     
+                      <div class="panel-body">
+                          <p class="clearfix">
+                              @if (item.slideOrder > 25)
+                              {
+                                  <img class="pull-left" src='@("../App_Imgs/Content/" + item.imageFilename + "f.jpg")'
+                                        style="margin:12px 0px; width:172px;" />
+
+                              }
+                              else
+                              {
+                                  <img class="" src='@("../App_Imgs/Content/" + item.imageFilename + "p.jpg")'
+                                        style="margin:12px 0px; width:172px;" />
+                              }
+                              @*<img class="img-thumbnail pull-right" src='@("/App_Imgs/Content/" + item.imageFilename + "p.jpg")' style="margin: 10px; margin-right:0px;  width:182px;" />*@
+                              <small></small>
+                          </p>
+                           <h3><b>@item.mainArea</b></h3>  
+                          <h4 class="text-primary">@item.imageTitle</h4>
+                          @{
+                             int maxChar = 240;
+                              
+                              
+                            <p class="">@Html.Raw(Shorten.ShortStr(item.imageCaption,maxChar)) <a href="@("/Spotlight?slideOrder=" + item.slideOrder)" class="btn-link" role="button" onclick="maxChar=444;">read...</a></p>                                
+                            }
+
+                          <br />
+                          @*<div class="btn-group">
+                              <a href="@item.pAll" class="btn btn-primary clearfix" role="button" target="_blank">Video1 <i class="fa fa-external-link"></i></a>
+                              <a href="@item.imageLink" class="btn btn-primary clearfix" role="button" target="_blank">Video 2 <i class="fa fa-external-link"></i></a>
+                          </div>*@
+                      </div>
+                  </div>
+                  }                  
+              }
+        </div>
+      
+    <!--Sidbear Current Spotlight---->  
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="col-md-4">
+        @foreach (var item in CurrSpot)
+        {
+            <div class="list-group">
+                <h3 class="text-muted"><b>Current Spotlight</b></h3>
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <h4 class="text-muted">@item.mainArea</h4>
+                        <div class="">
+                            @if (item.slideOrder > 25)
+                            {
+                                <img class="img-responsive" src='@("../App_Imgs/Content/" + item.imageFilename + "f.jpg")' style="margin:12px 0px;" />
+
+                            }
+                            else
+                            {
+                                
+                                <img class="img-responsive" src='@("../App_Imgs/Content/" + item.imageFilename + "p.jpg")' style="margin:12px 0px;" />
+
+                            }
+                            
+                            <p class="divider-thin"></p>
+                        </div>
+                        <h3><b>@item.imageTitle</b></h3>
+                        <p>@Html.Raw(Shorten.ShortStr(item.imageCaption,333))
+                        <a href='@Url.Action("Index", "Spotlight", new { slideOrder = currSpot.ToString() })'>[ View Article ]</a></p>
+
+                        @*<div><a href='@Url.Action("Index", "Spotlight", new { slideOrder = currSpot.ToString() })' class="btn btn-primary btn-block">Go to Spotlight</a></div>*@
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+        <!--Top Videos-->
+            @*<div class="list-group">
+                 <h3 class="text-muted"><b>Top Videos</b></h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">                       
+                        <div class="">
+                            <img class="img-responsive" src='../App_Imgs/Content/mcmasterPic.jpg' style="margin: 0px;" />
+                            <div class="playbtn fa fa-play-circle fa-3x" style=" display: block; position:relative; left:160px; top:-150px; z-index:4000; opacity: .775; color:white; margin-bottom: -30px;"></div>
+                            <div class="text-warning text-uppercase small"><b>Think</b></div>
+                            <p class="divider-thin"></p>
+                        </div>
+                        <h3><b>Coming Soon</b></h3>
+                        <p></p>
+
+                        <br />                      
+                        <div></div>
+                    </div>
+                </div>
+            </div>*@
+
+
+        <!--Top Documents-->
+            <div class="list-group">
+                 <h3 class="text-muted"><b><i class="fa fa-file-pdf-o"></i> Top Documents</b></h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">                     
+                            <p></p>      
+                            <h3 class="text-warning"><span class="label label-default">33</span> Coming Soon </h3>
+                            <p class="divider-thin"></p>
+
+                         <div class="text-warning">Army Operating Concept</div>
+                            <p class="divider-thin"></p>
+
+                         <div class="text-warning">Army Warfighting Challenges</div>
+                            <p class="divider-thin"></p>  
+
+                        <br />                      
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+</div>

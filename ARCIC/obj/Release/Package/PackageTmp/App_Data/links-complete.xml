@@ -1,0 +1,2824 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - -->
+<!-- THIS DATA FILE IS USED TO POPULATE THE /ARTICLES/EXCLUSIVE.ASPX PAGE.        -->
+<!-- - -->
+<!-- IT IS SEPARATE FROM THE RSS FEEDS SPECIFICALLY BECAUSE ADDITIONAL TAGS       -->
+<!-- AND INFORMATION ARE NOT PERMITTED IN THE RSS XML FORMAT.  THESE APP_DATA     -->
+<!-- FOLDERS WILL BE THE PRIMARY DATA RESOURCES AND WHAT IS PLACED IN OTHER       -->
+<!-- DATA FOLDERS WILL BE GENERATED FROM HERE.                                    -->
+<!-- - -->
+<!-- FOR TAGS THAT WILL BE REUSED WITHIN THE RSS FEED, WE WILL REUSE THOSE        -->
+<!-- TAGS HERE.  THAT WAY IT IS A SIMPLE AUTOMATED PROCESS TO COPY THE            -->
+<!-- doc TAG CONTENTS TO AN RSS FEED ITEM TAG.                                   -->
+<!-- - -->
+<!-- imageURL IS STRUCTURED AS FOLLOWS:                                           -->
+<!-- [DATE]-[ARTICLE TYPE]-[ARTICLE ORDER]-[ARTICLE ID]-[PHOTO COUNT][SIZE].JPG   -->
+<!-- DATE= YYYYMMDD                                                               -->
+<!-- ARTICLE TYPE = 01: EXCLUSIVE, 02: MILITARY/GOVERNMENT, 03: PUBLIC            -->
+<!-- ARTICLE ORDER = IF THERE ARE MULTIPLE ARTICLES ON THE SAME DAY, THEIR ORDER  -->
+<!-- ARTICLE ID = THE lnkID OF THE ARTICLE WITHIN THE XML FILE                   -->
+<!-- PHOTO COUNT = IF THERE ARE MULTIPLE PHOTOS FOR A SINGLE ARTICLE              -->
+<!-- SIZE = t: THUMB (125w x 100h), p: PAGE (320w x 240h), f: FULL (800w x 600h)  -->
+<!-- - -->
+
+
+<links>
+	<link>
+		<lnkID>118</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000160</sortDate>
+		<pubDate>September 16, 2015</pubDate>
+		<lnkURL>https://youtu.be/GryazLr_ZUE</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>ManWarCon 2015, Deputy Commanding General, Futures, LTG H.R. McMaster</title>
+		<description>LTG H.R. McMaster, Deputy Commanding General, Futures and Director of Army Capabilities Integration Center speaks at the 2015 Maneuver Warfighter Conference at the Maneuver Center of Excellence about some of the qualities needed in leaders</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus>TRADOC</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>117</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000160</sortDate>
+		<pubDate>March 23, 2015</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/watch/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC AUSA Coverage Livestreaming Site</title>
+		<description>Starting Tuesday, March 31, this page will provide a live video feed from the symposium along with a chat feature that will allow you to ask questions to speakers and panel members. Click on the 'Schedule' button to get the full list of topics, times and presenters.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus>TRADOC</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>118</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000159</sortDate>
+		<pubDate>March 17, 2015</pubDate>
+		<lnkURL>https://www.milsuite.mil/book/groups/army-warfighting-challenge-awfc-group</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>Army Warfighting Challenges - MilBook</title>
+		<description></description>
+		<placement>
+			<group>MilSuite</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>117</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000158</sortDate>
+		<pubDate>February 19, 2015</pubDate>
+		<lnkURL>http://www.iiss.org/en/events/events/archive/2015-f463/february-6697/continuity-and-change-6de9</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Continuity &amp; Change: The Nature of Future Conflict</title>
+		<description>Anticipating the demands of future armed conflict requires an understanding of continuities in the nature of war as well as an appreciation for changes in the character of armed conflict. The character of future warfare evolves based upon assigned missions; the operational environment; emerging technologies; and changes in enemy capabilities, objectives, and will. The Army must anticipate change while considering how continuities, such as those reflected in the principles of war, affect how the Army must operate to accomplish future missions.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection></connection>
+			<focus>Concepts</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>116</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000157</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.army.mil/standto/archive/2010/05/13/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Today's Focus: Army Warfighting Challenges</title>
+		<description>Army Warfighting Challenges (AWFCs) are current and mid-term military problems and gaps that help define capabilities needed for current and future force combat effectiveness. The Army's Training and Doctrine Command (TRADOC) identifies AWFCs using national and defense policy, strategy, and directives in conjunction with Joint and Army policy, doctrine, and concepts. TRADOC refines the AWFCs list through observations, insights, and lessons learned from current operations, along with experiments, war games, studies, and analyses.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>115</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000156</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=bTkhcQu9G-8</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>How to turn Ideas into Reality, by GEN David Perkins</title>
+		<description>GEN David Perkins, Commanding General of the U.S.Army Training and Doctrine Command, discusses How to turn Ideas into Reality. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>114</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000155</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=fzKlPJ4pqL0</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Future Environments, Threats, and Adversaries, by Michael O'Hanlon</title>
+		<description>Mr. Michael O'Hanlon discusses Future Environments, Threats and Adversaries. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>113</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000154</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=c7BkLrI46hc</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Industrial Innovation, Lessons Learned, by Dean Kamen</title>
+		<description>Mr. Dean Kamen discusses Lessons Learned from Industrial Innovation. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>112</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000153</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=GgEvbFMJ6wc</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Industrial Innovation, Principles and Key Attributes, by Barry Jaruzelski</title>
+		<description>Mr. Barry Jaruzelski discusses Principles and Key Attributes of Industrial Innovation. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>111</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000152</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=7nUrnMhES4Q</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Industrial Military Innovation, Principles and Key Attributes, by Frank Fernandez (1 of 2)</title>
+		<description>Mr. Frank Fernandez discusses Principles and Key Attributes of Industrial Military Innovation. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>110</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000151</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=QEfJOo68aco</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Industrial Military Innovation, Principles and Key Attributes, by Michael Griffin (2 of 2)</title>
+		<description>Mr. Michael Griffin discusses Principles and Key Attributes for Industrial Military Innovation. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>109</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000150</sortDate>
+		<pubDate>February 6, 2015</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=46je4uwfw6E</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Innovation in the Army: Historical Perspectives, by John Nolen</title>
+		<description>Mr John Nolen discusses Innovation in the Army: Historical Perspectives. Videos from the 13 January 2015 Unified Quest Innovation Symposium held at the College of William and Mary.</description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Unified Quest</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>108</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000149</sortDate>
+		<pubDate>February 4, 2015</pubDate>
+		<lnkURL>https://www.milsuite.mil/wiki/AWFC</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>Army Warfighting Challenges - MilWiki</title>
+		<description></description>
+		<placement>
+			<group>MilSuite</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Army Warfighting Challenges</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>107</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000148</sortDate>
+		<pubDate>December 12, 2014</pubDate>
+		<lnkURL>https://twitter.com/genmarkmilley</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>CSA Official Twitter Feed</title>
+		<description></description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>CSA</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>107</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000147</sortDate>
+		<pubDate>December 12, 2014</pubDate>
+		<lnkURL>https://www.facebook.com/GENMarkMilley</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>CSA Official Facebook Page</title>
+		<description></description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>CSA</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>106</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000146</sortDate>
+		<pubDate>December 12, 2014</pubDate>
+		<lnkURL>http://www.army.mil/leaders/csa/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>CSA Official Home Page</title>
+		<description></description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>CSA</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>105</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000145</sortDate>
+		<pubDate>March 4, 2014</pubDate>
+		<lnkURL>http://www.youtube.com/watch?v=mxPPLCEhRaQ</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>2014 AUSA Winter Symposium - Gen. Robert W. Cone - Force 2025</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Force 2025 and Beyond Directorate</directorate>
+			<initiative>Force 2025 and Beyond</initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>104</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000144</sortDate>
+		<pubDate>June 17, 2013</pubDate>
+		<lnkURL>https://www.youtube.com/watch?v=OgzrL5W7er0</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>LTG Walker Visits NIE 13.2</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus>Concepts</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>103</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000143</sortDate>
+		<pubDate>June 17, 2013</pubDate>
+		<lnkURL>https://www.youtube.com/watch?v=2V1bm6sxTWk</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Strategic Trends, Future Science, Tech Panel</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus>Concepts</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>102</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000142</sortDate>
+		<pubDate>March 18, 2013</pubDate>
+		<lnkURL>https://www.youtube.com/watch?v=YTh3AnV1JJc</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>1-35 AR trains with Nett Warrior at NIE 13.2</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus>Concepts</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>101</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000141</sortDate>
+		<pubDate>February 15, 2013</pubDate>
+		<lnkURL>http://www.c-span.org/video/?311019-1/future-us-army%26start=1918</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Gen. Odierno discusses the future Army at Brookings</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>Concepts</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>100</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000140</sortDate>
+		<pubDate>March 27, 2012</pubDate>
+		<lnkURL>http://www.senate.gov/fplayers/jw57/urlMP4Player.cfm?fn=armed032712p%26st=2570%26dur=6845</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>ARCIC Director Testifies at Senate Armed Services Committee</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>99</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000139</sortDate>
+		<pubDate>November 1, 2010</pubDate>
+		<lnkURL>http://www.army.mil/media/amp/?bctid=656414847001</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>OE Provides Greater Mission Effectiveness</title>
+		<description></description>
+		<placement>
+			<group>Video</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Operational Energy</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>98</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000138</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/pic/NIE/NIE_2011.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>NIE 11.2 Photo Page</title>
+		<description>
+			Redirects to: http://integration.army.mil/;<br /><br />
+		</description>
+		<placement>
+			<group>Photos</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>97</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000137</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/pic/nie_12_1/NIE_12-1.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>NIE 12.1 Photo Page</title>
+		<description>
+			Redirects to: http://integration.army.mil/;<br /><br />
+		</description>
+		<placement>
+			<group>Photos</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>96</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000136</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/pic/NIE%2012.2/12_2NIE.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>NIE 12.2 Photos</title>
+		<description>
+			Redirects to: http://integration.army.mil/;<br /><br />
+		</description>
+		<placement>
+			<group>Photos</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>95</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000135</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/pic/NIE_13_1/NIE13_1.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>NIE 13.1 Photos</title>
+		<description>
+			Redirects to: http://integration.army.mil/;<br /><br />
+		</description>
+		<placement>
+			<group>Photos</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>94</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000134</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.youtube.com/user/AUSANational</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Association of the U.S. Army  (YouTube)</title>
+		<description>YouTube account for the Association of the U.S. Army .</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>93</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000133</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.flickr.com/photos/126443182@N05/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Adapting the Army (Flickr)</title>
+		<description>Flickr account for the Army Capabilities Integration Center.</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>92</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000132</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.youtube.com/user/adaptingthearmy</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Adapting the Army (YouTube)</title>
+		<description>YouTube account for the Army Capabilities Integration Center.</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>91</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000131</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.facebook.com/AdaptingTheArmy</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Adapting the Army (Facebook)</title>
+		<description></description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>90</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000130</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.facebook.com/pages/FY11-Network-Integration-Evaluation-NIE/201227083233896</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Network Integration Evaluation</title>
+		<description>DEAD LINK</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>89</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000129</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.facebook.com/2BDE1AD</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>2nd Brigade, 1st Armored Division</title>
+		<description></description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>88</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000128</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.facebook.com/army.bliss</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>1st Armored Division and Fort Bliss</title>
+		<description></description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>87</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000127</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.facebook.com/pages/Brigade-Modernization-Command/193578694013981</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Brigade Modernization Command</title>
+		<description></description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>86</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000126</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.slideshare.net/adaptingthearmy</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Adapting the Army (SlideShare)</title>
+		<description>SlideShare account for the Army Capabilities Integration Center.</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>85</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000125</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.twitter.com/AdaptingTheArmy</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Adapting the Army (Twitter)</title>
+		<description>Twitter account of the Army Capabilities Integration Center.</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>84</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000124</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.facebook.com/NetworkIntegrationEvaluation</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Network Integration Evaluation</title>
+		<description>DEAD LINK</description>
+		<placement>
+			<group>Social Media</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>83</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000123</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://cac.arcicportal.army.mil/sites/arcic/Pages/ARCICBattleRhythmHome.aspx</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>Army Capabilities Integration Center - Portal</title>
+		<description></description>
+		<placement>
+			<group>SharePoint</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>82</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000122</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.milsuite.mil/book/community/strategic_landpower</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>Strategic Landpower - MilSuite Forum</title>
+		<description>N/A</description>
+		<placement>
+			<group>MilSuite</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative>Strategic Landpower Task Force</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>81</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000121</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://garrison.leavenworth.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Garrison Fort Leavenworth Installation Management Command - Fort Leavenworth, Kansas</title>
+		<description>Fort Leavenworth, Kansas is the oldest continuously active military reservation west of the Mississippi River. This historic post is noted for the campus-like setting, open green spaces and hometown character. We look forward to serving you upon your arrival, and hope that your experience, while living or visiting here, leaves a lasting impression as you enjoy the "Best Hometown in the Army". Army garrisons, also called an installation or post, are communities that provide many of the same types of services expected from any small town. Law enforcement, fire protection, sports &amp; recreational facilities, religious activities, child &amp; youth programs are just a small sample of the support and services we provide every day.</description>
+		<placement>
+			<group>Location</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>80</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000120</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.jble.af.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Joint Base Langley-Eustis</title>
+		<description>Langley is the oldest continually active Air Force base in the world and has a rich history, cementing its ties not only with the Air Force, but the Hampton Roads area. When you arrive, you will become part of a tradition that dates back to December 30, 1916. You are about to become part of America's First Team.  Fort Eustis is the training ground for the majority of the Army's transportation specialties. It is an excellent area to train Service members in transportation, aviation maintenance, logistics and deployment doctrine with its diverse landscape and easy access to the James River.</description>
+		<placement>
+			<group>Location</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>79</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000119</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.leavenworth.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>DCG-Combined Arms</title>
+		<description>REDUNDANT LINK - Already have links to both the garrison installation and the Combined Arms Center.</description>
+		<placement>
+			<group>Location</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>78</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000118</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.bliss.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>The official Homepage of Fort Bliss, Texas</title>
+		<description>Fort Bliss is a United States Army post in the U.S. states of New Mexico and Texas, with its headquarters located in El Paso, Texas. With an area of about 1,700 square miles (4,400 km2), it is the Army's second-largest installation, behind the adjacent White Sands Missile Range.</description>
+		<placement>
+			<group>Location</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Army Capabilities Integration Center (Headquarters)</directorate>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>77</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000117</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.ausa.org/publications/armymagazine/Pages/default.aspx</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>ARMY Magazine, Current Edition</title>
+		<description>A monthly four-color magazine focusing on the activities and interests of the U.S. Army worldwide, ARMY serves a readership interested in issues of national security; past and present issues involving landpower; and future trends in the military arts and sciences. The magazine focuses on developing and presenting thought-provoking articles and analyses for a professionally oriented audience.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>76</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000116</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://jtnc.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Joint Tactical Networking Center (JTNC)</title>
+		<description>Link formerly: http://jpeojtrs.mil/; JPEO Joint Tactical Radio System (JTRS). Redirects to this URL.<br /><br />The Joint Tactical Networking Center provides coordinated wireless communications expert technical support to USD(AT&amp;L) and DoD CIO-related policy initiatives and governance processes aimed at ensuring interoperable, secure, and affordable waveform and wireless communications. To achieve its vision and execute its mission, the JTNC is organized into three functional entities: DoD Waveform Information Repository, Standards, Compliance and Certification Assessments.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>75</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000115</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://peoc3t.army.mil/c3t/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office for Command, Control and Communications-Tactical (PEO C3T)</title>
+		<description>The Program Executive Office for Command, Control and Communications-Tactical (PEO C3T) provides our Soldiers with the computer systems, radios and communications networks they require to fight and win our Nation's wars. We develop, acquire and field to all Army units a range of products including specialized software applications, radios, computers, servers and communications systems; and integrate these systems together so they function seamlessly; while providing on-site training and support for the systems deployed worldwide.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>74</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000114</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://peocscss.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office Combat Support and Combat Service Support (PEO CS&amp;CSS)</title>
+		<description>Link formerly: http://peocscss.tacom.army.mil/; Dead link.<br /><br />PEO CS&amp;CSS directs and coordinates the efforts of five project and 23 product offices in managing more than 350+ Army systems, including several Joint Service programs, across all phases of their life cycle. Enable Joint and Coalition Warfighters Across Today's and Tomorrow's Diverse Mission Requirements Through Effective Life Cycle Management of the Army's Combat Support and Combat Service Support (CS&amp;CSS) Portfolio, Employing Solid Facts &amp; Data to Develop, Produce, Field, Sustain, and Integrate the Right Mobile, Survivable, Lethal, and Affordable Capabilities.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>73</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000113</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://tardec.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Tank Automotive Research, Development and Engineering Center (TARDEC)</title>
+		<description>The U.S. Army Tank Automotive Research, Development and Engineering Center (TARDEC) develops, integrates and sustains the right technology solutions for all manned and unmanned DoD ground vehicle systems (GVS) and combat service support (CSS) equipment to improve Current Force effectiveness and provide superior capabilities for the Future Force.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>72</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000112</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://usacac.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Combined Arms Center; Fort Leavenworth, Kansas</title>
+		<description>Link formerly: http://usacac.army.mil/cac2/; Redirects here.<br /><br />CAC, as a major subordinate headquarters of the U.S. Army Training and Doctrine Command, has often been referred to as the "Intellectual Center of the Army". It is, in many regards, "home base" for the majority of field grade officers across the Army. Since 1882, CAC and its predecessor organizations have been engaged in the primary mission of preparing the Army and its leaders for war. At present, this mission is divided between preparing the Army for the Global War on Terrorism and transforming it to meet future threats.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>71</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000111</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://usacac.army.mil/cac2/Doctrine.asp</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Doctrine 2015</title>
+		<description>Link formerly: http://usacac.army.mil/cac2/MCCOE/Doctrine2015Tables.asp; Redirects here.<br /><br />Doctrine Publications Search.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>70</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000110</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://web.amsaa.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Notice Acceptance Required</lnkAccess>
+		<source></source>
+		<title>Army Materiel Systems Analysis Activity</title>
+		<description>AMSAA provides responsive systems analysis to support the equipping and sustaining of weapons and materiel for our Warfighters in the field as well as our Future Army Forces. AMSAA is all about military systems analysis to provide decision making support to aid the soldier.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>69</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000109</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>The Official Homepage of the U.S. Army</title>
+		<description>The United States Army (USA) is the main branch of the United States Armed Forces responsible for land-based military operations. It is the largest and oldest established branch of the U.S. military, and is one of seven U.S. uniformed services. The modern army has its roots in the Continental Army which was formed on 14 June 1775, to meet the demands of the American Revolutionary War before the establishment of the United States. The Congress of the Confederation officially created the United States Army on 3 June 1784 after the end of the Revolutionary War to replace the disbanded Continental Army.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>68</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000108</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/info/institution/posturestatement/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Army Posture Statement</title>
+		<description>Link formerly: http://www.army.mil/aps/; Redirects here.<br /><br />The annual Army Posture Statement is an unclassified summary of Army roles, missions, accomplishments, plans, and programs. Designed to reinforce the Secretary and Chief of Staff of the Army posture and budget testimony before Congress, the APS serves a broad audience as a basic reference on the state of the Army.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>67</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000107</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/info/organization/cecom/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Communications-Electronics Command (CECOM)</title>
+		<description>The U.S. Army Communications-Electronics Command empowers and enables joint, interagency, intergovernmental and multi-national forces worldwide by providing full life cycle support solutions for Command, Control, Communications, Computers, Intelligence, Surveillance and Reconnaissance systems and capabilities.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>66</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000106</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/info/organization/unitsandcommands/commandstructure/rdecom/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Research, Development, and Engineering Command (RDECOM)</title>
+		<description>The U.S. Army Research, Development and Engineering Command is the Army's technology leader and largest technology developer. RDECOM ensures the dominance of Army capabilities by creating, integrating and delivering technology-enabled solutions to our Soldiers. To meet this commitment to the Army, RDECOM develops technologies in its eight major laboratories and research, development and engineering centers. It also integrates technologies developed in partnership with an extensive network of academic, industry, and international partners.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>65</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000105</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/info/organization/unitsandcommands/commandstructure/amc/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Materiel Command (AMC)</title>
+		<description>The U.S. Army Materiel Command is the Army's premier provider of materiel readiness – technology, acquisition support, materiel development, logistics power projection, and sustainment – to the total force, across the spectrum of joint military operations. If a Soldier shoots it, drives it, flies it, wears it, eats it or communicates with it, AMC provides it.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>64</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000104</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/leaders/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Army - Leadership</title>
+		<description>Senior Leaders of the United States Army.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>63</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000103</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/standto/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>STAND-TO! The official focus of the U.S. Army</title>
+		<description>STAND-TO! is the "Official Focus of the U.S. Army," contains a daily focus of news, information, and context for today's Army. It has a mission focus of providing a broad, objective view of the Army and current Army operations, doctrine and programs. STAND-TO! plays a critical role in the U.S. Army Office of the Chief of Public Affairs' strategic process to communicate Army relevant issues. Launched on October 7, 2004, STAND-TO! now has more than 11,000 subscribers, including all general officers, senior executive civilians, and command sergeants major.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>62</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000102</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.armycivilianservice.com/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Army Civilian Service</title>
+		<description>The United States Army has employed civilians since 1776 to support men and women in uniform. Today, with more than 330,000 civilian employees, Army Civilian Service is the largest, busiest and most successful "company" within the Department of Defense. Army civilians are dedicated, experienced and committed to serving the Nation. We are an integral part of the Army team providing mission-essential support to the Soldier. We are federal civil servants and we are committed to selfless service in the performance of our duties in support of our nation.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>61</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000101</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.atec.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Test and Evaluation Command</title>
+		<description>ATEC plans, integrates, and conducts experiments, developmental testing, independent operational testing, and independent evaluations and assessments to provide essential information to acquisition decision makers and commanders. Determine the true capability provided to our Soldiers through resource informed developmental, integrated and operational test and evaluation in an independent and objective manner.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>60</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000100</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.ausa.org</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Login Required</lnkAccess>
+		<source></source>
+		<title>Association of the United States Army</title>
+		<description>Since 1950, the Association of the United States Army has worked to support all aspects of national security while advancing the interests of America's Army and the men and women who serve. AUSA is a private, non-profit educational organization that supports America's Army - Active, National Guard, Reserve, Civilians, Retirees, Government Civilians, Wounded Warriors, Veterans, and family members. AUSA provides numerous Professional Development Opportunities at a variety of events both local and national.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection>Association of the United States Army</connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>59</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000059</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Army Brigade Combat Team (BCT) Modernization</title>
+		<description>Redirects to: http://integration.army.mil/;<br /><br />The Army Brigade Combat Team (BCT) Modernization strategy will build a versatile mix of tailorable, networked BCTs operating on a rotational scale that will leverage mobility, protection, information and precision fires to conduct effective operations to succeed in both today's and tomorrow's full spectrum military operations</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>58</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000058</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/Program_Executive_Office_Integration.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>System of Systems Integration Directorate</title>
+		<description>Redirects to: http://integration.army.mil/;<br /><br /></description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>57</lnkID>
+		<frozen>0</frozen>
+		<archive>1</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000057</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.bctmod.army.mil/nie_focus/index.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Focus on: Network Integration Evaluation (NIE)</title>
+		<description>Redirects to: http://integration.army.mil/;<br /><br /></description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>56</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000056</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.dvidshub.net/units/24PCH</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>24th Press Camp Headquarters</title>
+		<description>24th Press Camp Headquarters</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>55</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000055</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.caa.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Army Center For Army Analysis (CAA)</title>
+		<description>CAA conducts analyses across the spectrum of conflict in a Joint, Interagency, Intergovernmental, and Multinational (JIIM) context to inform critical senior level decisions for current and future national security issues.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>54</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000054</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.cascom.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Combined Arms Support Command (CASCOM) - Fort Lee, Virginia</title>
+		<description>The Army's sustainment think tank and premier learning institution, delivering game-changing professionals and solutions. CASCOM trains, educates and grows adaptive sustainment professionals; develops and integrates innovative Army and Joint sustainment capabilities, concepts and doctrine to enable Unified Land Operations.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>53</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000053</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.cecom.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>C4ISR Team at CECOM</title>
+		<description>CECOM is The Critical Link that ensures the global readiness of the complex, networked C4ISR systems and capabilities that provide our joint forces with the advanced information and technology they need to communicate on today's battlefield. CECOM adapts, strengthens and sustains the critical C4ISR systems that joint warfighters rely on - allowing them to operate, fight and win anywhere, against any foe, at any moment.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>52</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000052</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.centcom.mil</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>United States Central Command (CENTCOM)</title>
+		<description>U.S. Central Command (CENTCOM) is one of nine unified commands in the United States military. Six of these commands, including CENTCOM, have an area of responsibility (AOR), which is a specific geographic region of the world where the combatant commanders may plan and conduct operations as defined under the Unified Command Plan.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>51</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000051</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.cerdec.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Communications-Electronics Research, Development and Engineering Center (CERDEC)</title>
+		<description>The Communications-Electronics Research, Development and Engineering Center, more commonly known as CERDEC, actively advances Soldier capabilities that enable situational awareness and understanding, establish and secure communications, and protect Soldiers from surprise attack. As an Army applied research center under the U.S. Army Research, Development and Engineering Command, CERDEC provides the diverse technical expertise and operational awareness and understanding to develop, engineer and foresee essential Army needs in mission command and intelligence technologies, applications and networks designed to connect and protect the Soldier. Whether Soldier-borne or on vehicle or aviation platforms, the Army relies on CERDEC's technical expertise to develop and/or seek out capability advancements to address Soldier needs.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>50</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000050</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.darpa.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Defense Advanced Research Projects Agency (DARPA)</title>
+		<description>Creating breakthrough technologies for national security is the mission of the Defense Advanced Research Projects Agency (DARPA). By making pivotal investments in new technology-driven ideas for the United States, DARPA imagines and makes possible new capabilities for overcoming the multifaceted threats and challenges that lie ahead. This makes a better, more secure future possible. In an uncertain world, with constrained budgets, providing these new capabilities is more important than ever.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>49</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000049</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.dau.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Defense Acquisition University</title>
+		<description>Welcome to the Defense Acquisition University, a best-in-class corporate university for the Defense Acquisition Workforce. Everything we do at DAU is for you, the acquisition professional — from formal courses and continuous learning modules to knowledge sharing assets and consulting. As your learning partner, we will be with you in the classroom, online, and in your workplace — whenever and wherever you need DAU. All of our learning assets are meant to help you develop and manage acquisition programs, projects, and systems that continue to make our nation's warfighters the best-equipped armed forces in the world.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>48</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000048</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.dau.mil/CLC/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Continuous Learning Center - DAU</title>
+		<description>DoD Instruction 5000.66 establishes the standard that Defense Acquisition Workforce members must acquire 80 Continuous Learning Points (CLP) every two years from the date of entry into the acquisition workforce for as long as the member remains in an acquisition position.  Members are encouraged to set a goal of achieving 40 CLPs within any 12-month period.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>47</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000047</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.defense.gov/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Department of Defense (DoD)</title>
+		<description>The Secretary of Defense is the principal defense policy advisor to the President. Under the direction of the President, the Secretary exercises authority, direction, and control over the Department of Defense. The Deputy Secretary, the second-highest ranking official in the DoD, is delegated full power and authority to act for the Secretary and to exercise the powers of the Secretary on any and all matters for which the Secretary is authorized to act.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>46</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000046</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.defense.gov/landing/forms_directives.aspx</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>DoD Forms, Directives, &amp; Issuances</title>
+		<description>Please click here to access all major Department of Defense Directives, Forms, Guides, Instructions, Issuances, Notices, and publiciations.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>45</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000045</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.defenselink.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Defense Link</title>
+		<description>Redirects to http://www.defense.gov.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>44</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000044</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://dodcio.defense.gov/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Chief Information Officer, DoD</title>
+		<description>Link formerly: http://www.defenselink.mil/cio-nii/; Redirects here.<br /><br />On behalf of the Chief Information Officer, I welcome you to DoD CIO, the official web site for the Department of Defense Chief Information Officer. The DoD CIO is the Principal Staff Assistant (PSA) and advisor to the Secretary of Defense and Deputy Secretary of Defense on information resources management (IRM) matters. The DoD CIO is tasked with improving the combat power of the Department as well as its security and efficiency by ensuring that the Department treats information as a strategic asset and that innovative information capabilities are available throughout all areas of DoD supporting warfighting, business, and intelligence missions.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>43</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000043</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.defenselink.mil/qdr</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Quadrennial Defense Review 2010</title>
+		<description>Redirects to: http://www.defense.gov/home/features/2014/0314_sdr/qdr.aspx<br /><br />The Quadrennial Defense Review (QDR) is a legislatively-mandated review of Department of Defense strategy and priorities. The QDR will set a long-term course for DoD as it assesses the threats and challenges that the nation faces and re-balances DoD's strategies, capabilities, and forces to address today's conflicts and tomorrow's threats.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>42</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000042</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.dfas.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Defense Finance and Accounting Service</title>
+		<description>The people of the Defense Finance and Accounting Service (DFAS) take pride in serving the men and women who defend America. We take our contribution to national defense seriously. We work hard to fulfill the important fiscal responsibilities entrusted to us by the American taxpayers. We ensure the resources they provide are accounted for properly.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>41</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000041</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.dhs.gov/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Department of Homeland Security</title>
+		<description>The Department of Homeland Security has a vital mission: to secure the nation from the many threats we face. This requires the dedication of more than 240,000 employees in jobs that range from aviation and border security to emergency response, from cybersecurity analyst to chemical facility inspector. Our duties are wide-ranging, but our goal is clear - keeping America safe.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>40</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000040</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.disa.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Defense Information Systems Agency (DISA)</title>
+		<description>DISA is a combat support agency of the Department of Defense (DoD). The agency is composed of nearly 6,000 civilian employees; more than 1,500 active duty military personnel from the Army, Air Force, Navy, and Marine Corps; and approximately 7,500 defense contractors. The agency provides, operates, and assures command and control and information-sharing capabilities and a globally accessible enterprise information infrastructure in direct support to joint warfighters, national level leaders, and other mission and coalition partners across the full spectrum of military operations.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>39</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000039</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.eis.army.mil</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office for Enterprise Information Systems (PEO EIS)</title>
+		<description>PEO EIS enables information dominance by developing, acquiring, integrating and deploying information technology (IT) systems to meet the Army's demands today while preparing for the challenges of tomorrow. PEO EIS is comprised of 34 acquisition programs, crossing all functional domains, in all acquisition life cycle phases. Through the hard work and dedication of a workforce of military, government civilians, and contractor support, PEO EIS successfully manages approximately $3.5 billion in IT investments and fields systems around the globe.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>38</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000038</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.bliss.army.mil/BMC/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Brigade Modernization Command</title>
+		<description></description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>37</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000037</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.jcs.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Joint Chiefs of Staff</title>
+		<description>The Joint Chiefs of Staff consist of the Chairman, the Vice Chairman, the Chief of Staff of the Army, the Chief of Naval Operations, the Chief of Staff of the Air Force, the Commandant of the Marine Corps and the Chief of the National Guard Bureau. The collective body of the JCS is headed by the Chairman (or the Vice Chairman in the Chairman's absence), who sets the agenda and presides over JCS meetings. Responsibilities as members of the Joint Chiefs of Staff take precedence over duties as the Chiefs of Military Services. The Chairman of the Joint Chiefs of Staff is the principal military adviser to the President, Secretary of Defense, and the National Security Council (NSC), however, all JCS members are by law military advisers, and they may respond to a request or voluntarily submit, through the Chairman, advice or opinions to the President, the Secretary of Defense, or NSC.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>36</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000036</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.mda.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Missile Defense Agency (MDA)</title>
+		<description>The Missile Defense Agency (MDA) is a research, development, and acquisition agency within the Department of Defense. Our workforce includes government civilians, military service members, and contractor personnel in multiple locations across the United States. We are focused on retaining and recruiting a dedicated workforce interested in supporting our national security.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>35</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000035</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.msl.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office Missiles &amp; Space (PEO MS)</title>
+		<description>The Program Executive Office, Missiles and Space or PEO MS provides centralized management for all Army tactical and air defense missile programs and selected Army Space programs. The PEO was established in January 2005 with the merger of the PEO Air, Space and Missile Defense and the PEO Tactical Missiles. The PEO is responsible for the full life-cycle management of assigned programs.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>34</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000034</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.nationalguard.mil</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>National Guard</title>
+		<description>The National Guard continues its historic dual mission, providing trained units to the states, territories and the District of Columbia and keeping itself equipped to protect life and property. The Guard also provides trained units to the nation equipped and ready to defend the United States and its interests all over the globe.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>33</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000033</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.ebenefits.va.gov/ebenefits/nrd</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>National Resource Directory</title>
+		<description>Connecting Wounded Warriors, Service Members, Veterans, Their Families and Caregivers with Those Who Support Them.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>32</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000032</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.navy.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>U.S. Navy</title>
+		<description>The U.S. Navy was founded on 13 October 1775, and the Department of the Navy was established on 30 April 1798. The Department of the Navy has three principal components: The Navy Department, consisting of executive offices mostly in Washington, D.C.; the operating forces, including the Marine Corps, the reserve components, and, in time of war, the U.S. Coast Guard (in peace, a component of the Department of Homeland Security); and the shore establishment.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>31</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000031</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.paed.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program, Analysis &amp; Evaluation (PA&amp;E)</title>
+		<description>Redirects to https://www.eprobe.army.mil/; Planning, Programming &amp; Budgeting Business Operating System; CAC Required past welcome page.<br /><br />New URL: http://www.g8.army.mil/organization/program_analysis_and_evaluation/;<br /><br />PA&amp;E provides Army senior leadership direct, independent analysis of programs, alternatives, and priorities to make informed decisions regarding future years planning and programming to meet Army strategic objectives.  PA&amp;E exercises overall responsibility for developing the investment strategy for the entire Army in support of the Program Objective Memorandum and the Future Years Defense Program.  PA&amp;E manages the programming phase in the Army's Planning, Programming, Budgeting and Execution process and serves as executive agent for defending the Army program to OSD.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>30</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000030</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.peogcs.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>PEO GCS LIVE WIRE - Program Executive Office Ground Combat Systems (PEO GCS)</title>
+		<description>Program Executive Office Ground Combat Systems (PEO GCS) is responsible for providing world-class affordable, relevant and sustainable ground combat equipment to Joint Warfighters. The systems include the Abrams Main Battle Tank, Bradley Family of Vehicles (FoV), Towed and Self-propelled Howitzers, Stryker FoV, Robotics and Unmanned Ground Systems. With the addition of the Ground Combat Vehicle Program, PEO GCS is leading the design and development of the Army's next generation Infantry Fighting Vehicle.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>29</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000029</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.peogcs.army.mil/rsjpo.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Robotic System Joint Project Office (RS JPO)</title>
+		<description>Welcome to the Robotic System Joint Project Office (RS JPO). We take a joint (Army &amp; Marine) perspective in managing the development, systems engineering, integration, acquisition, testing, fielding, sustainment and improvement of unmanned systems which will form the background of the future force. We are spearheading development of the first generation of unmanned systems employing the latest sensor, remote navigation, and command and control technologies to integrate robotics into the battlefield. Speeding these technologies to the battlefield will potentially revolutionize combat operations.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>28</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000028</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.peosoldier.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office Soldier (PEO Soldier)</title>
+		<description>For the past decade, Program Executive Office (PEO) Soldier has provided our Soldiers with capabilities to ensure they remain decisive and dominant throughout the full spectrum of military operations. Our Army conducts offensive operations, defensive operations, stability operations and civil support operations with Soldiers equipped and trained to use the very best equipment and capabilities that PEO Soldier can provide.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>27</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000027</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.peostri.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office for Simulation, Training and Instrumentation (PEO STRI)</title>
+		<description>MISSION: Acquire and Sustain Training and Testing Solutions for the Army. VISION: To be the Army's Acquisition Center of Excellence for Training and Testing Solutions. MOTTO: Putting the power of simulation into the hands of our Warfighters.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>26</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000026</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>The Official Homepage of the U.S. Army Training and Doctrine Command (TRADOC)</title>
+		<description>U.S. Army Training and Doctrine Command was created on July 1st, 1973 under General William E. DePuy, who commanded a battalion in the 90th Infantry Division in World War II and led the 1st Infantry Division in Vietnam. Under General DePuy, TRADOC fundamentally transformed the Army into the best trained, equipped, led, and organized modern land power in the world. Today, TRADOC sustains its proud legacy of shaping the Army.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>25</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000025</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/arng/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Deputy Commanding General - Army National Guard</title>
+		<description>Advise and assist the Commanding General, and TRADOC on all matters relating to doctrine, organization, training, materiel, leadership, personnel and facilities (DOTMLPF) impacting the training and readiness of Reserve Component (RC) Soldiers. Coordinates directly with the Director, ARNG (DARNG) on issues that impact ARNG readiness. Champions TRADOC programs and future initiatives through existing senior level forums.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>24</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000024</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/cio/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Deputy Chief of Staff, G-6 - Command, Control, Communications, and Computers (C4)</title>
+		<description>The TRADOC Deputy Chief of Staff (DCS), G-6 (C4) is the senior adviser to CG, TRADOC for all matters relating to information technology (IT) and information management (IM) necessary for the execution of TRADOC's mission. The G-6 develops TRADOC-wide IT, and IM plans, policies, procedures and its enterprise architecture. The G-6 provides staff management for the development, acquisition, integration, operation, and sustainment of IT and IM applications, systems, and services for TRADOC.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>23</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000023</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/cofs/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Deputy Commanding General - Chief of Staff</title>
+		<description>Dead Link.  No direct redirect. CoS bio: http://www.tradoc.army.mil/dcos/DCoS_Bio.asp (archived page).  Link from existing tradoc site goes directly to PDF Bio.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>22</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000022</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/dcsint/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: G-2 (Intelligence)</title>
+		<description>The TRADOC G-2 develops, delivers, and validates the Operational Environment (OE) products and services to enable realistic training, leader development, education, concepts, and capabilities development for the United States Army.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>21</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000021</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/dcsopst/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Deputy Chief of Staff, G-3/5/7 (Operations, Plans, and Training)</title>
+		<description>New URL: http://www.tradoc.army.mil/g357/;<br /><br />Develop, integrate, and manage training operations and requirements, concepts, policies, plans; and directs operations continuously across TRADOC in support of CG TRADOC, ARFORGEN and the Human Capital Enterprise in order to build a campaign-capable, expeditionary and versatile Army in support of the Joint War-fighting Commander.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>20</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000020</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/dcspil/index.htm</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: G-1/4 (Personnel and Logistics)</title>
+		<description>Taking Care of Army Soldiers, Families and Civilians. Optimize support to TRADOC missions and priorities. Meeting ARFORGEN and Institutional requirements. Support the Human Capital Core Enterprise.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>19</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000019</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/dcsrm/index.htm</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Deputy Chief of Staff, G-8 (Resource Management)</title>
+		<description>The Deputy Chief of Staff, G-8 administers resources supporting 32 schools and centers at 16 Army installations. TRADOC schools conduct 2,700-plus courses, of which 300-plus are language courses. The command's training requirements have increased from a 520,000-plus student load in FY08 to a 560,000-plus student load in FY09.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>18</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000018</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/irac/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Internal Review and Audit Compliance</title>
+		<description>Internal Review and Audit Compliance (IRAC) is a special staff office that provides a full range of professional internal review services to the command. The IRAC mission is to support the TRADOC leadership and TRADOC organizations in improving accountability and compliance in the execution of their missions.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>17</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000017</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.tradoc.army.mil/usar/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>TRADOC: Deputy Commanding General - Army Reserve</title>
+		<description>Provide strategic oversight of all Army Reserve capabilities and equities within TRADOC to achieve a seamless link between TRADOC and the Army Reserve. To serve as a vital component and Army Reserve subject matter expert in support of CG, TRADOC's mission and vision.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus>tradoc</focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>16</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000016</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.usaac.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>United States Army Recruiting Command (USAREC)</title>
+		<description>Old Title: DCG-Initial Military Training;<br /><br />Mission: 1 October 2013 through September 2019, the Army (USAREC) will recruit professional, volunteer Soldiers; Soldier 2020, capable of effectively executing operations in the Army's complex operating environment. Vision: America's Army Starts Here; An All-Volunteer Team sustaining an All-Volunteer Army – with Soldiers and Civilians who exhibit the deportment, attributes, and values of a dedicated professional, enabled by leading edge technologies &amp; premier recruiting practices... while maintaining mutually supporting relationships with families &amp; communities.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>15</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000015</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.usar.army.mil/arweb/Pages/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Army Reserve</title>
+		<description>Redirected to: http://www.usar.army.mil/Pages/default.aspx;<br /><br />The Army Reserve's mission, under Title 10 of the U.S. Code, is to provide trained, equipped, and ready Soldiers and cohesive units to meet the global requirements across the full spectrum of operations. The Army Reserve is a key element in The Army multi-component unit force, training with Active and National Guard units to ensure all three components work as a fully integrated team.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>14</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000014</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.usf-iraq.com/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>United States Forces - Iraq</title>
+		<description>United States Forces - Iraq Advises, trains, assists, and equips Iraqi Security Forces, enabling them to provide for internal security while building a foundation capability to defend against external threats.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>13</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000013</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.usma.edu/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Military Academy (West Point, N.Y.)</title>
+		<description>The United States Military Academy's mission is to educate, train and inspire the Corps of Cadets so that each graduate is a commissioned leader of character committed to the values of Duty, Honor, Country and prepared for a career of professional excellence and service to the nation as an officer in the United States Army. The Academy provides a superb four-year education, which focuses on the leader development of cadets in the academic, military, and physical domains, all underwritten by adherence to a code of honor.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>12</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000012</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.marines.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>The Official Website of the United States Marine Corps</title>
+		<description>Old URL: http://www.usmc.mil/;<br /><br />The United States Marine Corps (USMC) is a branch of the United States Armed Forces responsible for providing power projection from the sea, using the mobility of the United States Navy to rapidly deliver combined-arms task forces. It is one of seven uniformed services of the United States. Created in 1775, the Marine Corps has been a component of the United States Department of the Navy since 1834, working closely with naval forces for training, transportation, and logistics.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>11</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000011</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://afm.us.army.mil/suite/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required past welcome page</lnkAccess>
+		<source></source>
+		<title>Army Equipping Enterprise System (AE2S)</title>
+		<description>The Army Equipping Enterprise System (AE2S) is a Headquarters Department of the Army (HQDA) knowledge management system that enables the Army staff to rapidly assess the feasibility, supportability, and affordability of current, programmed, and hypothetical HQDA initiatives by projecting force readiness and cost over time.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>10</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000010</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://jknife.jieddo.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>JIEDDO Knowledge and Information Fusion Exchange (JKnIFE)</title>
+		<description>The JIEDDO Knowledge and Information Fusion Exchange (JKnIFE) Portal provides vast amounts of training material and Counter-Improvised Explosive Device (C-IED) relevant information.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>9</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000009</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://secureapp2ako.hqda.pentagon.mil/ako/aspmo/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Login Required</lnkAccess>
+		<source></source>
+		<title>Army Study Program Management Office</title>
+		<description></description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>8</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000008</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://w4.pica.army.mil/PEOAmmo/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Program Executive Office Ammunition (PEO Ammunition)</title>
+		<description>The Program Executive Office Ammunition  (PEO Ammo) is committed to providing superior ammunition to the Soldier. The PEO is responsible for life-cycle acquisition management of all conventional ammunition, which includes integrating budgets, acquisition strategies, R&amp;D and life-cycle management across all ammunition families. PEO Ammunition is located at Picatinny Arsenal, New Jersey and is comprised of three Project Management (PM) offices; PM Close Combat Systems, PM Maneuver Ammunition Systems, PM Combat Ammunition Systems.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>7</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000007</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>http://www.army.mil/asaalt</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>Office of the Assistant Secretary of the Army for Acquisition, Logistics and Technology (ASAALT)</title>
+		<description>Mission Statement: Provide our Soldiers a decisive advantage in any mission by developing, acquiring, fielding, and sustaining the world's best equipment and services and leveraging technologies and capabilities to meet current and future Army needs. Vision Statement:  Highly efficient, effective, agile organization responsible for acquiring, developing, delivering, supporting and sustaining the most capable affordable systems and services for our Soldiers. Enabling our Soldiers to dominate the battlespace, safely and securely. Enabling our Soldiers to achieve first look, first strike advantage with unprecedented speed and accuracy.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>6</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000006</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.bliss.army.mil/2HBCT1AR/index.html</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>2d Brigade Combat Team, 1st Armored Division</title>
+		<description>2nd BCT, 1st AD (the Iron Brigade), is prepared to deploy and conduct Decisive and sustainable land operations in support of a Division, Joint Task Force, or Multinational Force. The Iron Brigade will be trained and ready to conduct Decisive Action as part of Combined Arms Maneuver or Wide Area Security operations. Currently 2nd BCT is tasked to support the Army Modernization Strategy through integration and evaluation of the Network, Capability Sets, and other adaptive and core capabilities to assist in shaping the future force of the U.S. Army.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate>Brigade Modernization Command</directorate>
+			<initiative>Network Integration Evaluation</initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>5</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000005</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.bpn.gov/ccr/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Login Required</lnkAccess>
+		<source></source>
+		<title>Central Contractor Registration</title>
+		<description>N/A</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>4</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000004</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.gov.uk/government/speeches/uk-fully-committed-to-implementing-the-responsibility-to-protect</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>UK fully committed to implementing the Responsibility to Protect</title>
+		<description>Statement by Ambassador Wilson, of the UK Mission to the UN, at the UN General Assembly Interactive Dialogue on Responsibility to Protect. I would like to thank the President of the General Assembly for holding this important debate today. I am also grateful to the panellists for a very interesting discussion. I am struck particularly about what the Secretary-General said about Syria, that was a stark warning to us all, by what Deputy-Secretary-General Eliasson said about this concept's history and the fact that we all agreed in 2005, that this was an important concept.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>3</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000003</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.inscom.army.mil/isalute/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>Open</lnkAccess>
+		<source></source>
+		<title>iSalute</title>
+		<description>If you have information that may be of interest to U.S. Army Counterintelligence, please click continue to submit an iSALUTE Suspicious Activity Report.</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>2</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000002</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.peoavn.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>Program Executive Office Aviation (PEO Aviation)</title>
+		<description>N/A</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+	<link>
+		<lnkID>1</lnkID>
+		<frozen>0</frozen>
+		<archive>0</archive>
+		<entDate>01/01/1900 12:00:00</entDate>
+		<sortDate>19000101000001</sortDate>
+		<pubDate>January 1, 1900</pubDate>
+		<lnkURL>https://www.us.army.mil/</lnkURL>
+		<lnkTarget>_blank</lnkTarget>
+		<lnkAccess>CAC Required</lnkAccess>
+		<source></source>
+		<title>Army Knowledge Online (AKO)</title>
+		<description>N/A</description>
+		<placement>
+			<group>General</group>
+			<all></all>
+			<lineofeffort></lineofeffort>
+			<directorate></directorate>
+			<initiative></initiative>
+			<connection></connection>
+			<focus></focus>
+		</placement>
+	</link>
+</links>
+
+
+
+
+

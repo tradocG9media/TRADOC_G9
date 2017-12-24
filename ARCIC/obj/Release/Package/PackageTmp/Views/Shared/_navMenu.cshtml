@@ -1,0 +1,225 @@
+﻿@using ARCIC.Models;
+
+@{
+    var currLPD = Globals.currLPD;
+    var currSpotlight = Globals.currSpotlight;
+
+    var Spot = Spotlight.GetSpotlights().Count();
+    var Readings = Reading.GetReadings().Count();
+    var readData2 = Reading.GetReadings();
+ 
+    
+
+  } 
+
+
+<!--SEO --Subscribe Buttons--> 
+
+<nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="margin-top:0px;">
+    <nav>                        
+        <div class="text-center">
+            <div class="btn-group btn-group-lg clearfix" role="group" aria-label="Basic example">                           
+                <a class="btn btn-primary hidden-xs hidden-sm" href="http://www.facebook.com/AdaptingTheArmy" target="_blank"
+                    onClick="ga('send', 'event', { eventCategory: 'Clicked',  eventAction: 'Outbound Link', eventLabel: 'Home Page Facebook Button', eventValue: 1});"><b> <i class="fa fa-facebook-square fa-lg"></i></b> </a>
+                <a class="btn btn-primary hidden-xs hidden-sm" href="http://www.twitter.com/AdaptingTheArmy" target="_blank"
+                    onClick="ga('send', 'event', { eventCategory: 'Clicked',  eventAction: 'Outbound Link', eventLabel: 'Home Page Twitter Button', eventValue: 1});"><b> <i class="fa fa-twitter fa-lg"></i></b> </a>
+                <a class="btn btn-primary text-uppercase hidden-xs hidden-sm"><b>Army Capabilities Integration Center</b> </a>
+                <a class="btn btn-primary text-center hidden-xs hidden-sm"><span><img class="img-responsive pull-right" src="~/App_Imgs/App/Logos/arcic-tradoc-logo-new-1x.png" style="margin: 0px 0px 0px 0px; padding: 0px; width:41px;"/></span></a>
+                <div class="text-center hidden-xs hidden-md hidden-lg clearfix">
+                    <div style="color:white; margin-top:20px; margin-bottom:-75px">
+                        <img class="img-responsive pull-left" src="~/App_Imgs/App/Logos/arcic-tradoc-logo-new-1x.png" style="margin: -10px -145px -75px -75px; width:26%;" />
+                         Army Capabilities Integration Center
+                    </div>                 
+                </div>
+                 <div class="text-center hidden-sm hidden-md hidden-lg clearfix">
+                    <div style="color:white; margin-top:20px; margin-bottom:-75px">
+                        <img class="img-responsive pull-left" src="~/App_Imgs/App/Logos/arcic-tradoc-logo-new-1x.png" style="margin: -8px -100px -125px -55px; width:80% " />
+                         ARCIC
+                    </div>                 
+                </div>
+
+                <a class="btn btn-primary hidden-xs hidden-sm" role="button" href="/Home/Contact"><b> Contact Us <i class="fa fa-envelope"></i></b> </a>
+                @* <a class="btn btn-primary hidden-xs hidden-sm" role="button" href="#" data-toggle="modal" data-target="#searchModal"><b>Search</b> <i class="fa fa-search fa-lg"></i></a>*@                            
+            </div>                        
+        </div>            
+    </nav>
+     
+  <div class="container">     
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="~/Home" style="color: white;"><small></small></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav" style="">
+                <li>
+                    <a href="~/Home"><i class="fa fa-home fa-lg"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="~/Home/About"><b class="text-primary">Army Capabilities Integration (Center)</b></a>
+                        </li>
+                        <li>
+                            <a href="~/Directorates/BMC">U.S. Joint Modernization Command</a>
+                        </li>
+                        <li>
+                            <a href="~/Directorates/CDD">Capabilities Development</a>
+                        </li>
+                        <li>
+                            <a href="~/Directorates/CDLD">Concept Development and Learning</a>
+                        </li>
+                        <li>
+                            <a href="~/Directorates/PLANSANDOPERATIONS">ARCIC Plans and Operations</a>
+                        </li>
+                        <li>
+                            <a href="~/Directorates/IAPD">International Army Programs</a>
+                        </li>
+                    </ul>
+                </li>                
+                <li class="dropdown">                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Leadership Professional Development">LPD <i class="fa fa-info-circle"></i></span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                                             
+                        <li><br /><h5></h5>
+                            <a href="@Url.Action("../LPD/ProfessionalReadings", new {articleSeries = currLPD })"><span class="text-primary">Professional Reading #@currLPD</span></a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("../Event", new {Group = "PDF" })">Professional Development Forums</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("../Event", new {Group = "DSS" })">Distinguished Speaker Series</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("../Event", new {Group = "OPD" })">TRADOC Officer Professional Development</a>
+                        </li>    
+                          <li>
+                            <a href="~/SSP/start"><span class="">Self Study Program</span></a>
+                        </li>                                                                
+                        <li>@helpers.GoogleTrackerLink("http://tradoc.tlcdelivers.com:8080/?config=ysm#section=home","Professional Development","clicked out bound link","LPD Recommended Books",1,"_blank","Recommended Books","book","","","")</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Initiatives <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header divider-thin-lower">Future Concepts</h6></li>
+                        <li>
+                            <a href="~/Initiatives/StrategicLandpower">Strategic LandPower</a>
+                        </li>
+                        <li>
+                            <a href="~/Initiatives/Force2025BeyondOverview">Force 2025 and Beyond</a>
+                        </li>
+                        <li>
+                            <a href="~/Initiatives/ArmyWarfightingChallenges">Army Warfighting Challenges</a>
+                        </li>
+                        <li><h6 class="dropdown-header divider-thin-lower">Campaign of Learning</h6></li>
+                        <li>
+                            <a href="~/Initiatives/UnifiedQuest">Unified Quest</a>
+                        </li>
+                        <li>
+                            <a href="~/Initiatives/NetworkIntegrationEvaluation">Network Integration Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="~/Initiatives/HumanDimension">Human Dimension</a>
+                        </li>
+                       <li> <h6 class="dropdown-header">JWA</h6></li>
+                        <li>
+                            <a href="~/App_Documents/AWA.pdf" target="_blank">Joint Warfighting Assessments (JWA)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Force 2025 and Beyond">F2025B <i class="fa fa-info-circle"></i></span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                         <li class="dropdown-item"><br /><h5></h5>
+                            <a href="~/Initiatives/Force2025BeyondOverview">Force 2025 and Beyond Overview</a>
+                              <h6 class="dropdown-header">Concepts</h6>
+                        </li>
+                        
+
+                        <li class="dropdown-item">
+                            <a href="~/Concepts/Capstone">Army Capstone Concept</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="~/Concepts/Operating">Army Operating Concept</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="~/Concepts/Learning">Army Learning Concept</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="~/Concepts/Training">Army Training Concept</a>
+                        </li>
+                          <li class="dropdown-item">
+                            <a href="~/Concepts/Human">Human Dimension Concept</a>
+                        </li>
+                          <li class="dropdown-item">
+                            <a href="~/Concepts/Functional">Army Functional Concept</a>
+                              <h6 class="dropdown-header">F2025 Maneuvers</h6> 
+                        </li>
+                                                
+                        <li class="dropdown-item">
+                            <a href="~/Initiatives/UnifiedQeust">Unified Quest</a>
+                        </li>
+                         <li class="dropdown-item">
+                            <a href="~/Initiatives/NetworkIntegrationEvaluation">Network Integration Evaluation</a>
+                        </li>
+                         <li class="dropdown-item">
+                            <a href="~/Initiatives/ArmyWarfightingChallenges">Army Warfighting Evaluation</a>
+                        </li>
+                         <li class="dropdown-item">
+                            <a href="~/Initiatives/StrategicLandpower">Strategic Landpower</a>
+                        </li>                       
+
+                    </ul>
+                </li>   
+                <li class="dropdown">
+                    <a href="~/Initiatives/ArmyWarfightingChallenges">
+                        <span data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Army Warfighting Challenges">AWFC <i class="fa fa-info-circle"></i></span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="~/Initiatives/UnifiedQuest">Unified Quest</a>
+                </li>               
+                <li class="dropdown">                    
+                    <a href="~/Initiatives/UnifiedChallenge">
+                         <span data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Unified Challenge Experimentation"> UC <i class="fa fa-info-circle"></i></span> </a>                    
+                </li>
+                 
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span>Collaborate </span><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li>
+                              <a target="_blank" onClick="ga('send', 'event', { eventCategory: 'Document',  eventAction: 'Download', eventLabel: 'Engagement Opportunities Calendar', eventValue: 1});" href="../App_Documents/EOCalendar/Engagement-Opportunities.pdf" class="text-muted">Collaboration Opportunities Calendar <i class="fa fa-file-pdf-o"></i></a>
+                        </li>
+                                          
+                        
+                    </ul>
+                </li>                 
+                
+                @*<li class="">
+                    <a href="#">AUSA</a>
+                </li>*@
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+
+</nav>
+
+
+
+
+
+
+  
+    

@@ -1,0 +1,90 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    var articles = Article.GetNewsByCompleteID("exclusive").Take(13);
+    var fullArticle = articles.Skip(6).Take(1);
+    var body = articles.Skip(1).Take(5);
+    
+}
+
+
+    <div class="col-md-8">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    @foreach (var item in fullArticle)
+                    {
+                        <h4><b>@item.title</b></h4>
+                        <p class="small">@item.author, @item.pubDate</p>
+                        <p>@Html.Raw(Shorten.ShortStr(item.description,687))</p>
+                    }
+                </div>
+            </div>
+        </div>
+        @foreach (var item in body)
+        {
+            <div class="col-md-6">
+            <div class="panel panel-default">
+                @if (item.pFocus == "content")
+                {
+                    <img class="img-responsive" src='@("../App_Imgs/Content/" + item.imageURL + "f.png")' />
+                }               
+                else 
+                {
+                    <img class="img-responsive" src="@item.imageURL" />
+                }
+                
+                <div class="panel-body">
+                    <h4><b>@Shorten.ShortStr(item.title,32)</b></h4>
+                    <p class="small">@item.author, @item.pubDate</p>
+                    <p>@Html.Raw(Shorten.ShortStr(item.description,200))</p>
+                </div>
+            </div>
+        </div>
+        }
+        
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Relative Army Warfighting Challenges</h4>
+                <p></p>
+            </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="label label-primary">#1</span></li>
+                </ul>
+        </div>
+            <div class="panel panel-default">
+            <div class="panel-body">
+                <h5>Relative Articles</h5>
+                <p></p>
+            </div>
+                <ul class="list-group">
+                    @foreach (var item in articles.Take(6))
+                    {
+                        <li class="list-group-item">
+                            <h4>@item.title</h4>
+                             <div class="small">(@item.pDirectorate)</div></li>
+                    }
+                </ul>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Related Initiatives</h4>
+                <p></p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Multimedia</h4>
+                <p></p>
+            </div>
+        </div>
+        </div>
+    </div>
+

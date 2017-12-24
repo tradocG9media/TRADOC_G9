@@ -1,0 +1,116 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Canon";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+
+<div class="row">
+  @*  <div>
+        @Html.Partial("_subPurpose")
+    </div>*@
+
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Canon</h1>
+            <p> Why does the Study of the Canon Matter?</p>
+            <p>
+                Canon is defined as “a sanctioned or accepted group or body of related works.” This canon on military thought is important due to the illustration of the basic ideas on war and warfare down through the ages. The canon provides a foundation to understand how wars are fought and won.
+            </p>
+            <p>
+                For this reading list the Canon is defined as:  On War, by Carl von Clausewitz, The Art of War, by Sun Tzu, History of the Peloponnesian War, by Thucydides, and Counterinsurgency Warfare, Theory and Practice by David Galula.
+            </p>
+           
+            @*<p>
+                    <a class="btn btn-primary btn-large">Call to action!</a>
+                </p>*@
+        </header>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b> An Approach to the Study of the Canon</b></h4>
+                        <p>
+                            Today's leaders should read the canon with an open mind to establish an intellectual groundwork of these classics in military thought. The canon does not provide a blueprint or a roadmap to certain victory, but it provides a context and way ahead that equips an agile mind to make informed decisions.
+                        </p>
+                        <p>
+                            The study of the canon should be, as Clausewitz suggested, "meant to educate the mind of the future commander, or, more accurately, to guide him in his self-education, not to accompany him to the battlefield; just as a wise teacher guides and stimulates a young man's intellectual development, but is careful not to lead him by the hand for the rest of his life." The canon also clearly illustrates that war remains a contest of wills down through the ages.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>Reflections</b></h4>
+                        <ol>
+                            <li>How are the four books of the canon similar and different?</li>
+                            <li>What are principals or recurring themes of military success or failure in war?</li>
+                            <li>Which of the canon is most important to your view of warfare? Why?</li>
+                            <li>How does a leader implement wisdom found in the canon?</li>
+                            <li>How does a leader foster a mindset to study the canon and relate the truths to his or her junior leaders?</li>
+                        </ol>
+                    
+                    </div>
+                </div>
+
+            </div>
+            <!--Articles/ Videos-->
+            <div class="col-md-4">
+                @Html.Partial("_article")
+
+                @Html.Partial("_video")
+            </div>
+        </div>
+
+        <!-- Books -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row">
+            @helpers.SSPBook(
+                "On War, by Carl von Clausewitz.",
+                "Carl von Clausewitz's On War is considered by most as the definitive work on war and warfare.  The book is an extraordinary attempt to construct an all-embracing theory of how war works.  Its coherence and ambition are unmatched by other military literature.  On War is full of sharp observation, biting irony, and memorable phrases.",
+                622,
+                "https://www.goodreads.com/book/show/117031.On_War?from_search=true",
+                "VonClausewitz.jpg")
+            @helpers.SSPBook(
+                "History of the Peloponnesian War, by Thucydides.",
+                "This book is a historical account of the Peloponnesian War fought between the Peloponnesian League (led by Sparta) and the Delian League (led by Athens).  It was written by Thucydides, an Athenian historian who served as an Athenian general during the war.  His account of the conflict is considered a classic and regarded as one of the earliest scholarly works of history.  The histories are divided into eight books by editors of later antiquity.",
+                622,
+                "http://www.worldcat.org/title/history-of-the-peloponnesian-war/oclc/777896&referer=brief_results",
+                "Thucydides.jpg")
+            @helpers.SSPBook(
+                "The Art of War, by Sun Tzu.",
+                "Perhaps the most prestigious and influential book of strategy in the world, as eagerly studied in Asia by modern politicians and executives as it has been by military leaders since ancient times.  As a study of the anatomy of organizations in conflict, The Art of War applies to competition and conflict in general, on every level from the interpersonal to the international.",
+                622,
+                "http://www.worldcat.org/title/art-of-war/oclc/8425879/viewport",
+                "SunTzu.jpg")
+                     
+            
+            @*<div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                 
+                    <div class="caption">
+                        <h3>The Seventh Sense: Power, Fortune, and Survival in the Age of Networks, by Joshua Cooper Ramo</h3>
+                        <p>
+                            @Shorten.ShortStr("According to Joshua Ramo, this is a time of disruption that lends itself to &quot;seventh sense&quot; thinking—in less trendy terms, the ability to discern how things connect to other things in nodes and networks, &quot;to look at any object and see the way in which it is changed by connection.&quot;", 122)
+
+                        </p>
+                        <p>
+                            <a href="http://www.worldcat.org/title/seventh-sense-power-fortune-and-survival-in-the-age-of-networks/oclc/921166382&referer=brief_results" class="btn btn-primary">Read Now!</a>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+    </div>
+</div>

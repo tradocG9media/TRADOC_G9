@@ -1,0 +1,269 @@
+﻿@using  ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{
+    ViewBag.Title = "Unified Challenge";
+    var docs = Document.GetDocumentsByInitiative("Unified Challenge");
+    var RelevantNews = Article.GetArticles().Where(x => x.pInitiative == "Unified Challenge");
+    var UCSpotlight = Spotlight.GetSpotlights().Where(x => x.mainArea == "Unified Challenge").Take(1);
+    //docs.Reverse();
+    
+}
+
+
+<div class="row">
+     <div class="col-md-12">
+        <div class="">
+            <h1 class="page-header"><b>Unified Challenge: 16.1 and 16.2</b></h1>
+            <ol class="breadcrumb hidden-xs hidden-sm">
+                <li><a href="/Home">Home</a>
+                </li>                
+                <li class="active">Initiatives</li>
+                <li class="active">Unified Challenge</li>
+            </ol>
+        </div>
+    </div>  
+    
+    
+
+    <div class="col-md-8">
+      
+        <!--Spotlight-->
+        <div class="panel panel-warning">
+            <div class="panel-heading">                             
+            <h3><b>Spotlight</b></h3>
+                            
+            </div>
+            @foreach (var item in UCSpotlight)
+                {                           
+                    <img class="img-responsive center-block"  src='@("/App_Imgs/Content/" + item.imageFilename + "f.jpg")' style="padding: 8px;" />                             
+                           
+                    <div class="panel-body clearfix">
+                        <div class="caption"> 
+                            <span class="text-primary">@helpers.loe(item.pLoe)</span> <span class="text-warning text-uppercase"><b>@item.pLoe</b></span>
+                            <div class="divider-thin"></div>                              
+                                    <h3><b>@item.imageTitle</b></h3>
+                                @Html.Raw(item.imageCaption)
+                                
+                        </div>
+                    </div>
+                }
+        </div>
+
+        <!--Overview-->
+       <h2><b>Overview</b></h2>
+        <div class="panel panel-default">      
+            <div class="panel-body">
+                <p>                    
+                    The JAED, Concept Development and Learning Directorate (CDLD) leads the FY2016 Unified Challenge (UC) series of experiments for the Centers of Excellence (CoE) to qualitatively and quantitatively assess Army Warfighting Challenge (AWFC) learning demands and measure force effectiveness of Force 2025 and Beyond (F2025B) Operational and Organizational (O&O) Concepts.  UC informs the development of O&O Concepts through the AWFC framework and provides DOTMLPF recommendations in support of F2025B.
+                </p>
+                <p>Typically, the Army has taken one of two routes in determining the way to optimize the force; one idea is that concepts should drive technological research and development, and the other on the idea that technology drives the way the Army fights conceptually. To maximize the benefits of both approaches in designing the force for 2025, a balanced approach is required to find the right ideas, the right technologies, and combine them in the force design so that overmatch is maintained.</p>
+            </div>
+        </div>
+
+
+        <h2><b>Mission</b></h2>
+        <div class="panel panel-default">      
+            <div class="panel-body">
+                <p>
+                    Lead, design, manage, integrate, and assess Army experiments to support current and future capabilities development efforts.  ICW other Service, joint, intergovernmental and multinational partners, deliver Army-level experimentation results that produce coordinated DOTMLPF-P recommendations.
+                </p>                
+            </div>
+        </div>
+
+
+        <h2><b>Vision</b></h2>
+        <div class="panel panel-default">      
+            <div class="panel-body">
+                <p>
+                    The Joint and Army Experimentation Division provides resources and oversight that enables the Centers of Excellence to conduct quantitative and qualitative experiments to assess future concepts and support capabilities development within the Army Warfighting Challenges analytical framework. We provide experimentation planning, guidance, and objectives that, through execution of learning events, confirm DOTMLPF-P requirements to inform and support the development of the future force. 
+                </p>
+            </div>
+        </div>
+
+        <h2><b>Unified Challenge Experiment Series:</b></h2>
+        <div class="panel panel-default">            
+            <div class="panel-body">
+                <h4><b>Unified Challenge Experiment Series:</b></h4>
+                <p>Series of Military experimentation done through Game Based Experiments and Simulation Based Experiments.</p>
+                <h4><b>Objectives:</b></h4>
+                <ul class="">                     
+                <li>Refine/update capabilities needed to be organic or task organized to the Theater Army, Corps and Division.</li>
+                <li>Assess current formations for modification and identify new formations required 2025 and beyond.</li>
+                <li>Refine/update what F2025M formations needed to be organic or task-organized to the Theater Army, Corps and Division.</li>
+                </ul>
+            </div>
+        </div>
+
+         <h2><b>End State:</b></h2>
+        <div class="panel panel-default">           
+            <div class="panel-body">               
+                <p>Determine how military elements of national power will support national security strategy within a whole of government context.</p>              
+
+            </div>
+        </div>
+          
+
+
+         <div class="">
+             <h2><b> Unified Challenge Events:</b></h2>
+            <div class="list-group clearfix">
+                <div class="list-group-item" data-toggle="collapse" data-target="#item1">
+                    <h5 class="col-sm-3 pull-right"><span class="btn-link" role="button">OVERVIEW <a href="../App_Documents/UC/UC_16_1_Information_Paper_09MAR_2016V3.pdf" target="_blank"> --- <i class="fa fa-file-pdf-o fa-sm"></i> PDF </a></span></h5>
+                    <h4><strong>Unified Challenge 16.1 GAMEX </strong>- <small>14-25 MAR 2016<strong></strong> </small></h4>
+                    <div id="item1" class="collapse row">
+                        <!-- -->
+                        <div class="panel-body">
+                             <!-- -->
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item" data-toggle="collapse" data-target="#item2">
+                    <h5 class="col-sm-3 pull-right"><span class="btn-link" role="button">OVERVIEW <a href="../App_Documents/UC/UC_16_2_ Info_Paper-8JUL16.pdf"target="_blank"> --- <i class="fa fa-file-pdf-o fa-sm"></i> PDF </a></span></h5>
+                    <h4><strong>Unified Challenge 16.2 GAMEX</strong> -<small> 1-18  AUG 2016 <strong></strong>  </small></h4>
+                    <div id="item2" class="collapse row">
+                        <div class="panel-body">
+                             <!-- -->
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item" data-toggle="collapse" data-target="#item3">
+                    <h5 class="col-sm-3 pull-right"><span class="btn-link" role="button">OVERVIEW <a href="../App_Documents/UC/UC_17_ INFORMATION_PAPER_02JUN16.pdf" target="_blank"> --- <i class="fa fa-file-pdf-o fa-sm"></i> PDF </a></span></h5>
+                    <h4><strong>Unified Challenge 17.1 GAMEX</strong> - <small>22 JAN-13 FEB 2017 <strong></strong> </small></h4>
+                    <div id="item3" class="collapse">                     
+                        <div class="panel-body">
+                               <!-- -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list-group-item" data-toggle="collapse" data-target="#item4">
+                    <h5 class="col-sm-3 pull-right"><span class="btn-link" role="button">OVERVIEW</span></h5>
+                    <h4><strong>Unified Challenge 17.2 SIMEX </strong>- <small>6-22 SEP 2017 <strong></strong> </small></h4>
+                    <div id="item4" class="panel-collapse collapse row">                       
+                        <div class="panel-body">
+                            <!-- -->
+                        </div>
+                    </div>
+                </div>   
+                </div>
+                
+            </div>
+        </div>
+
+    
+
+    <!--Sidebar-->
+    <section class="col-md-4">          
+   
+
+        <!--Video-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><b>UC 16.2</b></h4>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embid-responsive-item" width="358" height="200" src="https://www.youtube.com/embed/DxgmYaae4yM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="1" 
+                     onClick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Home Page Play', eventLabel: 'Played Video: UC16.2', eventValue: 1});">
+
+                </iframe>
+            </div>
+          
+        </div>
+
+        <div class="list-group">
+            <div class="list-group-item active">More Videos
+            </div>
+            <a class="list-group-item clearfix" href="https://youtu.be/g-Zs5EpYW70" target="_blank"><img class="img-responsive pull-right" src="../App_Imgs/Images/uc16.2-thumb.jpg" style="margin-left:12px;"/> Unified Challenge 16.1 <i class="fa fa-youtube-play"></i></a>
+            @*<a class="list-group-item" href="#">Morbi leo risus</a>
+            <a class="list-group-item" href="#">Porta ac consectetur ac</a>
+            <a class="list-group-item" href="#">Vestibulum at eros</a>*@
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><b>Social Media</b></h4>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item clearfix">                 
+                     @Twitter.FollowButton(userName: "UnifiChall", showCount: true, largeButton: true, language: "en")<br />
+                    Or contact us at : Joint and Army Experimentation, CDLD, TRADOC Building 950, Ft Eustis VA. 23604-5700
+                </div>              
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><b>Relevant News</b></h4>
+            </div>
+               @foreach (var item in RelevantNews)
+               { 
+                    <div class="list-group">
+                        <p> @if (item.archive == "mil")
+                        {                               
+                            <img class="card-img-top img-responsive" alt=""  src='@("../App_Imgs/Mil/" + item.imageURL + "p.jpg")'/>
+                        }
+                        else
+                        {
+                            <img class="card-img-top img-responsive" alt=""  src='@("../App_Imgs/Exclusives/" + item.imageURL + "f.jpg")'/>
+                        }</p>
+                         
+                        <div class="list-group-item clearfix">  
+                      
+                        <div><span><a href='@(item.link)' target="_blank">@item.title</a></span> <i class="fa fa-external-link fa-sm"></i></div>
+                        <div class="clearfix"><span>@item.author, @item.pubDate</span> , </div>
+                        </div>
+                    </div>
+               }
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><b>Documents</b></h4>
+            </div>
+            <div class="list-group">
+               @foreach (var item in docs)
+               {                  
+                   <div class="list-group-item clearfix">
+                     <div><span>  <a href='@(item.docURL + item.docFilename)' target="_blank">@item.title</a></span> <i class="fa fa-external-link fa-sm"></i></div>
+                       <div class="clearfix"><span>@item.pubDate</span> , <span class="text-muted">@item.publication</span></div>     
+                   </div>  
+               }
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><b>Links</b></h4>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item clearfix">
+                    <div><span><a href="https://www.us.army.mil/suite/page/695360" target="_blank"> <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Army_Knowledge_Online_(AKO)_logo.png" /></a> </span> </div>
+
+                </div>
+                 
+            </div>
+            <div class="list-group">
+                <div class="list-group-item clearfix">
+                    <div><span><a href="https://www.milsuite.mil/book/groups/army-experimentation" target="_blank">MILSUITE</a></span> <i class="fa fa-external-link fa-sm"></i></div>
+
+                </div>
+                 
+            </div>
+        </div>         
+    </section>
+
+</div>  
+
+         
+
+
+    <!--end row-->
+
+
+
+
+

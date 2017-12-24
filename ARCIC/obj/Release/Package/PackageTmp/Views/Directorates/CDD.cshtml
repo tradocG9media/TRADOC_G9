@@ -1,0 +1,217 @@
+﻿@using ARCIC.Models;
+
+@{
+    ViewBag.Title = "Capabilities Development";
+    var cdd = Globals.articles
+        .Where(x => x.pDirectorate == "Capabilities Development Directorate")
+        .OrderByDescending(x => x.entDate).Take(1);
+    
+}
+
+
+<!--CDD Page Content-->
+        <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-md-8">               
+                <h1 class="page-header"><b>Capabilities Development</b></h1>               
+            </div>          
+        </div>
+        <!-- /.row -->
+
+<div class="row">
+    <div class="row">
+        <div class="col-md-8">
+            @Html.Partial("_DirectorateNews")
+
+            <!--Mission-->
+            <div>
+                <h4><b>Mission</b></h4>
+                <p>Direct and integrate Capability Based Assessments to identify required capabilities, gaps and solutions. Direct and manage development of JCIDS capability documents, Force Design Updates, and DOTMLPF-P solutions to mitigate capability gaps identified by the annual Capability Needs Assessment (CNA). Provide functional oversight and integration across mission command, LandWarNet, maneuver, aviation, soldier, lethality, fires, maneuver support, protection, sustainment capability developments. Lead Organizational design and force structure solutions.</p>
+                <h4><b>Priorities and Key Initiatives</b></h4>
+                <ul class="">
+                    <li class=""> Produce validated, resource informed requirements documents</li>
+                    <li class="">Network Capability Review</li>
+                    <li class="">Capability Portfolio Reviews (CPRs)</li>
+                    <li class="">Long-Range Investment Requirements Analysis</li>
+                    <li class="">Capability Visualization (Army 2025B)</li>
+                    <li class="">Total Army Analysis (TAA) for informing the PPBES process</li>
+                    <li class=""> Capability Needs Analysis (CNA) - LEVEL III (Cross functional area) integration</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3 class="text-muted"><b>Leadership</b></h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>
+                        <img class="img-responsive" src="~/App_Imgs/Leadership/Komar-David-BG-ASU_01f.jpg" alt="" />
+                    </p>
+                    <div class="caption text-center">
+                        <h4 class="text-primary">
+                            <b>BG David P. Komar</b><br>
+                            <small>Director</small>
+                        </h4>
+                        <p></p>
+                        <div class="btn-group text-center">
+                            <div class="btn btn-default">
+                                <a href="/Leadership/cdd_director_bio"><i class="fa fa-word"></i>Bio</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row">
+
+        <!-- Divisions -->            
+             <div class="col-md-12">
+                     <h3 class="text-primary"><b>Divisions</b></h3>
+                 </div> 
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img01.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Capability Assessment and RAM Division</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Assess/Prioritize/Integrate Capabilities & POM Development Develop TRADOC Reliability, Availability and Maintainability (RAM) requirements and policy</p>
+                        
+                        <br />
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img02.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Fires Division (FD)</b></h4>                        
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        
+                        <p class="text-left">Performs staff management of Fires and Air Defense capabilities development across the DOTMLPF domains IAW the JCIDS and ArCP.</p>
+                      
+                        <br /><br /><br />
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img03.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Force Design Division</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        
+                        <p class="text-left">Leads TRADOC in developing operational force design/force structure solutions; manages the "O" domain of DOTMLPF to support JCIDS and Army requirements determination processes.</p>
+                       
+                        <br />
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive"src="~/App_Imgs/App/cdd-img04.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>LandWarNet Division (Network) (LWND)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        
+                        <p class="text-left">Provides staff management to integrate & synchronize network transport & services capabilities developments supporting current & future force net-enabled ops.</p>
+                       
+                         <br /> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12"></div>
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img05.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Maneuver, Aviation and Soldier Division (MASD)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>                        
+                        <p class="text-left">Joint & Army requirements. Capabilities for Maneuver and Aviation programs. Focus: BCTs, Indiv Wpns, SaaS, manned and unmanned aviation &, robotics.</p>
+                       <br />
+                    </div>
+                </div>
+            </div>                 
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img06.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Maneuver Support/Protection Division (MS/PD)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Provide staff management and synchronization of protection and Maneuver Support requirements determination and DOTMLPF capabilities developments.</p>
+                        
+                    </div>
+                </div>
+            </div>             
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img07.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Mission Command Intelligence and Cyber Division (MCICD)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <p class="text-left">Provides staff management to integrate & synchronize battle command, intelligence, biometrics and forensics requirements & capabilities.</p>
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-3 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="~/App_Imgs/App/cdd-img08.jpg" alt="">
+                    <div class="caption">
+                        <h4><b>Sustainment Division (SusD)</b></h4>
+                        <h3 class="text-primary"><b></b>
+                            <small></small>
+                        </h3>
+                        <br />
+                        <p class="text-left">Performs staff management of the requirements determination process for sustainment, ground mobility, airdrop, deployment, distribution & medical capabilities.</p>
+                        
+                    </div>
+                </div>
+            </div> 
+
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src="~/App_Imgs/App/cdd-img09.jpg" alt="">
+            <div class="caption">
+                <h4><b>Human Dimension Division (HDD)</b></h4>
+                <h3 class="text-primary">
+                    <b></b>
+                    <small></small>
+                </h3>
+                <br />
+                <p class="text-left">
+                    Performs staff management and synchronization of Human Dimension concepts-to-capabilities development encompassing the cognitive, physical, and social components to optimize the performance of Soldiers, leaders, and teams.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+        <!-- /.row --> 
+</div>
+
+    
+

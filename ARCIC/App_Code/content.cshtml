@@ -1,0 +1,164 @@
+﻿@using ARCIC.Models;
+
+@helper ContentBox(string box_Type, bool show_photo, bool show_paragraph, string title, string paragraph, string image, IEnumerable<ARCIC.Models.Article> data)
+{
+    <style>
+        #relatedContent {
+            display: none;
+            position: relative;
+            top: 0px;
+            left: 0;
+            z-index: 18000;  
+            margin-top:-200px;
+            margin-bottom:0;
+                      
+        }
+    </style>
+    if (box_Type == "Article")
+    {
+        <div class="panel panel-default">
+                @if (show_photo == true)
+                {
+                    <img class="img-responsive" src='@("../App_Imgs/Content/" + image + "f.jpg")' />
+                }
+                <div class="panel-body">
+                    <p>army.mil</p>
+                    <h4><b>@title</b></h4>
+                    <p>@paragraph</p>
+                </div>
+                <div class="btn-group center-block">
+                    <div class="btn btn-default">Share <i class="fa fa-share"></i></div>
+                    <div class="btn btn-default"><a href="#">Full Story</a></div>
+                    <div class="btn btn-default"><a href="#/">Related Content</a></div>
+                </div>
+                <div class="panel panel-default">
+                    <div><b>Related Content</b></div>
+                    <ul>
+                        @foreach (var item in data)
+                        {
+                            <li>@RelatedContent(item.title, "http://www.cnn.com")</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+    }
+    else if (box_Type == "Video")
+    {
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4><b>@title</b></h4>
+                    <p>@paragraph</p>
+                    <p><i class="fa fa-youtube"></i></p>
+                </div>
+            </div>
+    }
+
+}
+
+@helper RelatedContent(string title, string url)
+{
+    <a href="@url">@title</a>
+}
+
+
+@helper adButtonEvent(string trackingLabel, string eventGroup, Boolean textHighlight, string iconName, DateTime eventDate, string url)
+{
+    if (eventDate > DateTime.Now)
+    {
+        <a class="btn btn-default" href="@url" onclick="ga('send', 'event', { eventCategory: 'Event', eventAction: 'Clicked', eventLabel: '@trackingLabel/@eventGroup', eventValue: 1}); ">
+            <span class="text-@textHighlight">
+                <b>@eventGroup <i class="fa fa-@iconName"></i></b>
+            </span>
+        </a>
+    }
+
+}
+
+@helper adButton(string trackingCategory, string trackingAction, string trackingLabel,  string btnName, Boolean textHighlight, string iconName, string url)
+{
+    <style>
+        a#manualBtns {
+            font-size:1.27em;
+        }
+    </style>
+    var hotLinks = HotLinks.GetHotLinks();
+
+    <!--random button-->
+    <a id="manualBtns" class="btn btn-default"
+       href='@hotLinks.ToList().Find(x => x.name == btnName).url'
+       target="_blank"
+       onClick="ga('send', 'event', { eventCategory: '@trackingCategory', eventAction: '@trackingAction', eventLabel: '@trackingLabel', eventValue: 1}); data">
+        <span class="@textHighlight">
+            <b>@btnName <i class="fa fa-@iconName"></i></b>
+        </span>
+    </a>
+
+
+}
+@helper ShowImageInternal(DateTime date, string directorate, string ImageUrl, string loe)
+{
+    <h4 class="text-muted"><span>@directorate | <span class="label label-danger">@loe</span>  </span></h4>
+
+if (ImageUrl.Contains("http"))
+{
+        <img class="img-responsive" style="padding-top:4px; padding-bottom:4px;"
+             src="@ImageUrl" />
+}
+else if (date > Convert.ToDateTime("01/01/2016"))
+{
+        <img class="img-responsive" style="padding-top:4px; padding-bottom:4px;"
+             src='@("../App_Imgs/Content/" + ImageUrl + "f.jpg")' />
+}
+else
+{
+        <img class="img-responsive" style="padding-top:4px; padding-bottom:4px;"
+             src='@("../App_Imgs/Exclusives/" + ImageUrl + "f.jpg")' />
+}
+
+
+
+}
+@helper SocialIcons(bool showBoth, string twitter, string facebook, string loe)
+    {
+   <span class="text-left"><button type="button" class="btn btn-danger">@loe </button></span>
+    <span class="btn-group btn-group-sm text-right">       
+
+        @if (showBoth == true)
+        {            
+            <button type="button" class="btn btn-default"><i class="fa fa-twitter"></i> </button>
+            <button type="button" class="btn btn-default"><i class="fa fa-facebook"></i> </button>
+        }
+        else if (facebook == "facebook")
+        {
+            <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i> </button>
+        }
+        else if (facebook == "twitter")
+        {
+            <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i> </button>
+        }
+
+        
+</span>
+}
+@helper ShowImageIAPD(string image, string MainArea, string url, string loe)
+{
+    <h4 class="text-muted"><span>@MainArea | <span class="label label-danger">@loe</span>  </span></h4>
+    <img class="img-responsive" style="padding-top:4px; padding-bottom:4px;"
+         src='@("../App_Imgs/Content/" + image + "f.jpg")' />
+
+
+
+}
+@helper Jumbotron(string title, string desc) {
+    <div class="jumbotron">
+        <h2>@title</h2>
+        <p>@ARCIC.App_Code.Shorten.ShortStr(desc, 144)</p>
+    </div>
+
+}
+@helper cHref(string url, string target, string label, string category, string action) {
+
+    <a onClick="ga('send', 'event', { eventCategory: '@category', eventAction: '@action', eventLabel: '@label', eventValue: 0});" href="@url" target="@target">@label</a>
+
+}
+

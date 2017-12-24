@@ -1,0 +1,114 @@
+﻿@using ARCIC.App_Code;
+@{
+    ViewBag.Title = "Self Study Program / Learn";
+    Layout = "~/Areas/SSP/Views/Shared/_LayoutSSP.cshtml";
+}
+
+<div class="row">
+  @*  <div>
+        @Html.Partial("_subPurpose")
+    </div>*@
+
+    <div class="col-md-12">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h1>Learn</h1>
+            <p>Why Does Learning Matter?</p>
+            <p>Learning is knowledge acquired through experience, study, or being taught.  Learning shapes our thinking, informs our analysis, and drives our implementation of solutions. Our Army of today, recognizing the uncertainty involved with future operational environment, seeks to develop learning and adaptable leaders and units.  To mitigate strategic surprise in future war, the Army must continue to emphasize learning in leaders, units, and institutions.
+</p>
+            <p>Learning is particularly relevant to today's Army given the challenges faced in recent wars and the uncertainty of future armed conflict. Our ability to meet the operational demands posed by a variety of enemies and their capabilities, countermeasures, and adaptations will be part of our nation's tactical, operational, and strategic landscape.
+            </p>
+            <p>As we look ahead to an uncertain future, we must learn in order to adapt, innovate, and institutionalize both past experiences and future opportunities. Learning is essential to prepare for the next war in whatever context that conflict will emerge.
+            </p>
+            @*<p>
+                    <a class="btn btn-primary btn-large">Call to action!</a>
+                </p>*@
+        </header>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>An Approach to the Study of Learning</b></h4>
+                        <p>
+                            Individuals and units constantly learn, as a result of training, field problems, and operational deployments. Learning during peace time is an essential opportunity.  During times of peace future problems and their solutions occur by providing the time to learn and time to think through these complex problems.
+                        </p>
+                        <p>Learning in the Army often consists of the physical realm (deployments, experimentation, evaluations, exercises, modeling, simulations, and wargames) and the intellectual realm (studies, analysis, concept, and capabilities development) to help soldiers and leaders prepare for the future. Learning is the shared responsibility of all.</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4><b>Reflections</b></h4>
+                        <ol>
+                            <li>What obstacles prevent learning?</li>
+                            <li>What are the essential elements of learning in the Army?</li>
+                            <li>What role does an organizational institution or culture play in learning?</li>
+                            <li>How does a leader learn? How does a unit learn?</li>
+                            <li>How does a leader foster a learning mindset in his or her junior leaders?</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>	
+
+            <div class="col-md-4">
+                @Html.Partial("_article")
+                @Html.Partial("_video")
+
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3><span class="text-center"><i class="fa fa-book fa-lg"></i></span> Books</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Page Features -->
+        <div class="row">
+            @helpers.SSPBook(
+                "The Moment of Clarity -- Using the Human Sciences to Solve your Toughest Business Problems, by Christian Madsbjerg and Mikkel B. Rasmussen.",
+                "In this book the authors examine the business world’s assumptions about human behavior and show how these assumptions can lead businesses off track. But the authors chart a way forward. Using theories and tools from the human sciences—anthropology, sociology, philosophy, and psychology—the book introduces a practical framework called sensemaking. Sensemaking’s nonlinear problem-solving approach gives executives a better way to understand business challenges involving shifts in human behavior.",
+                622,
+                "http://www.worldcat.org/title/moment-of-clarity-using-the-human-sciences-to-solve-your-toughest-business-problems/oclc/858610477",
+                "Madsbjerg.jpg")
+            @helpers.SSPBook(
+                "In War from the Ground Up, by Emile Simpson",
+                "A former British Army officer who completed three combat tours of duty in southern Afghanistan, distinguishes between the use of armed force to accomplish military objectives that contribute to political solutions, and the use of armed force to directly achieve political outcomes. The latter, he argues, has become the norm. Simpson connects a clear and compelling description of the political nature of combat at the tactical level to the need for strategy to ensure consistency between policy and military operations.",
+                622,
+                "http://www.worldcat.org/title/war-from-the-ground-up-twenty-first-century-combat-as-politics/oclc/794366579/viewport",
+                "Simpson.jpg")
+            @helpers.SSPBook(
+                "Counterinsurgency in Modern Warfare, by Daniel Marston and Carter Malkasian.",
+                "In Counterinsurgency in Modern Warfare, the editors focus on the history of counter-insurgency from the late nineteenth century to examine how different strategies were developed and to evaluate whether those strategies contributed to the success or failure of counterinsurgency efforts. In general, the contributors place each conflict in social, cultural and political context, and avoid sweeping conclusions and simplistic analogies.",
+                622,
+                "http://www.worldcat.org/title/counterinsurgency-in-modern-warfare/oclc/166380048&referer=brief_results",
+                "Marston.jpg")
+            @helpers.SSPBook(
+                "The Echo of Battle: The Army’s Way of War, by Brian McAllister Linn.",
+                "In the face of radically new ways of waging war, Brian Linn surveys the past assumptions—and errors—that underlie the army’s many visions of warfare up to the present day. He explores the army’s forgotten heritage of deterrence, its long experience with counter-guerrilla operations, and its successive efforts to transform itself. Distinguishing three martial traditions—each with its own concept of warfare, its own strategic views, and its own excuses for failure—he locates the visionaries who prepared the army for its battlefield triumphs and the reactionaries whose mistakes contributed to its defeats.",
+                622,
+                "http://www.worldcat.org/title/echo-of-battle-the-armys-way-of-war/oclc/432690009/viewport",
+                "Linn.jpg")
+            
+        </div>
+         <div class="row">
+                @helpers.SSPBook(
+                "34 Days: Israel, Hezbollah, and the War in Lebanon, by Amos Harel, Avi Issacharoff.",
+                "Comprehensive account of the Second Lebanese War’s progression, from the border abduction of an Israeli soldier on July 12, 2006, through the hasty decision for an aggressive response; the fateful discussions in the Cabinet and the senior Israeli command; to the heavy fighting in south Lebanon and the raging diplomatic battles in Paris, Washington and New York.",
+                622,
+                "https://www.goodreads.com/book/show/2284517.34_Days?from_search=true",
+                "Harel.jpg")
+             @*@helpers.SSPBook(
+                "<!--title-->",
+                "<!--desc-->",
+                0,
+                "<!--Url-->",
+                "<!--Image-->")*@
+
+            </div>
+    </div>
+</div>

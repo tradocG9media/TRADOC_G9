@@ -1,0 +1,817 @@
+﻿<!--AWFC Form-->
+
+
+
+<style type="text/css">
+    h2 {
+        opacity: 1;
+        font-size: 1.25em;
+    }
+</style>
+
+@*First Name, Last Name, Rank, Title, Email, Phone, Org*@
+<h1 class="page-header"><b>Demo AWFC Questionnaire</b> </h1>
+
+
+<div class="row">
+    <div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div style="color:red;">*Check all that apply to your material</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        <div class="col-md-8"> 
+            
+               <!--AWFC-->       
+        @*    <div class="panel panel-default">              
+                <div class="panel-body">
+                    <p><b>Army Warfighting Challenges (AWFCs)</b>
+                         are enduring first order problems, the solutions to which will improve current and future force combat effectiveness. These challenges are reviewed and updated as needed to remain applicable for the future force. The last review of the AWFCs and related learning demands (see below) was completed on 08 October 2015. You may also download a <a href="~/App_Documents/AWFC-Current.pdf" target="_blank">flyer</a> of the challenges here. </p>
+                </div>
+            </div>*@
+
+         @*   <h3 class="panel-heading text-warning">As of 08/10/2016</h3>
+            <ul class="list-inline">
+                <li>Updates to this version:</li>
+                <li class=""><a class="text-warning" href="#Num4">Learning Demands for #4</a> | <a class="text-warning" href="#Num7">Learning Demands for #7</a> </li>
+            </ul>*@
+            <script>
+                $('.collapse').collapse()
+            </script>
+
+            <div class="list-group">
+
+                <div class="list-group-item clearfix">
+                   <h4 class="text-warning"><b>Warfighting Challenge #1</b> </h4>
+                         <a class="btn btn-primary btn-sm pull-right"  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="margin-left:8px;">
+                        Preview 
+                    </a>
+                    <p class="input-group">
+                        <span class="input-group-addon">
+                            <input class="" type="checkbox" aria-label="Checkbox for following text input">
+                        </span>
+
+                        <b><input type="text" class="form-control panel-title" aria-label="Checkbox for following text input" placeholder="Develop Situational Understanding" /></b>
+                    </p>
+                   
+                </div>
+                <!--collapsable area-->
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-block">
+                        <div class="list-group-item">
+
+                            <p>How to develop and sustain a high degree of situational understanding while operating in complex environments against determined, adaptive enemy organizations.</p>
+                            <div>
+                                <b>Lead</b>
+                                <p class="divider-thin"></p>
+                                <div>Intelligence Center of Excellence (ICoE)</div>
+                            </div>
+                            <div>
+                                <b>Learning Demands</b>
+                                <div class="divider-thin"></div>
+                                <p>Learning Demands for AWFC #1 are For Official Use Only (FOUO).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Start of AWFC 1-20-->
+                
+            </div>
+
+            <div id="" class="list-group">
+                <div class="list-group-item clearfix">
+                    <h4 class="text-warning"><b>Warfighting Challenge #2</b></h4>
+                    <a class="btn btn-primary btn-sm pull-right" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" style="margin-left:8px;">Preview
+                    </a>
+                    <p>                       
+                         @helpers.challengeBox("Shape the Security Environment")
+                    </p>
+
+                    </div>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-block">
+                        <div class="list-group-item ">                   
+                      <p>How to shape and influence security environments, engage key actors, and consolidate gains to achieve sustainable security outcomes in support of Geographic and Functional Combatant Commands and Joint requirements.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How does the Army determine, develop, and sustain the cognitive competencies required to Shape the Security Environment?</li>
+                             <li>How do Geographic Combatant Commanders access operational and institutional Army capabilities to shape the security environment in their Area of Responsibility?</li>
+                            <li>How does the Army ensure security environment planning is sufficient and timely in support of future operations in any operational environment?</li>
+                            <li>How must the Army synchronize NGO, OGA and joint, interorganizational, and multinational efforts to shape the security environment with military operations to support shared understanding and build trust?</li>
+                            <li>How is the regional security environment impacted by the Range of Military Operations?</li>
+                            <li>How will future Joint and Army forces integrate and synchronize site exploitation activities to derive facts, actionable information, or intelligence to enable decisive action, targeting, or criminal prosecution in support of unified land operations?2.6a. What are the indicators of increased or decreased stability?</li>
+                            <li>How does the Army identify and increase availability of subject matter expertise in Building Partner Capacity and Civil-Military Operations?</li>
+                            <li>How does the Army assess and develop intersocial knowledge, skills, and attitudes throughout the career lifecycle and provide tools to improve identified weak areas and sustain identified strengths?2.8a. How responsive must the IMSG be in generating expertise to meet expanded or unexpected requirements?</li>
+                            <li>What are the constraints and limitations in providing Army forces to conduct stability tasks that result in partner nation's ability to demonstrate the capability to conduct stability operations?</li>
+                            <li>What are the Army force structure requirements that best enable sustained partner activity operations necessary to develop shared aims, goals, and objectives?</li>
+                            
+                        </ol>
+                    </div>
+                    
+                </div>
+                    
+                 
+                </div>
+                    </div>
+                
+            </div>
+
+             <div id="" class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #3</b></h2>
+                      @helpers.challengeBox("Provide Security Force Assistance")
+                                       
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>United States Army Special Operations Command (USASOC)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />                         
+                        <ol>
+                            <li>How does the Army determine force composition to meet the required SFA mission objectives and develop unity of effort with Active and Reserve Component?</li>
+                            <li>How does the Army conduct mission planning that enables the United States Government (USG) objectives? </li>
+                            <li>How does the Army provide SFA capabilities that permit effective integration of Joint, Interorganizational, and Multinational (JIM) efforts in support of the USG’s broad national interests, policies and activities?</li>
+                            <li>What are the tasks, conditions and standards for executing SFA missions and how does the army build/utilize Army readiness during the conduct of SFA missions?</li>
+                            <li>How does the Army generate and sustain forces to support the Geographic Combatant Commander’s (GCC) SFA requirements for developing relationships with, and strengthening partner land forces, while also conducting bilateral/multinational exercises and unexpected contingencies?</li>
+                            <li>What issues contribute to a global network of relationships?</li>
+                            <li>What changes to doctrine and training are required?</li>
+                            <li>How does the Army improve training and educational effectiveness to advance the proficiency and readiness of the Host Nation (HN) forces?</li>
+                            <li>How does the Army synchronize SFA planning with JIM partners to support the Integrated Country Strategy (ICS) and GCC goals and objectives?</li>
+                            <li>How does the Army shape conditions that support SFA requirements? (Early and effective consolidation activities as part of a campaign design).</li>
+                            
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Num4" class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #4</b></h2>
+                     @helpers.challengeBox("Adapt the Institutional Army and Innovate")
+                    
+                    <p>How to maintain an agile institutional Army that ensures combat effectiveness of the total force, supports other services, fulfills DoD and other agencies' requirements, ensures quality of life for Soldiers and families, and possesses the capability to surge (mobilize) or expand (strategic reserve) the active Army.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                         <p class="text-warning">Updates were made to learning demands 1 - 10</p>
+                        <ol class="">
+                            <li>How to innovate and adapt the prioritization, integration, and synchronization of DOTMLPF-P capabilities developments. (OPR ARCIC CDD)</li>
+                            <li>How to innovate and adapt Army learning activities and development of the Army's vision of future conflict to efficiently and effectively support the development of Army capabilities. (OPR ARCIC CDLD)</li>
+                            <li>How to improve acquisition processes to efficiently, effectively, and innovatively satisfy requirements of future operating forces. (OPR ASA(ALT))</li>
+                            <li>How to generate and project the force by identifying key locations, resourcing, manning, and building joint power projection installations to support mobilization, demobilization, and rapid deployment of CONUS-based forces and OCONUS forces in GCC AORs. (OPR FORSCOM, USAR, NGB)</li>
+                            <li>How does the Total Force adapt and innovate to rapidly build, employ, and sustain capabilities in anticipation of emerging threats? Without compromising ongoing commitments, how can the Total Force improve its ability to mobilize, expand, and sustain to meet operational demands in an evolutionary environment? (OPR FORSCOM, USAR, NGB)</li>
+                            <li>How to efficiently, effectively, and innovatively manage Army installations to support readiness and mission execution, provide services and facilities, sustain the environment, and enhance the well–being of the military community. (OPR IMCOM)</li>
+                            <li>How to improve sustainment of the force by developing processes and procedures, coordinating across the Army, and consolidating within Army and DoD maintenance, depot, and material development facilities to increase effectiveness and improve efficiencies. (OPR AMC)</li>
+                            <li>How to efficiently and effectively deliver vital engineering solutions, in collaboration with our partners, to secure our Nation, energize our economy, and reduce risk from disaster. (OPR COE)</li>
+                            <li>How to efficiently and effectively plan, integrate, and conduct: experiments, developmental testing, independent operational testing, and independent evaluations and assessments to provide essential information to acquisition decision makers and commanders. (OPR ATEC)</li>
+                        <li>How to innovate and adapt Army business processes to improve effectiveness and efficiency. (OPR OBT)</li>
+                        
+                        </ol> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #5</b></h2>
+                     @helpers.challengeBox("Counter Weapons of Mass Destruction")
+                   
+                    <p>How to prevent, reduce, eliminate, and mitigate the use and effects of weapons of mass destruction (WMD) and chemical, biological, radiological, nuclear, and high yield explosives (CBRNE) threats and hazards on friendly forces and civilian populations.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Maneuver Support Center of Excellence (MSCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How do future forces detect, protect and mitigate future WMD threats and CBRNE hazards to maintain freedom of action and increase situational understanding?</li>
+                            <li>How do future forces deny the ability for WMD proliferation pathways to prevent adversary development of WMD?</li>
+                            <li>How do future forces conduct sustained operations in a CBRN hazard environment?</li>
+                            <li>How do future forces support the attribution of WMD threats and CBRN hazards?</li>
+                            <li>How do future forces support elimination of adversary WMD programs?</li>
+                            <li>How do future forces prevent the employment of enemy WMD capabilities?</li>
+                            <li>How do future forces support CBRN consequence management operations to save lives, mitigate human suffering and protect infrastructure?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #6</b></h2>
+                     @helpers.challengeBox("Conduct Homeland Operations")
+                    
+                    <p class="">How to operate across multiple domains and with multiple partners to defend the homeland and mitigate the effects of attacks and disasters. <span class="">Recently updated</span></p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Maneuver Support Center of Excellence (MSCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>What are the legal and policy impediments and requirements of the 'complex world' on Army homeland operations, and how must these develop to enable the Army to protect the homeland while guaranteeing our freedoms?</li>
+                            <li>How does the Army contribute to an active, layered global defense in the forward regions and in the approaches to prevent, and protect the homeland against, emerging threats and hazards?</li>
+                            <li>How do Army forces within the homeland contribute to an active, layered global defense to prevent, and protect the homeland against, emerging threats and adversaries?</li>
+                            <li>How does the Army ensure the resilience necessary to conduct the full range of military operations after domestic disasters or attacks?</li>
+                            <li>How will future Army installations integrate support for domestic operations into their core missions and capabilities?</li>
+                            <li>How do Army forces support civil authorities in response to complex catastrophes and disasters in complex urban environments in order to save lives, minimize human suffering, and protect critical infrastructure?</li>
+                            <li>How does the Army seamlessly transition between, or simultaneously execute, DSCA and HD operations in the homeland?</li>
+                            <li> How does the Army execute simultaneous support to Humanitarian Assistants/Disaster Relief (HA/DR) and foreign consequence management (FCM) operations while maintaining capacity for domestic disaster response?</li>
+                            <li>How should Army organizations change to meet requirements for future homeland operations?</li>
+                            <li>How does the Army respond to Chemical, Biological, Radiological, and Nuclear (CBRN) events in the homeland?</li>    
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Num7" class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #7</b></h2>
+                     @helpers.challengeBox("Conduct Space and Cyber Electromagnetic Operations and Maintain Communications")
+                    
+                    <p>How to assure uninterrupted access to critical communications and information links (satellite communications [SATCOM], positioning, navigation, and timing [PNT], and intelligence, surveillance, and reconnaissance [ISR]) across a multi-domain architecture when operating in a contested, congested, and competitive operating environment.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Cyber Center of Excellence (CyberCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How can the Army engineer the tactical network to reduce user complexity, improve capacity, increase resiliency, maximize bandwidth efficiency, enable dynamic reconfiguration, improve cybersecurity, while becoming expeditionary?</li>
+                            <li>What is the optimal way for the Army to organize the activities associated with Cyberspace Operations to maximize cyber capabilities across the Army Warfighting Functions while minimizing required resources?</li>
+                            <li>What is the optimal way to employ cyber capabilities with the elements of traditional combat power to support Unified Land Operations (ULO) and deliver the effects required by Commanders at all echelons?</li>
+                            <li>How can the Army better prepare its leaders and soldiers to operate in denied, degraded, and disrupted space operating environments (D3SOEs)?</li>
+                            <li>What effects must Army space forces deliver to assure overmatch and freedom of action for Army and joint forces?</li>
+                            <li>What capabilities do Army forces need to rapidly establish a space architecture that enables an expeditionary and globally deployed Army?</li>
+                            <li class="text-warning">In what ways can Army forces and capabilities be integrated with special operations forces to improve both Army and SF effectiveness?</li>
+                            <li>How does the Army develop and maintain situational understanding across the range of military operations to win in a complex world?</li>  
+                            <li class="text-warning">What are the intersections, overlaps, gaps, and seams between space, cyberspace, electromagnetic spectrum operations, military intelligence, and information operations and how can the Army effectively integrate these operations to support Unified Land Operations? (CCoE)</li>                         
+                            <li class="text-warning">How does the Army execute Navigation Warfare (NAVWAR), ensuring that Army forces have assured and reliable access to position, navigation, and timing (PNT) information while denying the same to our adversaries? (SMDC)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>          
+
+
+            
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #8</b></h2>
+                     @helpers.challengeBox("Enhance Realistic Training")
+                    
+                    <p>How to train Soldiers and leaders to ensure they are prepared to accomplish the mission across the range of military operations while operating in complex environments against determined, adaptive enemy organizations.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How does the Army improve and evolve the Integrated Training Environment in order to effectively replicate all conditions of the future operational environment – enabling adaptive realistic training--while also improving and evolving unit training management and readiness reporting?</li>
+                            <li>How does the Army continue to improve its training and education development policy, requirements, processes, products, concepts, strategies, plans, and tool?</li>
+                            <li> How does the Army continue to improve current training management systems and processes; while continuing to improve Unit Training Management (UTM), and nest Army Training Management Systems (ATMS) with Training Information Infrastructure (TII) and Army Training Information System (ATIS) efforts?</li>
+                            <li>How does the Army improve the effectiveness of training and educational enablers to improve outcomes, return on investments and increase Soldier, Leader and unit proficiency and readiness?</li>
+                            <li>How does the Army continue to improve the sustainment of crew and small unit collective maneuver, mission command training, home station ranges and training land, and its combat training centers?</li>
+                            <li>How does the Army continue to improve its Training Information System and allow more efficient, effective, and intuitive access to training information?</li>
+                            <li>How does the Army continue to improve its delivery of rigorous, relevant, and tailored distributed training and education at the point of need from a responsive and accessible delivery capability?</li>                        
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #9</b></h2>
+                     @helpers.challengeBox("Improve Soldier, Leader and Team Performance")
+                   
+                    <p>How to develop resilient Soldiers, adaptive leaders, and cohesive teams committed to the Army professional ethic that are capable of accomplishing the mission in environments of uncertainty and persistent danger.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>Talent Management: How can the Army best recruit, assess, develop, and manage Soldiers and Army Civilians throughout their life cycle, with increased focus on individual competencies and attributes, to build effective teams and meet Army needs?</li>
+                            <li>Human Performance Research and Assessment. How can the Army best continuously improve the cognitive, social, and physical performance of Army Professionals through the conduct and application of research, development, and assessment?</li>
+                            <li>Holistic Health and Fitness. How can the Army best enhance Soldier and Army Civilian health and readiness through a personalized and holistic program that improves human performance and resilience?</li>
+                            <li>Team Building. How can the Army best provide training guided by mission command to forge diverse individuals and organizations into cohesive teams based on mutual trust and unity of effort?</li>
+                            <li>Social Intelligence. How can the Army best develop trusted professionals as effective team members, who thrive in complex social environments, adapt to diverse cultures, communicate effectively, and build relationships?</li>
+                            <li>Army Profession. How does the Army reinforce an ethos of trust that supports honorable service, military expertise, stewardship, and esprit de corps?</li>
+                            <li>Intellectual Optimization. How can the Army best develop innovative and individualized learning programs to equip Army Professionals with the intellectual diversity and capacity to succeed in complex environments?</li>
+                        
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #10</b></h2>
+                     @helpers.challengeBox("Develop Agile and Adaptive Leaders")
+                   
+                    <p>How to develop agile, adaptive, and innovative leaders who thrive in conditions of uncertainty and chaos and are capable of visualizing, describing, directing, and leading and assessing operations in complex environments and against adaptive enemies.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How can the Army leverage cognitive skills development to meet leader talent requirements for overmatch in the Army Operating Concept (AOC) environment?</li>
+                            <li>What are the requirements for the development of agile, adaptive, and innovative leaders?</li>
+                            <li>What specific Army enterprise policies, programs, systems and processes must change to provide the level of agility, adaptability, and innovation the Army requires?</li>
+                            <li>How can the Army assess required leader competencies that enable an agile, adaptive and innovative leader?</li>
+                            <li>What are the effective developmental tools the Army can provide leaders to enhance the value derived from cumulative experiences?</li>
+                            <li>What are the science, technology, research and assessment implications for the future development of leaders?</li>
+                            <li>How can the Army support the development of “mutual trust” and cohesive teamwork in its units and organizations?</li>                         
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #11</b></h2>
+                     @helpers.challengeBox("Conduct Air-Ground Reconnaissance and Security Operations")
+                    
+                    <p>How to conduct effective air-ground combined arms reconnaissance and security operations to develop the situation rapidly in close contact with the enemy and civilian populations.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Maneuver Center of Excellence (MCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>What (DOTMLPF) changes are needed to effectively plan, synchronize and execute air-ground reconnaissance at all echelons from PLT to EAB?</li>
+                            <li>What DOTMLPF changes are required to enable threat overmatch/maximum range detection, identification and engagement against adversaries employing advanced countermeasures and deception techniques in all operational environments?</li>
+                            <li>How will capabilities of manned and unmanned aircraft be exploited during conduct of reconnaissance to collect and develop combat information and disseminate information to supported commander and staff?</li>
+                            <li>How can remote sensor and robotic technology be developed and integrated to support combined arms reconnaissance?</li>
+                            <li>How do we enable recon under the special conditions offered by CWMD operations, subterranean ops, and security operations over wide areas?</li>
+                            <li>How does the Army establish and maintain access to Land WarNet and thereby contribute to the processing, exploitation and dissemination of intelligence and/or information in support of ROMO?</li>
+                            <li>How do Army Forces conduct air-ground R&S operations to enable situational understanding for commander's decision making and risk reduction?</li>
+                            <li>What combinations of joint, interagency, multinational, and conventional capabilities (teaming air-ground and special operations forces, fires, cyber, electronic warfare and Intelligence) can be employed as an enduring tactic, technique and procedure producing sufficiently actionable information to enable persistent suppression, destruction or avoidance of enemy air defense threats across a defined area of operations and ensure friendly air operations in support of ground maneuver?</li>
+                            <li>What are the GPF - Special Operation Forces Air-Ground reconnaissance interdependencies necessary to effectively plan, synchronize and execute air-ground reconnaissance at the operational level?</li>
+                            <li>What are the Soldier, leader and unit competencies required for Army forces to conduct R&S Operations in the future?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #12</b></h2>
+                     @helpers.challengeBox("Conduct Joint Expeditionary Maneuver and Entry Operations")
+                    
+                    <p>How to project forces, conduct forcible and early entry, and transition rapidly to offensive operations to ensure access and seize the initiative.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Maneuver Center of Excellence (MCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li> What mobility and MPF capabilities would best enable forcible entry forces to insert at offset entry points and then rapidly transition to offensive operations?</li>
+                            <li>What combinations of Army and Joint missile defense capabilities are required to protect early entry forces from enemy anti-access efforts?</li>
+                            <li>What capabilities / DOTMLPF solutions are needed to enable Mission Command of early entry forces in order to support expeditionary maneuver?</li>
+                            <li>How can maneuver forces leverage sea basing and the sea as maneuver space to overcome enemy anti-access capabilities and what capabilities must be developed to make this functional?</li>
+                            <li>What training strategies will best support attaining Joint forcible entry proficiency and help assure US access into theaters around the globe?</li>
+                            <li>What strategic deployment capabilities are required in order to allow maneuver forces to conduct initial entry at multiple points simultaneously?</li>
+                            <li>How does the Army ensure intelligence planning and dissemination is sufficient and timely to enable the conduct of entry operations in any operational environment?</li>
+                            <li>What must we do to support situational understanding for commander's decision making and risk reduction?</li>
+                            <li> What CONUS/OCONUS infrastructure capabilities are necessary to ensure the rapid deployment of entry operation forces?</li>
+                            <li>How will significantly improved aircraft performance provide a capability for dispersed, mobile combined arms teams to concentrate rapidly?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #13</b></h2>
+                     @helpers.challengeBox("Conduct Wide Area Security")
+                    
+                    <p>How to establish and maintain security across wide areas (wide area security) to protect forces, populations, infrastructure, and activities necessary to shape security environments, consolidate gains, and set conditions for achieving policy goals.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Maneuver Center of Excellence (MCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li> What changes should be made in doctrine and training to facilitate reconnaissance and security operations against future threats in an increasing complex environment?</li>
+                            <li>What minimum package of enablers and/or other (DOTMLPF) changes are required to enable the R&S BCT to perform security operations across the Corps AO?</li>
+                            <li>What (DOTMLPF) changes are required to enable BCTs to perform security operations (area security, screen, guard, and cover) across wide areas?</li>
+                            <li> What network capabilities are required to enable BCTs to conduct security operations over wide areas?</li>
+                            <li>What training strategies or other capabilities will best support BCTs' ability to facilitate host nations providing essential services during security operations?</li>
+                            <li>How do future Army forces recover from the attack, manage the effects of the attack, and redistribute and restore capabilities to maintain mission effectiveness?</li>
+                            <li>How do future Army forces conduct maneuver support operations to enhance freedom of action?</li>
+                            <li> How do future Army forces conduct engineer operations to assure mobility, enhance protection, enable force projection and logistics, build partner capacity and develop infrastructure?</li>
+                            <li>How do future Army forces plan and design, construct, operate, and transfer and close contingency bases to provide a protected location from which to project and sustain combat power?</li>
+                            <li>What additional mission demands does Wide Area Security place upon Army Aviation?</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #14</b></h2>
+                     @helpers.challengeBox("Ensure Interoperability and Operate in a Joint, Interorganizational and Multinational Environment")
+                    
+                    <p>How to integrate joint, interorganizational, and multinational partner capabilities and campaigns to ensure unity of effort and accomplish missions across the range of military operations.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li> How to conduct the Operations Process (plan, prepare, execute, and assess) in a JIM environment?</li>
+                            <li> How to efficiently share information in a JIM environment?</li>
+                            <li> How to train effectively for operations within a JIM environment?</li>
+                            <li>How to integrate sustainment operations in a JIM environment?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 id="" class="text-muted"><b>Warfighting Challenge #15</b></h2>
+                     @helpers.challengeBox("Conduct Joint Combined Arms Maneuver")
+                    
+                    <p>How to conduct combined arms air-ground maneuver to defeat enemy organizations and accomplish missions in complex operational environments.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Maneuver Center of Excellence (MCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>What training strategies (LVC-G) and scenarios will best support proficiency in combined arms maneuver in future operations?</li>
+                            <li>How do we enable the SQD, PLT, and CO to integrate with and employ Joint/Army assets (intelligence, MPF, engineer, fires, Army Aviation, reconnaissance, CAS, etc.) from EAB to gain overmatch over opponents?</li>
+                            <li>How do we best enable IBCTs to rapidly transport, maneuver, and support dismounted forces during decisive action?</li>
+                            <li>How do we provide <mark>BCTs</mark> at company and below the ability to apply immediate, overwhelming, precision direct fire to destroy defilade or long range targets and other lethality improvements to achieve overmatch against opponents?</li>
+                            <li>What MPF capabilities would best support BCT's ability to develop the situation in close contact with the enemy, seize and retain the initiative, and maintain FOM during offensive operations?</li>
+                            <li>How does the Army achieve situational understanding which enables the defeat of enemy organizations across the ROMO through combined arms maneuver?</li>
+                            <li>How do future Army forces conduct maneuver support operations to enhance friendly force freedom of action, shape terrain, and deny enemy movement?</li>
+                            <li>How does the Army rapidly and effectively shape the terrain against enemy forces from the small unit level up to the division/corps level using lethal and nonlethal munitions or other similar capabilities (given the loss of existing counter mobility capabilities)?</li>
+                            <li>What combinations of joint, interagency, multinational, and conventional capabilities (teaming air-ground and special operations forces, fires, cyber, electronic warfare and Intelligence) can be employed as an enduring tactic, technique and procedure producing sufficiently actionable information to enable persistent suppression, destruction or avoidance of enemy air defense threats across a defined area of operations and ensure friendly air operations in support of ground maneuver?</li>
+                            <li>How will capabilities of manned and unmanned platforms be exploited during conduct of reconnaissance to collect and develop combat information and disseminate information to supported commander and staff?</li>
+                            
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #16</b></h2>
+                      @helpers.challengeBox("Set the Theater, Sustain Operations, and Maintain Freedom of Movement")
+                    
+                    <p>How to set the theater, provide strategic agility to the joint force, and maintain freedom of movement and action during sustained and high tempo operations at the end of extended lines of communication in austere environments.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Sustainment Center of Excellence (SCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>Assess the Army's roles/responsibilities to Set (Surge) the Theater ISO ASCC/JFC?</li>
+                            <li>How does the Army facilitate ready access to seize the initiative in early entry operations?</li>
+                            <li>How does the Army underscore US commitment to Allies/Partners and assist the GCC to shape, influence, and consolidate partner capacity?</li>
+                            <li>What are the attributes/characteristics of a resilient and reliable sustainment and distribution network ISO COCOM high tempo operations?</li>
+                            <li> What changes are required to deliver a more lethal and agile Expeditionary Force that maintains combat effectiveness and overmatch?</li>
+                            <li>How can the Army help integrate/enable Joint authorities in a Joint, Inter-organizational, Multi-national (JIM) environment?</li>
+                            <li>How should the Army mitigate a shrinking overseas defense posture while maintaining the ability to respond to "unknown, unknowable, and ever changing" global crisis?</li>
+                            <li>What are the most significant constraints and vulnerabilities to the Army's ability to rapidly respond to crisis?</li>
+                            <li> How does the Army drive demand reduction to decrease sustainment requirements?</li>
+                            <li>How does the Army utilize the five domains (Land, Air, Maritime, Cyber and Space) over extended lines of communication to ensure Freedom of Movement and Action?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #17</b></h2>
+                      @helpers.challengeBox("Integrate Fires")
+                    
+                    <p>How to coordinate and integrate Army and JIM fires, and conduct targeting across all domains to defeat the enemy and preserve freedom of maneuver and action across the range of military operations</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Fires Center of Excellence (FCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How do Fires forces conduct targeting to detect, track, and match targets with effects considering operational requirements, commanders' objectives, and available Army, joint, inter-organizational and multinational capabilities and inter-dependencies?</li>
+                            <li>How do Fires forces coordinate and integrate Army, JIM capabilities, at strategic, operational and tactical levels, through all five domains, to provide scalable effects to combatant commanders?</li>
+                            <li>How do Fires forces establish and maintain communications with Army, joint, inter-organizational and multinational partners, with adequate quality of service to deliver desired effects over wide areas?</li>
+                            <li>How do Fires forces coordinate and integrate advanced technologies such as directed energy, robotics, hyper-sonics, and electro-magnetic launch to reduce sustainment, increase firepower, and deliver effects with greater range and precision?</li>
+                            <li>How do Fires forces rapidly clear and gain authorization to employ Army, joint, inter-organizational, and multinational scalable effects to support commanders' objectives?</li>
+                            <li>What is the optimal means for the Army to integrate missile defense capabilities across all Army warfighting and joint functions to support regional shaping and deterrence?</li>
+                          
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 id="" class="text-warning"><b>Warfighting Challenge #18</b></h2>
+                      @helpers.challengeBox("Deliver Fires")
+                   
+                    <p>How to deliver fires to defeat the enemy and preserve freedom of action across the range of military operations.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Fires Center of Excellence (FCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li> How do Fires forces detect targets with sufficient range, precision, and timeliness to facilitate delivery of effects?</li>
+                            <li> How do Fires forces deliver scalable effects with sufficient range, precision, and timeliness to support commanders' objectives?</li>
+                            <li>How do Fires forces mitigate systems range, classification, identification, and discrimination limitations to offset threat advantages and gain overmatch?</li>
+                            <li> How do fires forces mitigate sufficiency limitations with sensors, launchers, and munitions to support widely dispersed friendly forces and critical assets?</li>
+                            <li>How do Fires forces employ advanced technologies such as directed energy, robotics, hyper-sonics, and electro-magnetic launch to such as directed energy, robotics, hyper-sonics, and electro-magnetic launch to reduce sustainment, increase firepower and deliver effects with greater range and precision?</li>
+                            <li>How do Fires forces operating across wide areas or supporting widely dispersed friendly forces conduct mission command and sustainment?</li>
+                            <li>How do Fires forces tailor formations and capabilities to maximize effectiveness and versatility, minimize sustainment footprints requirements, and optimize deployment packages?</li>
+                            <li>How do Fires forces facilitate communications between Fires formations at all echelons to integrate Fires systems and provide commanders with a network-enabled mission command capability?</li>
+                            <li>How do Fires forces maintain sufficient strategic and tactical mobility to position Fires systems at the geographic locations where and when they are needed?</li>
+                            <li>How do Fires forces protect Fires systems, networks, architectures, and Soldiers from threat actions and environmental factors <mark>to include Advanced Electronic Attack during operations?</mark> </li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #19</b></h2>
+                      @helpers.challengeBox("Exercise Mission Command")
+                    
+                    <p>How to understand, visualize, describe, and direct operations consistent with the philosophy of mission command to seize the initiative over the enemy and accomplish the mission across the range of military operations.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                        <ol>
+                            <li>How does the Army Create Unity of Effort to effectively implement mission command to achieve Army-wide understanding and application of the MC philosophy leading to successful Unified Land Operations (ULO) in support of the joint force?</li>
+                            <li>What individual, collective and leader MC training/development tasks are critical to the application of MC philosophy and to execute the MC WFF?</li>
+                            <li>How does the Army measure success with MC implementation?</li>
+                            <li>How do future Army forces, at all echelons and in all conditions, achieve continuous MC?</li>
+                            <li>How do Army forces, at all echelons and under all conditions, achieve sustainable understanding, training, employment, and maintenance of automated MC information systems?</li>
+                            <li>How do Army forces, at all echelons and under all conditions, plan, prepare, execute and access operations using analog procedures and maintain commonality when the digital Mission Command Information Systems (MCIS) are degraded or unavailable?</li>
+                            <li>How do Army forces, at all echelons and under all conditions, achieve full MCIS interoperability to meet operational requirements with Unified Action Partners?</li>
+                            <li>How do future leaders at all echelons embody the Mission Command Philosophy and achieve the ability to understand, visualize, describe, direct, lead and assess performance optimization with agility and confidence?</li>
+                            <li> How do Future Army forces achieve the ability to describe, plan, integrate, continuously assess, and incorporate Cyber Electromagnetic (CEM) activities?</li>
+                            
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h2 class="text-warning"><b>Warfighting Challenge #20</b></h2>
+                      @helpers.challengeBox("Develop Capable Formations")
+               
+                    <p>How to design Army formations capable of rapidly deploying and conducting operations for ample duration and in sufficient scale to accomplish the mission.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Army Capabilities Integration Center, Capabilities Developments Directorate (ARCIC CDD)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                        <ol>
+                            <li>How does the Army improve its ability to rapidly change task organization based on METT-TC considerations while preserving combined arms capability at the lowest level?</li>
+                            <li>How to develop / design our ground formations for rapid deployment with capabilities to conduct operations of ample duration and in sufficient scale to accomplish the mission?</li>
+                            <li>How to develop formations that allow division and JTF commanders to set the conditions for the close fight and seize, retain and exploit the initiative? (Survey division and corps commanders)</li>
+                            <li>Does a Hybrid maneuver unit consisting of Infantry, Stryker, Mechanized Infantry and Armor increase the speed and efficiency of employment? If so, what is the optimum formation, company, battalion or brigade? (Survey BMC, TCM A,I,SBCT, division and brigade commanders)</li>
+                            <li>How to identify reductions or efficiencies in overhead that preserve fighting capability?</li>
+                            <li>How to develop, train and retain air ground formations?</li>
+                            <li>What technology improvements can be provided to the formation in the Near-, Mid-, and Far-Terms which:
+                                <ul class="list-unstyled">
+                                    <li> a. Reduce the gross weight / cube of the formation's major end items?</li>
+                                    <li> b. Allow the execution of mission requirements with far fewer personnel and/or equipment?</li>
+                                    <li> c. Improve range, lethality, and precision to overcome anti-access and area denial, extend mutual support across greater distances to significantly reduce or eliminate the need for external Indirect Fire and TacAir support?</li>
+                                    <li> d. Significantly reduce its sustainment demands?</li>
+                                    <li> e. Use of Remote and Autonomous Systems (RAS) (robotics) to increase lethality, improve protection, and extend Soldiers’ and units’ reach?</li>
+                                    <li> f. Insert technologies into formations which obviate the need for separate, specialized functional organizations?</li>
+                                    <li> g. Provide equipment, organizational designs, and deployment TTP that enable formations to deploy and rapidly transition into operations significantly reducing requirements for Reception, Staging, Onward Movement and Integration (RSOI)?</li>
+                                    <li> h. Allow maximum integration of improved protection, lethality, mobility and power generation without negatively impacting deployment or sustainment?</li>
+                                </ul>
+                            </li>
+                            <li>What organizational design changes can be enacted in the Near-, Mid-, and Far-Terms which improve speed of employment and/or close or mitigate capability gaps?</li>
+                            <li>Can the pooling of resources (i.e. “streamlining and pooling” transportation assets, fuel, and weapons systems) reduce deployment requirements while enabling formations access to resources to conduct operations of ample duration and in sufficient scale to accomplish the mission?</li>
+                            <li>How does the Army use experimentation to ensure the best balance (combat, maneuver support, sustainment and mix) and stance (ability to react to wide range of contingencies) for the Army to avoid “not getting it too wrong?”</li>
+                           
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--sidebar-->
+         <div class="col-md-4">
+                <!--Form-->
+         <div class="panel panel-primary">
+             <div class="panel-heading"><h3>Form</h3></div>
+                 <div class="panel-body">
+                     <div>
+                         <form>
+                             <fieldset class="form-group">
+                                 <legend>User</legend>
+                                 <div class="form-group">
+                                     <input type="text" class="form-control" id="exampleInputName2" placeholder="First name">
+                                 </div>
+                                 <div class="form-group">
+                                     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Last name">
+                                 </div>
+
+                             </fieldset>
+
+                             @*<div class="form-group">
+                                 <label for="exampleSelect1">Example select</label>
+                                 <select class="form-control" id="exampleSelect1">
+                                     <option>1</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                 </select>
+                             </div>*@
+                             
+                             <div class="form-group">
+                                 <label for="exampleInputEmail2">Email</label>
+                                 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                             </div>
+                             <div class="form-group">  
+
+                                 <label for="exampleInputEmail2">Title</label>
+                                 <input type="email" size="44" class="form-control" id="exampleInputEmail2" placeholder="Analyst">
+                                 </div>
+
+                             <div class="form-group">
+                                   <label for="exampleSelect1">Rank</label>
+                                 <select class="form-control" id="exampleSelect1">
+                                     <option>CTR</option>
+                                      <option>GOV</option>
+                                     <option>MAJ</option>
+                                     <option>LTC</option>
+                                     <option>COL</option> 
+                                 </select>
+
+                                </div>
+                                 
+                             <div class="form-group">
+                             
+                                  <label for="exampleSelect1">Organization</label>
+                                   <select class="form-control" id="exampleSelect1">
+                                     <option>ARCIC</option>
+                                      <option>CAC</option>
+                                     <option>AWA</option>
+                                     <option>REF</option>
+                                      
+                                 </select>    
+                             </div>
+
+
+
+
+                            
+
+                             <div class="form-group">
+                                 <label for="exampleTextarea">Comments</label>
+                                 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                             </div>
+
+                             <div class="form-group">
+                                 <label for="exampleInputFile">Attach file</label>
+                                 <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                 <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                             </div>
+                             <fieldset class="form-group">
+                                 <legend>Option</legend>
+                                 <div class="radio">
+                                     <label>
+                                         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                         Option one is this and that&mdash;be sure to include why it's great
+                                     </label>
+                                 </div>
+                                 <div class="radio">
+                                     <label>
+                                         <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                         Option two can be something else and selecting it will deselect option one
+                                     </label>
+                                 </div>
+                                 <div class="radio disabled">
+                                     <label>
+                                         <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                         Option three is disabled
+                                     </label>
+                                 </div>
+                             </fieldset>
+                             <div class="checkbox">
+                                 <label>
+                                     <input type="checkbox">
+                                     Check me out
+                                 </label>
+                             </div>
+                             <button type="submit" class="btn btn-primary">Submit</button>
+                         </form>
+                     </div>
+                 </div>
+             </div>     
+            
+            
+
+        </div>
+        
+
+        
+        
+    </div>

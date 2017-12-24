@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Army Capabilities Integration Center</title>
+        <link rel="icon" href="@Url.Content("/favicon.ico")" type="image/x-icon" />     
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")           
+        @Styles.Render("~/Content/font-awesome/css/css")       
+        @Scripts.Render("~/bundles/modernizr")
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">        
+       <script src="//www.google-analytics.com/analytics.js" async=""></script>
+       <script src="http://www.google-analytics.com/plugins/ua/linkid.js" async="" type="text/javascript"></script>
+        <link href="~/Content/styles.css" rel="stylesheet" />     
+
+        
+    </head>
+<body>   
+    <div class="">
+
+        <!--Navigation-->
+        <div>     
+           @Html.Partial("_navigation")          
+        </div>        
+        
+
+        <!--Content-->
+        <div id="home1">
+            @RenderSection("featured", required: false)
+
+            <div class="container">
+                @RenderBody()
+            </div>
+        </div>
+        <!--Footer-->
+   
+            <footer>
+            @Html.Partial("~/Views/Shared/_footer.cshtml")
+        </footer>
+        
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    @RenderSection("scripts", required: false)
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('.carousel').carousel({ interval: 10000 }).carousel()
+         });
+         $(function () {
+             $('[data-toggle="popover"]').popover()
+         })
+
+         jQuery(function () {
+             jQuery('#myTab a:first').tab('show')
+         })
+         //$('#selectId').change(function () {
+         //    window.open($(this).val());
+         //});
+   
+
+    </script>
+    @Html.Partial("_analytics")
+</body>
+</html>

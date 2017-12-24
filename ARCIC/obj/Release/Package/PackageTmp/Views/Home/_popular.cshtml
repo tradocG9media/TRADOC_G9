@@ -1,0 +1,85 @@
+﻿@using System;
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.Models;
+@using ARCIC.App_Code;
+
+@{   
+       
+   // var popular = Globals.popular.OrderByDescending(x => x.entDate).Take(4);
+    var popularData = Article.GetArticles()
+        .Where(x => x.dataSet == "exclusive")
+        .Where(x => x.pGroup == "popular")
+        .Where(x => x.archive != "Yes")
+        .Take(10);
+      
+    //TODO: Add Links
+}   
+    
+   
+
+    @foreach (var item in popularData)
+    {
+        <div class="col-md-6">
+            <div class="panel panel-default">
+
+                @if (item.imageURL.Contains("http") || item.imageURL.Contains("ftp"))
+                {
+                    <img class="img-responsive center-block" src="@item.imageURL" />
+                }
+                else
+                {
+                    <img class="img-responsive center-block" src='@("../App_Imgs/Content/" + item.imageURL + "f.jpg")'style="height:300px;"  />
+                }
+                <div class="panel-body">
+                    <div class="text-center">
+                        @if (item.title.Length > 50)
+                        {
+                            <h4><b>@Html.Raw(Shorten.ShortStr(item.title, 52))
+                                <span class="text-primary" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="@item.title"> ... </span> </b> </h4>
+                        }
+                        else
+                        {
+                            <h4><b>@Html.Raw(item.title) </b> </h4>
+                        }
+                    </div>
+                    <div class="text-center">
+                        @{
+
+                            if (item.link.Contains("http") && MasterTODO.CheckIsPDF(item.link) == true)
+                            {
+                               <a href="@item.link" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Outbound Link', eventLabel: @item.title', eventValue: 1});">@item.source </a>
+
+                            }
+                            else if (item.link.Contains("http"))
+                            {
+                                <a href="@item.link" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Outbound Link', eventLabel: '@item.title', eventValue: 1});">
+                                    @item.source </a><i class="fa fa-external-link"></i>
+
+                            }
+                            else if (MasterTODO.CheckIsPDF(item.link) == true)
+                            {
+                                <a href="@item.link" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Document', eventLabel: '@item.title', eventValue: 1});">
+                                   View </a><i class="fa fa-file-pdf-o"></i>
+
+                            }
+                            else
+                            {
+                                <a href="@item.link" target="_blank" onclick="ga('send', 'event', { eventCategory: 'Popular',  eventAction: 'Clicked', eventLabel: '@item.title', eventValue: 1});">
+                                   View
+                            </a>
+
+                            }
+
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      }
+
+

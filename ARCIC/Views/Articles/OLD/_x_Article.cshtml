@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ARCIC.Models.ArticleModels>
+@using System.Collections.Generic;
+@using System.Xml;
+@using System.Xml.Linq;
+@using System.Linq;
+@using ARCIC.App_Code;
+@using ARCIC.Models;
+@{
+    var story = ViewBag.Exclusive;
+
+
+    int currArticle = Update.currArticle();
+        
+    //var article = (from x in XDocument.Load(global.serverPath + "App_Data/articles-complete.xml").Descendants("complete")
+    //    where (string)x.Attribute("id").Value == "exclusive"
+    //    from a in x.Elements("article")
+    //    where (Int32.Parse(a.Element("artID").Value)) == currArticle
+
+    //    select new ArticleModels
+    //    {
+    //        artID = a.Element("artID").Value,
+    //        frozen = (Int32.Parse(a.Element("frozen").Value)),
+    //        archive = (Int32.Parse(a.Element("archive").Value)),
+    //        entDate = a.Element("entDate").Value,
+    //        modDate = a.Element("modDate").Value,
+    //        sortDate = a.Element("sortDate").Value,
+    //        title = a.Element("title").Value,
+    //        pubDate = a.Element("pubDate").Value,
+    //        author = a.Element("author").Value,
+    //        link = a.Element("link").Value,
+    //        source = a.Element("source").Value,
+    //        guid = a.Element("guid").Value,
+    //        description = a.Element("description").Value,
+    //        pGroup = a.Element("placement").Element("group").Value,
+    //        pAll = a.Element("placement").Element("all").Value,
+    //        pLOE = a.Element("placement").Element("lineofeffort").Value,
+    //        pDirectorate = a.Element("placement").Element("directorate").Value,
+    //        pInitiative = a.Element("placement").Element("initiative").Value,
+    //        pConnection = a.Element("placement").Element("connection").Value,
+    //        pFocus = a.Element("placement").Element("focus").Value,
+    //        imageURL = a.Element("imageURL").Value,
+    //    });                             
+    
+    }
+
+<br /><br /><br />
+ <!-- Content Row -->
+<div class="row">
+        @*<p>Object: @ObjectInfo.Print(article)</p>*@
+
+      @foreach (var item in story)
+      {
+          if (item.pGroup == "Exclusive")
+          {
+              <p> <img src="~/App_Imgs/App/Icons/Exclusive_032.png" /></p>
+          }
+              <!-- Content Article  -->
+              <div class="col-md-8 clearfix">
+
+                  <div class="panel panel-default">
+                      <img class="img-responsive thumbnail " src='@("/App_Imgs/Content/" + item.imageURL + "f.jpg")' />
+                      <div class="panel-body clearfix"> 
+                          
+                          @if (item.artID == "86")
+                          {
+                              //Disclaimer 
+                              <img class="img-responsive" src="http://cdn.warontherocks.com/wp-content/themes/_m/img/logo.png" style="width:148px;"/>
+                              <h5>"This article was originally published at <a href="http://warontherocks.com" target="_blank">War on the Rocks</a> , an online magazine on strategy, defense, and foreign affairs.  It is reposted with permission."</h5>
+                            
+                          }                          
+                                                   
+                          <h1><b>@item.title</b></h1>
+                          @if (item.pGroup == "/App_Documents/Bios/Nadia-Schadlow.pdf")
+                          {
+                              <div class="text-muted">@item.author | <a href="@item.pGroup" target="_blank">Biography</a></div>
+                          }
+                          else
+                          {
+                            
+                          }
+                          @*<div class="cleafix">@item.pubDate <a class="btn btn-primary pull-right" href="@item.link" target="_blank">Mad Scientist Video Discussions</a></div>*@                          
+                        
+                            <hr />
+                         
+                          <p class="text-muted">@Html.Raw(item.description)</p>                    
+                      
+                      </div>
+                  </div>
+              </div>          
+      }
+
+
+    <!-- Sidebar Column -->
+
+    <div class="col-md-4">
+        <h3 class="text-muted"><i class="fa fa-archive"></i><b>Recent Articles</b></h3>
+        <div class="list-group">
+            <div class="list-group-item">
+                <h4 class="text-warning">Coming Soon...</h4>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br />

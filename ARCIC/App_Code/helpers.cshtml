@@ -1,0 +1,624 @@
+﻿@using ARCIC.App_Code;
+@helper PageTitleSimple(string heading, string url, string category, string subHeading)
+{    
+    <!-- Page Heading/Breadcrumbs --> 
+            <div class="col-lg-8">               
+                <h1 class="page-header"><b>@heading</b>
+                    <small>@subHeading</small>
+                </h1> 
+                <ol class="breadcrumb">
+                    <li><a href='@url'>@category</a>
+                    </li>
+                    <li class="active">@subHeading</li>
+                </ol>
+            </div>        
+        <!-- /.row --> 
+}
+@helper Article(string title, string desc, string author, string source, string published, string image)
+    {  
+        <p><img class="img-responsive" src='@("../App_Imgs/Content/"+ image + "f.jpg")' /></p>
+        <h4><b>@title</b></h4>
+        <p class="">@author| @source| @published</p>
+       
+    
+    }
+@helper LPDReading(string title, string desc, string author, string source, string published, string image) {
+    <div class="pull-left"><img class="img-responsive" style="margin-right:11px;" src='@("../App_Imgs/LPD-Sources/"+ image + "t.png")' /></div>
+    <h2><b>@title</b></h2>
+        <p class="">@author| @source| @published</p>
+        <div>Read Director's <a href="#">Full Comments</a>:</div>
+}
+
+@helper gTrack(string Category, string link, string Action,  string Label, int Value, string target, string TEXT, string iconName, string iconSize, string textColor, string clas, string data)
+{    
+    
+  <a class="btn btn-default @clas" href="@link" target="@target"
+      onClick="ga('send', 'event', { eventCategory: '@Category', eventAction: '@Action', eventLabel: '@Label', eventValue: @Value}); @data"><span class="text-@textColor" ><b>@TEXT</b> <i class="fa fa-@iconName fa-@iconSize"></i></span></a>
+  
+  @*<a href="javascript:void(0)" onClick="ga('send', 'event', { eventCategory: 'Download',  eventAction: 'Home Page Download', eventLabel: 'Clicked', eventValue: 1});">Login</a>*@
+      
+    
+}
+@helper InsertImage(string urlStr, string archiveTxt, string paramater1, string paramater2, string size)
+{
+  <p>
+        @if (urlStr.Contains(paramater1) || urlStr.Contains(paramater2))
+                {
+                    <img class="img-responsive" src="@urlStr" />
+                }
+                else if(archiveTxt == "mil")
+                {
+                    <img class="img-responsive" src='@("App_Imgs/Mil/" + urlStr + "f.jpg")' />
+                }
+                else if (archiveTxt == "exclusives")
+	            {
+		            <img class="img-responsive" src='@("App_Imgs/Exclusives/" + urlStr + "f.jpg")' />
+	            }
+                else
+                {
+                    <img class="img-responsive" src='@("../App_Imgs/Content/" + urlStr + "f.jpg")' />
+                }
+              
+    
+  </p>
+}
+@helper GoogleTrack(string Category, string link, string Action,  int Value, string target, string TEXT, string iconName, string iconSize, string textColor, string clas)
+{    
+    
+  <a class="btn btn-default @clas" href="@link" target="@target" onClick="ga('send', 'event', { eventCategory: '@Category', eventAction: '@Action', eventLabel: 'Clicked', eventValue: @Value});"><span class="text-@textColor"><b>@TEXT</b> <i class="fa fa-@iconName fa-@iconSize"></i></span></a>
+  
+  @*<a href="javascript:void(0)" onClick="ga('send', 'event', { eventCategory: 'Download',  eventAction: 'Home Page Download', eventLabel: 'Clicked', eventValue: 1});">Login</a>*@
+      
+    
+}
+@helper SSPBook(string title, string desc, int textLength, string url, string Image)
+{
+    <div class="col-md-4 ">
+        <div class="thumbnail">
+            <div class="caption">
+                <img class="img-responsive center-block thumbnail" style="width: 120px;" src="/Areas/SSP/_appImages/@Image" alt="@title">
+                <h3>@title</h3>
+                <p>
+                    @Shorten.ShortStr(desc, textLength)
+                </p>
+                <p class="text-center">
+                    <a href="@url" class="btn btn-primary" target="_blank">Review Now!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+}
+@helper Book(string title, string desc, int textLength, string url)
+{
+    <div class="hero-feature">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>@title  </h3>
+                <p>
+                    @Shorten.ShortStr(desc, textLength)
+                </p>
+                <p>
+                    <a href="@url" class="btn btn-primary">Review Now!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+}
+@helper Reflectoins(string item1, string item2, string item3, string item4, string item5, string item6)
+    {
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4><b>Reflections</b></h4>
+            <ol>
+                @{
+                    var list = new List<string> { item1, item2, item3, item4, item5, item6 };
+                    foreach (var item in list)
+                    {
+                        if (item == "")
+                        { /*nothing*/ }
+                        else
+                        {
+                            <li>@item</li>
+                        }
+                    }
+                }
+            </ol>
+
+        </div>
+    </div>
+}
+@helper SSPArticle(string title,string desc, string url)
+    {
+    <h5> <a href="@url" target="_blank">@title </a><span><i class="fa fa-external-link"></i></span></h5>
+    <p>@desc</p>
+
+}
+@helper GoogleTracker(string link, string eventCategory, string eventAction, string eventLabel, int Value, string hrefTarget, string TextLabel, string iconName, string iconSize, string textColor, string clas)
+{    
+    
+  <a class="btn btn-default @clas" href="@link" target="@hrefTarget" onClick="ga('send', 'event', { eventCategory: '@eventCategory', eventAction: '@eventAction', eventLabel: '@eventLabel', eventValue: @Value});"><span class="text-@textColor"><b>@TextLabel</b> <i class="fa fa-@iconName fa-@iconSize"></i></span></a>
+  
+  @*<a href="javascript:void(0)" onClick="ga('send', 'event', { eventCategory: 'Download',  eventAction: 'Home Page Download', eventLabel: 'Clicked', eventValue: 1});">Login</a>*@
+      
+    
+}
+@helper GoogleTrackerLink(string link, string eventCategory, string eventAction, string eventLabel, int Value, string hrefTarget, string TextLabel, string iconName, string iconSize, string textColor, string clas)
+{    
+    
+  <a class=" @clas" href="@link" target="@hrefTarget" onClick="ga('send', 'event', { eventCategory: '@eventCategory', eventAction: '@eventAction', eventLabel: '@eventLabel', eventValue: @Value});"><span class="text-@textColor">@TextLabel <i class="fa fa-@iconName fa-@iconSize"></i></span></a>
+  
+  @*<a href="javascript:void(0)" onClick="ga('send', 'event', { eventCategory: 'Download',  eventAction: 'Home Page Download', eventLabel: 'Clicked', eventValue: 1});">Login</a>*@
+      
+    
+}
+@helper Ellipse(int length, string input, string link)
+{
+    string answer = "";
+
+    if (input.Length <= length)
+    {
+        answer = input;
+    }
+    else
+    {
+        answer = input.Substring(0, length);
+        @answer
+         <a class="btn-link" role="button" href="@link"><small class="btn-link">[...]</small></a>
+    }  
+   
+}
+@helper VideoBox(string srcImage, string title, string link, string subLink, string pubDate, string frozen, string source) {
+    
+    <div class="panel panel-default">
+              
+        @if (srcImage.Contains("https") || srcImage.Contains("http") || srcImage.Contains("App_Imgs/"))
+        {
+          <img class="card-img-top img-responsive" alt="Card image cap"  src="@srcImage" style="width: 102%;"/>  
+        }
+        else
+        {
+          <img class="card-img-top img-responsive" alt="Card image cap"  src='@("../App_Imgs/Content/" + srcImage + "f.jpg")' style="width: 102%;"/>     
+        }     
+                  
+            <div class="playBtn clearfix">               
+                <div class="clearfix">
+                    <span class="pull-left"><b>@pubDate</b></span>
+                    @if (link.Contains(".pdf") || link.Contains(".ppt") || frozen == "1")
+                    { 
+                    }
+                    else
+                    {
+                     <a class="clearfix" href="@subLink" target="_blank" style="color: white;" onClick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: '@title', eventValue: 1});" >
+                            <img class="img-responsive pull-right" src="../App_Imgs/App/Logos/youtube30.png" />
+                        </a>                        
+                    }
+                </div>
+            </div>
+            <div class="panel-body" style="height:142px;">
+                <div class="card-deck-wrapper">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-block clearfix">
+                                <h4 class="card-title"><strong>@title</strong></h4>                                
+                                <div>
+                                       @if (frozen == "1")
+                                       {
+                                        <div class="clearfix text-uppercase text-center small">
+                                            <div class="pull-right">
+                                                <span onclick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: '@title', eventValue: 1});">Watch on @pubDate</span>
+                                                
+                                            </div>
+                                        </div>
+                                       }
+                                       else
+                                       {
+                                        <small class="clearfix text-uppercase text-center">
+                                            <span class="pull-right">
+                                                <a href="@link" target="_blank"
+                                                   onclick="ga('send', 'event', { eventCategory: 'Video',  eventAction: 'Play', eventLabel: '@title', eventValue: 1});">Watch on @source</a>
+                                                <i class="fa fa-external-link"></i>
+                                            </span>
+                                        </small>
+                                       }
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+}
+
+@helper challengeBox(string title)
+{
+    <p class="input-group">
+        <span class="input-group-addon has-success">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+        </span>
+
+        <b>
+            <input type="text" class="form-control panel-title" aria-label="Checkbox for following text input" placeholder="@title" /></b>
+    </p> 
+   
+}
+ @helper check(string comment)
+        {
+            
+                    <input type="checkbox" aria-label="@comment">
+              
+         
+            
+        }
+@helper AWFCcollapse(int challNum, string title)
+{
+    <div id="" class="list-group">
+                <div class="list-group-item clearfix">
+                    <h4 class="text-warning"><b>Warfighting Challenge #@challNum</b></h4>
+                    <a class="btn btn-primary btn-sm pull-right" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" style="margin-left:8px;">Preview
+                    </a>
+                    <p>
+                        @challengeBox(title)
+                    </p>
+                    </div>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-block">
+                        <div class="list-group-item ">                   
+                   
+                    
+                </div>
+                    
+                    <p>How to shape and influence security environments, engage key actors, and consolidate gains to achieve sustainable security outcomes in support of Geographic and Functional Combatant Commands and Joint requirements.</p>
+                    <div>
+                        <b>Lead</b>
+                        <div class="divider-thin"></div>
+                        <p>Mission Command Center of Excellence (MCCoE)</p>
+                    </div>
+                     <div>
+                        <b>Learning Demands</b>
+                        <div class="divider-thin"></div>
+                         <br />
+                        <ol>
+                            <li>How does the Army determine, develop, and sustain the cognitive competencies required to Shape the Security Environment?</li>
+                             <li>How do Geographic Combatant Commanders access operational and institutional Army capabilities to shape the security environment in their Area of Responsibility?</li>
+                            <li>How does the Army ensure security environment planning is sufficient and timely in support of future operations in any operational environment?</li>
+                            <li>How must the Army synchronize NGO, OGA and joint, interorganizational, and multinational efforts to shape the security environment with military operations to support shared understanding and build trust?</li>
+                            <li>How is the regional security environment impacted by the Range of Military Operations?</li>
+                            <li>How will future Joint and Army forces integrate and synchronize site exploitation activities to derive facts, actionable information, or intelligence to enable decisive action, targeting, or criminal prosecution in support of unified land operations?2.6a. What are the indicators of increased or decreased stability?</li>
+                            <li>How does the Army identify and increase availability of subject matter expertise in Building Partner Capacity and Civil-Military Operations?</li>
+                            <li>How does the Army assess and develop intersocial knowledge, skills, and attitudes throughout the career lifecycle and provide tools to improve identified weak areas and sustain identified strengths?2.8a. How responsive must the IMSG be in generating expertise to meet expanded or unexpected requirements?</li>
+                            <li>What are the constraints and limitations in providing Army forces to conduct stability tasks that result in partner nation's ability to demonstrate the capability to conduct stability operations?</li>
+                            <li>What are the Army force structure requirements that best enable sustained partner activity operations necessary to develop shared aims, goals, and objectives?</li>
+                            
+                        </ol>
+                    </div>
+                </div>
+                    </div>
+             
+
+
+
+                
+            </div>
+}
+
+@helper Truncate(string input, int length, string link)
+{
+     if (input.Length <= length) {
+          @input
+     } else {
+          @input.Substring(0, length)<text> <a href="@link" target="_blank">[...]</a></text>
+     }
+} 
+
+@helper Google(string btn_type, string btnLabel, string Class, string url, string target, string eCategory, string eAction, string eLabel)
+{
+    //Pick button type standard---button---buttonGroup
+    //ga('send', 'event', 'Videos', 'play', 'Fall Campaign');   
+    if (btn_type == "standard")
+    {
+        <a class="@Class" href="@url" target="@target" onclick="ga('send', 'event', '@eCategory', '@eAction', '@eLabel');">@btnLabel</a>
+    }
+    else
+    {
+         <a class="@Class btn btn-default" href="@url" target="@target" onclick="ga('send', 'event', '@eCategory', '@eAction', '@eLabel');">@btnLabel</a>
+    }    
+    
+}
+@helper GoogleBtnGroup(int numOfButtons)
+{
+   
+    <div class="btn-group">
+        @for (int i = 0; i < @numOfButtons; i++)
+        {
+            <a class="btn btn-default" href="#" target=""></a>
+        }
+    </div>
+    
+}
+@helper fontIcon(string name, string size)
+{
+    <i class="fa fa-@name fa-@size"></i>
+}
+
+@helper Mission(string mission, string vision, string intent, string priorities, string overview)
+{
+    <div class="col-md-8">
+        <h4>Mission</h4>
+        <p></p>
+        <h4>Key Initiatives</h4>
+        <p></p>
+        <p></p>
+        <h4>Current Objectives</h4>
+        <p></p>
+        <ul class="list-group">
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+        </ul>
+        <p></p>
+    </div>
+  }
+
+
+
+@helper Divisions(
+    string imgFilePath1, string divName1, string overview1,
+    string imgFilePath2, string divName2, string overview2,
+    string imgFilePath3, string divName3, string overview3,
+    string imgFilePath4, string divName4, string overview4,
+    string imgFilePath5, string divName5, string overview5,
+    string imgFilePath6, string divName6, string overview6,
+    string imgFilePath7, string divName7, string overview7,
+    string imgFilePath8, string divName8, string overview8,
+    string imgFilePath9, string divName9, string overview9)
+    {    
+    <div class="col-lg-12">
+        <h2 class="page-header">Divisions</h2>
+    </div>  
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath1 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName1</b></h4>
+                <p class="text-left">@overview1</p>
+                <br />
+            </div>
+        </div>
+    </div>   
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath2 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName2</b></h4>
+                <p class="text-left">@overview2</p>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath3 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName3</b></h4>
+                <p class="text-left">@overview3</p>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath4 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName4</b></h4>
+                <p class="text-left">@overview4</p>
+                <br />
+            </div>
+        </div>
+    </div>          
+             
+    <div class="col-md-12"></div>
+               
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath5 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName5</b></h4>
+                <p class="text-left">@overview5</p>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath6 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName6</b></h4>
+                <p class="text-left">@overview6</p>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath7 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName7</b></h4>
+                <p class="text-left">@overview7</p>
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src='@("~/App_Imgs/Leadership/" + imgFilePath8 + "p.jpg")' alt="">
+            <div class="caption">
+                <h4><b>@divName8</b></h4>
+                <p class="text-left">@overview8</p>
+                <br />
+            </div>
+        </div>
+    </div>
+    
+    
+}
+
+@helper InTheNewsThmbs(
+string section1,
+string imgFolder,
+string imgFilePath1,
+string imgFilePath2,
+string imgFilePath3,
+string imgFilePath4,
+string imgFilePath5
+)
+{    
+  <div class="">
+            <h2 class="page-header"><b>@section1 in the News</b></h2>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src='@("../App_Imgs/" + imgFolder + "/" + imgFilePath1 + ".jpg")' alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                 <img class="img-responsive customer-img" src='@("../App_Imgs/" + imgFolder + "/" + imgFilePath2 + ".jpg")' alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                 <img class="img-responsive customer-img" src='@("../App_Imgs/" + imgFolder + "/" + imgFilePath3 + ".jpg")' alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                 <img class="img-responsive customer-img" src='@("../App_Imgs/" + imgFolder + "/" + imgFilePath4 + ".jpg")' alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                 <img class="img-responsive customer-img" src='@("../App_Imgs/" + imgFolder + "/" + imgFilePath5 + ".jpg")' alt="">
+            </div>               
+    
+}
+
+
+
+
+
+@helper SidebarDynamic(string title, string subTitle, string img)
+{    //Add foreach loop
+     <div class="col-xs-6 col-sm-3 sidebar-offcanvas col-md-4" id="sidebar" role="navigation">
+           <h2><b>@title</b></h2>
+
+           <div class="panel panel-default">                 
+               <div class="panel-body">
+                   <h4><b>@subTitle</b></h4>
+                     <img class="img-responsive" src="http://warontherocks.com/wp-content/uploads/2015/12/pKYX1MursadczaXx7mFYyTn9X2uETAs3.jpg" alt="" />
+                        <ul class="nav">              
+                          <li><a href="#">Arming our Allies The Case for Offensive Capabilties</a></li>
+                          <li><a href="#">THE CHALLENGE OF THE GRAY ZONE</a></li>
+                          <li><a href="#">The Geopolitical Nihilist</a></li>   
+                            <li><a href="#">The Tyrant’s Hopelessness</a></li>                         
+                        </ul>
+               </div>
+           </div>
+        </div>    
+}
+@helper icon(string type)
+{
+    <i class="fa fa-@type"></i>
+    
+}
+@helper SeoCall2Action(string btnName, string btnLink )
+{    
+    
+        <a href="@btnLink" class="btn btn-primary btn-xs" role="button">@btnName</a>
+   
+    
+}
+
+
+@helper YouTubeLPD(string videoSrc)
+{
+    //<![CDATA[<a href="https://youtu.be/jkjFLXjDKbc" target="_blank" class="std" onClick="ga('send', 'event', 'LPD', 'YouTube Video', 'https://youtu.be/jkjFLXjDKbc');"><img alt="YouTube" class="inLineImg" src="../app_Imgs/Icons/YouTube_024.png">Presentation Available Here<img src="../app_Imgs/link_newwin.png" alt="Opens a new tab or window" class="link" /></a>]]>
+    <a href="@videoSrc" target="_blank" class="" onClick="ga('send', 'event', 'LPD', 'YouTube Video', '@videoSrc');">
+        <i class="fa fa-youtube">Presentation Available Here</i>
+        <img src="../app_Imgs/link_newwin.png" alt="Opens a new tab or window" class="" /></a>
+    
+}
+
+@helper SectionHeader(string pagetitle, string link1, string link2, string link3)
+{   
+        <div class="">
+            <h1 class="page-header"><b>@pagetitle</b></h1>
+            <ol class="breadcrumb hidden-xs hidden-sm">
+                <li><a href="/Home">@link1</a></li>
+                <li class="active">@link2</li>
+                <li class="active">@link3</li>
+            </ol>
+        </div> 
+}
+
+@helper AWFC(string Num1, string Num2, string Num3, string Num4, string Num5, string Num6, string Num7, string Num8, string Num9, string Num10, string Num11, string Num12, string Num13, string Num14, string Num15, string Num16, string Num17, string Num18, string Num19, string Num20)
+{             
+           
+    <ul class="list-unstyled">
+        <li class="@Num1"><b>AWFC #1</b> Develop Situational Understanding – How to develop and sustain a high degree of situational understanding while operating in complex environments against determined, adaptive enemy organizations. </li>
+        <li class="@Num2"><b>AWFC #2</b> Shape the Security Environment – How to shape and influence security environments, engage key actors, and consolidate gains to achieve sustainable security outcomes in support of Geographic and Functional Combatant Commands and Joint requirements.</li>
+
+        <li class="@Num3"><b>AWFC #3</b> Provide Security Force Assistance – How to provide security force assistance to support policy goals and increase local, regional, and host nation security force capability, capacity, and effectiveness. </li>
+        <li class="@Num4"><b>AWFC #4</b> Adapt the Institutional Army and Innovate: How to maintain an agile institutional Army that ensures combat effectiveness of the total force, supports other services, fulfills DoD and other agencies' requirements, ensures quality of life for Soldiers and families, and possesses the capability to surge (mobilize) or expand (strategic reserve) the active Army.</li>
+
+        <li class="@Num5"><b>AWFC #5</b> Counter Weapons of Mass Destruction - How to prevent, reduce, eliminate, and mitigate the use and effects of weapons of mass destruction (WMD) and chemical, biological, radiological, nuclear, and high yield explosives (CBRNE) threats and hazards on friendly forces and civilian populations.</li>
+        <li class="@Num6"><b>AWFC #6</b> Conduct Homeland Operations - How to operate across multiple domains and with multiple partners to defend the homeland and mitigate the effects of attacks and disasters.</li>
+
+        <li class="@Num7"><b>AWFC #7</b> Conduct Space and Cyber Electromagnetic Operations and Maintain Communications - How to assure uninterrupted access to critical communications and information links (satellite communications [SATCOM], positioning, navigation, and timing [PNT], and intelligence, surveillance, and reconnaissance [ISR]) across a multi-domain architecture when operating in a contested, congested, and competitive operating environment. </li>
+        <li class="@Num8"><b>AWFC #8</b> Enhance Realistic Training – How to train Soldiers and leaders to ensure they are prepared to accomplish the mission across the range of military operations while operating in complex environments against determined, adaptive enemy organizations. </li>
+
+        <li class="@Num9"><b>AWFC #9</b> Improve Soldier, Leader and Team Performance – How to develop resilient Soldiers, adaptive leaders, and cohesive teams committed to the Army professional ethic that are capable of accomplishing the mission in environments of uncertainty and persistent danger</li>
+        <li class="@Num10"><b>AWFC #10</b> Develop Agile and Adaptive Leaders – How to develop agile, adaptive, and innovative leaders who thrive in conditions of uncertainty and chaos and are capable of visualizing, describing, directing, and leading and assessing operations in complex environments and against adaptive enemies.</li>
+
+        <li class="@Num11"><b>AWFC #11</b> Conduct Air-Ground Reconnaissance and Security Operations - How to conduct effective air-ground combined arms reconnaissance and security operations to develop the situation rapidly in close contact with the enemy and civilian populations.</li>
+        <li class="@Num12"><b>AWFC #12</b> Conduct Joint Expeditionary Maneuver and Entry Operations – How to project forces, conduct forcible and early entry, and transition rapidly to offensive operations to ensure access and seize the initiative.</li>
+
+        <li class="@Num13"><b>AWFC #13</b> Conduct Wide Area Security – How to establish and maintain security across wide areas (wide area security) to protect forces, populations, infrastructure, and activities necessary to shape security environments, consolidate gains, and set conditions for achieving policy goals.</li>
+        <li class="@Num14"><b>AWFC #14</b> Ensure Interoperability and Operate in a Joint, Interorganizational, and Multinational Environment – How to integrate joint, interorganizational, and multinational partner capabilities and campaigns to ensure unity of effort and accomplish missions across the range of military operations.</li>
+
+        <li class="@Num15"><b>AWFC #15</b> Conduct Joint Combined Arms Maneuver – How to conduct combined arms air-ground maneuver to defeat enemy organizations and accomplish missions in complex operational environments. </li>
+        <li class="@Num16"><b>AWFC #16</b> Set the Theater, Sustain Operations, and Maintain Freedom of Movement - How to set the theater, provide strategic agility to the joint force, and maintain freedom of movement and action during sustained and high tempo operations at the end of extended lines of communication in austere environments.</li>
+
+        <li class="@Num17"><b>AWFC #17</b> Integrate Fires: How to coordinate and integrate Army and JIM fires, and conduct targeting across all domains to defeat the enemy and preserve freedom of maneuver and action across the range of military operations.</li>
+        <li class="@Num18"><b>AWFC #18</b> Deliver Fires – How to deliver fires to defeat the enemy and preserve freedom of action across the range of military operations. </li>
+
+        <li class="@Num19"><b>AWFC #19</b> Exercise Mission Command – How to understand, visualize, describe, and direct operations consistent with the philosophy of mission command to seize the initiative over the enemy and accomplish the mission across the range of military operations. </li>
+        <li class="@Num20"><b>AWFC #20</b> Develop Capable Formations – How to design Army formations capable of rapidly deploying and conducting operations for ample duration and in sufficient scale to accomplish the mission.</li>
+    </ul>	
+       
+        
+    
+}
+@helper loe(string Name)
+{ 
+   
+    string tag = "";
+    
+    if (Name == "Implement")
+    {
+        tag = "Deliver integrated DOTMLPF-P solutions to improve combat effectiveness of the current and future force."; 
+    }
+    else if (Name == "Think")
+    {
+        tag = "Establish a sound conceptual foundation for Army modernization.";
+    }
+     else if (Name == "Learn")
+    {
+        tag = "Conduct rigorous experiments, wargames, and assessments to learn in a focused, sustained, and collaborative manner.";
+    }
+     else if (Name == "Analyze")
+    {
+        tag = "Focus prioritized efforts on first-order military challenges.";
+    }
+     else if (Name == "Communicate")
+    {
+        tag = "Communicate";
+    }
+    
+    
+     <a class="text-primary" href="#" data-toggle="popover" data-trigger="hover" title="@Name" data-content="@tag"> <i class="fa fa-info-circle fa-lg text-primary" role="button"></i></a>
+    
+}

@@ -1,0 +1,113 @@
+﻿@using ARCIC.Models;
+@using ARCIC.App_Code;
+@{ 
+    IEnumerable<Article> slidesData = ViewBag.slides;
+    var slides = slidesData.ToList();
+    var slideCnt = slides.ToList().Count();
+}
+<style>
+    .carousel-inner div img {width:120%;}
+   
+
+</style>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        @for (int i = 1; i < slideCnt; i++)
+            {
+            <li data-target="#myCarousel" data-slide-to="@i"></li>
+        }
+    </ol>
+
+
+    <!--First Slide active-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src='@("/App_Imgs/Slider/" + slides[0].imageURL + "fmobile.jpg")' alt="@slides[0].source">
+            <div class="col-md-12">
+                <div id="carouselCaption" class="carousel-caption text-center clearfix" style="display:block;">
+                    @if (slides[0].pFocus == "Exclusive")
+                    {
+                        <div class="text-center"><img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png " /></div>
+                    }
+
+                    <h4 class="text-center"><b>@Shorten.ShortStr(slides[0].title, 66)...</b></h4>
+                    <div class="">
+                        @if (slides[0].pFocus == "Exclusive")
+
+                        {
+                            <a class="btn btn-warning" href='@(Url.Action("Article", "Articles", new { articleID = slides[0].artID }))' role="button"
+                               onclick="ga('send', 'event', { eventCategory: 'News Slider',  eventAction: 'Clicked', eventLabel: '@slides[0].title', eventValue: 1});">Read<i class="fa fa-external-link"></i></a>
+
+                        }
+                        else if (slides[0].pFocus == "Local")
+                        {
+                            <a class="btn btn-primary" href='@(Url.Action("Article", "Articles", new { articleID = slides[0].artID }))' target="_self" role="button"
+                               onclick="ga('send', 'event', { eventCategory: 'News Slider',  eventAction: 'Clicked', eventLabel: '@slides[0].title', eventValue: 1});">Read<i class="fa fa-external-link"></i></a>
+
+                        }
+                        else
+                        {
+                            <a class="btn btn-primary" href='@(slides[0].link)' target="_blank" role="button"
+                               onclick="ga('send', 'event', { eventCategory: 'News Slider',  eventAction: 'Clicked', eventLabel: '@(slides[0].title)', eventValue: 1});">Read<i class="fa fa-external-link"></i></a>
+
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slides 2 ++ -->
+        @foreach (var item in slides.Skip(1))
+            {
+            <div class="item">
+                <img src='@("/App_Imgs/Slider/" + item.imageURL + "fmobile.jpg")' alt="@item.source">
+                <div class="col-md-12">
+                    <div class="carousel-caption text-center">
+                        @if (item.pFocus.ToString() == "Exclusive")
+                        {
+                            <div class=""> <img class="img-responsive" src="App_Imgs/App/Icons/Exclusive_032.png" /></div>
+                        }
+
+                        <h4 class="text-center"><b>@Shorten.ShortStr(item.title, 66)...</b></h4>
+
+                        <div class="">
+                            @if (item.pFocus.ToString() == "Exclusive")
+                            {
+                                <a class="btn btn-warning btn-xs" href='@(Url.Action("Article", "Articles", new { articleID = item.artID }))' target="_self" role="button"
+                                   onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@item.title', eventValue: 1});">Read<i class="fa fa-external-link"></i></a>
+                            }
+                            else if (item.pFocus.ToString() == "Local")
+                            {
+                                <a class="btn btn-primary btn-xs" href='@(Url.Action("Article", "Articles", new { articleID = item.artID }))' target="_self" role="button" onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@item.title', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+
+                            }
+                            else//other
+                            {
+                                <a class="btn btn-primary btn-xs" href="@item.link" target="_blank" role="button" onclick="ga('send', 'event', { eventCategory: 'News Slider Article',  eventAction: 'Clicked', eventLabel: '@item.title', eventValue: 1});">Read <i class="fa fa-external-link"></i></a>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+
+
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+

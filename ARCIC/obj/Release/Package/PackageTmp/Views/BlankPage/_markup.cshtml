@@ -1,0 +1,17 @@
+﻿@using ARCIC.Models;
+
+@{
+    var data = Reading.GetData();
+    
+}
+
+<div class="container">
+    <div class="col-md-8">
+        @foreach (var item in data)
+        {
+            <div> @item.title</div>
+        }
+    </div>
+
+
+</div>

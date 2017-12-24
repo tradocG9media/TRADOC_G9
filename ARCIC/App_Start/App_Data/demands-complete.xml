@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Challenges>
+  <Demands>
+    <demand>
+      <id>0</id>
+      <number>0</number>
+      <title></title>
+      <desc></desc>
+      <lead></lead>
+      <demand1></demand1>
+      <demand2></demand2>
+      <demand3></demand3>
+      <demand4></demand4>
+      <demand5></demand5>
+      <demand6></demand6>
+      <demand7></demand7>
+      <demand8></demand8>
+      <demand9></demand9>
+      <demand10></demand10>
+      <demand11></demand11>
+      <demand12></demand12>7
+      <demand13></demand13>
+      <demand14></demand14>
+      <demand15></demand15>
+    </demand>
+    <demand>
+      <id>1</id>
+      <number>1</number>
+      <title>Develop Situational Understanding</title>
+      <desc>How to develop and sustain a high degree of situational understanding while operating in complex environments against determined, adaptive enemy organizations.</desc>
+      <lead>Intelligence Center of Excellence (ICoE)</lead>
+      <demand1>Learning Demands for AWFC #1 are For Official Use Only (FOUO).</demand1>
+      <demand2></demand2>
+      <demand3></demand3>
+      <demand4></demand4>
+      <demand5></demand5>
+      <demand6></demand6>
+      <demand7></demand7>
+      <demand8></demand8>
+      <demand9></demand9>
+      <demand10></demand10>
+      <demand11></demand11>
+      <demand12></demand12>
+      <demand13></demand13>
+      <demand14></demand14>
+      <demand15></demand15>
+    </demand>
+    <demand>
+      <id>2</id>
+      <number>2</number>
+      <title>Shape the Security Environment</title>
+      <desc>How does the Army influence the security environment and engage key actors and local/regional forces in order to consolidate gains and achieve sustainable security outcomes in support of Geographic Combatant Commands and Joint requirements.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>
+      
+        <demand1>How can the Army develop a common operating picture of security cooperation activities among the components, including special operations forces and UA partners, to ensure unity of effort for activities that mutually support the Integrated Country Strategy (ICS) and GCC goals?</demand1>
+        <demand2>What host nation information is necessary to accurately identify security cooperation opportunities and assess the outcomes of engagements across all domains (to include the presence or anticipated occurrence of mega-cities)?</demand2>
+        <demand3>How does the Army improve training and educational effectiveness to advance the proficiency and readiness of Host Nation (HN) forces?</demand3>
+        <demand4>How can Army Service Component Command’s (ASCC) Theater Security Cooperation (TSC) planning integrate Regionally-Aligned Forces (RAF) to improve efficiency and achieve theater objectives?</demand4>
+        <demand5> How can the Army better enable ASCCs to identify supporting objectives, identify requirements, set priorities for countries and resources, and assess the activity and its impact on the theater security objective? </demand5>
+        <demand6>How can the Army maximize the potential of personal relationships built through international military education and training as a force multiplier for security cooperation activities?</demand6>
+        <demand7>How can TRADOC ensure Army personnel understand the nuances of planning, executing, and assessing Army Security Cooperation activities prior to assignment at ASCCs?</demand7>
+        <demand8>How can the Army train, sustain, and incorporate the skills of cultural awareness and language training throughout Soldiers’ careers?</demand8>
+        <demand9>How does the Army generate and sustain forces to support the GCC’s SFA requirements for developing relationships and strengthening partner land forces, while also conducting bilateral/multi-national exercises and unexpected contingencies?</demand9>
+        <demand10>What are the Army force structure requirements that best enable sustained partner activity operations necessary to develop shared aims, goals, and objectives?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+      
+    </demand>
+    <demand>
+      <id>3</id>
+      <number>3</number>
+      <title>Shape the Security Environment (2/3)</title>
+      <desc>How does the Army influence the security environment and engage key actors and local/regional forces in order to consolidate gains and achieve sustainable security outcomes in support of Geographic Combatant Commands and Joint requirements.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>
+      
+        <demand1>How can the Army develop a common operating picture of security cooperation activities among the components, including special operations forces and UA partners, to ensure unity of effort for activities that mutually support the Integrated Country Strategy (ICS) and GCC goals?</demand1>
+        <demand2>What host nation information is necessary to accurately identify security cooperation opportunities and assess the outcomes of engagements across all domains (to include the presence or anticipated occurrence of mega-cities)?</demand2>
+        <demand3>How does the Army improve training and educational effectiveness to advance the proficiency and readiness of Host Nation (HN) forces?</demand3>
+        <demand4>How can Army Service Component Command’s (ASCC) TSC planning integrate Regionally-Aligned Forces (RAF) to improve efficiency and achieve theater objectives?</demand4>
+        <demand5>How can the Army better enable ASCCs to identify supporting objectives, identify requirements, set priorities for countries and resources, and asses the activity and its impact on the theater security objective?</demand5>
+        <demand6>How can the Army maximize the potential of personal relationships built through international military education and training as a force multiplier for security cooperation activities?</demand6>
+        <demand7>How can TRADOC ensure Army personnel understand the nuances of planning, executing, and assessing Army Security Cooperation activities prior to assignment at ASCCs?</demand7>
+        <demand8>How can the Army train, sustain, and incorporate the skills of cultural awareness and language training throughout Soldiers’ careers?</demand8>
+        <demand9>How does the Army generate and sustain forces to support the GCC’s SFA requirements for developing relationships and strengthening partner land forces, while also conducting bilateral/multi-national exercises and unexpected contingencies?</demand9>
+        <demand10>What are the Army force structure requirements that best enable sustained partner activity operations necessary to develop shared aims, goals, and objectives?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+      
+    </demand>
+    <demand>
+      <id>4</id>
+      <number>4</number>
+      <title>Adapt the Institutional Army and Innovate</title>
+      <desc>How to improve the rate of innovation to drive capability development and deliver DOTMLPF-P solutions to the warfighter at a pace that meets operational demand within the existing constraints of the acquisition and budgeting processes.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>
+      
+        <demand1>What are the individual, organizational, and institutional barriers that impede innovation that don’t require change to laws?</demand1>
+        <demand2>How does the Army as an institution anticipate change in the operating environment to produce solutions?</demand2>
+        <demand3>How does the Army harness the collective creative capacity that exists throughout the force to continue to build adaptive leaders and a more responsive institution?</demand3>
+        <demand4>How and what are the mechanisms that will enable the Army to increase collaboration with members of industry, academia, and think-tanks?</demand4>
+        <demand5>How can the Army harness innovative solutions through crowd sourcing?</demand5>
+        <demand6>What are the layers of bureaucracy or institutional oversight that can be decreased or removed within the acquisition life-cycle?</demand6>
+        <demand7>How can the acquisition life-cycle process change to become a more agile, adaptive, and responsive process?</demand7>
+        <demand8>How will an inability to increase the rate of innovation effect Army operations in dense urban areas or megacities?</demand8>
+        <demand9></demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>5</id>
+      <number>5</number>
+      <title>Counter Weapons of Mass Destruction</title>
+      <desc>How to prevent, reduce, eliminate, and mitigate the use and effects of weapons of mass destruction (WMD) and chemical, biological, radiological, nuclear, and high yield explosives (CBRNE) threats and hazards on friendly forces and civilian populations.</desc>
+      <lead>Maneuver Support Center of Excellence (MSCoE)</lead>
+      
+        <demand1>How do future forces detect, protect and mitigate future WMD threats and CBRNE hazards to maintain freedom of action and increase situational understanding across wide areas and in dense urban environments?</demand1>
+        <demand2>How do future forces deny the ability for WMD proliferation pathways to prevent adversary development of WMD?</demand2>
+        <demand3>How do future forces conduct sustained operations in a CBRN hazard environment?</demand3>
+        <demand4>How do future forces support the attribution of WMD threats and CBRN hazards?</demand4>
+        <demand5>How do future forces support elimination of adversary WMD programs?</demand5>
+        <demand6>How do future forces prevent the employment of enemy WMD capabilities?</demand6>
+        <demand7>How do future forces support CBRN consequence management operations to save lives, mitigate human suffering and protect infrastructure?</demand7>
+        <demand8></demand8>
+        <demand9></demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>6</id>
+      <number>6</number>
+      <title>Conduct Homeland Operations</title>
+      <desc>How to operate across multiple domains and with multiple partners to defend the homeland and mitigate the effects of attacks and disasters. Recently updated.</desc>
+      <lead>Maneuver Support Center of Excellence (MSCoE)</lead>
+      
+        <demand1>What are the legal and policy impediments to effective homeland operations, and how to mitigate them in order to protect the homeland?</demand1>
+        <demand2>How does the future Army contribute to an active, layered global defense in the forward regions and in the approaches to prevent, and protect the homeland against, emerging threats and hazards?</demand2>
+        <demand3>How do future Army forces within the homeland contribute to an active, layered global defense to prevent, and protect the homeland against, emerging threats and adversaries?</demand3>
+        <demand4>How does the Army ensure the resilience necessary to conduct the full range of military operations after domestic disasters or attacks?</demand4>
+        <demand5>How will future Army installations integrate domestic operations into their core missions and capabilities?</demand5>
+        <demand6>How do Army forces support civil authorities in response to complex catastrophes and disasters in complex urban environments in order to save lives, minimize human suffering, and protect critical infrastructure?</demand6>
+        <demand7>How does the Army seamlessly transition between, or simultaneously execute, DSCA and HD operations in the homeland?</demand7>
+        <demand8>How does the Army execute simultaneous support to Humanitarian Assistants/Disaster Relief (HA/DR) and foreign consequence management (FCM) operations while maintaining capacity for domestic disaster response?</demand8>
+        <demand9>How should Army organizations change to meet requirements for future homeland operations?</demand9>
+        <demand10>How does the Army respond to Chemical, Biological, Radiological, and Nuclear (CBRN) events in the homeland?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>7</id>
+      <number>7</number>
+      <title>Conduct Space, Cyberspace, Electronic Warfare, and Communications Operations </title>
+      <desc>How to assure access to and integrity of critical data and information, across multiple domains, in an increasingly contested and congested operational environment, while simultaneously denying the same to the enemy. </desc>
+      <lead>Cyber Center of Excellence (CyberCoE)</lead>      
+        <demand1>How can the Army engineer the tactical network to reduce user complexity, improve capacity, increase resiliency, maximize bandwidth efficiency, enable dynamic reconfiguration, and improve EW and cybersecurity capabilities, while becoming expeditionary? (CCoE)</demand1>
+        <demand2>What is the optimal way for the Army to organize the activities associated with cyberspace operations to maximize cyber capabilities across the Army Warfighting Functions while minimizing required resources? (CCoE)</demand2>
+        <demand3> What is the optimal method to employ space, cyberspace, electronic warfare, and communications capabilities within the Multi-Domain Battle framework, to include dense urban areas and megacities, to deliver effects required by commanders at all echelons?  (CCoE/SMDC)  </demand3>
+        <demand4>How can the Army better prepare its leaders and Soldiers to operate in Denied, Degraded, and Disrupted Space Operational Environments (D3SOEs)?  (SMDC)  </demand4>
+      <demand5> What operations must Army forces execute, across all phases, to assure overmatch and freedom of action for Army and joint forces?  </demand5>
+      <demand6>What capabilities do Army forces need to rapidly establish aerial, high altitude, and space architectures that enable an expeditionary and globally deployed Army?  (SMDC/CCoE)  </demand6>
+      <demand7> How does the Army develop and maintain situational understanding within the space and cyberspace domains to help create and exploit temporary windows of superiority?  (CCoE/SMDC)   </demand7>
+        <demand8>What are the intersections, overlaps, gaps, and seams between space, cyberspace, electromagnetic spectrum operations, military intelligence, and information operations and how can the Army effectively integrate these operations to support Unified Land Operations? (CCoE)</demand8>
+        <demand9>How does the Army execute Navigation Warfare (NAVWAR), ensuring that Army forces have assured and reliable access to position, navigation, and timing (PNT) information while denying the same to our adversaries? (SMDC)</demand9>
+        <demand10>How does the Army execute Special Technical Operations (STO), ensuring that emerging special technical capabilities (such as Alternative Compensatory Control Measures, ACCM) are integrated to support Unified Land Operations? (SMDC)</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>8</id>
+      <number>8</number>
+      <title>Enhance Realistic Training</title>
+      <desc>How to train Soldiers, leaders and units to ensure they are prepared to accomplish the mission across the range of military operations while operating in complex environments against determined, adaptive enemy organizations. </desc>
+      <lead>CAC-T</lead>
+      
+        <demand1>Training Environment. How does the Army improve and evolve the Integrated Training Environment in order to effectively replicate all conditions of the future operational environment – creating adaptive realistic training– while also improving and evolving unit training management and readiness reporting?</demand1>
+        <demand2>Megacity or Dense Urban Environment. How does the Army train to win in dense urban areas or mega city environments?</demand2>
+        <demand3>Training and Education Development. How does the Army continue to improve its training and education development policy, requirements, processes, products, concepts, strategies, plans, and tools?</demand3>
+        <demand4>Training Management. How does the Army continue to improve current training management systems and processes; while continuing to improve Unit Training Management (UTM), and nest Army Training Management Systems (ATMS) with Training Information Infrastructure (TII) and Army Training Information System (ATIS) efforts?</demand4>
+        <demand5>Training Support. How does the Army improve the effectiveness of training and educational enablers to improve outcomes, return on investments and increase Soldier, Leader and unit proficiency and readiness?</demand5>
+        <demand6>Live Training. How does the Army improve the sustainment of crew and small unit collective maneuver, mission command training, home station ranges and training land, and its combat training centers?</demand6>
+        <demand7>Training Information Systems. How does the Army continue to improve its Training Information System and allow more efficient, effective, and intuitive access to training information?</demand7>
+        <demand8>Distributed Learning. How does the Army continue to improve its delivery of rigorous, relevant, and tailored distributed training and education at the point of need from a responsive and accessible delivery capability?</demand8>
+        <demand9></demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>9</id>
+      <number>9</number>
+      <title>Improve Soldier, Leader, and Team Performance</title>
+      <desc>How to develop resilient Soldiers, adaptive leaders, and cohesive teams committed to the Army professional ethic that are capable of accomplishing the mission in environments of uncertainty and persistent danger.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>
+
+      <demand1><![CDATA[<b>Future Operational Environment (FOE).</b>]]> How will the FOE impact the performance of soldiers, leaders, and small teams across the range of military operations required to achieve overmatch? </demand1>
+      <demand2><![CDATA[<b>Recruit/Assess/Train.</b> ]]> How can the Army best recruit, assess, develop, and manage soldiers and leaders throughout their lifecycle, with increased focus on individual competencies and attributes, to build effective and adaptable teams? </demand2>
+      <demand3><![CDATA[<b>Human Performance Research and Assessment.</b> ]]> How can the Army optimize the cognitive, physical, and social performance of Army Professionals through the conduct and application of research, development, and assessment? </demand3>
+      <demand4><![CDATA[<b>Attributes.</b> ]]> What attributes/characteristics/traits are required across the Army to enable essential performance? </demand4>
+      <demand5><![CDATA[<b>Readiness.</b>]]> How does the Army assess and maintain fielded human performance solutions (materiel and non-materiel) across the total force in support of readiness and operations?   </demand5>
+      <demand6>What human-level conditions, operations, essential performance, and enabling attributes are relevant for subterranean and dense urban environments?</demand6>
+      <demand7></demand7>
+      <demand8></demand8>
+        <demand9></demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>10</id>
+      <number>10</number>
+      <title>Develop Agile and Adaptive Leaders</title>
+      <desc>How to develop agile, adaptive, and innovative leaders who thrive in conditions of uncertainty and chaos and are capable of visualizing, describing, directing, and leading and assessing operations in complex environments and against adaptive enemies.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>
+      
+        <demand1>How should the Army demonstrate its commitment to the Army Profession, life-long learning, and development?</demand1>
+        <demand2>How should the Army balance its commitment to the training, education, and experience components of leader development?</demand2>
+        <demand3>How should the Army manage military and civilian talent to benefit both the institution and individual?</demand3>
+        <demand4>How should the Army select and develop leaders with positive leader attributes and proficiency in core leadership competencies for responsibility at higher levels?</demand4>
+        <demand5>How should the Army prepare adaptive and creative leaders capable of operating within the complexity of the operational environment and the entire range of military operations?</demand5>
+        <demand6>How should leader development enable or support the realization of Mission Command?</demand6>
+        <demand7>How should the Army demonstrate valuing a broad range of leader development experiences and developmental opportunities?</demand7>
+        <demand8></demand8>
+        <demand9></demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>11</id>
+      <number>11</number>
+      <title>Conduct Air-Ground Reconnaissance and Security Operations</title>
+      <desc>How to conduct effective air-ground combined arms reconnaissance and security operations to develop the situation rapidly in close contact with the enemy and civilian populations.</desc>
+      <lead>Maneuver Center of Excellence (MCoE)</lead>
+        <demand1>What DOTMLPF-P changes are required to enable overmatch/maximum range detection, identification and engagement against adversaries employing advanced countermeasures and deception techniques?</demand1>
+        <demand2>How do Army forces conduct persistent, cross-domain, integrated air-ground reconnaissance and security operations using manned and unmanned platforms to collect, develop, and report near real time actionable combat information and provide early warning, reaction time, maneuver space, and security?</demand2>
+        <demand3>How can the Army develop and integrate remote sensor and robotic/autonomous technologies to support air-ground reconnaissance and security operations?</demand3>
+        <demand4>What DOTMLPF-P solutions are required to enable reconnaissance &amp; security operations in the cyberspace and space domains and in chemical biological radiological nuclear and explosive (CBRN-E), dense urban, and subterranean environments?</demand4>
+        <demand5>How does the Army maintain network capabilities in a contested environment that supports processing and exploitation of combat information, and dissemination of intelligence?</demand5>
+        <demand6>What are the air-ground (cross domain) reconnaissance capabilities required at each echelon to enable BCT semi-independent operations?</demand6>
+        <demand7>What are the DOTMLPF-P Implications of significantly increased Army aircraft performance (range, speed, payload, endurance) for the conduct of Air-Ground Reconnaissance (cross-domain)?</demand7>
+        <demand8>What are the general purpose forces - special operation forces (GPF-SOF) interdependencies necessary to effectively plan, synchronize and execute air-ground (cross-domain) reconnaissance &amp; security operations at the operational level. </demand8>
+        <demand9>What are the Soldier, leader and unit competencies required for Army forces to effectively conduct reconnaissance and security operations?</demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+    </demand>
+     <demand>
+      <id>12</id>
+      <number>12</number>
+      <title>Conduct Joint Expeditionary Maneuver and Entry Operations</title>
+      <desc>How does the Army deploy and project forces, conduct forcible and early entry, and set conditions across multiple domains to rapidly transition to offensive operations to ensure access and seize the initiative.</desc>
+      <lead>Maneuver Center of Excellence (MCoE)</lead>
+      
+        <demand1>What DOTMLPF-P capabilities enable Army forces to conduct joint entry operations in complex A2AD environments from strategic distances and rapidly transition from movement to maneuver, present multiple dilemmas to the enemy, and accomplish mission objectives?</demand1>
+        <demand2>How do future Army forces deploy combat-configured, combined arms forces rapidly, transition quickly, and conduct joint combined arms operations of sufficient scale and ample duration?</demand2>
+        <demand3>How do Army forces integrate and synchronize joint, inter-organizational and multi-national capabilities to protect early entry forces from enemy A2AD threats?</demand3>
+        <demand4>What DOTMLPF-P capabilities do early entry forces require to realize mission command in degraded environments and support expeditionary maneuver?</demand4>
+        <demand5>How do Army forces leverage the sea as maneuver space to execute cross domain maneuver?</demand5>
+        <demand6>What cross-domain deployment capabilities do maneuver forces require to conduct initial entry operations at multiple points simultaneously?</demand6>
+        <demand7>How do Army forces ensure timely and sufficient distribution of intelligence products to support commander’s decision making in the conduct of forcible and early entry operations?</demand7>
+        <demand8>What DOTMLPF-P capabilities do Army forces require to conduct forcible and early entry operations into or in close proximity to dense urban areas?</demand8>
+        <demand9>How do Army forces conduct forcible and early entry operations; transport personnel, equipment and supplies; and conduct air medical evacuation from land and and sea bases to austere or unprepared landing zones?</demand9>
+        <demand10>How do Army forces exploit significantly improved aircraft performance to gain a maneuver advantage?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>13</id>
+      <number>13</number>
+      <title>Conduct Wide Area Security</title>
+      <desc>How do Army forces establish and maintain security across wide areas (wide area security) and across multiple domains to protect forces, populations, infrastructure, and activities necessary to shape security environments, consolidate gains, and set conditions for achieving policy goals.</desc>
+      <lead>Maneuver Center of Excellence (MCoE)</lead>
+      
+        <demand1>What DOTMLPF-P capabilities enable Army forces to consolidate gains, including the relocation of displaced civilians, reestablishment of law and order, performance of humanitarian assistance, and restoration of key infrastructure?</demand1>
+        <demand2>How do Army forces transition from the occupation of territory and control of populations gained as a result of military operations, to the transfer of control to legitimate authorities building the capability to govern and secure the host nation?</demand2>
+        <demand3>How do Army forces conduct persistent, cross domain, integrated reconnaissance and security operations to provide early and accurate warning, preserve freedom of maneuver, protect populations and critical infrastructure, and consolidate gains?</demand3>
+        <demand4>How do Army forces integrate and synchronize joint, inter-organizational, and multi-national capabilities to protect populations, friendly forces, installations, borders, infrastructure, and activities?</demand4>
+        <demand5>How do Army forces conduct local security across formations and echelons to develop situational understanding, preclude enemy options, and protect the force from dangers?</demand5>
+        <demand6>What DOTMLPF-P capabilities are required to enable reconnaissance and security operations across wide areas that may include dense urban, subterranean, and other complex environments?</demand6>
+        <demand7>How do Army forces employ remote and standoff CBRN detection and integrate disparate, non-CBRN detectors to enhance situational understanding during joint combined operations?</demand7>
+        <demand8>How do Army forces conduct engineer operations to assure mobility, enhance protection, enable force projection and logistics, build partner capacity and develop infrastructure?</demand8>
+        <demand9>How do Army forces plan and design, secure, construct, operate, and transfer or close contingency bases to provide a protected location from which to project and sustain combat power?</demand9>
+        <demand10>How will advanced manned and unmanned air/ground capabilities be integrated to facilitate collection, development, and dissemination of actionable combat information for rapid targeting across domains?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>14</id>
+      <number>14</number>
+      <title>Ensure Interoperability and Operate in JIM Environment</title>
+      <desc>How to integrate joint, inter-organizational, and multi-national partner capabilities and campaigns to ensure unity of effort and accomplish missions across the range of military operations.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>      
+        <demand1>How do Army units interact (technical, human and procedural) with UAPs to conduct the operations process (plan, prepare, execute and assess) and maintain the operational tempo for achieving the commander’s intent?</demand1>
+        <demand2>How do Army units and UAOPs efficiently share mission critical data/information to achieve mutual situational awareness/situational understanding (SA/SU) in a Joint, Inter-organizational and Multi-national environment?)</demand2>
+        <demand3>How do Army units (Corps and Below) integrate UAPs into the Department of Defense Information Network – Army (DoDIN-A) in order to execute Unified Land Operations (ULO), maintain the operational tempo, and achieve the commander’s intent? </demand3>
+        <demand4>How does the Army enable UAP access to information and data across multiple classifications in order to share mission critical information, maintain the operational tempo, and achieve the commander’s intent?</demand4>
+        <demand5>How do Army units engage and interact with UAPs with differing Mission Command philosophies so as to quickly develop trust and exercise initiative as one cohesive team? </demand5>
+        <demand6>How do Army units conduct realistic training events that replicates a JIM environment and incorporate network linkages and interoperability with all JIM partners? </demand6>
+        <demand7>How does the Army coordinate, synchronize and deconflict Army operations with Unified Action Partners during Urban Operations? </demand7>
+        <demand8></demand8>
+        <demand9></demand9>
+        <demand10></demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+      
+    </demand>
+    <demand>
+      <id>15</id>
+      <number>15</number>
+      <title>Conduct Joint Combined Arms Maneuver</title>
+      <desc>How to conduct combined arms air-ground maneuver to defeat enemy organizations and accomplish missions in complex operational environments.</desc>
+      <lead>Maneuver Center of Excellence (MCoE)</lead>
+      
+      <demand1>How do Army forces synchronize the capabilities of all five domains (land, air,  maritime, space and cyberspace) to support maneuver?</demand1>
+      <demand2>What DOTMLPF-P capabilities do Army forces require to gain sufficient mobility, firepower, protection, intelligence, mission command, and sustainment necessary to conduct cross-domain maneuver?</demand2>
+      <demand3>How do Army forces operate semi-independently and sustain operations for ample duration at extended distances, while retaining the ability to concentrate  combat power rapidly from multiple locations and directions to achieve operational objectives?</demand3>
+      <demand4>What DOTMLPF-P capabilities do Army forces require to maneuver and survive  in close combat against enemies with robotic and autonomous systems, UAS, manned aircraft (rotary and fixed wing), and advanced long- range indirect fire capabilities?</demand4>
+      <demand5>How do Army forces move formations rapidly to control tempo and momentum of maneuver to enable them to concentrate combat power at decisive points?</demand5>
+      <demand6>What DOTMLPF-P capabilities do Army forces require to identify, secure, and reduce obstacles and hazards; breach structures; and bridge gaps to guarantee unimpeded freedom of maneuver during joint combined arms operations?</demand6>
+      <demand7>How do Army forces produce accurate firing data that enables the delivery of cross-domain, precision and volume, scalable (non-lethal to lethal) fires during joint combined arms operations to destroy or neutralize enemy forces and support ground maneuver?</demand7>
+      <demand8>How does the Army rapidly and effectively shape complex terrain including dense urban areas and subterranean environments from the small unit to corps level using lethal and nonlethal capabilities?</demand8>
+      <demand9>How do Army forces employ space and cyberspace capabilities that allow  maneuver forces to identify threats, defend the Army information network, exploit access to enemy networks; and achieve offensive effects to support tactical and operational maneuver?</demand9>
+      <demand10>What are the DOTMLPF-P Implications of significantly increased aircraft performance (range, speed, payload, performance in objective area) for the conduct of Combined Arms Maneuver? (ACoE, Nov 2014)</demand10>
+      <demand11></demand11>
+      <demand12></demand12>
+      <demand13></demand13>
+      <demand14></demand14>
+      <demand15></demand15>
+
+      
+    </demand>
+     <demand>
+      <id>16</id>
+      <number>16</number>
+      <title>Set the Theater Sustain Operations and Maintain Freedom of Movement</title>
+      <desc>How to set the theater, provide strategic agility to the joint force, and maintain freedom of movement and action during sustained and high tempo operations at the end of extended lines of communication in austere environments.</desc>
+      <lead>Sustainment Center of Excellence (SCoE)</lead>
+      
+        <demand1>Identify and assess the Army’s roles/responsibilities to Set (Surge) the Theater ISO ASCC/JFC?</demand1>
+        <demand2>How does the Army facilitate access to seize the initiative in early entry operations?</demand2>
+        <demand3>How does the Army underscore US commitment to Allies/Partners and better assist the GCC to shape the theater and build partner capacity?</demand3>
+        <demand4>What are the attributes/characteristics of resilient and reliable sustainment and distribution networks ISO semi-independent formations in dispersed operations?</demand4>
+        <demand5>What changes are required to enable a more lethal and agile Expeditionary Force that maintains combat effectiveness and overmatch?</demand5>
+        <demand6>How does the Army, with joint, inter-organizational, and multi-national partners, sustain global cross domain maneuver, in sufficient scale, and for ample duration to achieve JFC objectives?</demand6>
+        <demand7>How should the Army mitigate constraints and vulnerabilities with a shrinking overseas defense posture while maintaining the ability to rapidly respond to “unknown, unknowable, and ever changing” global crisis?</demand7>
+        <demand8>How does the Army drive fundamental demand reduction IOT conduct semi-independent and dispersed operations for operational reach and prolonged endurance?</demand8>
+        <demand9>How does the Army ensure Freedom of Movement and Action in a Multi-Domain Battle?</demand9>
+        <demand10>How does the Army sustain cross domain maneuver in areas of dense urban terrain?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+        
+      
+    </demand>
+     <demand>
+      <id>17</id>
+      <number>17</number>
+      <title>Employ Cross-Domain Fires</title>
+      <desc>How to employ cross-domain fires to defeat the enemy and preserve freedom of action across the range of military operations (ROMO).</desc>
+      <lead>Fires Center of Excellence (FCoE)</lead>     
+       
+        <demand1>How does the Fires Cell in the Operational Fires Command rapidly clear and gain engagement authorization to employ Army and JIM fires across all domains during JCAM?</demand1>
+        <demand2>How does the Fires Cell in the Strategic Fires Command rapidly clear and gain engagement authorization to employ Army and JIM fires across all domains in ROMO?</demand2>
+        <demand3>How does the Operational Fires Command deliver effective cannon, rocket, and missile fires against land, air, and maritime targets with the capacity, range, and lethality to overmatch enemy capabilities?</demand3>
+        <demand4>How does the Strategic Fires Command deliver effective rocket and missile fires against land, air, sea, and space targets to defend friendly forces and critical assets? (</demand4>
+        <demand5>How do the Operational and Strategic Fires Commands employ cross domain fires within a JIM environment, leveraging joint assets and the capabilities of allied nations?</demand5>
+        <demand6>How does the Observation Battery of the Operational Fires Command provide persistent all weather targeting in dense urban/suburban areas during JCAM?</demand6>
+        <demand7>How does the Target Acquisition Battery in the Strategic Fires Command provide persistent all weather targeting in littorals across ROMO?</demand7>
+        <demand8>How does the Fires Cell of the Operational and Strategic Fires Commands integrate Army and JIM sensors to collect and share information, facilitate targeting and engagements, and provide early warning? (</demand8>
+        <demand9>How does the Observation Battery of the Operational Fires Command locate ground and maritime targets throughout the depth of the joint operational area with sufficient accuracy and timeliness to engage targets with precision cannon, rocket, and missile fires, achieving desired effects only on designated targets?</demand9>
+        <demand10>How does the Operational and Strategic Fires Command leverage space-based capabilities in satellite communications (SATCOM), position, navigation and timing (PNT), intelligence, surveillance and reconnaissance (ISR), missile warning (MW), and environmental monitoring (EM) during multi-domain battle?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+     <demand>
+      <id>18</id>
+      <number>18</number>
+      <title>Employ Cross-Domain Fires</title>
+      <desc>How to employ cross-domain fires to defeat the enemy and preserve freedom of action across the range of military operations (ROMO).</desc>
+      <lead>Fires Center of Excellence (FCoE)</lead>        
+        <demand1>How does the Fires Cell in the Operational Fires Command rapidly clear and gain engagement authorization to employ Army and JIM fires across all domains during JCAM?</demand1>
+        <demand2>How does the Fires Cell in the Strategic Fires Command rapidly clear and gain engagement authorization to employ Army and JIM fires across all domains in ROMO?</demand2>
+        <demand3>How does the Operational Fires Command deliver effective cannon, rocket, and missile fires against land, air, and maritime targets with the capacity, range, and lethality to overmatch enemy capabilities?</demand3>
+        <demand4>How does the Strategic Fires Command deliver effective rocket and missile fires against land, air, sea, and space targets to defend friendly forces and critical assets? (</demand4>
+        <demand5>How do the Operational and Strategic Fires Commands employ cross domain fires within a JIM environment, leveraging joint assets and the capabilities of allied nations?</demand5>
+        <demand6>How does the Observation Battery of the Operational Fires Command provide persistent all weather targeting in dense urban/suburban areas during JCAM?</demand6>
+        <demand7>How does the Target Acquisition Battery in the Strategic Fires Command provide persistent all weather targeting in littorals across ROMO?</demand7>
+        <demand8>How does the Fires Cell of the Operational and Strategic Fires Commands integrate Army and JIM sensors to collect and share information, facilitate targeting and engagements, and provide early warning? (</demand8>
+        <demand9>How does the Observation Battery of the Operational Fires Command locate ground and maritime targets throughout the depth of the joint operational area with sufficient accuracy and timeliness to engage targets with precision cannon, rocket, and missile fires, achieving desired effects only on designated targets?</demand9>
+        <demand10>How does the Operational and Strategic Fires Command leverage space-based capabilities in satellite communications (SATCOM), position, navigation and timing (PNT), intelligence, surveillance and reconnaissance (ISR), missile warning (MW), and environmental monitoring (EM) during multi-domain battle?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>19</id>
+      <number>19</number>
+      <title>Exercise Mission Command</title>
+      <desc>How to understand, visualize, describe, and direct operations consistent with the philosophy of mission command to seize the initiative over the enemy and accomplish the mission across the range of military operations.</desc>
+      <lead>Mission Command Center of Excellence (MCCoE)</lead>
+
+        <demand1> How do 2025-2040 U.S. Army echelons above brigade (EAB) headquarters organize as part of JIM teams to combine capabilities across domains and instruments of power to deter or defeat aggressive peers? </demand1>
+        <demand2> How do 2025-2040 U.S. Army echelons above brigade (EAB) headquarters operate as part of JIM teams to combine capabilities across domains and instruments of power to deter or defeat aggressive peers?</demand2>
+        <demand3> What are the required capabilities that will enable 2025-2040 U.S. Army echelons above brigade (EAB) headquarters to be capable of defeating aggressive peer state adversaries in ground combat? </demand3>
+        <demand4> How do future Army forces, at all echelons and in all conditions, achieve continuous MC? </demand4>
+        <demand5> How does the Army create unity of effort to effectively implement mission command to achieve Army and coalition wide understanding and practice of the MC philosophy leading to successful Unified Land Operations (ULO) in support of the joint force?</demand5>
+        <demand6> How do Army forces, at all echelons and under all conditions, achieve unity of effort to meet operational requirements with joint, inter-organizational and multi-national partners? </demand6>
+        <demand7> How do Army forces, at all echelons and under all conditions, achieve sustainable understanding, training, employment, and maintenance of automated MC information systems? </demand7>
+        <demand8> How do future Army forces achieve the ability to describe, plan, integrate, continuously assess, and incorporate Cyber Electromagnetic (CEM) activities? </demand8>
+        <demand9> How do Army forces, at all echelons and under all conditions, achieve shared knowledge to support consistent application of Mission Command and Knowledge Management across operational and institutional domains? </demand9>
+        <demand10>How does the Army in a complex urban environment continue to execute mission command?</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>
+    <demand>
+      <id>20</id>
+      <number>20</number>
+      <title>Develop Capable Formations</title>
+      <desc>How to design Army formations capable of rapidly deploying and conducting operations for ample duration and in sufficient scale to accomplish the mission.</desc>
+      <lead>Army Capabilities Integration Center, Capabilities Developments Directorate (ARCIC CDD)</lead>
+      
+        <demand1>How does the Army improve its ability to task organize for purpose while preserving combined arms capability at the lowest level?</demand1>
+        <demand2>How to develop / design our ground formations to conduct decentralized combined arms maneuver with integrated air-ground operations across contested land, air, maritime, space, and cyberspace domains over wide areas and in congested and restricted urban terrain that allows them to secure wide areas and control territory to protect populations and consolidate gains?</demand2>
+        <demand3>How to develop formations that allow division and JTF commanders to set the conditions for the close fight and seize, retain and exploit the initiative?</demand3>
+        <demand4>Does a Hybrid maneuver unit consisting of Infantry, Stryker, Mechanized Infantry and Armor increase the speed and efficiency of employment? If so, what is the optimum formation, company, battalion or brigade?</demand4>
+        <demand5>How to identify reductions or efficiencies in overhead that preserve fighting capability?</demand5>
+        <demand6>How to develop, train and retain air ground formations?</demand6>
+        <demand7>
+          What technology improvements can be provided to the formation in the Near-, Mid-, and Far-Terms which:          
+          <![CDATA[
+          <ul class="list-unstyled">
+          <li>a. Reduce the gross weight / cube of the formation's major end items?</li>
+          <li>b. Allow the execution of mission requirements with far fewer personnel and/or equipment?</li>
+          <li>c. Improve range, lethality, and precision to overcome anti-access and area denial, extend mutual support across greater distances to significantly reduce or eliminate the need for external Indirect Fire and TacAir support?</li>
+          <li>d. Significantly reduce its sustainment demands?</li>
+          <li>e. Use of Remote and Autonomous Systems (RAS) (robotics) to increase lethality, improve protection, and extend Soldiers’ and units’ reach?</li>
+          <li>f. Insert technologies into formations which obviate the need for separate, specialized functional organizations?</li>
+          <li>g. Provide equipment, organizational designs, and deployment TTP that enable formations to deploy and rapidly transition into operations significantly reducing requirements for Reception, Staging, Onward Movement and Integration (RSOI)?</li>
+          <li>h. Allow maximum integration of improved protection, lethality, mobility and power generation without negatively impacting deployment or sustainment?</li>
+          </ul>
+          
+          ]]>  
+        </demand7>
+        <demand8>What organizational design changes can be enacted in the Near-, Mid-, and Far-Terms which improve speed of employment and/or close or mitigate capability gaps?</demand8>
+        <demand9>Can the pooling of resources (i.e. transportation assets, fuel, and weapons systems) reduce deployment requirements while enabling formations access to resources to conduct operations of ample duration and in sufficient scale to accomplish the mission?</demand9>
+        <demand10>How does the Army use experimentation to ensure the best balance (combat, maneuver support, sustainment and mix) and stance (ability to react to wide range of contingencies) for the Army to avoid “not getting it too wrong?”</demand10>
+        <demand11></demand11>
+        <demand12></demand12>
+        <demand13></demand13>
+        <demand14></demand14>
+        <demand15></demand15>
+
+      
+    </demand>-->
+
+  </Demands>
+</Challenges>
+
